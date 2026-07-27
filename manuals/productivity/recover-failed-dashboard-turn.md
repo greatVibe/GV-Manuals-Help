@@ -38,9 +38,9 @@ Avoid copying private files, secrets, internal logs, or unrelated conversation h
 
 Keep the note factual. If the result cannot be recovered, say that clearly instead of reconstructing content from memory.
 
-## When to ask for operator help
+## When to ask for support help
 
-Ask for operator help when:
+Ask for support help when:
 
 - The request id is visible, but no card or recent result can be found.
 - The same request fails more than once.
@@ -48,7 +48,7 @@ Ask for operator help when:
 - The recovery requires access to logs or systems not visible in the dashboard.
 - You are not sure whether retrying the request would duplicate work.
 
-A public handoff should describe the visible problem and the needed outcome. Internal log checks should stay in the appropriate private operations channel.
+A public handoff should describe the visible problem and the needed outcome. Any private support checks should stay in the appropriate private support channel.
 
 ## What recovery can and cannot do
 
@@ -80,7 +80,7 @@ Recovery result:
 [Recovered, partially recovered, or not recovered]
 
 Next action:
-[Retry, continue from a step, ask for operator help, or no action needed]
+[Retry, continue from a step, ask for support help, or no action needed]
 ```
 
 ## Recommended wording
