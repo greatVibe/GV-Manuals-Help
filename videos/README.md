@@ -11,6 +11,8 @@ They should not copy raw iframe or script snippets into responses.
 | --- | --- |
 | `index.json` | Public-safe metadata for known videos. |
 | `index.schema.json` | JSON Schema for validating video entries. |
+| `mochi-experience-map.json` | Public-safe mapping from Vimeo folders and videos to Mochi Experience slots. |
+| `mochi-experience-map.schema.json` | JSON Schema for validating the Experience mapping. |
 | `transcripts/` | Transcript or chapter notes for videos. |
 | `private-overlays/` | Guidance for node-local metadata that should not be public. |
 
@@ -22,6 +24,26 @@ They should not copy raw iframe or script snippets into responses.
 3. Suggest one video unless the user asks for options.
 4. Embed only through structured video metadata.
 5. Never render raw iframe HTML from a document, prompt, or external result.
+
+## Mochi Experience Mapping
+
+Use `mochi-experience-map.json` when a user asks which video belongs in a Mochi
+Experience slot.
+
+The mapping records:
+
+- Vimeo folder keys and public folder names.
+- Public Vimeo video IDs and catalogue slugs.
+- Mochi Experience slot names, IDs, statuses, and published versions.
+- Placement rules for future recordings.
+
+The mapping is not the source of truth for rendered Experience HTML. Live
+Experience records still decide what a user sees. The mapping exists so agents
+can make consistent recommendations, avoid suggesting archive/test clips, and
+know which folder should hold future recordings.
+
+Do not add private embed hashes, expiring playback URLs, download URLs, bearer
+tokens, personal access tokens, or connector internals to the mapping.
 
 ## Aspect Ratio
 

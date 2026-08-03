@@ -13,6 +13,62 @@ Private names have been generalized where they are not needed for public help.
 
 This video is indexed as a first-login welcome video for new GreatVibe users.
 
+## Editorial Review
+
+Public voice status: summary-ready. The transcript is useful for agents that
+need to understand the video, route it to the right help topic, or summarize the
+welcome message in user-facing language.
+
+Quote readiness: the edited public-copy excerpts below are quote-ready as
+prepared public wording. The transcript itself is still not approved for
+verbatim quotes until a human has checked the recording against the text.
+
+Recommended public wording:
+
+- Describe GreatVibe as an AI coding platform for building commercial
+  applications and systems with stronger process, review, and context controls.
+- Emphasize predictable AI-assisted engineering, clear standards, and AI as a
+  first-class team member.
+- Avoid lifting informal phrases verbatim from the transcript unless a human has
+  approved the exact quote.
+
+Before marking this quote-ready:
+
+- Confirm the transcript against the source video.
+- Smooth filler language only if the transcript is being republished as edited
+  copy rather than a literal transcript.
+- Keep the founder voice, but avoid wording that sounds dismissive of users who
+  still write or review code manually.
+
+## Quote-Ready Public Copy
+
+Use this section when a user asks for polished public wording. These excerpts
+are edited copy prepared from the transcript themes, not verbatim transcript
+quotes.
+
+### Positioning
+
+GreatVibe is an AI coding platform for building commercial applications and
+systems with clearer context, stronger review, and more predictable delivery.
+
+The platform is built around a simple idea: AI can be a first-class member of
+the engineering team when it has the right instructions, standards, context,
+and review loops.
+
+### Short Excerpts
+
+- GreatVibe helps teams move from prompt-by-prompt coding to structured,
+  observable AI-assisted engineering.
+- The goal is not just faster code. The goal is predictable implementation that
+  follows the design patterns, standards, and constraints the team cares about.
+- GreatVibe treats AI agents as part of the team, which means they need clear
+  context, explicit rules, and a durable record of the work they perform.
+
+### Suggested Caption
+
+Founder welcome: why GreatVibe exists, how it brings structure to AI coding,
+and why predictable engineering workflows matter when AI is part of the team.
+
 ## Chapters
 
 | Start | Title |
@@ -84,5 +140,6 @@ I'll leave it here for now and hope you enjoy our platform.
 Suggest this video when a user asks for a welcome walkthrough, first-login help,
 or a quick orientation before asking Mochi to work on files.
 
-This transcript is useful for summary and routing. Avoid verbatim quoting until
-the transcript has had human review.
+This transcript is useful for summary and routing. Use the edited public-copy
+section for quote-ready wording. Avoid verbatim transcript quotes until the
+transcript has had human review.

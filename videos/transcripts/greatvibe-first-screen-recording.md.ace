@@ -8,6 +8,8 @@ Provides transcript status and chapter notes for the first screen recording.
 # Key Sections
 - Video metadata.
 - Transcript source and status.
+- Editorial review and quote-readiness notes.
+- Edited public-copy excerpts.
 - Sanitized auto-generated transcript.
 - Agent usage notes.
 
@@ -18,9 +20,13 @@ Provides transcript status and chapter notes for the first screen recording.
 - Transcript is auto-generated, lightly cleaned, and sanitized for public
   documentation. Do not treat it as a verbatim quote source until editorial
   review is complete.
+- Public-copy excerpts are edited/paraphrased copy prepared from transcript
+  themes. They are quote-ready as public copy, not as verbatim transcript text.
 - Do not add Vimeo hashes, expiring caption URLs, or download links.
 
 # Change History
+- 2026-08-03: Added quote-ready edited public-copy excerpts.
+- 2026-08-03: Added public voice and quote-readiness review notes.
 - 2026-08-03: Added sanitized auto-generated transcript fetched through the
   Vimeo connector.
 - 2026-08-03: Created transcript placeholder.

@@ -8,16 +8,20 @@ Explains how the video catalogue should be authored and consumed.
 # Key Sections
 - Catalogue files.
 - How agents select videos.
+- How agents map videos to Mochi Experience slots.
 - Vimeo privacy hash handling.
 - Aspect ratio guidance.
 
 # Dependencies
 - `index.json`
 - `index.schema.json`
+- `mochi-experience-map.json`
+- `mochi-experience-map.schema.json`
 - `private-overlays/README.md`
 
 # Gotchas
 - Keep embed hashes out of public examples.
 
 # Change History
+- 2026-08-03: Added Mochi Experience slot mapping guidance.
 - 2026-08-03: Created video catalogue README.

@@ -1,0 +1,164 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://greatvibe.example/schemas/mochi-experience-map.schema.json",
+  "title": "GreatVibe Vimeo to Mochi Experience map",
+  "type": "object",
+  "required": ["version", "updated_at", "vimeo_folders", "mochi_experience_slots", "placement_rules"],
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "source_notes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 2
+      },
+      "uniqueItems": true
+    },
+    "vimeo_folders": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/vimeo_folder"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "mochi_experience_slots": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/mochi_experience_slot"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "placement_rules": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 2
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  },
+  "$defs": {
+    "vimeo_folder": {
+      "type": "object",
+      "required": ["key", "name", "vimeo_project_uri", "purpose", "status"],
+      "additionalProperties": false,
+      "properties": {
+        "key": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 120
+        },
+        "vimeo_project_uri": {
+          "type": "string",
+          "pattern": "^/users/[0-9]+/projects/[0-9]+$"
+        },
+        "purpose": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 500
+        },
+        "status": {
+          "type": "string",
+          "enum": ["active", "legacy-active", "empty-ready", "archive"]
+        },
+        "expected_mochi_slots": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 2
+          },
+          "uniqueItems": true
+        },
+        "catalogue_video_slugs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "mochi_experience_slot": {
+      "type": "object",
+      "required": [
+        "slot",
+        "experience_id",
+        "experience_title",
+        "status",
+        "published_version",
+        "catalogue_video_slug",
+        "vimeo_video_id",
+        "vimeo_folder_key",
+        "use_when"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "slot": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "experience_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "experience_title": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 140
+        },
+        "status": {
+          "type": "string",
+          "enum": ["active", "inactive", "draft", "planned"]
+        },
+        "published_version": {
+          "type": ["integer", "null"],
+          "minimum": 1
+        },
+        "catalogue_video_slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "vimeo_video_id": {
+          "type": "string",
+          "pattern": "^[0-9]+$"
+        },
+        "vimeo_folder_key": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "use_when": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 500
+        },
+        "related_docs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "notes": {
+          "type": "string",
+          "maxLength": 500
+        }
+      }
+    }
+  }
+}

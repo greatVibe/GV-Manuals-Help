@@ -1,0 +1,25 @@
+file: mochi-experience-map.json
+consumers: [Mochi agents, video catalogue maintainers, Experience maintainers]
+produces: [public-safe mapping from Vimeo folders and videos to Mochi Experience slots]
+---
+# Purpose
+Documents how public video catalogue entries relate to Vimeo folder structure
+and Mochi Experience delivery slots.
+
+# Key Sections
+- Vimeo folder keys and intended use.
+- Current Mochi Experience slot bindings.
+- Mapping rules for future videos.
+
+# Dependencies
+- `index.json` supplies canonical public video metadata.
+- `mochi-experience-map.schema.json` validates this file.
+
+# Gotchas
+- Do not store Vimeo embed hashes, expiring playback URLs, download URLs,
+  bearer tokens, personal access tokens, or private connector metadata.
+- Treat this as routing metadata, not the source of truth for live Experience
+  HTML.
+
+# Change History
+- 2026-08-03: Created durable public-safe video-to-Experience mapping.

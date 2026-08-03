@@ -1,0 +1,23 @@
+file: mochi-experience-map.schema.json
+consumers: [video catalogue maintainers, validation tools, Mochi agents]
+produces: [JSON Schema for Vimeo-to-Mochi Experience mappings]
+---
+# Purpose
+Defines a public-safe schema for mapping Vimeo folders and videos to Mochi
+Experience slots.
+
+# Key Sections
+- Root catalogue version and update date.
+- Vimeo folder records.
+- Mochi Experience slot records.
+- Future placement rules.
+
+# Dependencies
+- `mochi-experience-map.json` should validate against this schema.
+
+# Gotchas
+- The schema intentionally allows public Vimeo IDs and folder URIs but no
+  embed hashes or expiring playback/download URLs.
+
+# Change History
+- 2026-08-03: Created initial mapping schema.

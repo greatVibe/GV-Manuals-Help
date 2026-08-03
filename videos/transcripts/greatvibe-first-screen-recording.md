@@ -14,6 +14,64 @@ Private names and internal repo/node identifiers have been generalized.
 This video is indexed as an introductory GreatVibe walkthrough for first-session
 orientation.
 
+## Editorial Review
+
+Public voice status: summary-ready. The transcript explains the product through
+real usage: gvturn cards, cross-node work, status states, metrics, and
+AI-assisted engineering practice.
+
+Quote readiness: the edited public-copy excerpts below are quote-ready as
+prepared public wording. The transcript itself still includes auto-generated
+phrasing, long spoken sentences, and generalized references that need a human
+pass before they are quoted verbatim.
+
+Recommended public wording:
+
+- Describe this as a founder walkthrough of GreatVibe in use, showing how turns,
+  nodes, repo context, metrics, and review states support AI-assisted work.
+- Use it when users ask why gvturns matter, what the power footer does, or how
+  GreatVibe keeps AI work observable.
+- Avoid presenting the development metrics as fixed marketing numbers; they were
+  point-in-time examples from the recording.
+
+Before marking this quote-ready:
+
+- Confirm all numbers against the recording or remove exact counts from quotes.
+- Keep private repo and node names generalized.
+- Tighten repeated phrases before using excerpts in public landing copy.
+
+## Quote-Ready Public Copy
+
+Use this section when a user asks for polished public wording. These excerpts
+are edited copy prepared from the transcript themes, not verbatim transcript
+quotes.
+
+### Positioning
+
+GreatVibe makes AI-assisted work observable. Every turn can become a durable
+work record with context, status, next actions, and review signals that help the
+team understand what happened and what should happen next.
+
+The platform supports work across connected nodes, repositories, and agents, so
+teams can inspect progress, compare activity, and keep AI-generated work inside
+a shared operating rhythm.
+
+### Short Excerpts
+
+- A gvturn is more than a response. It is a work record that captures the
+  prompt, the result, the status, and the next action.
+- GreatVibe gives teams a way to see AI work across nodes, repositories, and
+  time instead of losing it in disconnected chat threads.
+- The power footer turns each response into a practical workflow surface, with
+  recommended next actions that can be clicked or edited before sending.
+- The platform is designed to keep human intent, AI output, and review history
+  in the same working context.
+
+### Suggested Caption
+
+Founder walkthrough: how GreatVibe uses gvturns, node context, metrics, and
+review states to make AI-assisted engineering visible and repeatable.
+
 ## Chapters
 
 | Start | Title |
@@ -201,5 +259,6 @@ video. Catch you later.
 Suggest this video when a new user asks what to do first, how to understand the
 GreatVibe experience, or how to start with gvturn-based work.
 
-This transcript is useful for summary and routing. Avoid verbatim quoting until
-the transcript has had human review.
+This transcript is useful for summary and routing. Use the edited public-copy
+section for quote-ready wording. Avoid verbatim transcript quotes until the
+transcript has had human review.
