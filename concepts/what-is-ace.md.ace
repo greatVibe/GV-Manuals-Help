@@ -1,0 +1,22 @@
+file: what-is-ace.md
+consumers: [new users, developers, Mochi agents]
+produces: [public ACE explanation]
+---
+# Purpose
+Explains ACE as design notes that travel with files.
+
+# Key Sections
+- What ACE is.
+- Why it helps.
+- What an ACE file contains.
+- Public-safe usage.
+
+# Dependencies
+- Links to gvContext concept guide.
+
+# Gotchas
+- Keep this as a user-facing explanation, not a full internal engineering rule
+  set.
+
+# Change History
+- 2026-08-03: Created public ACE concept guide.

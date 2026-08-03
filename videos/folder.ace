@@ -1,0 +1,29 @@
+file: videos/
+consumers: [Mochi agents, video catalogue maintainers, users]
+produces: [video metadata schema, public video index, transcript references]
+---
+# Purpose
+Structured catalogue for GreatVibe training videos so agents can suggest or
+embed relevant videos in gvturns.
+
+# Key Files
+- `README.md` explains the catalogue model.
+- `index.schema.json` validates video entries.
+- `index.json` stores public-safe metadata.
+- `transcripts/` stores transcript or chapter pages.
+- `private-overlays/` documents node-local metadata overlays.
+
+# Dependencies
+- `../CATALOGUE.md` routes users and agents to videos.
+- `../reference/public-safety-rules.md` defines video safety boundaries.
+
+# Gotchas
+- Do not store raw iframe HTML or script snippets.
+- Vimeo `embed_hash` values should live in private node-local overlays, not in
+  public catalogue entries.
+- New recordings should use square `1:1` aspect ratio unless the source video
+  requires another ratio.
+
+# Change History
+- 2026-08-03: Created video catalogue, schema, entries, transcript stubs, and
+  private overlay guidance.

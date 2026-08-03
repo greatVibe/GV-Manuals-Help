@@ -1,0 +1,21 @@
+file: transcripts/
+consumers: [Mochi agents, users, video catalogue maintainers]
+produces: [video transcript and chapter notes]
+---
+# Purpose
+Transcript and chapter-note pages for indexed videos.
+
+# Key Files
+- `greatvibe-first-screen-recording.md`
+- `greatvibe-welcome.md`
+
+# Dependencies
+- `../index.json` points to transcript paths.
+
+# Gotchas
+- Do not include private video hashes, raw iframe HTML, or private user data.
+- If full transcripts are unavailable, mark the page as a placeholder and keep
+  summaries conservative.
+
+# Change History
+- 2026-08-03: Created transcript stubs for initial videos.

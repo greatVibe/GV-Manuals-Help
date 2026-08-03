@@ -1,0 +1,21 @@
+file: what-is-a-gvturn.md
+consumers: [new users, Mochi agents]
+produces: [gvturn concept explanation]
+---
+# Purpose
+Explains gvturn cards as user-facing work records.
+
+# Key Sections
+- What a gvturn is.
+- What to check in a gvturn.
+- How choices work.
+- Common statuses.
+
+# Dependencies
+- Links to review and failed-turn guides.
+
+# Gotchas
+- Keep status explanations user-facing, not tied to internal storage details.
+
+# Change History
+- 2026-08-03: Created initial gvturn concept guide.

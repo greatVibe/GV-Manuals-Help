@@ -1,0 +1,30 @@
+file: gv-manuals-help/
+consumers: [GreatVibe users, Mochi node agents, public documentation maintainers]
+produces: [public help manuals, starter guides, video catalogue metadata]
+---
+# Purpose
+Public-safe help repository seeded onto GreatVibe nodes so users and agents can
+find task guidance without reading internal implementation docs.
+
+# Key Files
+- `README.md` explains the repo purpose and navigation.
+- `CATALOGUE.md` is the public topic index agents should read first.
+- `getting-started/` contains first-session onboarding guides.
+- `concepts/` explains user-facing GreatVibe vocabulary.
+- `how-to/` contains practical task guides.
+- `reference/` contains glossary and safety reference material.
+- `videos/` contains structured training-video metadata and schemas.
+
+# Dependencies
+- `SANITIZATION.md` is the publication safety checklist.
+- Internal source docs must be rewritten before publication.
+
+# Gotchas
+- Do not publish credentials, private URLs, internal routes, private hostnames,
+  customer data, roadmap commitments, or pricing strategy.
+- Vimeo `embed_hash` values are access-control data. Public catalogue entries
+  should reference private overlays rather than storing real hashes directly.
+
+# Change History
+- 2026-08-03: Added public help spine folders, catalogue, starter docs, and
+  structured video catalogue guidance.

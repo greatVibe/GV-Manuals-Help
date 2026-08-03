@@ -1,0 +1,22 @@
+file: recover-a-failed-turn.md
+consumers: [users, Mochi agents]
+produces: [failed-turn recovery workflow]
+---
+# Purpose
+Provides a public recovery workflow for a failed or incomplete assistant turn.
+
+# Key Sections
+- What to check.
+- What to ask next.
+- How to preserve context.
+- When to restart with a smaller request.
+
+# Dependencies
+- Extends the productivity failed-dashboard-turn guide.
+
+# Gotchas
+- Avoid internal logs, service restart instructions, or private operational
+  commands.
+
+# Change History
+- 2026-08-03: Created user-facing failed-turn recovery guide.

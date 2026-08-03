@@ -36,37 +36,57 @@ If a source document contains any of the above, rewrite it into a public-safe gu
 
 ## Repository Map
 
-Planned structure:
+Current structure:
 
 ```text
 GV-Manuals-Help/
 |-- README.md
 |-- SANITIZATION.md
+|-- CATALOGUE.md
+|-- getting-started/
+|   |-- welcome-to-greatvibe.md
+|   |-- first-10-minutes.md
+|   `-- ask-mochi-for-help.md
+|-- concepts/
+|   |-- what-is-a-node.md
+|   |-- what-is-a-gvturn.md
+|   |-- what-is-gvcontext.md
+|   `-- what-is-ace.md
+|-- how-to/
+|   |-- review-ai-work.md
+|   |-- work-with-files.md
+|   |-- recover-a-failed-turn.md
+|   |-- add-ai-agent-credential.md
+|   |-- add-github-credential.md
+|   |-- builtin-credential-and-connector-templates.md
+|   |-- understand-the-status-bar.md
+|   `-- manage-turns-with-gv-menu-eventlog-gvturns.md
 |-- manuals/
 |   |-- productivity/
 |   |   |-- overview.md
 |   |   |-- troubleshooting.md
 |   |   `-- excel-formulas.md
-|   `-- authoring/
-|       `-- diagrams-with-mermaid.md
-|-- standards/
-|   |-- engineering-principles.md
-|   |-- documentation.md
-|   |-- security-and-privacy.md
-|   `-- testing.md
-`-- ace/
-    |-- what-is-ace.md
-    `-- quickstart.md
+|-- reference/
+|   |-- glossary.md
+|   `-- public-safety-rules.md
+`-- videos/
+    |-- README.md
+    |-- index.json
+    |-- index.schema.json
+    |-- private-overlays/
+    `-- transcripts/
 ```
 
 ## Using These Manuals
 
-Start with the topic closest to your task:
+Start with `CATALOGUE.md`, then choose the topic closest to your task:
 
+- For first-session help, see `getting-started/`.
+- For GreatVibe vocabulary, see `concepts/`.
+- For practical task workflows, see `how-to/`.
 - For document workflows, see `manuals/productivity/`.
-- For diagrams and technical writing, see `manuals/authoring/`.
-- For public development standards, see `standards/`.
-- For ACE documentation practices, see `ace/`.
+- For safety rules and definitions, see `reference/`.
+- For training videos, see `videos/index.json`.
 
 Each document should be written for a public reader. Prefer plain explanations, safe examples, and clear troubleshooting steps.
 

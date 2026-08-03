@@ -1,0 +1,22 @@
+file: first-10-minutes.md
+consumers: [new users, Mochi agents]
+produces: [first-session checklist]
+---
+# Purpose
+Gives new users a short sequence for their first GreatVibe session.
+
+# Key Sections
+- Minute-by-minute first actions.
+- First prompt examples.
+- Review guidance.
+- Next steps.
+
+# Dependencies
+- Links to core concept and how-to guides.
+
+# Gotchas
+- Do not include internal setup commands or private node details.
+- Keep timing approximate and user-facing.
+
+# Change History
+- 2026-08-03: Created first-session checklist.

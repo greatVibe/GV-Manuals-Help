@@ -1,0 +1,27 @@
+file: README.md
+consumers: [new users, documentation maintainers, Mochi agents]
+produces: [repository overview, navigation rules, publication boundaries]
+---
+# Purpose
+Introduces GV-Manuals-Help as the public help and reference repo for GreatVibe
+users and node-local agents.
+
+# Key Sections
+- What belongs here.
+- What does not belong here.
+- Repository map.
+- Using these manuals.
+- Publishing rules.
+
+# Dependencies
+- `SANITIZATION.md` for publication review.
+- `CATALOGUE.md` for topic-level navigation.
+
+# Gotchas
+- Keep this page public-safe; avoid internal architecture promises or private
+  operational details.
+- Update the repository map whenever a new top-level help section is added.
+
+# Change History
+- 2026-08-03: Updated map and navigation for getting-started, concepts,
+  how-to, reference, and video catalogue sections.

@@ -1,0 +1,19 @@
+file: reference/
+consumers: [users, Mochi agents, documentation maintainers]
+produces: [public reference material]
+---
+# Purpose
+Stable reference docs for public vocabulary and safety rules.
+
+# Key Files
+- `glossary.md`
+- `public-safety-rules.md`
+
+# Dependencies
+- `../SANITIZATION.md` for publication rules.
+
+# Gotchas
+- Keep definitions short and public-safe.
+
+# Change History
+- 2026-08-03: Created reference section.

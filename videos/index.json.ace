@@ -1,0 +1,23 @@
+file: index.json
+consumers: [Mochi agents, video search tools, documentation readers]
+produces: [public-safe video catalogue entries]
+---
+# Purpose
+Lists known GreatVibe videos in structured form without raw iframe HTML.
+
+# Key Entries
+- `greatvibe-first-screen-recording`
+- `greatvibe-welcome`
+
+# Dependencies
+- Must validate against `index.schema.json`.
+- Transcript paths should point to files under `transcripts/`.
+- Private Vimeo hashes should be resolved via node-local overlays.
+
+# Gotchas
+- Do not add a raw `embed_hash` field to this public index.
+- Keep `video_id` strings quoted.
+
+# Change History
+- 2026-08-03: Created initial catalogue with two Vimeo welcome videos supplied
+  by the user, using overlay refs for private embed hashes.

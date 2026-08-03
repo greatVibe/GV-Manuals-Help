@@ -1,0 +1,22 @@
+file: work-with-files.md
+consumers: [users, Mochi agents]
+produces: [file-work guidance]
+---
+# Purpose
+Explains how users can ask GreatVibe to inspect, summarise, and safely work
+with files.
+
+# Key Sections
+- Describe the file task.
+- Read-only vs edit requests.
+- Review before sharing.
+- Related productivity guides.
+
+# Dependencies
+- Links to productivity manuals.
+
+# Gotchas
+- Avoid private file paths and internal storage details.
+
+# Change History
+- 2026-08-03: Created file-work guide.

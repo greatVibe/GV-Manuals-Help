@@ -1,0 +1,23 @@
+file: README.md
+consumers: [Mochi agents, video maintainers, users]
+produces: [video catalogue usage guide]
+---
+# Purpose
+Explains how the video catalogue should be authored and consumed.
+
+# Key Sections
+- Catalogue files.
+- How agents select videos.
+- Vimeo privacy hash handling.
+- Aspect ratio guidance.
+
+# Dependencies
+- `index.json`
+- `index.schema.json`
+- `private-overlays/README.md`
+
+# Gotchas
+- Keep embed hashes out of public examples.
+
+# Change History
+- 2026-08-03: Created video catalogue README.

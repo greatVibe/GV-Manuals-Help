@@ -1,0 +1,21 @@
+file: ask-mochi-for-help.md
+consumers: [new users, Mochi agents]
+produces: [prompting guidance for user help requests]
+---
+# Purpose
+Shows users how to ask Mochi for clear, actionable help.
+
+# Key Sections
+- What to include in a request.
+- Prompt examples.
+- How to ask for safer review.
+- How to ask for follow-up.
+
+# Dependencies
+- Links to first-session and review guides.
+
+# Gotchas
+- Keep examples tool-agnostic and safe for public readers.
+
+# Change History
+- 2026-08-03: Created initial prompt guidance.

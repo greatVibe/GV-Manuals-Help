@@ -1,0 +1,22 @@
+file: public-safety-rules.md
+consumers: [documentation maintainers, Mochi agents]
+produces: [public-safe documentation rules]
+---
+# Purpose
+Condenses the public safety boundary for docs and video metadata.
+
+# Key Sections
+- Do publish.
+- Do not publish.
+- Video metadata caution.
+- Review checklist.
+
+# Dependencies
+- `../SANITIZATION.md` is the full checklist.
+
+# Gotchas
+- Keep this aligned with SANITIZATION.md.
+- Do not store real access-control hashes in examples.
+
+# Change History
+- 2026-08-03: Created concise public safety reference.

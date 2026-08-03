@@ -1,0 +1,65 @@
+{
+  "version": "1.0.0",
+  "updated_at": "2026-08-03",
+  "default_aspect_ratio": "1:1",
+  "videos": [
+    {
+      "slug": "greatvibe-first-screen-recording",
+      "title": "GreatVibe First Screen Recording",
+      "summary": "A first walkthrough recording for orienting a user in the GreatVibe experience.",
+      "provider": "vimeo",
+      "video_id": "1214761385",
+      "embed_hash_ref": "greatvibe-first-screen-recording",
+      "source_url": "https://vimeo.com/1214761385",
+      "aspect_ratio": "1:1",
+      "product_area": "mochi-onboarding",
+      "audience": ["new-users", "mochi-users"],
+      "difficulty": "intro",
+      "trust": "owned",
+      "visibility": "unlisted-overlay-required",
+      "tags": ["welcome", "first-session", "mochi", "onboarding", "gvturn"],
+      "related_docs": [
+        "../getting-started/welcome-to-greatvibe.md",
+        "../getting-started/first-10-minutes.md",
+        "../concepts/what-is-a-gvturn.md"
+      ],
+      "transcript_path": "transcripts/greatvibe-first-screen-recording.md",
+      "chapters": [
+        {
+          "start_seconds": 0,
+          "title": "Welcome and orientation"
+        }
+      ],
+      "updated_at": "2026-08-03"
+    },
+    {
+      "slug": "greatvibe-welcome",
+      "title": "GreatVibe Welcome",
+      "summary": "A welcome video for a new GreatVibe user, suitable for first-login onboarding.",
+      "provider": "vimeo",
+      "video_id": "1214762754",
+      "embed_hash_ref": "greatvibe-welcome",
+      "source_url": "https://vimeo.com/1214762754",
+      "aspect_ratio": "3:4",
+      "product_area": "mochi-onboarding",
+      "audience": ["new-users", "mochi-users"],
+      "difficulty": "intro",
+      "trust": "owned",
+      "visibility": "unlisted-overlay-required",
+      "tags": ["welcome", "mochi", "onboarding", "first-login"],
+      "related_docs": [
+        "../getting-started/welcome-to-greatvibe.md",
+        "../getting-started/ask-mochi-for-help.md",
+        "../concepts/what-is-a-node.md"
+      ],
+      "transcript_path": "transcripts/greatvibe-welcome.md",
+      "chapters": [
+        {
+          "start_seconds": 0,
+          "title": "Welcome"
+        }
+      ],
+      "updated_at": "2026-08-03"
+    }
+  ]
+}

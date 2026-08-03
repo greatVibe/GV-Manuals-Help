@@ -1,0 +1,21 @@
+file: what-is-gvcontext.md
+consumers: [new users, Mochi agents, documentation maintainers]
+produces: [public gvContext explanation]
+---
+# Purpose
+Explains gvContext as the guidance layer that helps agents behave consistently.
+
+# Key Sections
+- What context means.
+- Why local manuals matter.
+- What users should know.
+- What users should not edit casually.
+
+# Dependencies
+- Links to ACE and catalogue docs.
+
+# Gotchas
+- Do not expose internal context compilation routes or operational details.
+
+# Change History
+- 2026-08-03: Created public gvContext concept guide.

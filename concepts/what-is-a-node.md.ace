@@ -1,0 +1,21 @@
+file: what-is-a-node.md
+consumers: [new users, Mochi agents]
+produces: [plain-language node explanation]
+---
+# Purpose
+Explains a GreatVibe node in user-facing terms.
+
+# Key Sections
+- Node definition.
+- What lives on a node.
+- How users work with it.
+- Privacy and review notes.
+
+# Dependencies
+- Links to gvturn and gvContext concepts.
+
+# Gotchas
+- Avoid operational infrastructure details and hostnames.
+
+# Change History
+- 2026-08-03: Created initial node concept guide.

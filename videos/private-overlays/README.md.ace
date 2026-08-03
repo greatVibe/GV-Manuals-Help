@@ -1,0 +1,20 @@
+file: README.md
+consumers: [node seed maintainers, documentation maintainers]
+produces: [private video overlay instructions]
+---
+# Purpose
+Explains the private overlay pattern for unlisted video embed hashes.
+
+# Key Sections
+- Why overlays exist.
+- Example shape with placeholders.
+- Runtime merge behavior.
+
+# Dependencies
+- `../index.json`
+
+# Gotchas
+- Examples must use fake hashes only.
+
+# Change History
+- 2026-08-03: Created private overlay README.

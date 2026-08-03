@@ -1,0 +1,20 @@
+file: greatvibe-first-screen-recording.md
+consumers: [Mochi agents, users]
+produces: [transcript placeholder and chapter notes]
+---
+# Purpose
+Provides transcript status and chapter notes for the first screen recording.
+
+# Key Sections
+- Video metadata.
+- Transcript status.
+- Agent usage notes.
+
+# Dependencies
+- Referenced by `../index.json`.
+
+# Gotchas
+- Full transcript has not been supplied yet.
+
+# Change History
+- 2026-08-03: Created transcript placeholder.

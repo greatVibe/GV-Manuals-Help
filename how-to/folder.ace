@@ -1,0 +1,28 @@
+file: how-to/
+consumers: [GreatVibe users, Mochi agents]
+produces: [task-oriented public guides]
+---
+# Purpose
+Practical task guides that help users get useful work done safely.
+
+# Key Files
+- `review-ai-work.md`
+- `work-with-files.md`
+- `recover-a-failed-turn.md`
+- `add-ai-agent-credential.md`
+- `add-github-credential.md`
+- `builtin-credential-and-connector-templates.md`
+- `understand-the-status-bar.md`
+- `manage-turns-with-gv-menu-eventlog-gvturns.md`
+
+# Dependencies
+- Links to productivity manuals and concept guides.
+
+# Gotchas
+- Keep instructions product-facing and avoid internal commands unless they are
+  intended for public users.
+
+# Change History
+- 2026-08-03: Added credential, connector, status bar, and turn-management
+  starter guides.
+- 2026-08-03: Created initial how-to guide set.

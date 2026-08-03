@@ -1,0 +1,23 @@
+file: index.schema.json
+consumers: [video catalogue maintainers, validation tools, Mochi agents]
+produces: [JSON Schema for video catalogue entries]
+---
+# Purpose
+Defines the public-safe structure for `videos/index.json`.
+
+# Key Fields
+- Stable slug, title, provider, video ID, aspect ratio.
+- Product area, audience, tags, related docs, transcript path.
+- Optional private overlay reference for Vimeo embed hashes.
+
+# Dependencies
+- `index.json` should validate against this schema.
+
+# Gotchas
+- Schema allows `embed_hash_ref`, not raw `embed_hash`, for public catalogue
+  entries.
+- `video_id` is provider-specific and must stay a string to avoid numeric
+  conversion.
+
+# Change History
+- 2026-08-03: Created initial video index schema.

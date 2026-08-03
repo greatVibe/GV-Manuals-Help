@@ -1,0 +1,23 @@
+file: getting-started/
+consumers: [new GreatVibe users, Mochi agents]
+produces: [first-session onboarding guides]
+---
+# Purpose
+Guides that help a new user understand what to do in their first GreatVibe
+session.
+
+# Key Files
+- `welcome-to-greatvibe.md`
+- `first-10-minutes.md`
+- `ask-mochi-for-help.md`
+
+# Dependencies
+- `../CATALOGUE.md` links these guides into public navigation.
+- `../videos/index.json` may reference matching welcome videos.
+
+# Gotchas
+- Keep product explanations practical and public-safe.
+- Avoid internal platform architecture, private routes, or unreleased promises.
+
+# Change History
+- 2026-08-03: Created first-session guide set.

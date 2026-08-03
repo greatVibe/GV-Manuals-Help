@@ -1,0 +1,22 @@
+file: welcome-to-greatvibe.md
+consumers: [new users, Mochi agents]
+produces: [plain-language GreatVibe introduction]
+---
+# Purpose
+Explains what GreatVibe is for from a new user's point of view.
+
+# Key Sections
+- What GreatVibe helps with.
+- What a user can ask for.
+- How help is delivered.
+- What to try next.
+
+# Dependencies
+- Links to `first-10-minutes.md`, `ask-mochi-for-help.md`, and core concepts.
+
+# Gotchas
+- Do not over-promise autonomy or unreleased features.
+- Keep examples neutral and non-customer-specific.
+
+# Change History
+- 2026-08-03: Created initial public welcome guide.

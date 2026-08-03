@@ -1,0 +1,21 @@
+file: review-ai-work.md
+consumers: [users reviewing gvturns, Mochi agents]
+produces: [AI work review checklist]
+---
+# Purpose
+Provides a practical checklist for reviewing assistant output.
+
+# Key Sections
+- What to check.
+- When to ask for evidence.
+- When to request changes.
+- When to escalate.
+
+# Dependencies
+- Links to gvturn concept and productivity review checklists.
+
+# Gotchas
+- Avoid implying AI output is automatically correct.
+
+# Change History
+- 2026-08-03: Created initial AI review guide.

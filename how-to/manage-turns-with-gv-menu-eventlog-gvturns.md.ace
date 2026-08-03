@@ -1,0 +1,27 @@
+file: manage-turns-with-gv-menu-eventlog-gvturns.md
+consumers: [GreatVibe users, Mochi agents, support writers]
+produces: [public turn management guide]
+---
+# Purpose
+Explains how users can start, stop, and check turns using the visible UI,
+event log, and gvturn history.
+
+# Key Sections
+- Starting turns.
+- Checking running turns.
+- Stopping or pausing.
+- Using eventlog and gvturn history.
+- Recovery prompts.
+
+# Dependencies
+- `understand-the-status-bar.md`
+- `recover-a-failed-turn.md`
+- `../concepts/what-is-a-gvturn.md`
+
+# Gotchas
+- Keep this user-facing. Do not include private endpoints or service restart
+  commands.
+- Stopping behavior may vary by UI; advise users to follow visible labels.
+
+# Change History
+- 2026-08-03: Created initial turn management guide.

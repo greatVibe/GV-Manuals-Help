@@ -1,0 +1,20 @@
+file: glossary.md
+consumers: [new users, Mochi agents]
+produces: [public vocabulary definitions]
+---
+# Purpose
+Defines common GreatVibe terms in plain language.
+
+# Key Sections
+- Core terms.
+- Review terms.
+- Documentation terms.
+
+# Dependencies
+- Links to concept docs.
+
+# Gotchas
+- Avoid internal implementation terms unless the public reader needs them.
+
+# Change History
+- 2026-08-03: Created initial glossary.

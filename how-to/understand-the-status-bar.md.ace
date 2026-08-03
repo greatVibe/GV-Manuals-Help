@@ -1,0 +1,25 @@
+file: understand-the-status-bar.md
+consumers: [GreatVibe users, Mochi agents, support writers]
+produces: [public status bar orientation guide]
+---
+# Purpose
+Explains the GreatVibe status bar as a compact place for workspace and turn
+state.
+
+# Key Sections
+- What the status bar is.
+- Common signals.
+- What to check when something looks wrong.
+- Prompt examples.
+
+# Dependencies
+- `manage-turns-with-gv-menu-eventlog-gvturns.md`
+- `../concepts/what-is-a-node.md`
+- `../concepts/what-is-a-gvturn.md`
+
+# Gotchas
+- The visible status bar can change by surface and release; keep labels generic
+  and tell users to rely on current UI text.
+
+# Change History
+- 2026-08-03: Created initial status bar guide.

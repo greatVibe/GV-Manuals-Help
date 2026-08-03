@@ -1,0 +1,20 @@
+file: private-overlays/
+consumers: [node seed maintainers, video catalogue maintainers]
+produces: [private overlay documentation]
+---
+# Purpose
+Documents how node-local private video metadata can augment the public video
+catalogue without committing access-control values to the public repo.
+
+# Key Files
+- `README.md`
+
+# Dependencies
+- `../index.json` uses `embed_hash_ref` values that private overlays can
+  resolve.
+
+# Gotchas
+- Do not commit real overlay files with real Vimeo hashes to the public repo.
+
+# Change History
+- 2026-08-03: Created private overlay guidance.
