@@ -1,20 +1,26 @@
 file: greatvibe-first-screen-recording.md
 consumers: [Mochi agents, users]
-produces: [transcript placeholder and chapter notes]
+produces: [sanitized auto-generated transcript and chapter notes]
 ---
 # Purpose
 Provides transcript status and chapter notes for the first screen recording.
 
 # Key Sections
 - Video metadata.
-- Transcript status.
+- Transcript source and status.
+- Sanitized auto-generated transcript.
 - Agent usage notes.
 
 # Dependencies
 - Referenced by `../index.json`.
 
 # Gotchas
-- Full transcript has not been supplied yet.
+- Transcript is auto-generated, lightly cleaned, and sanitized for public
+  documentation. Do not treat it as a verbatim quote source until editorial
+  review is complete.
+- Do not add Vimeo hashes, expiring caption URLs, or download links.
 
 # Change History
+- 2026-08-03: Added sanitized auto-generated transcript fetched through the
+  Vimeo connector.
 - 2026-08-03: Created transcript placeholder.
