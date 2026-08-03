@@ -1,0 +1,23 @@
+file: email-writing.md
+consumers: [GreatVibe users, Mochi agents]
+produces: [email drafting guide]
+---
+# Purpose
+Helps users write clear emails with a specific subject, early ask, and concise
+context.
+
+# Key Sections
+- When to use this guide.
+- Start with the outcome.
+- Use a specific subject line.
+- Put the ask near the top.
+- Keep context short.
+
+# Dependencies
+- Belongs to the productivity manual set.
+
+# Gotchas
+- Do not invent recipients, commitments, dates, or approvals.
+
+# Change History
+- 2026-08-03: Added ACE companion.

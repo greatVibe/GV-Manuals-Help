@@ -1,0 +1,24 @@
+file: recover-failed-dashboard-turn.md
+consumers: [GreatVibe users, Mochi agents, support writers]
+produces: [failed dashboard turn recovery guide]
+---
+# Purpose
+Explains public-safe steps for recovering after a failed dashboard turn.
+
+# Key Sections
+- When to use this guide.
+- What to keep.
+- Recovery steps for users.
+- When to ask for support help.
+- What recovery can and cannot do.
+- Public-safe recovery note template.
+
+# Dependencies
+- Belongs to the productivity manual set.
+
+# Gotchas
+- Keep recovery advice public-safe. Avoid internal commands, private service
+  names, and unsupported guarantees.
+
+# Change History
+- 2026-08-03: Added ACE companion.

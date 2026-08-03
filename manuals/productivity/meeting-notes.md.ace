@@ -1,0 +1,23 @@
+file: meeting-notes.md
+consumers: [GreatVibe users, Mochi agents]
+produces: [meeting notes guide]
+---
+# Purpose
+Explains how to capture meeting purpose, decisions, action items, notes, and
+outcomes.
+
+# Key Sections
+- Before the meeting.
+- Capture the purpose.
+- Record decisions clearly.
+- Track action items.
+- Separate notes from outcomes.
+
+# Dependencies
+- Belongs to the productivity manual set.
+
+# Gotchas
+- Do not turn rough discussion into confirmed decisions unless the notes say so.
+
+# Change History
+- 2026-08-03: Added ACE companion.

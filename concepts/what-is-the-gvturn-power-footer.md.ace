@@ -1,0 +1,27 @@
+file: what-is-the-gvturn-power-footer.md
+consumers: [new users, Mochi agents, support writers]
+produces: [public explanation of gvturn footer zones and interactions]
+---
+# Purpose
+Explains the gvturn power footer for users who do not have access to source
+code or internal design docs.
+
+# Key Sections
+- What the power footer is.
+- Five zones.
+- Click, hold, and keyboard behavior.
+- Status and review signals.
+- What to ask when footer information is unclear.
+
+# Dependencies
+- `what-is-a-gvturn.md`
+- `../how-to/review-ai-work.md`
+- `../how-to/manage-turns-with-gv-menu-eventlog-gvturns.md`
+
+# Gotchas
+- Keep this as public product guidance, not renderer implementation detail.
+- Do not include internal file paths, endpoints, or private implementation
+  contracts.
+
+# Change History
+- 2026-08-03: Created public gvturn power footer guide.

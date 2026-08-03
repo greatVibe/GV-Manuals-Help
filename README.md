@@ -50,6 +50,7 @@ GV-Manuals-Help/
 |-- concepts/
 |   |-- what-is-a-node.md
 |   |-- what-is-a-gvturn.md
+|   |-- what-is-the-gvturn-power-footer.md
 |   |-- what-is-gvcontext.md
 |   `-- what-is-ace.md
 |-- how-to/
@@ -60,6 +61,7 @@ GV-Manuals-Help/
 |   |-- add-github-credential.md
 |   |-- builtin-credential-and-connector-templates.md
 |   |-- understand-the-status-bar.md
+|   |-- use-gvturn-actions.md
 |   `-- manage-turns-with-gv-menu-eventlog-gvturns.md
 |-- manuals/
 |   |-- productivity/

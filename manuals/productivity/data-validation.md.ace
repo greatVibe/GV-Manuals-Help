@@ -1,0 +1,25 @@
+file: data-validation.md
+consumers: [GreatVibe users, Mochi agents]
+produces: [data validation checklist]
+---
+# Purpose
+Helps users validate required fields, accepted values, dates, numbers, and
+duplicates before relying on a dataset.
+
+# Key Sections
+- Before validating data.
+- Required fields.
+- Accepted values.
+- Date checks.
+- Number checks.
+- Duplicate checks.
+
+# Dependencies
+- Belongs to the productivity manual set.
+
+# Gotchas
+- Validation identifies risk; it does not prove business correctness unless the
+  user supplies the relevant rules.
+
+# Change History
+- 2026-08-03: Added ACE companion.

@@ -1,0 +1,24 @@
+file: follow-up-actions.md
+consumers: [GreatVibe users, Mochi agents]
+produces: [follow-up action writing guide]
+---
+# Purpose
+Explains how to write follow-up actions with outcomes, owners, due dates, and
+useful context.
+
+# Key Sections
+- When to use this guide.
+- Write actions as outcomes.
+- Include an owner.
+- Include a due date when timing matters.
+- Add context without copying everything.
+
+# Dependencies
+- Belongs to the productivity manual set.
+
+# Gotchas
+- Do not assign owners or due dates unless they are supplied by the user or the
+  source material.
+
+# Change History
+- 2026-08-03: Added ACE companion.

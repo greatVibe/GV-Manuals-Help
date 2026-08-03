@@ -20,8 +20,10 @@ when an agent needs to choose the right local guide before answering.
 | Ask Mochi for help | `getting-started/ask-mochi-for-help.md` | `videos/index.json` tag `mochi` |
 | Understand a node | `concepts/what-is-a-node.md` | `videos/index.json` tag `node` |
 | Understand a gvturn | `concepts/what-is-a-gvturn.md` | `videos/index.json` tag `gvturn` |
+| Understand the gvturn power footer | `concepts/what-is-the-gvturn-power-footer.md` | No indexed video yet |
 | Understand context | `concepts/what-is-gvcontext.md` | `videos/index.json` tag `context` |
 | Review AI work | `how-to/review-ai-work.md` | `videos/index.json` tag `review` |
+| Use gvturn actions | `how-to/use-gvturn-actions.md` | No indexed video yet |
 | Work with files | `how-to/work-with-files.md` | `videos/index.json` tag `files` |
 | Recover after a failed turn | `manuals/productivity/recover-failed-dashboard-turn.md` and `how-to/recover-a-failed-turn.md` | `videos/index.json` tag `troubleshooting` |
 | Add an AI agent credential | `how-to/add-ai-agent-credential.md` | No indexed video yet |
@@ -35,10 +37,10 @@ when an agent needs to choose the right local guide before answering.
 | Topic | Public docs |
 | --- | --- |
 | Getting started | `getting-started/welcome-to-greatvibe.md`, `getting-started/first-10-minutes.md`, `getting-started/ask-mochi-for-help.md` |
-| Core concepts | `concepts/what-is-a-node.md`, `concepts/what-is-a-gvturn.md`, `concepts/what-is-gvcontext.md`, `concepts/what-is-ace.md` |
+| Core concepts | `concepts/what-is-a-node.md`, `concepts/what-is-a-gvturn.md`, `concepts/what-is-the-gvturn-power-footer.md`, `concepts/what-is-gvcontext.md`, `concepts/what-is-ace.md` |
 | Practical workflows | `how-to/review-ai-work.md`, `how-to/work-with-files.md`, `how-to/recover-a-failed-turn.md` |
 | Credentials and connectors | `how-to/add-ai-agent-credential.md`, `how-to/add-github-credential.md`, `how-to/builtin-credential-and-connector-templates.md` |
-| Console and turns | `how-to/understand-the-status-bar.md`, `how-to/manage-turns-with-gv-menu-eventlog-gvturns.md` |
+| Console and turns | `how-to/understand-the-status-bar.md`, `how-to/manage-turns-with-gv-menu-eventlog-gvturns.md`, `how-to/use-gvturn-actions.md` |
 | Productivity | `manuals/productivity/overview.md` and the guides in `manuals/productivity/` |
 | Reference | `reference/glossary.md`, `reference/public-safety-rules.md` |
 | Videos | `videos/README.md`, `videos/index.json`, `videos/index.schema.json` |

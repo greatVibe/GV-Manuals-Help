@@ -1,0 +1,24 @@
+file: feedback-tracking.md
+consumers: [GreatVibe users, Mochi agents]
+produces: [feedback tracking guide]
+---
+# Purpose
+Explains how to capture, source, write, and group feedback so it can be acted
+on.
+
+# Key Sections
+- When to use this guide.
+- Capture feedback in one place.
+- Record the source.
+- Write feedback as a clear item.
+- Group related feedback.
+
+# Dependencies
+- Belongs to the productivity manual set.
+
+# Gotchas
+- Preserve the difference between user feedback, interpretation, and planned
+  action.
+
+# Change History
+- 2026-08-03: Added ACE companion.

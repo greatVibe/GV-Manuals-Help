@@ -8,6 +8,7 @@ Plain-language concept docs for user-facing GreatVibe vocabulary.
 # Key Files
 - `what-is-a-node.md`
 - `what-is-a-gvturn.md`
+- `what-is-the-gvturn-power-footer.md`
 - `what-is-gvcontext.md`
 - `what-is-ace.md`
 
@@ -19,4 +20,5 @@ Plain-language concept docs for user-facing GreatVibe vocabulary.
   implementation contracts.
 
 # Change History
+- 2026-08-03: Added public gvturn power footer concept guide.
 - 2026-08-03: Created initial concept docs.

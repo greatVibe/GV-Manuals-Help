@@ -36,6 +36,31 @@ Look for:
 - Assumptions stated as facts.
 - Recommendations without tradeoffs.
 
+## Use The Power Footer Signals
+
+Before clicking a footer action, check what the footer is telling you.
+
+Look at:
+
+- The status or next-action banner.
+- The primary action card.
+- Any highlighted quick reactions.
+- Tool count, timing, or other metrics.
+- Whether the turn is marked as needing audit or review.
+
+If the footer suggests `Commit`, `Push`, `Ship it`, or another finalising
+action, confirm the work is actually ready. For file changes, ask what changed
+and what was verified before approving.
+
+If the footer suggests `Audit`, `Review`, `Verify`, `Deeper`, or `Rethink`,
+treat that as a signal to slow down and inspect the result.
+
+Useful prompt:
+
+```text
+Explain the footer signals on this gvturn before I choose an action.
+```
+
 ## Ask For Changes Clearly
 
 If the result is close but not right, say what to change.
@@ -69,5 +94,6 @@ Ask for deeper review when the work affects:
 ## Related Guides
 
 - `../concepts/what-is-a-gvturn.md`
+- `../concepts/what-is-the-gvturn-power-footer.md`
 - `../manuals/productivity/review-checklists.md`
 - `../manuals/productivity/approval-requests.md`

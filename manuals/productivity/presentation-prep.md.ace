@@ -1,0 +1,25 @@
+file: presentation-prep.md
+consumers: [GreatVibe users, Mochi agents]
+produces: [presentation preparation guide]
+---
+# Purpose
+Helps users prepare presentations around audience, main message, slide purpose,
+simple structure, and early conclusions.
+
+# Key Sections
+- When to use this guide.
+- Start with the audience.
+- Define the main message.
+- Choose the purpose of each slide.
+- Use a simple structure.
+- Put the conclusion early.
+
+# Dependencies
+- Belongs to the productivity manual set.
+
+# Gotchas
+- Do not invent audience needs or claims that are not supported by the supplied
+  material.
+
+# Change History
+- 2026-08-03: Added ACE companion.

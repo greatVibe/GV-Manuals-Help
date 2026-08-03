@@ -1,0 +1,24 @@
+file: pdf-review.md
+consumers: [GreatVibe users, Mochi agents]
+produces: [PDF review checklist]
+---
+# Purpose
+Guides users through PDF layout, content, link, data, and table checks.
+
+# Key Sections
+- When to use PDF.
+- First open the PDF.
+- Layout checks.
+- Content checks.
+- Link checks.
+- Data and table checks.
+
+# Dependencies
+- Belongs to the productivity manual set.
+
+# Gotchas
+- PDFs can hide copy, layout, and table extraction issues. Ask users to verify
+  important final output visually.
+
+# Change History
+- 2026-08-03: Added ACE companion.

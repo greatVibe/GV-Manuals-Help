@@ -1,0 +1,25 @@
+file: SANITIZATION.md
+consumers: [documentation maintainers, Mochi agents, reviewers]
+produces: [public-safety checklist for documentation publication]
+---
+# Purpose
+Defines the safety checklist for rewriting or reviewing source material before
+it is published in gv-manuals-help.
+
+# Key Sections
+- Blocked content.
+- Source review.
+- Rewrite rules.
+- Safe examples.
+- Public claims.
+- Final review checklist.
+
+# Dependencies
+- Used by `README.md` and `CATALOGUE.md` as the publication boundary.
+
+# Gotchas
+- This file protects the public repo from private implementation details,
+  credentials, customer data, internal URLs, and unsupported roadmap claims.
+
+# Change History
+- 2026-08-03: Added ACE companion for the public sanitization checklist.

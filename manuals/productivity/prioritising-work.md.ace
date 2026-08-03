@@ -1,0 +1,25 @@
+file: prioritising-work.md
+consumers: [GreatVibe users, Mochi agents]
+produces: [work prioritisation guide]
+---
+# Purpose
+Helps users prioritise work by outcome, urgency, importance, impact, effort,
+risk, and dependencies.
+
+# Key Sections
+- Start with the outcome.
+- Separate urgent from important.
+- Consider impact.
+- Consider effort.
+- Consider risk.
+- Check dependencies.
+
+# Dependencies
+- Belongs to the productivity manual set.
+
+# Gotchas
+- Prioritisation depends on user goals. Surface assumptions when goals or
+  constraints are missing.
+
+# Change History
+- 2026-08-03: Added ACE companion.

@@ -9,6 +9,7 @@ event log, and gvturn history.
 # Key Sections
 - Starting turns.
 - Checking running turns.
+- Power footer actions.
 - Stopping or pausing.
 - Using eventlog and gvturn history.
 - Recovery prompts.
@@ -24,4 +25,5 @@ event log, and gvturn history.
 - Stopping behavior may vary by UI; advise users to follow visible labels.
 
 # Change History
+- 2026-08-03: Added power footer guidance for turn continuation and review.
 - 2026-08-03: Created initial turn management guide.

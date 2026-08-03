@@ -1,0 +1,24 @@
+file: spreadsheet-formatting.md
+consumers: [GreatVibe users, Mochi agents]
+produces: [spreadsheet formatting guide]
+---
+# Purpose
+Explains practical spreadsheet formatting choices for structure, headers,
+column widths, and alignment.
+
+# Key Sections
+- When to format a spreadsheet.
+- Start with the structure.
+- Header row.
+- Column widths.
+- Alignment.
+
+# Dependencies
+- Belongs to the productivity manual set.
+
+# Gotchas
+- Formatting should improve readability without hiding data, formulas, or
+  warnings.
+
+# Change History
+- 2026-08-03: Added ACE companion.

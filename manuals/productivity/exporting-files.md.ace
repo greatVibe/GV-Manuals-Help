@@ -1,0 +1,24 @@
+file: exporting-files.md
+consumers: [GreatVibe users, Mochi agents]
+produces: [file export guide]
+---
+# Purpose
+Helps users choose export formats and check files before exporting PDFs,
+spreadsheets, documents, and named deliverables.
+
+# Key Sections
+- Choose the right format.
+- Before exporting.
+- PDF exports.
+- Spreadsheet exports.
+- Document exports.
+- File names.
+
+# Dependencies
+- Belongs to the productivity manual set.
+
+# Gotchas
+- Exported files may lose formulas, comments, hidden metadata, or editability.
+
+# Change History
+- 2026-08-03: Added ACE companion.

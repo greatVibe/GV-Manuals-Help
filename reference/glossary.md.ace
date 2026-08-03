@@ -9,6 +9,7 @@ Defines common GreatVibe terms in plain language.
 - Core terms.
 - Review terms.
 - Documentation terms.
+- Power footer terms.
 
 # Dependencies
 - Links to concept docs.
@@ -17,4 +18,5 @@ Defines common GreatVibe terms in plain language.
 - Avoid internal implementation terms unless the public reader needs them.
 
 # Change History
+- 2026-08-03: Added power footer vocabulary.
 - 2026-08-03: Created initial glossary.

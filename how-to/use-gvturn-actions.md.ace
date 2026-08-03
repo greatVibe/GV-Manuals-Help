@@ -1,0 +1,26 @@
+file: use-gvturn-actions.md
+consumers: [GreatVibe users, Mochi agents, support writers]
+produces: [practical workflow for choosing gvturn footer actions]
+---
+# Purpose
+Shows users how to choose quick reactions, action cards, tone controls, and
+review actions in the gvturn power footer.
+
+# Key Sections
+- Read before clicking.
+- Choose quick reactions.
+- Choose action cards.
+- Use hold-to-edit.
+- Interpret review and audit signals.
+
+# Dependencies
+- `../concepts/what-is-the-gvturn-power-footer.md`
+- `review-ai-work.md`
+- `manage-turns-with-gv-menu-eventlog-gvturns.md`
+
+# Gotchas
+- Do not tell users to click finalising actions without review.
+- Keep behavior generic where product surfaces may vary.
+
+# Change History
+- 2026-08-03: Created initial gvturn action guide.

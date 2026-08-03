@@ -14,6 +14,7 @@ Practical task guides that help users get useful work done safely.
 - `builtin-credential-and-connector-templates.md`
 - `understand-the-status-bar.md`
 - `manage-turns-with-gv-menu-eventlog-gvturns.md`
+- `use-gvturn-actions.md`
 
 # Dependencies
 - Links to productivity manuals and concept guides.
@@ -23,6 +24,7 @@ Practical task guides that help users get useful work done safely.
   intended for public users.
 
 # Change History
+- 2026-08-03: Added practical guide for choosing gvturn footer actions.
 - 2026-08-03: Added credential, connector, status bar, and turn-management
   starter guides.
 - 2026-08-03: Created initial how-to guide set.

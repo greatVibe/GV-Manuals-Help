@@ -1,0 +1,24 @@
+file: work-handoffs.md
+consumers: [GreatVibe users, Mochi agents]
+produces: [work handoff writing guide]
+---
+# Purpose
+Explains how to write handoffs with outcome, current state, next action, facts,
+recommendations, and decisions already made.
+
+# Key Sections
+- When to use this guide.
+- Start with the outcome.
+- Describe the current state.
+- Name the next action.
+- Separate facts from recommendations.
+- Include decisions already made.
+
+# Dependencies
+- Belongs to the productivity manual set.
+
+# Gotchas
+- Keep facts, recommendations, decisions, and unresolved questions distinct.
+
+# Change History
+- 2026-08-03: Added ACE companion.

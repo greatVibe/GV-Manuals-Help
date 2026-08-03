@@ -1,0 +1,24 @@
+file: status-updates.md
+consumers: [GreatVibe users, Mochi agents]
+produces: [status update writing guide]
+---
+# Purpose
+Helps users write status updates with a headline, consistent structure,
+specific progress, and clear separation of completed and planned work.
+
+# Key Sections
+- When to use this guide.
+- Start with the headline.
+- Use a consistent structure.
+- Be specific about progress.
+- Separate completed work from planned work.
+
+# Dependencies
+- Belongs to the productivity manual set.
+
+# Gotchas
+- Do not overstate certainty, completion, or dates when the source material does
+  not support them.
+
+# Change History
+- 2026-08-03: Added ACE companion.

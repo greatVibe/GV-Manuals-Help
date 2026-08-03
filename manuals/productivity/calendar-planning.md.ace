@@ -1,0 +1,24 @@
+file: calendar-planning.md
+consumers: [GreatVibe users, Mochi agents]
+produces: [calendar planning guide]
+---
+# Purpose
+Helps users plan calendar blocks around fixed commitments, focused work, clear
+event titles, and useful event details.
+
+# Key Sections
+- When to use this guide.
+- Start with fixed commitments.
+- Block focused work.
+- Use calendar titles that explain the purpose.
+- Add useful event details.
+
+# Dependencies
+- Belongs to the productivity manual set.
+
+# Gotchas
+- Avoid making scheduling promises without checking the user's real calendar or
+  explicit constraints.
+
+# Change History
+- 2026-08-03: Added ACE companion.

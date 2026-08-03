@@ -1,0 +1,22 @@
+file: review-checklists.md
+consumers: [GreatVibe users, Mochi agents]
+produces: [review checklist writing guide]
+---
+# Purpose
+Explains how to build focused review checklists with a clear purpose, review
+scope, and specific checklist items.
+
+# Key Sections
+- When to use this guide.
+- Start with the purpose.
+- Define what is being reviewed.
+- Keep checklist items specific.
+
+# Dependencies
+- Belongs to the productivity manual set.
+
+# Gotchas
+- Checklist items should be observable and actionable, not vague quality goals.
+
+# Change History
+- 2026-08-03: Added ACE companion.

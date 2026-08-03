@@ -1,0 +1,23 @@
+file: project-summaries.md
+consumers: [GreatVibe users, Mochi agents]
+produces: [project summary writing guide]
+---
+# Purpose
+Explains how to write project summaries with current state, purpose, status,
+history, and changed work separated clearly.
+
+# Key Sections
+- When to use this guide.
+- Start with the current state.
+- Include the purpose.
+- Separate status from history.
+- Name what changed.
+
+# Dependencies
+- Belongs to the productivity manual set.
+
+# Gotchas
+- Do not collapse unresolved risks into completed status.
+
+# Change History
+- 2026-08-03: Added ACE companion.

@@ -1,0 +1,22 @@
+file: decision-records.md
+consumers: [GreatVibe users, Mochi agents]
+produces: [decision record writing guide]
+---
+# Purpose
+Explains how to record a decision, its reason, and the options considered.
+
+# Key Sections
+- When to use this guide.
+- Keep the decision easy to find.
+- Start with the decision.
+- Include the reason.
+- Record the options considered.
+
+# Dependencies
+- Belongs to the productivity manual set.
+
+# Gotchas
+- Separate the actual decision from recommendations or unapproved options.
+
+# Change History
+- 2026-08-03: Added ACE companion.

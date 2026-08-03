@@ -1,0 +1,25 @@
+file: csv-files.md
+consumers: [GreatVibe users, Mochi agents]
+produces: [CSV handling guide]
+---
+# Purpose
+Explains safe handling of CSV files, including opening, editing, dates, numbers,
+and column-shape checks.
+
+# Key Sections
+- When to use CSV.
+- Before opening a CSV.
+- Opening CSV files.
+- Editing CSV files.
+- Dates and numbers.
+- Missing or extra columns.
+
+# Dependencies
+- Belongs to the productivity manual set.
+
+# Gotchas
+- CSV edits can silently change dates, leading zeros, encodings, and delimiter
+  assumptions. Tell users to preserve originals before risky changes.
+
+# Change History
+- 2026-08-03: Added ACE companion.

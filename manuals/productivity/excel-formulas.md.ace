@@ -1,0 +1,26 @@
+file: excel-formulas.md
+consumers: [GreatVibe users, Mochi agents]
+produces: [spreadsheet formula review guide]
+---
+# Purpose
+Explains common spreadsheet formula checks, reference issues, lookup risks, and
+formula error troubleshooting.
+
+# Key Sections
+- Before editing formulas.
+- Common formula checks.
+- Cell references.
+- Relative and absolute references.
+- Totals and subtotals.
+- Lookups.
+- Formula errors.
+
+# Dependencies
+- Belongs to the productivity manual set.
+
+# Gotchas
+- Formula edits can change downstream results. Encourage review of affected
+  cells and totals.
+
+# Change History
+- 2026-08-03: Added ACE companion.

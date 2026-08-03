@@ -10,6 +10,7 @@ Machine-readable public index for user-facing manuals and videos.
 - Topic index.
 - Starter paths by user intent.
 - Credential, connector, status, and turn-management routing.
+- Gvturn power footer routing.
 - Video catalogue reference.
 
 # Dependencies
@@ -21,6 +22,8 @@ Machine-readable public index for user-facing manuals and videos.
 - Keep links relative so the catalogue works locally on a seeded node.
 
 # Change History
+- 2026-08-03: Added routing for the practical gvturn action guide.
+- 2026-08-03: Added routing for the public gvturn power footer guide.
 - 2026-08-03: Added routing for AI agent credentials, GitHub credentials,
   templates, status bar, and turn management.
 - 2026-08-03: Created initial public catalogue for the new help spine.

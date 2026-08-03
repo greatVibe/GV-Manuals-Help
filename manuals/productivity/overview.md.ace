@@ -1,0 +1,25 @@
+file: overview.md
+consumers: [GreatVibe users, Mochi agents]
+produces: [productivity manual overview]
+---
+# Purpose
+Introduces the productivity guide set and routes users to document, spreadsheet,
+CSV, review, and workflow manuals.
+
+# Key Sections
+- What you can use it for.
+- Supported document types.
+- Common workflows.
+- Safe spreadsheet practices.
+- When to ask for review.
+- Related guides.
+
+# Dependencies
+- Links to sibling productivity guides.
+
+# Gotchas
+- Keep the overview as routing guidance; avoid duplicating every workflow in
+  detail.
+
+# Change History
+- 2026-08-03: Added ACE companion.

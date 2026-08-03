@@ -13,6 +13,8 @@ Short definitions for common GreatVibe terms.
 | Manual | A written guide for a user-facing task or concept. |
 | Mochi | The assistant experience a user works with in GreatVibe. |
 | Node | A workspace where GreatVibe can use local files, help docs, tools, and history. |
+| Power footer | The action area below a gvturn card, containing reactions, action cards, tone controls, utilities, and metrics. |
+| Quick reaction | A short footer chip such as Continue, Verify, Audit, or Rethink. |
 | Review | A check of AI output, file changes, or recommendations before relying on them. |
 | Video catalogue | Structured metadata that lets agents suggest or embed the right training video. |
 
@@ -20,5 +22,6 @@ Short definitions for common GreatVibe terms.
 
 - `../concepts/what-is-a-node.md`
 - `../concepts/what-is-a-gvturn.md`
+- `../concepts/what-is-the-gvturn-power-footer.md`
 - `../concepts/what-is-gvcontext.md`
 - `../concepts/what-is-ace.md`

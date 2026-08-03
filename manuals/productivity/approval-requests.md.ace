@@ -1,0 +1,25 @@
+file: approval-requests.md
+consumers: [GreatVibe users, Mochi agents]
+produces: [approval request writing guide]
+---
+# Purpose
+Helps users write clear approval requests that identify the decision, context,
+recommendation, and available options.
+
+# Key Sections
+- When to use this guide.
+- Put the decision first.
+- Explain what is being approved.
+- Give enough context.
+- State the recommended decision.
+- List options when there is a choice.
+
+# Dependencies
+- Belongs to the productivity manual set.
+
+# Gotchas
+- Keep approval wording neutral. Do not imply approval has happened before the
+  decision maker confirms it.
+
+# Change History
+- 2026-08-03: Added ACE companion.

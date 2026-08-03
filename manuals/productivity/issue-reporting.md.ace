@@ -1,0 +1,22 @@
+file: issue-reporting.md
+consumers: [GreatVibe users, Mochi agents]
+produces: [issue report writing guide]
+---
+# Purpose
+Helps users write issue reports with a short title, clear problem statement, and
+location details.
+
+# Key Sections
+- When to use this guide.
+- Start with a short title.
+- State the problem clearly.
+- Include where the issue appears.
+
+# Dependencies
+- Belongs to the productivity manual set.
+
+# Gotchas
+- Separate observed behavior from suspected cause unless evidence is available.
+
+# Change History
+- 2026-08-03: Added ACE companion.

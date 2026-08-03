@@ -1,0 +1,22 @@
+file: sharing-files.md
+consumers: [GreatVibe users, Mochi agents]
+produces: [file sharing checklist]
+---
+# Purpose
+Helps users check format, file name, version, and content before sharing files.
+
+# Key Sections
+- Before sharing a file.
+- Choose the right format.
+- Use a clear file name.
+- Check the version.
+- Review the content.
+
+# Dependencies
+- Belongs to the productivity manual set.
+
+# Gotchas
+- Remind users to check sensitive information and permissions before sharing.
+
+# Change History
+- 2026-08-03: Added ACE companion.

@@ -7,6 +7,7 @@ Provides a practical checklist for reviewing assistant output.
 
 # Key Sections
 - What to check.
+- How to use power footer signals.
 - When to ask for evidence.
 - When to request changes.
 - When to escalate.
@@ -18,4 +19,5 @@ Provides a practical checklist for reviewing assistant output.
 - Avoid implying AI output is automatically correct.
 
 # Change History
+- 2026-08-03: Added power footer review guidance.
 - 2026-08-03: Created initial AI review guide.

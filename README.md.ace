@@ -23,5 +23,7 @@ users and node-local agents.
 - Update the repository map whenever a new top-level help section is added.
 
 # Change History
+- 2026-08-03: Added use-gvturn-actions.md to the repository map.
+- 2026-08-03: Added power footer concept guide to the repository map.
 - 2026-08-03: Updated map and navigation for getting-started, concepts,
   how-to, reference, and video catalogue sections.

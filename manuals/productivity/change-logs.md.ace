@@ -1,0 +1,24 @@
+file: change-logs.md
+consumers: [GreatVibe users, Mochi agents]
+produces: [change log writing guide]
+---
+# Purpose
+Explains how to keep simple change logs with clear categories, outcomes, and
+consistent dates.
+
+# Key Sections
+- When to use this guide.
+- Keep the purpose simple.
+- Use clear categories.
+- Write changes as outcomes.
+- Include dates consistently.
+
+# Dependencies
+- Belongs to the productivity manual set.
+
+# Gotchas
+- Change logs should describe what changed, not expose private review notes or
+  internal-only implementation details.
+
+# Change History
+- 2026-08-03: Added ACE companion.

@@ -1,0 +1,25 @@
+file: file-naming.md
+consumers: [GreatVibe users, Mochi agents]
+produces: [file naming guide]
+---
+# Purpose
+Helps users create clear file names with dates, versions, status labels, and
+consistent separators.
+
+# Key Sections
+- Good file names.
+- What to include.
+- Dates.
+- Versions.
+- Status labels.
+- Separators.
+
+# Dependencies
+- Belongs to the productivity manual set.
+
+# Gotchas
+- Keep examples neutral and avoid exposing customer names or private project
+  names.
+
+# Change History
+- 2026-08-03: Added ACE companion.

@@ -1,0 +1,24 @@
+file: troubleshooting.md
+consumers: [GreatVibe users, Mochi agents]
+produces: [productivity troubleshooting guide]
+---
+# Purpose
+Helps users troubleshoot incomplete data, formula display problems, unexpected
+formula values, invisible changes, and unsupported changes.
+
+# Key Sections
+- Data looks incomplete.
+- Formulas show as text.
+- Formulas return unexpected values.
+- Changes are not visible yet.
+- A change is not supported.
+
+# Dependencies
+- Belongs to the productivity manual set.
+
+# Gotchas
+- Troubleshooting should identify likely checks and next steps without
+  presenting guesses as confirmed causes.
+
+# Change History
+- 2026-08-03: Added ACE companion.

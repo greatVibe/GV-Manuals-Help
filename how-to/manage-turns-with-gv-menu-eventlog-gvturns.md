@@ -37,6 +37,32 @@ You can also ask:
 Check the latest turn status and summarise what is running, completed, or waiting for review.
 ```
 
+## Use The Power Footer To Continue
+
+When a gvturn card appears, use its power footer to continue safely.
+
+The footer may show:
+
+- A next-action banner.
+- A primary action card.
+- Secondary action cards.
+- Quick reactions such as Continue, Audit, Verify, or Rethink.
+- Tone controls for the next response.
+- Metrics such as tool count, timing, model, status, or work type.
+
+Click an action card when you want to send the suggested prompt immediately.
+Hold an action card when you want to edit the prompt before sending.
+
+If the turn is marked as needing audit or review, do not treat the primary
+action as routine. Read the card, check the changed files or evidence, then
+choose whether to approve, ask for verification, or request changes.
+
+Useful prompt:
+
+```text
+Explain the footer actions for this gvturn and tell me which one is safest.
+```
+
 ## Use The Event Log
 
 The event log is useful when you need to understand what happened during a turn.
@@ -96,3 +122,4 @@ If a turn fails, ends unexpectedly, or creates partial work:
 - `recover-a-failed-turn.md`
 - `understand-the-status-bar.md`
 - `../concepts/what-is-a-gvturn.md`
+- `../concepts/what-is-the-gvturn-power-footer.md`

@@ -1,0 +1,24 @@
+file: task-tracking.md
+consumers: [GreatVibe users, Mochi agents]
+produces: [task tracking guide]
+---
+# Purpose
+Explains how to write useful tasks with clear titles, outcomes, owners, and
+simple statuses.
+
+# Key Sections
+- What makes a good task.
+- Write clear task titles.
+- Define the outcome.
+- Assign one owner.
+- Use simple statuses.
+
+# Dependencies
+- Belongs to the productivity manual set.
+
+# Gotchas
+- Avoid assigning ownership or status without evidence from the user or source
+  material.
+
+# Change History
+- 2026-08-03: Added ACE companion.

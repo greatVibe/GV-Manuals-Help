@@ -1,0 +1,21 @@
+file: manuals/
+consumers: [GreatVibe users, Mochi agents, documentation maintainers]
+produces: [public manual collections]
+---
+# Purpose
+Contains public-safe manual sets grouped by work area.
+
+# Key Files
+- `productivity/` contains practical document, spreadsheet, review, and
+  work-management guides.
+
+# Dependencies
+- `../CATALOGUE.md` routes users and agents into the relevant manual set.
+- `../SANITIZATION.md` defines publication safety checks.
+
+# Gotchas
+- Keep manuals user-facing. Do not include internal systems, private URLs,
+  credentials, customer data, or operational commands.
+
+# Change History
+- 2026-08-03: Added folder ACE for the public manuals area.

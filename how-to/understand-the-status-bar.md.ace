@@ -9,6 +9,7 @@ state.
 # Key Sections
 - What the status bar is.
 - Common signals.
+- Relationship to gvturn power footer.
 - What to check when something looks wrong.
 - Prompt examples.
 
@@ -22,4 +23,5 @@ state.
   and tell users to rely on current UI text.
 
 # Change History
+- 2026-08-03: Clarified status bar vs gvturn power footer roles.
 - 2026-08-03: Created initial status bar guide.

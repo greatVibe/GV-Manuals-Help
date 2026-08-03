@@ -1,0 +1,29 @@
+file: productivity/
+consumers: [GreatVibe users, Mochi agents, documentation maintainers]
+produces: [public productivity workflow manuals]
+---
+# Purpose
+Practical public guides for common document, spreadsheet, review, planning, and
+handoff workflows.
+
+# Key Files
+- `overview.md` introduces the productivity manual set.
+- File and data guides cover spreadsheets, CSVs, PDFs, exports, cleanup, and
+  validation.
+- Communication guides cover emails, status updates, approvals, handoffs, and
+  summaries.
+- Review and recovery guides cover checklists, recurring reviews,
+  troubleshooting, and failed dashboard turns.
+
+# Dependencies
+- `../../CATALOGUE.md` links to this manual set.
+- `../../SANITIZATION.md` defines public-safety review.
+
+# Gotchas
+- These guides are public-facing and should avoid private implementation
+  details, source paths, customer data, credentials, and unreleased commitments.
+- Keep recommendations practical and tool-agnostic unless a behavior is a public
+  GreatVibe feature.
+
+# Change History
+- 2026-08-03: Added folder ACE for productivity manuals.

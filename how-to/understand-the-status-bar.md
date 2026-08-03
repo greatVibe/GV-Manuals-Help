@@ -18,6 +18,25 @@ Common status bar signals may include:
 - Whether the interface is connected or reconnecting.
 - Shortcuts into menus, logs, or turn history.
 
+## Status Bar Versus Power Footer
+
+The status bar gives you a broad workspace signal. The gvturn power footer gives
+you actions for one specific gvturn.
+
+Use the status bar when you want to know:
+
+- Which node or workspace is active.
+- Whether a turn is running.
+- Whether the interface looks connected.
+- Whether there are general warnings.
+
+Use the power footer when you want to know:
+
+- What to do with the current gvturn.
+- Whether the turn needs review or audit.
+- Which follow-up action is recommended.
+- Whether to continue, verify, commit, push, rethink, or ask for more detail.
+
 ## When A Turn Is Running
 
 While a turn is running, the status bar may show activity or progress. If the
@@ -49,3 +68,4 @@ If the status bar shows a warning, disconnected state, or stale status:
 - `manage-turns-with-gv-menu-eventlog-gvturns.md`
 - `../concepts/what-is-a-node.md`
 - `../concepts/what-is-a-gvturn.md`
+- `../concepts/what-is-the-gvturn-power-footer.md`

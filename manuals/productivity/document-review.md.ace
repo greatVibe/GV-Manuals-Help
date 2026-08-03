@@ -1,0 +1,25 @@
+file: document-review.md
+consumers: [GreatVibe users, Mochi agents]
+produces: [document review checklist]
+---
+# Purpose
+Provides a checklist for reviewing document content, formatting, links,
+references, calculations, and sensitive information.
+
+# Key Sections
+- Before you start.
+- Content checks.
+- Formatting checks.
+- Link and reference checks.
+- Data and calculation checks.
+- Sensitive information check.
+
+# Dependencies
+- Belongs to the productivity manual set.
+
+# Gotchas
+- Review should call out uncertainty and avoid treating unchecked information as
+  verified.
+
+# Change History
+- 2026-08-03: Added ACE companion.

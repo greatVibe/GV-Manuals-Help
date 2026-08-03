@@ -42,8 +42,29 @@ Common choices might:
 
 You can also ignore the choices and write your own follow-up.
 
+## What The Power Footer Does
+
+Many gvturns include a power footer below the main card. The power footer is
+where you choose what happens next.
+
+It may include:
+
+- Quick reaction chips.
+- A next-action or review banner.
+- Action cards.
+- Tone controls.
+- Utility actions.
+- Metrics and status badges.
+
+If a gvturn feels complete but you are unsure what to do next, read the power
+footer. It often shows whether the work needs review, approval, continuation,
+or a follow-up question.
+
+For a full explanation, see `what-is-the-gvturn-power-footer.md`.
+
 ## Related Guides
 
 - `../how-to/review-ai-work.md`
 - `../how-to/recover-a-failed-turn.md`
 - `../getting-started/ask-mochi-for-help.md`
+- `what-is-the-gvturn-power-footer.md`
