@@ -65,9 +65,36 @@ GV-Manuals-Help/
 |   `-- manage-turns-with-gv-menu-eventlog-gvturns.md
 |-- manuals/
 |   |-- productivity/
+|   |   |-- approval-requests.md
+|   |   |-- calendar-planning.md
+|   |   |-- change-logs.md
+|   |   |-- csv-files.md
+|   |   |-- data-cleanup.md
+|   |   |-- data-validation.md
+|   |   |-- decision-records.md
+|   |   |-- document-review.md
+|   |   |-- email-writing.md
+|   |   |-- excel-formulas.md
+|   |   |-- exporting-files.md
+|   |   |-- feedback-tracking.md
+|   |   |-- file-naming.md
+|   |   |-- follow-up-actions.md
+|   |   |-- issue-reporting.md
+|   |   |-- meeting-notes.md
 |   |   |-- overview.md
+|   |   |-- pdf-review.md
+|   |   |-- presentation-prep.md
+|   |   |-- prioritising-work.md
+|   |   |-- project-summaries.md
+|   |   |-- recover-failed-dashboard-turn.md
+|   |   |-- recurring-reviews.md
+|   |   |-- review-checklists.md
+|   |   |-- sharing-files.md
+|   |   |-- spreadsheet-formatting.md
+|   |   |-- status-updates.md
+|   |   |-- task-tracking.md
 |   |   |-- troubleshooting.md
-|   |   `-- excel-formulas.md
+|   |   `-- work-handoffs.md
 |-- reference/
 |   |-- glossary.md
 |   `-- public-safety-rules.md
@@ -75,8 +102,13 @@ GV-Manuals-Help/
     |-- README.md
     |-- index.json
     |-- index.schema.json
+    |-- mochi-experience-map.json
+    |-- mochi-experience-map.schema.json
     |-- private-overlays/
+    |   `-- README.md
     `-- transcripts/
+        |-- greatvibe-first-screen-recording.md
+        `-- greatvibe-welcome.md
 ```
 
 ## Using These Manuals

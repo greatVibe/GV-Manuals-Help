@@ -8,6 +8,7 @@ Machine-readable public index for user-facing manuals and videos.
 # Key Sections
 - How to use the catalogue.
 - Topic index.
+- Repository coverage.
 - Starter paths by user intent.
 - Credential, connector, status, and turn-management routing.
 - Gvturn power footer routing.
@@ -22,6 +23,8 @@ Machine-readable public index for user-facing manuals and videos.
 - Keep links relative so the catalogue works locally on a seeded node.
 
 # Change History
+- 2026-08-04: Added repository coverage for current public folders, video map
+  files, private overlay README, and transcripts.
 - 2026-08-03: Added routing for the practical gvturn action guide.
 - 2026-08-03: Added routing for the public gvturn power footer guide.
 - 2026-08-03: Added routing for AI agent credentials, GitHub credentials,

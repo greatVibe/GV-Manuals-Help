@@ -20,9 +20,13 @@ users and node-local agents.
 # Gotchas
 - Keep this page public-safe; avoid internal architecture promises or private
   operational details.
-- Update the repository map whenever a new top-level help section is added.
+- Update the repository map whenever a new top-level help section, public guide,
+  video metadata file, or transcript file is added.
+- Do not list ACE companion files in the user-facing repository map.
 
 # Change History
+- 2026-08-03: Expanded the repository map to list all 30
+  `manuals/productivity/` guides and current video catalogue files.
 - 2026-08-03: Added use-gvturn-actions.md to the repository map.
 - 2026-08-03: Added power footer concept guide to the repository map.
 - 2026-08-03: Updated map and navigation for getting-started, concepts,
