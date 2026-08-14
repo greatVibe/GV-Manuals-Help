@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
-  "updated_at": "2026-08-03",
+  "updated_at": "2026-08-14",
   "source_notes": [
-    "Mapping was checked against authenticated Vimeo data and live Mochi Experience records on 2026-08-03.",
+    "Mapping was checked against the live Mochi Experience record and Vimeo player metadata on 2026-08-14.",
     "This file is public-safe routing metadata. It intentionally excludes Vimeo embed hashes, expiring playback URLs, download URLs, credentials, and private connector state.",
     "Live Experience HTML remains the source of truth for the rendered card. This mapping is for agents deciding which video belongs with which slot."
   ],
@@ -13,8 +13,12 @@
       "vimeo_project_uri": "/users/261676826/projects/30103803",
       "purpose": "Landing area for polished welcome videos that introduce GreatVibe to new users.",
       "status": "empty-ready",
-      "expected_mochi_slots": ["first-login"],
-      "catalogue_video_slugs": ["greatvibe-welcome"]
+      "expected_mochi_slots": [
+        "first-login"
+      ],
+      "catalogue_video_slugs": [
+        "greatvibe-welcome"
+      ]
     },
     {
       "key": "using-mochi",
@@ -22,7 +26,10 @@
       "vimeo_project_uri": "/users/261676826/projects/30103804",
       "purpose": "Practical videos about using Mochi, inspecting a node, starting work, and asking for help.",
       "status": "empty-ready",
-      "expected_mochi_slots": ["first-login", "second-login"]
+      "expected_mochi_slots": [
+        "first-login",
+        "second-login"
+      ]
     },
     {
       "key": "turns-and-review",
@@ -30,8 +37,13 @@
       "vimeo_project_uri": "/users/261676826/projects/30103805",
       "purpose": "Videos about gvturn cards, review states, power footer actions, audits, and delivery status.",
       "status": "empty-ready",
-      "expected_mochi_slots": ["broadcast", "second-login"],
-      "catalogue_video_slugs": ["greatvibe-first-screen-recording"]
+      "expected_mochi_slots": [
+        "broadcast",
+        "second-login"
+      ],
+      "catalogue_video_slugs": [
+        "greatvibe-first-screen-recording"
+      ]
     },
     {
       "key": "credentials-and-connectors",
@@ -39,7 +51,9 @@
       "vimeo_project_uri": "/users/261676826/projects/30103806",
       "purpose": "Credential, connector, and API access walkthroughs.",
       "status": "empty-ready",
-      "expected_mochi_slots": ["broadcast"]
+      "expected_mochi_slots": [
+        "broadcast"
+      ]
     },
     {
       "key": "building-with-ai",
@@ -47,7 +61,10 @@
       "vimeo_project_uri": "/users/261676826/projects/30103807",
       "purpose": "Videos about using AI agents as part of a professional engineering workflow.",
       "status": "empty-ready",
-      "expected_mochi_slots": ["broadcast", "third-login"]
+      "expected_mochi_slots": [
+        "broadcast",
+        "third-login"
+      ]
     },
     {
       "key": "tests-and-archive",
@@ -62,8 +79,14 @@
       "vimeo_project_uri": "/users/261676826/projects/30087306",
       "purpose": "Legacy active folder currently holding the two catalogue videos used by Mochi Experiences.",
       "status": "legacy-active",
-      "expected_mochi_slots": ["first-login", "broadcast"],
-      "catalogue_video_slugs": ["greatvibe-welcome", "greatvibe-first-screen-recording"]
+      "expected_mochi_slots": [
+        "first-login",
+        "broadcast"
+      ],
+      "catalogue_video_slugs": [
+        "greatvibe-welcome",
+        "greatvibe-first-screen-recording"
+      ]
     }
   ],
   "mochi_experience_slots": [
@@ -72,17 +95,17 @@
       "experience_id": "exp_first_login",
       "experience_title": "Start With Mochi",
       "status": "active",
-      "published_version": 6,
+      "published_version": 8,
       "catalogue_video_slug": "greatvibe-welcome",
-      "vimeo_video_id": "1214762754",
+      "vimeo_video_id": "1217843223",
       "vimeo_folder_key": "johnathon-quick-vids",
-      "use_when": "Show a new user the short GreatVibe welcome before their first serious Mochi request.",
+      "use_when": "Give a new user a comprehensive GreatVibe walkthrough before their first serious Mochi request.",
       "related_docs": [
         "../getting-started/welcome-to-greatvibe.md",
         "../getting-started/ask-mochi-for-help.md",
         "../concepts/what-is-a-node.md"
       ],
-      "notes": "Future polished welcome recordings should move toward the 00 Welcome folder, but the current video should not be moved until embed delivery has been rechecked."
+      "notes": "Version 8 is live with the square Johnathon Intro to greatVibe recording; the private Vimeo embed hash remains only in the Experience record."
     },
     {
       "slot": "broadcast",

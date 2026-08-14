@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updated_at": "2026-08-03",
+  "updated_at": "2026-08-14",
   "default_aspect_ratio": "1:1",
   "videos": [
     {
@@ -13,11 +13,20 @@
       "source_url": "https://vimeo.com/1214761385",
       "aspect_ratio": "1:1",
       "product_area": "mochi-onboarding",
-      "audience": ["new-users", "mochi-users"],
+      "audience": [
+        "new-users",
+        "mochi-users"
+      ],
       "difficulty": "intro",
       "trust": "owned",
       "visibility": "unlisted-overlay-required",
-      "tags": ["welcome", "first-session", "mochi", "onboarding", "gvturn"],
+      "tags": [
+        "welcome",
+        "first-session",
+        "mochi",
+        "onboarding",
+        "gvturn"
+      ],
       "related_docs": [
         "../getting-started/welcome-to-greatvibe.md",
         "../getting-started/first-10-minutes.md",
@@ -34,19 +43,30 @@
     },
     {
       "slug": "greatvibe-welcome",
-      "title": "GreatVibe Welcome",
-      "summary": "A welcome video for a new GreatVibe user, suitable for first-login onboarding.",
+      "title": "Johnathon Intro to GreatVibe",
+      "summary": "A comprehensive first-login introduction to GreatVibe, Mochi, nodes, gvturns, tools, review workflows, and the platform trust model.",
       "provider": "vimeo",
-      "video_id": "1214762754",
+      "video_id": "1217843223",
       "embed_hash_ref": "greatvibe-welcome",
-      "source_url": "https://vimeo.com/1214762754",
-      "aspect_ratio": "3:4",
+      "source_url": "https://vimeo.com/1217843223",
+      "aspect_ratio": "1:1",
       "product_area": "mochi-onboarding",
-      "audience": ["new-users", "mochi-users"],
+      "audience": [
+        "new-users",
+        "mochi-users"
+      ],
       "difficulty": "intro",
       "trust": "owned",
       "visibility": "unlisted-overlay-required",
-      "tags": ["welcome", "mochi", "onboarding", "first-login"],
+      "tags": [
+        "welcome",
+        "mochi",
+        "onboarding",
+        "first-login",
+        "gvturn",
+        "tools",
+        "trust"
+      ],
       "related_docs": [
         "../getting-started/welcome-to-greatvibe.md",
         "../getting-started/ask-mochi-for-help.md",
@@ -56,10 +76,59 @@
       "chapters": [
         {
           "start_seconds": 0,
-          "title": "Welcome"
+          "title": "Welcome and the GreatVibe premise"
+        },
+        {
+          "start_seconds": 38,
+          "title": "AI-centric coding and directed collaboration"
+        },
+        {
+          "start_seconds": 169,
+          "title": "Nodes, gvmesh, gvsandbox, Claude, and Codex"
+        },
+        {
+          "start_seconds": 258,
+          "title": "GreatVibe building and operating itself"
+        },
+        {
+          "start_seconds": 623,
+          "title": "Mochi, public manuals, and getting started"
+        },
+        {
+          "start_seconds": 692,
+          "title": "Sending the first prompt"
+        },
+        {
+          "start_seconds": 792,
+          "title": "gvturn cards and follow-up choices"
+        },
+        {
+          "start_seconds": 919,
+          "title": "Audits, model switching, and review"
+        },
+        {
+          "start_seconds": 1046,
+          "title": "Git, credentials, settings, and files"
+        },
+        {
+          "start_seconds": 1157,
+          "title": "Meshes, organizations, and collaboration"
+        },
+        {
+          "start_seconds": 1336,
+          "title": "Cloning repositories and the Files explorer"
+        },
+        {
+          "start_seconds": 1458,
+          "title": "Secrets Vault and the trust chain"
+        },
+        {
+          "start_seconds": 1560,
+          "title": "Closing"
         }
       ],
-      "updated_at": "2026-08-03"
+      "updated_at": "2026-08-14",
+      "duration_seconds": 1567
     }
   ]
 }

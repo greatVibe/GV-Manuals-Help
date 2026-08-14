@@ -1,4 +1,5 @@
 file: mochi-experience-map.json
+lastModified-first-login-v8: 2026-08-14 — Records the verified live first-login Experience v8 routing to Vimeo 1217843223 while keeping its private embed hash out of public metadata.
 consumers: [Mochi agents, video catalogue maintainers, Experience maintainers]
 produces: [public-safe mapping from Vimeo folders and videos to Mochi Experience slots]
 ---
