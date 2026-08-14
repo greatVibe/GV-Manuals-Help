@@ -95,7 +95,7 @@
       "experience_id": "exp_first_login",
       "experience_title": "Start With Mochi",
       "status": "active",
-      "published_version": 8,
+      "published_version": 9,
       "catalogue_video_slug": "greatvibe-welcome",
       "vimeo_video_id": "1217843223",
       "vimeo_folder_key": "johnathon-quick-vids",
@@ -105,7 +105,7 @@
         "../getting-started/ask-mochi-for-help.md",
         "../concepts/what-is-a-node.md"
       ],
-      "notes": "Version 8 is live with the square Johnathon Intro to greatVibe recording; the private Vimeo embed hash remains only in the Experience record."
+      "notes": "Version 9 is live with the square Johnathon Intro to greatVibe recording and transcript-derived chapter cues covering first turns, gvturn evidence, audits, workspace tools, and Secrets Vault; the private Vimeo embed hash remains only in the Experience record."
     },
     {
       "slot": "broadcast",
