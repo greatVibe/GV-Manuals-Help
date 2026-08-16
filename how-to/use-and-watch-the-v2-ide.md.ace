@@ -1,0 +1,12 @@
+---
+file: use-and-watch-the-v2-ide.md
+consumers: [GreatVibe users, Mochi agents]
+produces: [public v2 IDE usage and observation guidance]
+lastModified: 2026-08-16
+---
+# Purpose
+Explains how users open, control, and safely observe agent work in the node-coupled v2 IDE.
+
+# Gotchas
+- Do not promise cross-account observation while private IDE sessions remain account-scoped.
+- Keep implementation details and internal tool names out of the public guide.

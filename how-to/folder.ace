@@ -1,6 +1,7 @@
 file: how-to/
 consumers: [GreatVibe users, Mochi agents]
 produces: [task-oriented public guides]
+lastModified: 2026-08-16 — Added public guidance for using and observing the v2 IDE safely.
 ---
 # Purpose
 Practical task guides that help users get useful work done safely.
@@ -15,6 +16,7 @@ Practical task guides that help users get useful work done safely.
 - `understand-the-status-bar.md`
 - `manage-turns-with-gv-menu-eventlog-gvturns.md`
 - `use-gvturn-actions.md`
+- `use-and-watch-the-v2-ide.md`
 
 # Dependencies
 - Links to productivity manuals and concept guides.

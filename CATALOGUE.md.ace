@@ -1,6 +1,7 @@
 file: CATALOGUE.md
 consumers: [Mochi agents, new users, documentation maintainers]
 produces: [public topic index, doc routing guidance, video routing guidance]
+lastModified: 2026-08-16 — Indexed the v2 IDE use and observation guide and made this repository's sole public-help authority explicit.
 ---
 # Purpose
 Machine-readable public index for user-facing manuals and videos.

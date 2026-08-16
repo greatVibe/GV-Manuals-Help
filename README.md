@@ -1,6 +1,7 @@
 # GV-Manuals-Help
 
-Public help and reference material for GreatVibe users, partners, and developers.
+The sole node-seeded manuals and help repository for GreatVibe users, agents,
+partners, and developers.
 
 This repository contains customer-facing manuals, authoring guides, and public engineering standards. It is designed to be safe to share publicly and easy to seed onto GreatVibe nodes as a local help reference.
 
@@ -62,6 +63,7 @@ GV-Manuals-Help/
 |   |-- builtin-credential-and-connector-templates.md
 |   |-- understand-the-status-bar.md
 |   |-- use-gvturn-actions.md
+|   |-- use-and-watch-the-v2-ide.md
 |   `-- manage-turns-with-gv-menu-eventlog-gvturns.md
 |-- manuals/
 |   |-- productivity/
