@@ -1,0 +1,10 @@
+file: use-the-status-bar-toolbox-and-stop-turns.md
+consumers: [GreatVibe users, Mochi agents]
+produces: [public toolbox and stop-turn guide]
+---
+# Purpose
+Explains how an agent opens the status-bar toolbox and how the user stops the correct active turn.
+# Dependencies
+- `understand-the-status-bar.md`
+# Gotchas
+- Confirm node and turn ownership before stopping work.

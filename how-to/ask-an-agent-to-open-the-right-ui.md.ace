@@ -1,0 +1,8 @@
+file: ask-an-agent-to-open-the-right-ui.md
+consumers: [GreatVibe users, Mochi agents]
+produces: [public MCP-to-Konui navigation recipe index]
+---
+# Purpose
+Defines exact, user-facing prompts and agent tool calls for opening supported dashboard surfaces and wizards.
+# Gotchas
+- UI delivery is live-only; zero sockets or a failed receipt is not success.

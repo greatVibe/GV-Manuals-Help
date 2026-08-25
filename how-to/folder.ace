@@ -1,7 +1,7 @@
 file: how-to/
 consumers: [GreatVibe users, Mochi agents]
 produces: [task-oriented public guides]
-lastModified: 2026-08-16 — Added public guidance for using and observing the v2 IDE safely.
+lastModified: 2026-08-25 — Added ten task guides covering provider credentials, Account Admin, cross-node turns, Eventlog, toolbox controls, and agent-opened UI.
 ---
 # Purpose
 Practical task guides that help users get useful work done safely.
@@ -17,6 +17,16 @@ Practical task guides that help users get useful work done safely.
 - `manage-turns-with-gv-menu-eventlog-gvturns.md`
 - `use-gvturn-actions.md`
 - `use-and-watch-the-v2-ide.md`
+- `add-anthropic-oauth-credential.md`
+- `add-codex-oauth-credential.md`
+- `add-aws-credential.md`
+- `connect-a-private-github-repository.md`
+- `check-eventlog-in-dashboard-console.md`
+- `manage-organizations-meshes-and-nodes.md`
+- `set-your-profile-picture.md`
+- `view-turns-across-nodes.md`
+- `use-the-status-bar-toolbox-and-stop-turns.md`
+- `ask-an-agent-to-open-the-right-ui.md`
 
 # Dependencies
 - Links to productivity manuals and concept guides.

@@ -1,0 +1,10 @@
+file: connect-a-private-github-repository.md
+consumers: [GreatVibe users, Mochi agents]
+produces: [public private GitHub repository connection guide]
+---
+# Purpose
+Explains secure GitHub credential setup and native Git MCP use for private repositories.
+# Dependencies
+- `add-github-credential.md`
+# Gotchas
+- Agents must use native Git MCP tools before shell Git.

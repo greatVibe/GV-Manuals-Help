@@ -1,0 +1,10 @@
+file: check-eventlog-in-dashboard-console.md
+consumers: [GreatVibe users, Mochi agents]
+produces: [public Eventlog inspection guide with UI action recipe]
+---
+# Purpose
+Explains how an agent opens the Eventlog card and how users inspect running or failed turns.
+# Dependencies
+- `manage-turns-with-gv-menu-eventlog-gvturns.md`
+# Gotchas
+- Delivery receipts must be checked before claiming the card opened.

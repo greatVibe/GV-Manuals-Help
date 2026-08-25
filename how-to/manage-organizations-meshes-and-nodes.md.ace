@@ -1,0 +1,10 @@
+file: manage-organizations-meshes-and-nodes.md
+consumers: [GreatVibe users, Mochi agents]
+produces: [public Account Admin organization, mesh, and node guide]
+---
+# Purpose
+Routes organization and mesh work to Account Admin and node creation to the native Add Node sheet.
+# Dependencies
+- `../concepts/what-is-a-node.md`
+# Gotchas
+- Account Admin changes remain human-confirmed; agents open the UI but do not invent permissions.

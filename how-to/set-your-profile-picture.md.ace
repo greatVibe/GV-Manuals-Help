@@ -1,0 +1,8 @@
+file: set-your-profile-picture.md
+consumers: [GreatVibe users, Mochi agents]
+produces: [public Account Admin profile-picture guide]
+---
+# Purpose
+Shows how to open Account Admin and update the profile picture under Personalisation.
+# Gotchas
+- Native file selection requires a user gesture.

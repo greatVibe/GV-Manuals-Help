@@ -1,0 +1,10 @@
+file: view-turns-across-nodes.md
+consumers: [GreatVibe users, Mochi agents]
+produces: [public global node inventory and cross-node turn guide]
+---
+# Purpose
+Explains global node discovery, node selection, and visible gvturn history across readable nodes.
+# Dependencies
+- `manage-turns-with-gv-menu-eventlog-gvturns.md`
+# Gotchas
+- Use `node_list` with `scope: global`; never infer global inventory from local mesh state.
