@@ -1,0 +1,16 @@
+file: use-console-main-row-and-prompt-controls.md
+consumers: [GreatVibe users, Mochi agents, support writers]
+produces: [public main action row and prompt composer guide]
+created: 2026-08-27
+---
+# Purpose
+Explains the plus-button reveal row, its exact card order and click/hold roles,
+the prompt input, full composer launcher, and send button.
+
+# Dependencies
+- `ask-an-agent-to-open-the-right-ui.md`
+- `understand-the-status-bar.md`
+
+# Gotchas
+- Keep action order, labels, and guidance target names synchronized with the dashboard.
+- Native camera, gallery, file, and clipboard choices still require a user gesture.

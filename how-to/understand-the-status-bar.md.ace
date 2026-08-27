@@ -1,4 +1,5 @@
 file: understand-the-status-bar.md
+lastModified: 2026-08-27 — Documents every current status-bar control in visual order, its click behavior, and its guidance target.
 consumers: [GreatVibe users, Mochi agents, support writers]
 produces: [public status bar orientation guide]
 ---
@@ -19,8 +20,7 @@ state.
 - `../concepts/what-is-a-gvturn.md`
 
 # Gotchas
-- The visible status bar can change by surface and release; keep labels generic
-  and tell users to rely on current UI text.
+- Keep the documented left-to-right order synchronized with the dashboard shell and guidance target vocabulary.
 
 # Change History
 - 2026-08-03: Clarified status bar vs gvturn power footer roles.

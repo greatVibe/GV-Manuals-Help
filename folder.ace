@@ -1,7 +1,7 @@
 file: gv-manuals-help/
 consumers: [GreatVibe users, Mochi node agents, public documentation maintainers]
 produces: [public help manuals, starter guides, video catalogue metadata]
-lastModified: 2026-08-25 — Added ten public task guides with exact, receipt-aware MCP-to-Konui UI recipes.
+lastModified: 2026-08-27 — Expanded the public console-control and multi-step guidance manuals.
 ---
 # Purpose
 Public-safe help repository seeded onto GreatVibe nodes so users and agents can
