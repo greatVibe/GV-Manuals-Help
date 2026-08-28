@@ -26,6 +26,7 @@ and users. Private employee engineering repositories are not user help sources.
 | Understand the gvturn power footer | `concepts/what-is-the-gvturn-power-footer.md` | No indexed video yet |
 | Understand context | `concepts/what-is-gvcontext.md` | `videos/index.json` tag `context` |
 | Review AI work | `how-to/review-ai-work.md` | `videos/index.json` tag `review` |
+| Report or follow support | `how-to/report-and-follow-support-requests.md` | No indexed video yet |
 | Use gvturn actions | `how-to/use-gvturn-actions.md` | No indexed video yet |
 | Work with files | `how-to/work-with-files.md` | `videos/index.json` tag `files` |
 | Recover after a failed turn | `manuals/productivity/recover-failed-dashboard-turn.md` and `how-to/recover-a-failed-turn.md` | `videos/index.json` tag `troubleshooting` |
@@ -53,7 +54,7 @@ and users. Private employee engineering repositories are not user help sources.
 | --- | --- |
 | Getting started | `getting-started/welcome-to-greatvibe.md`, `getting-started/first-10-minutes.md`, `getting-started/ask-mochi-for-help.md` |
 | Core concepts | `concepts/what-is-a-node.md`, `concepts/what-is-a-gvturn.md`, `concepts/what-is-the-gvturn-power-footer.md`, `concepts/what-is-gvcontext.md`, `concepts/what-is-ace.md` |
-| Practical workflows | `how-to/review-ai-work.md`, `how-to/work-with-files.md`, `how-to/recover-a-failed-turn.md` |
+| Practical workflows | `how-to/review-ai-work.md`, `how-to/work-with-files.md`, `how-to/recover-a-failed-turn.md`, `how-to/report-and-follow-support-requests.md` |
 | Credentials and connectors | `how-to/add-ai-agent-credential.md`, `how-to/add-anthropic-oauth-credential.md`, `how-to/add-codex-oauth-credential.md`, `how-to/add-aws-credential.md`, `how-to/add-github-credential.md`, `how-to/connect-a-private-github-repository.md`, `how-to/builtin-credential-and-connector-templates.md` |
 | Console, Account Admin, IDE, and turns | `how-to/understand-the-status-bar.md`, `how-to/use-console-main-row-and-prompt-controls.md`, `how-to/manage-turns-with-gv-menu-eventlog-gvturns.md`, `how-to/check-eventlog-in-dashboard-console.md`, `how-to/manage-organizations-meshes-and-nodes.md`, `how-to/set-your-profile-picture.md`, `how-to/view-turns-across-nodes.md`, `how-to/use-the-status-bar-toolbox-and-stop-turns.md`, `how-to/ask-an-agent-to-open-the-right-ui.md`, `how-to/use-gvturn-actions.md`, `how-to/use-and-watch-the-v2-ide.md` |
 | Productivity | `manuals/productivity/overview.md` and the guides in `manuals/productivity/` |

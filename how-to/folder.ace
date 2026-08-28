@@ -1,7 +1,7 @@
 file: how-to/
 consumers: [GreatVibe users, Mochi agents]
 produces: [task-oriented public guides]
-lastModified: 2026-08-27 — Added detailed status-bar, main-row, prompt-composer, and guidance-bubble workflows.
+lastModified: 2026-08-28 — Expanded native support guidance with lifecycle, agile planning, delivery links, evidence, privacy, and attribution semantics.
 ---
 # Purpose
 Practical task guides that help users get useful work done safely.
@@ -28,6 +28,7 @@ Practical task guides that help users get useful work done safely.
 - `use-the-status-bar-toolbox-and-stop-turns.md`
 - `ask-an-agent-to-open-the-right-ui.md`
 - `use-console-main-row-and-prompt-controls.md`
+- `report-and-follow-support-requests.md`
 
 # Dependencies
 - Links to productivity manuals and concept guides.

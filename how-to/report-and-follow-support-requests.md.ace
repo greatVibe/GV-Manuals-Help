@@ -1,0 +1,12 @@
+file: report-and-follow-support-requests.md
+lastModified-rollout-clarity: 2026-08-28 — Separates the shipped five-state lifecycle from later SDLC phases and flags planning/integration surfaces as rollout-dependent.
+consumers: [GreatVibe users, Mochi agents, support reporters]
+produces: [public support reporting and follow-up guidance]
+---
+# Purpose
+Explain how native support attribution, evidence, privacy, classification, lifecycle, agile planning, and delivery links work.
+
+# Gotchas
+- Do not paste secrets, raw prompts, private logs, or personal contact details into support records.
+- Email delivery and managed uploads may depend on features enabled for the account.
+- Agent, model, and build labels are diagnostic metadata; authenticated human attribution remains authoritative until a signed agent principal is available.
