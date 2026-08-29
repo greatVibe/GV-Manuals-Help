@@ -2,6 +2,8 @@
 
 Use Support in your profile menu to view your requests, open a request, follow progress, and review linked delivery work without starting another AI turn.
 
+<!-- gv-guidance: {"id":"support-queue","target":"support-queue","message":"Your visible support requests are collected in this queue.","surface":"support","action":"default"} -->
+
 ## Before you report
 
 Search your support queue for the same symptom. A repeated report is useful when it adds a new affected node, time, version, or piece of evidence, but avoid creating several records for the same occurrence.
@@ -18,6 +20,8 @@ The original organization, mesh, node, and first-seen time are retained as repor
 
 ## Add safe evidence
 
+<!-- gv-guidance: {"id":"support-evidence","target":"support-evidence","message":"Review privacy-safe screenshots and files in this evidence section.","surface":"support","action":"default","group":"support-detail-tour","order":1,"mode":"concurrent"} -->
+
 Screenshots and files should be point-in-time evidence. Prefer a managed or versioned reference with capture time, media type, and storage version.
 
 Never include:
@@ -31,6 +35,8 @@ Never include:
 Allowed evidence depends on your account policy. GreatVibe validates the reference type, capture time, media type, and version before accepting it.
 
 ## Understand the request lifecycle
+
+<!-- gv-guidance: {"id":"support-history","target":"support-history","message":"Follow state changes and updates in this ticket history.","surface":"support","action":"default","group":"support-detail-tour","order":2,"mode":"concurrent"} -->
 
 The shipped lifecycle states are new, triaged, acknowledged, resolved, and dismissed. Later SDLC rollout phases add in progress, waiting for customer, waiting internally, closed, and explicit duplicate outcomes. Konui shows only transitions currently enabled for your account.
 

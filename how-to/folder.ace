@@ -2,6 +2,7 @@ file: how-to/
 consumers: [GreatVibe users, Mochi agents]
 produces: [task-oriented public guides]
 lastModified: 2026-08-28 — Expanded native support guidance with lifecycle, agile planning, delivery links, evidence, privacy, and attribution semantics.
+lastModified-guidance-markers: 2026-08-28 — Adds marker-backed single and grouped guidance recipes.
 ---
 # Purpose
 Practical task guides that help users get useful work done safely.

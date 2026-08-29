@@ -1,4 +1,5 @@
 file: reference/
+lastModified-guidance-markers: 2026-08-28 — Adds the stable public guidance-marker schema for agents and documentation maintainers.
 consumers: [users, Mochi agents, documentation maintainers]
 produces: [public reference material]
 ---

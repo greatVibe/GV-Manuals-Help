@@ -2,6 +2,7 @@ file: gv-manuals-help/
 consumers: [GreatVibe users, Mochi node agents, public documentation maintainers]
 produces: [public help manuals, starter guides, video catalogue metadata]
 lastModified: 2026-08-27 — Expanded the public console-control and multi-step guidance manuals.
+lastModified-guidance-markers: 2026-08-28 — Adds public-safe machine-readable guidance markers so agents can retrieve surface, target, copy, and group context directly from manuals.
 ---
 # Purpose
 Public-safe help repository seeded onto GreatVibe nodes so users and agents can

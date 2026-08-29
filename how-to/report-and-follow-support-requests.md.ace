@@ -1,4 +1,5 @@
 file: report-and-follow-support-requests.md
+lastModified-guidance-markers: 2026-08-28 — Adds marker-backed support queue, evidence, and history guidance context for single or grouped tours.
 lastModified-rollout-clarity: 2026-08-28 — Separates the shipped five-state lifecycle from later SDLC phases and flags planning/integration surfaces as rollout-dependent.
 consumers: [GreatVibe users, Mochi agents, support reporters]
 produces: [public support reporting and follow-up guidance]

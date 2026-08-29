@@ -1,0 +1,12 @@
+file: guidance-markers.md
+created: 2026-08-28
+consumers: [Mochi agents, documentation maintainers, guidance tooling]
+produces: [public machine-readable guidance marker schema]
+---
+# Purpose
+Defines the public-safe HTML-comment marker that binds help text to closed Konui guidance targets and optional multi-bubble groups.
+# Gotchas
+- Markers are context hints, never executable selectors or authorization.
+- Targets must come from the documented closed vocabulary.
+- Copy remains plain text and at most 180 characters.
+- Group order is one-based and unique within a group.
