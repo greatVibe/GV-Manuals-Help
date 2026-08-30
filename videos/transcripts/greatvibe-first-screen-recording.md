@@ -108,7 +108,7 @@ stuff, at least from a development perspective, your dev environments.
 
 We have a primary development node and a business node. The primary development node since the beginning of the year.
 In March, we imported all of our turns, our turn history, from our original
-genesis environment. That was the first V1 environment of GreatVibe, and then
+configured-mesh environment. That was the first V1 environment of GreatVibe, and then
 we migrated to version two and brought all our turns into this new node
 architecture.
 
