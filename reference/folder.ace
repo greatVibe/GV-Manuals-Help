@@ -1,5 +1,6 @@
 file: reference/
 lastModified-guidance-markers: 2026-08-28 — Adds the stable public guidance-marker schema for agents and documentation maintainers.
+lastModified-dashboard-guidance-coverage: 2026-08-31 — Adds complete concise coverage for the current closed dashboard-console guidance vocabulary.
 consumers: [users, Mochi agents, documentation maintainers]
 produces: [public reference material]
 ---
@@ -9,6 +10,7 @@ Stable reference docs for public vocabulary and safety rules.
 # Key Files
 - `glossary.md`
 - `public-safety-rules.md`
+- `dashboard-console-elements.md`
 
 # Dependencies
 - `../SANITIZATION.md` for publication rules.

@@ -3,6 +3,7 @@ consumers: [GreatVibe users, Mochi node agents, public documentation maintainers
 produces: [public help manuals, starter guides, video catalogue metadata]
 lastModified: 2026-08-27 — Expanded the public console-control and multi-step guidance manuals.
 lastModified-guidance-markers: 2026-08-28 — Adds public-safe machine-readable guidance markers so agents can retrieve surface, target, copy, and group context directly from manuals.
+lastModified-dashboard-guidance-coverage: 2026-08-31 — Adds an authoritative public reference for every closed dashboard-console guidance target.
 ---
 # Purpose
 Public-safe help repository seeded onto GreatVibe nodes so users and agents can
@@ -15,6 +16,7 @@ find task guidance without reading internal implementation docs.
 - `concepts/` explains user-facing GreatVibe vocabulary.
 - `how-to/` contains practical task guides.
 - `reference/` contains glossary and safety reference material.
+- `reference/dashboard-console-elements.md` documents every current dashboard-console guidance element and its bubble marker.
 - `videos/` contains structured training-video metadata and schemas.
 
 # Dependencies

@@ -1,5 +1,6 @@
 file: CATALOGUE.md
 lastModified-guidance-markers: 2026-08-28 — Indexes the machine-readable guidance marker reference and marker-backed UI recipes.
+lastModified-dashboard-guidance-coverage: 2026-08-31 — Indexes the complete dashboard-console element and guidance-marker reference.
 lastModified-support-guide: 2026-08-28 — Indexed native support lifecycle, agile planning, delivery-link, and follow-up guidance.
 lastModified: 2026-08-27 — Indexes detailed status-bar, main-row, prompt-control, and multi-step guidance help.
 consumers: [Mochi agents, new users, documentation maintainers]
@@ -17,6 +18,7 @@ Machine-readable public index for user-facing manuals and videos.
 - Credential, connector, status, and turn-management routing.
 - Gvturn power footer routing.
 - Video catalogue reference.
+- Dashboard-console element and guidance-target reference.
 
 # Dependencies
 - `videos/index.json` for structured video metadata.

@@ -1,4 +1,7 @@
 file: guidance-markers.md
+lastModified-guidance-first-routing: 2026-08-31 — Defines the user-response priority: verified single/group guidance for solvable how-to requests, support routing for genuine issues, then durable gvturn output.
+lastModified-agent-catalog-discovery: 2026-08-31 — Agents query `konui_guidance_catalog` before exact targeting; rows are live, bounded, accessible-control metadata.
+lastModified-complete-control-addressing: 2026-08-31 — Documents exact automatic control keys and per-marker reveal instructions for cross-layer sequence groups.
 created: 2026-08-28
 consumers: [Mochi agents, documentation maintainers, guidance tooling]
 produces: [public machine-readable guidance marker schema]
@@ -8,5 +11,6 @@ Defines the public-safe HTML-comment marker that binds help text to closed Konui
 # Gotchas
 - Markers are context hints, never executable selectors or authorization.
 - Targets must come from the documented closed vocabulary.
+- Automatic targets must use documented bounded `control:<key>` values; raw selectors remain forbidden.
 - Copy remains plain text and at most 180 characters.
 - Group order is one-based and unique within a group.

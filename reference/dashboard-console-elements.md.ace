@@ -1,0 +1,20 @@
+file: dashboard-console-elements.md
+lastModified-complete-control-addressing: 2026-08-31 — Extends the curated aliases with automatic runtime anchors and self-documentation for every native, disclosure, focusable, and declared-action console control.
+created: 2026-08-31
+consumers: [GreatVibe users, Mochi agents, support writers, documentation maintainers]
+produces: [complete public dashboard-console element reference, one guidance marker per closed target]
+---
+# Purpose
+Documents what every current closed dashboard-console guidance element does,
+why it is helpful, how to use it, and the exact public-safe bubble copy.
+
+# Dependencies
+- `guidance-markers.md` defines the marker format and safety boundary.
+- The authenticated dashboard's closed guidance vocabulary remains authoritative.
+
+# Gotchas
+- Curated aliases cover common human language; automatic exact keys cover every
+  live native, disclosure, focusable, and declared-action element, including
+  dynamically created controls. Internal anchors are normalized into the exact namespace.
+- Keep target names synchronized with the live guidance tool schema.
+- Keep marker messages plain text and no longer than 180 characters.
