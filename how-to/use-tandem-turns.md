@@ -63,6 +63,18 @@ Each device still takes one of the four seats.
   know your text is shared.
 - Up to four people can be in one session.
 
+## Share Attachments
+
+Attachments you add while a session is active are shared with the group
+automatically: attach an image, file, or sealed secret the normal way and it
+appears as a chip on the session strip for everyone, marked with who added
+it.
+
+- Anyone in the session can remove a shared attachment with the chip's ×.
+- Removing your own attachment from your tray removes it from the shared
+  draft too, and a removal by a teammate also clears it from your tray.
+- Shared attachments are sent with the prompt when the draft is sent.
+
 ## Send The Shared Prompt
 
 Any participant can send:
