@@ -55,6 +55,10 @@ Each device still takes one of the four seats.
   have a short window to reconnect before their seat is released.
 - Everyone types into the same prompt box. Edits from other people merge in
   live, and your cursor stays where you put it.
+- The moment a second person lands in the session, both sides are brought
+  into the shared prompt box: it is revealed and focused, and a short note
+  says who you are now co-editing with — no hunting for where the
+  collaboration is happening.
 - The prompt box border glows gold while a session is active, so you always
   know your text is shared.
 - Up to four people can be in one session.
