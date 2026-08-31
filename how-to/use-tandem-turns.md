@@ -59,6 +59,25 @@ Each device still takes one of the four seats.
   into the shared prompt box: it is revealed and focused, and a short note
   says who you are now co-editing with — no hunting for where the
   collaboration is happening.
+- You can see everyone's cursor: each teammate's caret shows as a thin
+  coloured bar with their name above it, in their avatar colour, moving as
+  they type.
+
+## Use The Tandem Turns Composer
+
+For longer drafts, open the full-screen **Tandem Turns Composer**: press
+the ⛶ button on the session strip, or the normal expand-composer button
+while a session is active. It is the same shared draft in a large editing
+area — nothing forks or copies.
+
+- The header reads "Tandem Turns Composer" with the live revision, so you
+  always know you are on the shared surface.
+- Everyone who has joined is listed near the bottom, next to the shared
+  attachments, above the **Send shared draft**, **Leave**, and **Close**
+  buttons.
+- Close returns you to the normal prompt box with the same draft; Send
+  works exactly like the small composer — one confirmation, one turn,
+  everyone back to normal.
 - The prompt box border glows gold while a session is active, so you always
   know your text is shared.
 - Up to four people can be in one session.
