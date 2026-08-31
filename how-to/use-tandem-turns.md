@@ -30,6 +30,9 @@ What happens next depends on whether a session already exists on that node:
   the shared draft. If they reject, or do not answer within 30 seconds, you
   stay in your normal console.
 
+While a join is waiting, click **Cancel** to withdraw it. This removes the
+queued request from the session as well as clearing the local waiting state.
+
 Only people using the dashboard console on the **same node** can join. There
 is no way to invite someone on a different node into your session.
 
@@ -116,6 +119,10 @@ once, and you are back to normal.
 If the send fails, the session reopens with the draft intact so the group can
 fix the prompt and try again.
 
+If sending does not settle within one minute, the shared session closes with a
+timeout instead of remaining frozen. Check whether the turn appeared before
+sending the preserved final draft again.
+
 ## Leave A Session
 
 - Click the **Leave** button on the avatar strip, or click the TT button
@@ -133,5 +140,5 @@ fix the prompt and try again.
 | "Join request timed out" | The controller did not answer within 30 seconds. Ask them to watch for the popup and click TT again. |
 | "Session is full" | Four people are already in the session. |
 | "Not available on this node" | Your account is not subscribed to that node's console. Reselect the node or check your access. |
-| Your typing stops appearing | Your connection dropped. Reconnect within about 90 seconds and your seat resumes automatically. |
+| Your typing stops appearing | Your connection dropped. Reconnect within about 90 seconds; retained server changes are merged with your unsent typing. If safe merging is no longer possible, Tandem mode closes and keeps your local draft in the normal composer. |
 | Draft frozen unexpectedly | Someone pressed send. Wait for the turn to start or for editing to reopen. |

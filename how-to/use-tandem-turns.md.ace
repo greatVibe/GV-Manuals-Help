@@ -1,6 +1,7 @@
 file: use-tandem-turns.md
 consumers: [GreatVibe users, Mochi agents, support writers]
 produces: [practical workflow for co-editing and sending one prompt with Tandem Turns]
+lastModified: 2026-08-31j — Reconciles composer/carets/attachments with hardened reconnect, cancel-withdrawal, and bounded-send behavior; removes the absolute no-loss claim.
 ---
 # Purpose
 Shows users how to start, join, co-edit, send, and leave a Tandem Turns
@@ -19,7 +20,8 @@ session in the dashboard console.
 
 # Gotchas
 - Keep the locked semantics exact: same-node only, one session per node,
-  send ends the session for everyone, drafts are never lost on session end.
+  send ends the session for everyone, and a recovery-window miss preserves
+  the local draft while exiting TT for manual reconciliation.
 - Public-safe: no protocol frame names, file paths, or internal repo names.
 
 # Change History
