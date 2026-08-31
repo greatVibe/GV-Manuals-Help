@@ -23,4 +23,7 @@ session in the dashboard console.
 - Public-safe: no protocol frame names, file paths, or internal repo names.
 
 # Change History
+- 2026-08-31b: Same-user multi-device — your own devices join instantly with
+  no approval, share one colour, and inherit control if the creating device
+  goes away; node-switch TT click now starts/joins on the new node.
 - 2026-08-31: Created for the Tandem Turns v1 browser release.

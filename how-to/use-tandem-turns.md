@@ -33,6 +33,20 @@ What happens next depends on whether a session already exists on that node:
 Only people using the dashboard console on the **same node** can join. There
 is no way to invite someone on a different node into your session.
 
+## Your Own Devices Join Instantly
+
+You never approve yourself. If **you** already have a seat in the session —
+say you started it on your desktop — then clicking TT on your phone, tablet,
+or a second browser window joins immediately, with no popup for anyone. Both
+of your seats share one colour in the avatar strip, and the shared draft
+appears on the new device as soon as it joins.
+
+This also keeps your session alive across devices: if the device that
+created the session closes or loses connection, your other connected device
+takes over as controller instead of the session ending.
+
+Each device still takes one of the four seats.
+
 ## While You Are Co-Editing
 
 - The **avatar strip** above the prompt box shows everyone in the session.
@@ -71,9 +85,11 @@ fix the prompt and try again.
 
 - Click the **Leave** button on the avatar strip, or click the TT button
   again.
-- If the controller leaves, the session ends for everyone. Nobody loses work:
-  the final draft text stays in each person's prompt box.
-- Switching to a different node also leaves the session.
+- If the controller leaves, control passes to their own other connected
+  device when they have one; otherwise the session ends for everyone. Nobody
+  loses work: the final draft text stays in each person's prompt box.
+- Switching to a different node leaves the session; clicking TT on the new
+  node starts or joins a session there.
 
 ## Troubleshooting
 
