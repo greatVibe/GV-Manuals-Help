@@ -1,6 +1,7 @@
 file: dashboard-console-elements.md
 lastModified-complete-control-addressing: 2026-08-31 — Extends the curated aliases with automatic runtime anchors and self-documentation for every native, disclosure, focusable, and declared-action console control.
 created: 2026-08-31
+lastModified-image-attachment-tour: 2026-08-31 — Makes plus → Attach → Gallery/Paste the authoritative image-input route and groups its markers into one ordered guidance tour.
 consumers: [GreatVibe users, Mochi agents, support writers, documentation maintainers]
 produces: [complete public dashboard-console element reference, one guidance marker per closed target]
 ---
@@ -18,3 +19,4 @@ why it is helpful, how to use it, and the exact public-safe bubble copy.
   dynamically created controls. Internal anchors are normalized into the exact namespace.
 - Keep target names synchronized with the live guidance tool schema.
 - Keep marker messages plain text and no longer than 180 characters.
+- Image-input instructions must never substitute a paperclip for the plus and Attach controls shown by the dashboard.

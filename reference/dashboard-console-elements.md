@@ -24,8 +24,8 @@ Decorative text is outside this list.
 
 | Element | What it does | Why it is helpful | How to use it |
 | --- | --- | --- | --- |
-| Main row toggle | Shows or hides the console's main action cards. | Keeps common context and workspace tools close to the prompt. | Click the plus button beside the prompt. |
-| Attach | Adds images or files to the next prompt. | Gives the agent the source material it needs. | Reveal the main row and click Attach; hold for more attachment choices. |
+| Main row toggle | Shows or hides the console's main action cards. | Keeps common context and workspace tools close to the prompt. | Click the plus button beside the prompt. This is also the first image-attachment step. |
+| Attach | Adds images or files to the next prompt. | Gives the agent the source material it needs. | Click +, choose Attach, then choose Gallery or Paste for an image. Do not look for a paperclip. |
 | Sealed Secret | Adds a protected value through the sealed-secret flow. | Keeps sensitive values out of ordinary prompt text. | Reveal the main row and click Sealed Secret; hold for advanced options. |
 | History | Opens earlier prompts and saved scripts. | Makes useful requests easy to reuse. | Reveal the main row and click History; hold for saved Scripts. |
 | Files | Opens files for the selected node. | Lets you inspect and choose workspace material without leaving the console. | Reveal the main row and click Files; hold for the full Files view. |
@@ -68,9 +68,9 @@ distinct surface from Settings; agents must never substitute one for the other.
 | Element | What it does | Why it is helpful | How to use it |
 | --- | --- | --- | --- |
 | Camera | Opens the device camera picker. | Adds a new photo directly to the prompt. | Open Attach, then choose Camera and complete the device picker. |
-| Gallery | Opens the image gallery picker. | Adds an existing image to the prompt. | Open Attach, then choose Gallery and select an image. |
+| Gallery | Opens the image gallery picker. | Adds an existing image to the prompt. | Click +, choose Attach, then choose Gallery and select an image. |
 | File | Opens the file picker. | Adds a document or other supported file. | Open Attach, then choose File and select it. |
-| Paste | Reads supported clipboard content. | Adds copied text or images without browsing files. | Open Attach, then choose Paste and approve clipboard access if asked. |
+| Paste | Reads supported clipboard content. | Adds copied text or images without browsing files. | Click +, choose Attach, then choose Paste when the image is already in the computer or mobile clipboard. |
 
 ## History Actions
 
@@ -136,12 +136,12 @@ may reveal a surface first when its target is otherwise hidden.
 <!-- gv-guidance: {"id":"dashboard-new-session","target":"new-session","message":"Start a fresh session for the selected node and profile here.","surface":"toolbox","action":"default"} -->
 <!-- gv-guidance: {"id":"dashboard-reload","target":"reload-dashboard","message":"Reload the dashboard tab with this control.","surface":"toolbox","action":"default"} -->
 <!-- gv-guidance: {"id":"dashboard-turn-timer","target":"turn-timer","message":"See how long the active turn has been running here."} -->
-<!-- gv-guidance: {"id":"dashboard-main-row-toggle","target":"main-row-toggle","message":"Show or hide the main console actions with this plus button."} -->
-<!-- gv-guidance: {"id":"dashboard-attach","target":"attach","message":"Add images or files to the next prompt here.","surface":"main-row","action":"attach"} -->
+<!-- gv-guidance: {"id":"dashboard-main-row-toggle","target":"main-row-toggle","message":"Start image attachment with this plus button beside the prompt.","group":"image-attachment-tour","order":1,"mode":"sequence"} -->
+<!-- gv-guidance: {"id":"dashboard-attach","target":"attach","message":"Choose Attach from the main action row next.","surface":"main-row","action":"attach","group":"image-attachment-tour","order":2,"mode":"sequence"} -->
 <!-- gv-guidance: {"id":"dashboard-attach-camera","target":"attach-camera","message":"Take a new photo for the prompt with this choice.","surface":"attach","action":"camera"} -->
-<!-- gv-guidance: {"id":"dashboard-attach-gallery","target":"attach-gallery","message":"Choose an existing image for the prompt with this choice.","surface":"attach","action":"gallery"} -->
+<!-- gv-guidance: {"id":"dashboard-attach-gallery","target":"attach-gallery","message":"Choose Gallery to select an image from this device.","surface":"attach","action":"gallery","group":"image-attachment-tour","order":3,"mode":"sequence"} -->
 <!-- gv-guidance: {"id":"dashboard-attach-file","target":"attach-file","message":"Choose a file for the prompt with this choice.","surface":"attach","action":"file"} -->
-<!-- gv-guidance: {"id":"dashboard-attach-paste","target":"attach-paste","message":"Add supported clipboard content with this choice.","surface":"attach","action":"paste"} -->
+<!-- gv-guidance: {"id":"dashboard-attach-paste","target":"attach-paste","message":"Or choose Paste when the image is already in the clipboard.","surface":"attach","action":"paste","group":"image-attachment-tour","order":4,"mode":"sequence"} -->
 <!-- gv-guidance: {"id":"dashboard-sealed-secret","target":"sealed-secret","message":"Add a protected value through the sealed-secret flow here.","surface":"main-row","action":"sealed-secret"} -->
 <!-- gv-guidance: {"id":"dashboard-history","target":"history","message":"Reuse earlier prompts or open saved Scripts here.","surface":"main-row","action":"history"} -->
 <!-- gv-guidance: {"id":"dashboard-history-popular","target":"history-popular","message":"Show frequently reused prompts with Popular.","surface":"history","action":"default"} -->

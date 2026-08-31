@@ -2,6 +2,7 @@ file: use-console-main-row-and-prompt-controls.md
 consumers: [GreatVibe users, Mochi agents, support writers]
 produces: [public main action row and prompt composer guide]
 created: 2026-08-27
+lastModified-image-attachment-tour: 2026-08-31 — Documents the exact plus → Attach → Gallery/Paste image flow, explicitly rejects paperclip wording for image input, and publishes a sequenced guidance-group recipe.
 ---
 # Purpose
 Explains the plus-button reveal row, its exact card order and click/hold roles,
@@ -14,3 +15,4 @@ the prompt input, full composer launcher, and send button.
 # Gotchas
 - Keep action order, labels, and guidance target names synchronized with the dashboard.
 - Native camera, gallery, file, and clipboard choices still require a user gesture.
+- Image attachment starts at the plus control; paperclip controls belong to other prompt-context attachment flows and must not be named in image instructions.

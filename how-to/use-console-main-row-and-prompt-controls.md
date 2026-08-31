@@ -21,6 +21,23 @@ The cards appear in this order:
 Click the plus button again to hide the row. An agent can also reveal the row
 and point at one or several cards without opening their destinations.
 
+## Attach An Image
+
+Image attachment uses the plus button, not a paperclip:
+
+1. Click the **+** button beside the prompt.
+2. Choose **Attach** from the main action row.
+3. Choose **Gallery** to select an image from the device, or **Paste** when the
+   image is already in the computer or mobile clipboard.
+
+Camera and File remain available in the same Attach choices when those routes
+fit better. A paperclip may appear on gvturns or other API results to attach
+that item as prompt context; it is not the image-input control.
+
+Ask **“Show me how to attach an image.”** The agent should present the ordered
+`image-attachment-tour` guidance group from the dashboard element reference as
+one smooth tour.
+
 ## Prompt Controls
 
 The center text area is the prompt input. Your prompt goes to the node and AI
