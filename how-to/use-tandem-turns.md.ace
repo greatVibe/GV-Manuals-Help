@@ -1,0 +1,26 @@
+file: use-tandem-turns.md
+consumers: [GreatVibe users, Mochi agents, support writers]
+produces: [practical workflow for co-editing and sending one prompt with Tandem Turns]
+---
+# Purpose
+Shows users how to start, join, co-edit, send, and leave a Tandem Turns
+session in the dashboard console.
+
+# Key Sections
+- What a session is (same-node, one per node, short-lived, send ends it).
+- Start or join via the TT button; controller accept/reject.
+- Co-editing: avatar strip, live merge, gold border, four-person cap.
+- Send: confirmation overlay, one turn for the group, everyone exits TT mode.
+- Leave and troubleshooting.
+
+# Dependencies
+- `use-console-main-row-and-prompt-controls.md`
+- `../concepts/what-is-a-node.md`
+
+# Gotchas
+- Keep the locked semantics exact: same-node only, one session per node,
+  send ends the session for everyone, drafts are never lost on session end.
+- Public-safe: no protocol frame names, file paths, or internal repo names.
+
+# Change History
+- 2026-08-31: Created for the Tandem Turns v1 browser release.
