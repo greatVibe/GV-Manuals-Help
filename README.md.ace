@@ -1,4 +1,5 @@
 file: README.md
+lastModified-agent-iq-metal: 2026-09-20 — Links the public Agent IQ Metal Design System guide and local starter in navigation and the repository map.
 consumers: [new users, documentation maintainers, Mochi agents]
 produces: [repository overview, navigation rules, publication boundaries]
 lastModified: 2026-08-16 — Declared gv-manuals-help the sole node-seeded manuals/help authority and indexed the v2 IDE guide.

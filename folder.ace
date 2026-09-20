@@ -1,4 +1,5 @@
 file: gv-manuals-help/
+lastModified-agent-iq-metal: 2026-09-20 — Adds the public Agent IQ Metal Design System guide and a self-contained illustrative starter.
 consumers: [GreatVibe users, Mochi node agents, public documentation maintainers]
 produces: [public help manuals, starter guides, video catalogue metadata]
 lastModified: 2026-08-27 — Expanded the public console-control and multi-step guidance manuals.

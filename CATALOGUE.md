@@ -26,6 +26,7 @@ and users. Private employee engineering repositories are not user help sources.
 | Understand the gvturn power footer | `concepts/what-is-the-gvturn-power-footer.md` | No indexed video yet |
 | Understand context | `concepts/what-is-gvcontext.md` | `videos/index.json` tag `context` |
 | Review AI work | `how-to/review-ai-work.md` | `videos/index.json` tag `review` |
+| Build Agent IQ Metal visuals and responsive layouts | [Metal Design System guide](how-to/build-agent-iq-metal-layouts.md) and [self-contained starter](reference/agent-iq-metal-starter.html) | No indexed video yet |
 | Report or follow support | `how-to/report-and-follow-support-requests.md` | No indexed video yet |
 | Use gvturn actions | `how-to/use-gvturn-actions.md` | No indexed video yet |
 | Work with files | `how-to/work-with-files.md` | `videos/index.json` tag `files` |
@@ -58,6 +59,7 @@ and users. Private employee engineering repositories are not user help sources.
 | Getting started | `getting-started/welcome-to-greatvibe.md`, `getting-started/first-10-minutes.md`, `getting-started/ask-mochi-for-help.md` |
 | Core concepts | `concepts/what-is-a-node.md`, `concepts/what-is-a-gvturn.md`, `concepts/what-is-the-gvturn-power-footer.md`, `concepts/what-is-gvcontext.md`, `concepts/what-is-ace.md` |
 | Practical workflows | `how-to/review-ai-work.md`, `how-to/work-with-files.md`, `how-to/recover-a-failed-turn.md`, `how-to/report-and-follow-support-requests.md` |
+| Agent IQ Metal Design System | [Visual language and layout catalogue](how-to/build-agent-iq-metal-layouts.md), [copyable local HTML starter](reference/agent-iq-metal-starter.html) |
 | Credentials and connectors | `how-to/add-ai-agent-credential.md`, `how-to/add-anthropic-oauth-credential.md`, `how-to/add-codex-oauth-credential.md`, `how-to/add-aws-credential.md`, `how-to/add-github-credential.md`, `how-to/connect-a-private-github-repository.md`, `how-to/builtin-credential-and-connector-templates.md` |
 | Console, Account Admin, IDE, and turns | `how-to/understand-the-status-bar.md`, `how-to/use-console-main-row-and-prompt-controls.md`, `how-to/manage-turns-with-gv-menu-eventlog-gvturns.md`, `how-to/check-eventlog-in-dashboard-console.md`, `how-to/manage-organizations-meshes-and-nodes.md`, `how-to/set-your-profile-picture.md`, `how-to/view-turns-across-nodes.md`, `how-to/use-the-status-bar-toolbox-and-stop-turns.md`, `how-to/ask-an-agent-to-open-the-right-ui.md`, `how-to/use-gvturn-actions.md`, `how-to/use-and-watch-the-v2-ide.md`, `how-to/use-tandem-turns.md` |
 | Productivity | `manuals/productivity/overview.md` and the guides in `manuals/productivity/` |
@@ -73,6 +75,7 @@ as user-facing help.
 | Area | Public files |
 | --- | --- |
 | Repository guide | `README.md`, `CATALOGUE.md`, `SANITIZATION.md` |
+| Agent IQ design and examples | `how-to/build-agent-iq-metal-layouts.md`, `reference/agent-iq-metal-starter.html` |
 | Getting started | `getting-started/welcome-to-greatvibe.md`, `getting-started/first-10-minutes.md`, `getting-started/ask-mochi-for-help.md` |
 | Concepts | `concepts/what-is-a-node.md`, `concepts/what-is-a-gvturn.md`, `concepts/what-is-the-gvturn-power-footer.md`, `concepts/what-is-gvcontext.md`, `concepts/what-is-ace.md` |
 | How-to guides | `how-to/review-ai-work.md`, `how-to/work-with-files.md`, `how-to/recover-a-failed-turn.md`, `how-to/add-ai-agent-credential.md`, `how-to/add-github-credential.md`, `how-to/builtin-credential-and-connector-templates.md`, `how-to/understand-the-status-bar.md`, `how-to/use-console-main-row-and-prompt-controls.md`, `how-to/use-gvturn-actions.md`, `how-to/manage-turns-with-gv-menu-eventlog-gvturns.md`, `how-to/use-and-watch-the-v2-ide.md`, `how-to/use-tandem-turns.md` |
@@ -86,6 +89,7 @@ Agents should use this repository as local help memory, not as a source of
 private implementation facts.
 
 - Read this catalogue before recommending a guide or video.
+- For Agent IQ metal/glass styling, Wide opening, Phone portrait, Compact Fold or Adaptive focus layouts, read [the public Metal Design System guide](how-to/build-agent-iq-metal-layouts.md). Its [HTML starter](reference/agent-iq-metal-starter.html) is an illustrative local example, not production telemetry or a data-query API.
 - Read `reference/guidance-markers.md` before converting embedded
   `gv-guidance` markers into one single or grouped bubble presentation.
 - Use `reference/dashboard-console-elements.md` to match a dashboard-console

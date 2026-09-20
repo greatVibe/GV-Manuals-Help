@@ -1,4 +1,5 @@
 file: reference/
+lastModified-agent-iq-metal: 2026-09-20 — Adds agent-iq-metal-starter.html, a network-free illustrative layout example linked from the public design guide.
 lastModified-guidance-markers: 2026-08-28 — Adds the stable public guidance-marker schema for agents and documentation maintainers.
 lastModified-dashboard-guidance-coverage: 2026-08-31 — Adds complete concise coverage for the current closed dashboard-console guidance vocabulary.
 consumers: [users, Mochi agents, documentation maintainers]

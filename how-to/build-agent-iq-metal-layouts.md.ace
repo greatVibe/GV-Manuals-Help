@@ -1,0 +1,33 @@
+file: build-agent-iq-metal-layouts.md
+consumers: [GreatVibe users, AI agents, public visual authors]
+produces: [Agent IQ Metal Design System, responsive layout catalogue, reusable public authoring guidance]
+lastModified: 2026-09-20
+---
+# Purpose
+Explain the shared metal/glass visual language and its wide, phone, compact Fold
+and adaptive focus layouts. Teach public authors how to describe useful work,
+preserve viewer control and distinguish measured progress from illustrative data.
+
+# Dependencies
+- ../reference/agent-iq-metal-starter.html provides a self-contained local example.
+- ../CATALOGUE.md and ../README.md route users and agents to this guide.
+- ../SANITIZATION.md supplies the public publication boundary.
+
+# Gotchas
+- Public authoring guidance only: no private endpoints, identifiers, paths,
+  credentials, deployment evidence or incident history.
+- Examples are illustrative, never live observations or production metrics.
+- Native inert HTML and optional isolated script regions have different
+  capabilities. Do not imply local example functions are product APIs.
+- Copyable script examples include their own document sizing reset so the
+  canvas fills the isolated region without depending on the preview wrapper.
+- Read-only design/current-view inspection is conditional on the current tool
+  manifest or trusted native API. Isolated examples receive supplied snapshots
+  and must never acquire a parent-DOM or network bridge.
+- Optional native query keys are omitted when absent, rather than passing an
+  undefined own property to strict request normalization.
+- Startup and example layouts are quality references, not a required workflow
+  or fixed number of panels. Respect actual available width and height.
+
+# Change History
+- 2026-09-20: Created a public design guide with reusable code and layout advice.

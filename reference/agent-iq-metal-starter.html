@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Agent IQ Metal — illustrative layout starter</title>
+  <style>html,body{margin:0;height:100%;background:#10151f}</style>
+</head>
+<body>
+<!-- Copy this region, including its style and script, into a supported Agent IQ
+     script region. The outer document is only a standalone preview wrapper. -->
+<section data-gv-iq-script="v1" data-gv-iq-height="fill" style="height:100%;min-height:0">
+<style>
+  html,body{margin:0;padding:0;width:100%;height:100%;overflow:hidden}
+  section[data-gv-iq-script="v1"]{display:block;width:100%;height:100%;min-height:0}
+  *{box-sizing:border-box}
+  .metal{--cyan:#56d9ec;--amber:#f5b34d;--green:#98c379;--muted:#a2b1c6;color:#edf5ff;background:radial-gradient(ellipse at 48% 35%,#193044 0%,#10151f 65%);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;height:100%;min-height:0;container:metal / size}
+  .surface{height:100%;min-height:0;padding:clamp(12px,2.2vw,28px);display:grid;grid-template-rows:auto auto minmax(0,1fr);gap:14px}
+  .focus{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:start}
+  .eyebrow{color:var(--cyan);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;margin:0 0 6px}
+  h1{font-size:clamp(19px,2.6vw,28px);line-height:1.2;margin:0 0 6px;font-weight:650}
+  .next{margin:0;font-size:14px;line-height:1.5;color:#d3deee}
+  .demo{color:var(--muted);font-size:11px;margin:0;max-width:190px;line-height:1.5;text-align:right}
+  .switches{display:flex;flex-wrap:wrap;gap:7px;align-items:center}
+  button{font:inherit;font-size:12px;line-height:1.4;color:#dce8f6;padding:7px 11px;border:1px solid #456176;border-radius:7px;background:linear-gradient(#263847,#14212d);cursor:pointer;min-height:32px}
+  button[aria-pressed="true"]{color:#fff;border-color:var(--cyan);box-shadow:0 0 0 1px #56d9ec30,inset 0 1px #b9efff33}
+  button:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
+  .layout{display:grid;min-height:0;gap:14px;grid-template-columns:minmax(0,1fr) minmax(150px,.65fr) minmax(0,1fr);grid-template-rows:minmax(0,1.15fr) minmax(0,.85fr);grid-template-areas:"work core verify" "deliver deliver deliver"}
+  .cell,.core{position:relative;min-width:0;min-height:0;border:1px solid #416777;border-radius:15px;background:linear-gradient(135deg,#b0d9ef17,#5f91ad08 36%,#02091366),linear-gradient(160deg,#1d3040ed,#101b29f5);box-shadow:inset 0 1px #d2efff45,inset 0 -1px #0009,0 12px 25px #0004;overflow:auto}
+  .cell{padding:clamp(14px,2vw,24px);display:flex;flex-direction:column;justify-content:flex-start;border-top:2px solid #56d9ec91}
+  .cell::before{content:"";position:absolute;left:0;top:22px;width:5px;height:25px;border-radius:0 4px 4px 0;background:var(--cyan);box-shadow:0 0 12px #56d9ec70}
+  .cell h2{margin:4px 0 9px;font-size:clamp(17px,2vw,23px);line-height:1.25}
+  .cell p{margin:0;font-size:14px;line-height:1.65;max-width:62ch;color:#c6d7e9}
+  .cell small{color:var(--muted);font-size:11px;letter-spacing:.9px;text-transform:uppercase}
+  .cell[data-cell="work"]{grid-area:work}.cell[data-cell="verify"]{grid-area:verify}.cell[data-cell="deliver"]{grid-area:deliver}
+  .core{grid-area:core;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:14px;overflow:hidden;border-color:#75939b;background:radial-gradient(circle,#674b2129,#152432 70%)}
+  .emblem{width:clamp(82px,10vw,135px);aspect-ratio:1;position:relative;display:grid;place-items:center}
+  .orbit{position:absolute;inset:0;border:1px solid #56d9ecaa;border-radius:50%;box-shadow:inset 0 0 16px #56d9ec16,0 0 25px #56d9ec18}
+  .orbit::before{content:"";position:absolute;inset:9px;border:1px dashed #56d9ec55;border-radius:50%;animation:breathe 3s ease-in-out infinite}
+  .logo{width:80%;height:80%;filter:drop-shadow(0 0 9px #fff2)}
+  .stage{margin:10px 0 0;color:var(--amber);font-size:15px;font-weight:600;text-align:center;line-height:1.35}
+  .stage-note{font-size:11px;color:var(--muted);margin:5px 0 0;text-align:center}
+  .layout[data-mode="work"]{grid-template-columns:120px minmax(0,1.65fr) minmax(0,1fr);grid-template-areas:"core work verify" "core work deliver"}
+  .layout[data-mode="verify"]{grid-template-columns:120px minmax(0,1.65fr) minmax(0,1fr);grid-template-areas:"core verify work" "core verify deliver"}
+  .layout[data-mode="deliver"]{grid-template-columns:120px minmax(0,1.65fr) minmax(0,1fr);grid-template-areas:"core deliver work" "core deliver verify"}
+  .layout:not([data-mode="starting"]) .emblem{width:80px}
+  .cell[data-priority="current"]{border-color:#f5b34da1;box-shadow:inset 0 1px #ffe7b645,0 0 30px #f5b34d09,0 12px 25px #0004}
+  .cell[data-priority="current"]::before{background:var(--amber);box-shadow:0 0 12px #f5b34d70}
+  @keyframes breathe{50%{opacity:.35}}
+  @container metal (max-width: 600px){
+    .surface{padding:14px;gap:10px}.focus{grid-template-columns:1fr;gap:5px}.demo{text-align:left;max-width:none}.demo br{display:none}
+    h1{font-size:21px}.next{font-size:13px}.switches{gap:5px}button{padding:6px 9px}
+    .layout,.layout[data-mode]{grid-template-columns:minmax(0,1fr);grid-template-rows:164px repeat(3,minmax(112px,1fr));grid-template-areas:"core" "work" "verify" "deliver";overflow:auto;gap:10px}
+    .layout[data-mode="verify"]{grid-template-areas:"core" "verify" "work" "deliver"}.layout[data-mode="deliver"]{grid-template-areas:"core" "deliver" "work" "verify"}
+    .core{overflow:visible}.emblem,.layout:not([data-mode="starting"]) .emblem{width:86px}.stage{margin-top:7px}.stage-note{margin-top:3px}
+    .cell{padding:15px}.cell h2{font-size:19px;margin:3px 0 6px}.cell p{font-size:13px;line-height:1.5}
+  }
+  @container metal (min-width: 640px) and (max-height: 360px){
+    .surface{padding:10px 12px;gap:7px}.focus{gap:10px}h1{font-size:20px;margin-bottom:3px}.next{font-size:12px}.demo{font-size:10px}.eyebrow{font-size:10px;margin-bottom:3px}
+    .switches{gap:5px}button{font-size:11px;padding:4px 9px;min-height:27px}
+    .layout,.layout[data-mode]{grid-template-columns:86px repeat(3,minmax(0,1fr));grid-template-rows:minmax(0,1fr);grid-template-areas:"core work verify deliver";gap:9px}
+    .layout[data-mode="verify"]{grid-template-areas:"core verify work deliver"}.layout[data-mode="deliver"]{grid-template-areas:"core deliver work verify"}
+    .core{padding:7px}.emblem,.layout:not([data-mode="starting"]) .emblem{width:56px}.stage{font-size:12px;margin-top:8px}.stage-note{display:none}
+    .cell{padding:12px;justify-content:flex-start}.cell h2{font-size:16px;margin:4px 0 7px}.cell p{font-size:12px;line-height:1.5}.cell small{font-size:10px}.cell::before{width:3px}
+  }
+  @container metal (max-width: 639px) and (max-height: 420px){
+    .surface{padding:10px;gap:7px}.focus{gap:3px}.eyebrow{font-size:10px;margin-bottom:3px}h1{font-size:18px;margin-bottom:3px}.next{font-size:11px;line-height:1.35}.demo{font-size:10px;line-height:1.3}
+    .switches{gap:4px}button{font-size:10px;padding:4px 7px;min-height:25px}
+    .layout,.layout[data-mode]{grid-template-columns:66px minmax(0,1fr);grid-template-rows:minmax(0,1fr);grid-template-areas:"core work";gap:8px;overflow:hidden}
+    .layout[data-mode="verify"]{grid-template-areas:"core verify"}.layout[data-mode="deliver"]{grid-template-areas:"core deliver"}
+    .cell{display:none;padding:10px}.layout[data-mode="starting"] [data-cell="work"],.layout[data-mode="work"] [data-cell="work"],.layout[data-mode="verify"] [data-cell="verify"],.layout[data-mode="deliver"] [data-cell="deliver"]{display:flex}
+    .cell h2{font-size:16px;margin:3px 0 5px}.cell small{font-size:10px}.cell p{font-size:12px;line-height:1.4}
+    .core{padding:5px;overflow:hidden}.emblem,.layout:not([data-mode="starting"]) .emblem{width:46px}.stage{font-size:11px;margin-top:5px}.stage-note{display:none}
+  }
+  @container metal (max-height: 280px){.cell p{display:none}}
+  @media (prefers-reduced-motion:reduce){.orbit::before{animation:none}}
+</style>
+<main class="metal" aria-label="Illustrative Agent IQ Metal layout">
+  <div class="surface">
+    <header class="focus">
+      <div><p class="eyebrow">Agent IQ · Metal</p><h1 id="focus-title">Plan a useful short guide</h1><p class="next" id="focus-next">Next: understand the reader and the question.</p></div>
+      <p class="demo">Illustrative local preview.<br>No real work is running.</p>
+    </header>
+    <div class="switches" role="group" aria-label="Illustrative layout stage">
+      <button type="button" data-mode="starting" aria-pressed="true">Wide opening</button>
+      <button type="button" data-mode="work" aria-pressed="false">Work focus</button>
+      <button type="button" data-mode="verify" aria-pressed="false">Verify focus</button>
+      <button type="button" data-mode="deliver" aria-pressed="false">Deliver focus</button>
+    </div>
+    <section class="layout" data-mode="starting" aria-label="Example work, evidence and result">
+      <div class="core">
+        <div class="emblem"><span class="orbit" aria-hidden="true"></span><svg class="logo" viewBox="0 0 80 80" role="img" aria-label="greatVibe">
+          <path d="M 18,40 C 28,24 44,16 60,22" fill="none" stroke="#ffffff" stroke-width="1.8" style="opacity:.65;stroke-linecap:round"/>
+          <path d="M 18,40 C 32,40 50,40 64,40" fill="none" stroke="#ffffff" stroke-width="2.5" style="stroke-linecap:round"/>
+          <path d="M 18,40 C 28,56 44,64 60,58" fill="none" stroke="#ffffff" stroke-width="1.8" style="opacity:.65;stroke-linecap:round"/>
+          <circle cx="18" cy="40" r="4.5" fill="#f59e0b"/>
+        </svg></div>
+        <p class="stage" id="stage">Starting</p><p class="stage-note">Example stage</p>
+      </div>
+      <article class="cell" data-cell="work"><small>Request → approach</small><h2>The approach</h2><p>Understand the reader, then shape a clear explanation.</p></article>
+      <article class="cell" data-cell="verify"><small>Evidence → confidence</small><h2>Useful discoveries</h2><p>Show the facts that help answer the question. Leave unknowns clear.</p></article>
+      <article class="cell" data-cell="deliver"><small>Work → useful outcome</small><h2>The result</h2><p>A short guide the reader can understand and use.</p></article>
+    </section>
+  </div>
+</main>
+<script>
+(function () {
+  'use strict';
+  // Local examples only. These values are not production telemetry, and this
+  // function is not a dashboard API. Replace the examples with observed facts.
+  var root = document.querySelector('.metal');
+  if (!root) return;
+  var examples = {
+    starting: {stage:'Starting',title:'Plan a useful short guide',next:'Understand the reader and the question.',work:['The approach','Understand the reader, then shape a clear explanation.'],verify:['Useful discoveries','Show the facts that help answer the question. Leave unknowns clear.'],deliver:['The result','A short guide the reader can understand and use.']},
+    work: {stage:'Working',title:'Shape the explanation',next:'Check each claim against the available material.',work:['Build the outline','Arrange the answer around the reader’s main question.'],verify:['Claims to check','Keep assumptions visible until there is evidence.'],deliver:['Useful output','Prepare a concise guide with a reusable example.']},
+    verify: {stage:'Checking',title:'Check the draft',next:'Resolve unclear instructions before sharing.',work:['Draft outline','Keep the question and intended audience in view.'],verify:['Review the example','Read the instructions and try the example at phone and desktop sizes.'],deliver:['Review copy','Prepare the useful result with any limitations stated.']},
+    deliver: {stage:'Ready for review',title:'Present the useful result',next:'Let the reader inspect and reuse the guide.',work:['What changed','Explain the changes that matter to the reader.'],verify:['Evidence and limits','Attach actual checks when available. This preview proves no production result.'],deliver:['The reusable guide','Put the answer and usable example first. Keep supporting detail nearby.']}
+  };
+  function renderExample(mode) {
+    var example = examples[mode];
+    if (!example) return;
+    root.querySelector('.layout').setAttribute('data-mode', mode);
+    root.querySelector('#focus-title').textContent = example.title;
+    root.querySelector('#focus-next').textContent = 'Next: ' + example.next;
+    root.querySelector('#stage').textContent = example.stage;
+    root.querySelectorAll('[data-cell]').forEach(function (cell) {
+      var key = cell.getAttribute('data-cell');
+      cell.querySelector('h2').textContent = example[key][0];
+      cell.querySelector('p').textContent = example[key][1];
+      cell.setAttribute('data-priority', key === mode ? 'current' : 'supporting');
+    });
+    root.querySelectorAll('button[data-mode]').forEach(function (button) {
+      button.setAttribute('aria-pressed', String(button.getAttribute('data-mode') === mode));
+    });
+  }
+  root.querySelectorAll('button[data-mode]').forEach(function (button) {
+    button.addEventListener('click', function () { renderExample(button.getAttribute('data-mode')); });
+  });
+})();
+</script>
+</section>
+</body>
+</html>

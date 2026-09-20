@@ -1,0 +1,35 @@
+file: agent-iq-metal-starter.html
+consumers: [public users, AI agents, visual authors]
+produces: [standalone illustrative Agent IQ Metal layout example]
+lastModified: 2026-09-20
+---
+# Purpose
+Provide a copyable, self-contained design example for Wide opening, Phone
+portrait, Compact Fold and Adaptive focus layouts. Local controls demonstrate
+moving the same useful cells to match Work, Verify and Deliver priorities.
+
+# Dependencies
+- ../how-to/build-agent-iq-metal-layouts.md documents usage and limits.
+- No external libraries, fonts, resources, network or dashboard APIs.
+
+# Gotchas
+- Every scenario is labelled illustrative. Nothing claims real work completion.
+- Scenario controls/functions are local example code, not a GreatVibe API.
+- The optional script region can be copied into a capable Agent IQ runtime;
+  the outer document is a standalone preview wrapper, not a tool payload.
+- Responsive rules use available region width and height. Preserve viewer
+  allocation and reduced motion; never force parent size or scroll position.
+- Prefer the canonical greatVibe symbol without a duplicate wordmark.
+- Canonical path opacity and rounded caps use inline style so script-region
+  preparation preserves them as well as direct standalone browser rendering.
+- The copyable region owns its html/body size and padding reset. Its size
+  container must retain a definite height inside the isolated runtime, whose
+  default body padding would otherwise collapse full-height composition.
+- Short phone allocations condense to a small core and the current useful cell;
+  supporting cells yield before the stage/focus/next labels. No document height
+  floor may exceed the viewer allocation. Short Fold retains three cell titles.
+- Preview controls use an allowlisted DIV with role=group; unsupported NAV
+  wrappers are unwrapped during script preparation and would break grid rows.
+
+# Change History
+- 2026-09-20: Added the network-free responsive example and accessible controls.

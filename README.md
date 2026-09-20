@@ -55,6 +55,7 @@ GV-Manuals-Help/
 |   |-- what-is-gvcontext.md
 |   `-- what-is-ace.md
 |-- how-to/
+|   |-- build-agent-iq-metal-layouts.md
 |   |-- review-ai-work.md
 |   |-- work-with-files.md
 |   |-- recover-a-failed-turn.md
@@ -98,6 +99,7 @@ GV-Manuals-Help/
 |   |   |-- troubleshooting.md
 |   |   `-- work-handoffs.md
 |-- reference/
+|   |-- agent-iq-metal-starter.html
 |   |-- glossary.md
 |   `-- public-safety-rules.md
 `-- videos/
@@ -120,6 +122,7 @@ Start with `CATALOGUE.md`, then choose the topic closest to your task:
 - For first-session help, see `getting-started/`.
 - For GreatVibe vocabulary, see `concepts/`.
 - For practical task workflows, see `how-to/`.
+- For responsive Agent IQ visuals, read the [Metal Design System guide](how-to/build-agent-iq-metal-layouts.md) and try the [self-contained starter](reference/agent-iq-metal-starter.html).
 - For document workflows, see `manuals/productivity/`.
 - For safety rules and definitions, see `reference/`.
 - For training videos, see `videos/index.json`.
