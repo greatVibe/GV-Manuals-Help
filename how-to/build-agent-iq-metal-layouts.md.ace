@@ -30,6 +30,12 @@ preserve viewer control and distinguish measured progress from illustrative data
   or fixed number of panels. Respect actual available width and height.
 
 # Change History
+- 2026-09-21d: Added "Use the spaces well during a turn" — a practical playbook:
+  declare the Architecture model every visible turn from facts gathered in that
+  turn, use heat as declared focus that warms and cools across frames, hero the
+  space the turn is about (architecture hero + evidence@bottom for system work),
+  move spaces at phase changes rather than every frame, and prefer one hero
+  over a three-way split when panes must be read rather than glanced.
 - 2026-09-21c: Spaces v4 — spaces can split onto different edges (per-pane
   drag/Alt+arrows; agent syntax name@edge inside data-gv-iq-spaces) and any
   space can be the hero (centre drop zone, ⛶ button, H key, or the new

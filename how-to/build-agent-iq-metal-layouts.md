@@ -257,6 +257,36 @@ re-declare heat as work moves and the map cools and warms across the turn.
 Opening the space before any declaration shows this primitives cheat-sheet in
 place, so the contract is discoverable from the canvas itself.
 
+### Use the spaces well during a turn
+
+A short playbook that turns the mechanics above into good turns:
+
+- **Declare architecture every visible turn.** The space only draws what a
+  frame declares — a turn that declares nothing leaves the reader looking at
+  the cheat-sheet. Build the model from facts collected in the same turn and
+  put live detail (a version, a state, a vital) in each row's label. Six to
+  eight components with dependencies converging on the real hub read best.
+- **Let heat tell the story.** Heat is the declared focus, not a measurement:
+  mark what this turn is about hot, its neighbours warm, and re-declare so the
+  map warms while you work and cools on the closing frame. Observed results
+  belong in the Evidence space.
+- **Choose the hero by subject.** Make the space the turn is *about* the hero.
+  For architecture and system investigations,
+  `data-gv-iq-spaces="architecture,evidence@bottom"` with
+  `data-gv-iq-hero="architecture"` is a strong default: the model gets the big
+  canvas, evidence stays glanceable, and the frame reads fine as a strip.
+- **Split to monitor, hero to read.** A three-way split is great when each
+  pane only needs a glance; a dense model or comparison deserves the hero
+  zone. Don't leave an 8-component map squeezed into a side strip.
+- **Move at phase changes, not every frame.** Each rearrangement should mean
+  something: split when a comparison phase starts, hero for the reveal, and
+  close with the arrangement that best presents the outcome — or hand the
+  whole canvas back with an empty spaces list. Remember to restate the spaces
+  list on any frame that repositions.
+- **The reader always wins.** Any chip tap, drag, ⛶ or reset overrides your
+  proposals for the rest of the turn — treat that as steering, not failure,
+  and keep declaring the model so their chosen layout stays fed.
+
 ## Honest state, progress and evidence
 
 Start with a stage such as “Starting” or “Waiting for an update” when no measured
