@@ -30,6 +30,11 @@ preserve viewer control and distinguish measured progress from illustrative data
   or fixed number of panels. Respect actual available width and height.
 
 # Change History
+- 2026-09-21c: Spaces v4 — spaces can split onto different edges (per-pane
+  drag/Alt+arrows; agent syntax name@edge inside data-gv-iq-spaces) and any
+  space can be the hero (centre drop zone, ⛶ button, H key, or the new
+  data-gv-iq-hero attribute; the frame swaps into the hero's dock slot and
+  stays the default primary).
 - 2026-09-21b: Spelled out mid-turn movement in the agent-arrangement section —
   every published frame re-reads the proposal, so successive frames can slide
   the dock between edges, swap/resize/close the open set; plus the gate rule

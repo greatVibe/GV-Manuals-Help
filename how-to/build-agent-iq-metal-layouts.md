@@ -165,14 +165,21 @@ all.
 
 The reader stays in control:
 
-- A chip **toggles** its space open or closed; up to three spaces tile
-  intelligently beside the frame, and each pane has its own close control.
-- **Long-press a pane's header and drag** to move the open spaces to any edge
-  of the canvas — right, left, bottom or top. Dropping on another pane's
-  header reorders the two panes. The same moves are available from the
-  keyboard, and a reset control returns the default arrangement.
-- The choice of open spaces, edge and share of the canvas is remembered on
-  the device between turns.
+- A chip **toggles** its space open or closed; up to three spaces can be open
+  at once, and each pane has its own close control.
+- Spaces can **split apart**: long-press a pane's header and drag it to any
+  edge — right, left, bottom or top — and only that pane moves there, so
+  different spaces can sit on different edges at the same time. Dropping on
+  another pane's header reorders the two panes. Alt+arrows on a header do
+  the same move from the keyboard, and a reset control returns everything to
+  one dock on the default edge.
+- Any space can become the **hero**: drop a pane on the centre zone while
+  dragging, tap the ⛶ button in its header, or press H on the header. The
+  hero space takes the primary zone and the frame swaps into the hero's dock
+  slot. The frame is always the default primary — hero is an explicit,
+  reversible choice (toggle ⛶ again to swap back).
+- The open spaces, their edges, the hero and the share of the canvas are
+  remembered on the device between turns.
 
 ### The agent can propose the arrangement
 
@@ -182,15 +189,23 @@ involved; they travel inside the same published frame:
 
 ```html
 <section data-gv-iq-scene="v1"
-  data-gv-iq-spaces="architecture,evidence"
+  data-gv-iq-spaces="architecture,evidence@bottom"
+  data-gv-iq-hero="architecture"
   data-gv-iq-layout="right"
   data-gv-iq-share="0.34"> … </section>
 ```
 
 - `data-gv-iq-spaces` — up to three of `topology`, `evidence`, `beforeafter`,
-  `architecture` (comma-separated); an empty value closes all spaces.
-- `data-gv-iq-layout` — the edge to dock on: `top`, `right`, `bottom` or `left`.
-- `data-gv-iq-share` — the fraction of the canvas the spaces take (a decimal
+  `architecture` (comma-separated); an empty value closes all spaces. Each
+  entry may carry its own edge with `@top`/`@right`/`@bottom`/`@left`
+  (`evidence@bottom`) to split that space onto its own dock; a bare name uses
+  the default edge.
+- `data-gv-iq-hero` — one of the listed space names: that space takes the
+  primary zone for this frame and the frame swaps into its dock slot. Omit
+  the attribute (the normal case) and the frame stays primary.
+- `data-gv-iq-layout` — the default edge for spaces without an `@edge`:
+  `top`, `right`, `bottom` or `left`.
+- `data-gv-iq-share` — the fraction of the canvas the docks take (a decimal
   such as `0.34`; the canvas clamps it to a readable range).
 
 This is **display-only and advisory**. It is honoured only while the reader is
