@@ -160,8 +160,8 @@ Alongside the authored frame, the Agent IQ canvas offers four dockable
 canvas: **Topology** (how the work is organised right now), **Evidence**
 (observed results collected during the turn), **Before · After** (a
 side-by-side of the change) and **Architecture** (the system as the agent
-declared it, with a this-turn focus heatmap). The **Frame** chip closes them
-all.
+declared it, with a this-turn focus heatmap). The **Main view** chip closes
+them all, returning the canvas to the agent's main frame.
 
 The reader stays in control:
 
@@ -178,8 +178,11 @@ The reader stays in control:
   hero space takes the primary zone and the frame swaps into the hero's dock
   slot. The frame is always the default primary — hero is an explicit,
   reversible choice (toggle ⛶ again to swap back).
-- The open spaces, their edges, the hero and the share of the canvas are
-  remembered on the device between turns.
+- Sizing preferences (the share of the canvas, preferred edges) are
+  remembered on the device. **Every turn starts clean**, though: when a new
+  turn begins the canvas returns to the full main view with the spaces
+  closed, on "autopilot" — the agent's opening frame (or your own taps)
+  decides what this turn shows. Nothing lingers from the previous turn.
 
 ### The agent can propose the arrangement
 
@@ -251,11 +254,17 @@ authored frame — the block is treated as data and never shown as frame text:
   labels heat as the agent's declaration, never as measured telemetry.
 - `data-arch-deps` — up to six comma-separated ids of other declared
   components. Unknown or self references are dropped.
+- `data-arch-parts` (optional) — up to six comma-separated names (24
+  characters each) for the pieces **inside** that component this turn
+  touches, e.g. `data-arch-parts="renderer,sanitizer,storage"`. Readers see
+  them when they tap the box — a second layer of depth that works for both
+  developers and business readers. Declare parts on the hot components
+  especially; that is where people tap.
 
 A frame **without** a new declaration keeps the previous model, so you can
 re-declare heat as work moves and the map cools and warms across the turn.
-Opening the space before any declaration shows this primitives cheat-sheet in
-place, so the contract is discoverable from the canvas itself.
+Before any declaration the space shows a plain-English explanation of what
+will appear there — readers are never shown primitives or code.
 
 ### Use the spaces well during a turn
 

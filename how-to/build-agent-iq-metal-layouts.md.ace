@@ -30,6 +30,12 @@ preserve viewer control and distinguish measured progress from illustrative data
   or fixed number of panels. Respect actual available width and height.
 
 # Change History
+- 2026-09-21e: Autopilot + module depth + rename: documented that every turn
+  opens on the full main view with spaces closed (autopilot until the agent
+  proposes or the reader acts; device preferences survive), the new optional
+  data-arch-parts row attribute (inner parts shown when a reader taps a box),
+  the "Main view" chip rename (was "Frame"), and the plain-English empty state
+  (replacing the retired in-pane primitives cheat-sheet mention).
 - 2026-09-21d: Added "Use the spaces well during a turn" — a practical playbook:
   declare the Architecture model every visible turn from facts gathered in that
   turn, use heat as declared focus that warms and cools across frames, hero the
