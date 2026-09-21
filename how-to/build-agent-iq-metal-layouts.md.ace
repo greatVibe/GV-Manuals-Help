@@ -30,6 +30,11 @@ preserve viewer control and distinguish measured progress from illustrative data
   or fixed number of panels. Respect actual available width and height.
 
 # Change History
+- 2026-09-21b: Spelled out mid-turn movement in the agent-arrangement section —
+  every published frame re-reads the proposal, so successive frames can slide
+  the dock between edges, swap/resize/close the open set; plus the gate rule
+  that data-gv-iq-layout/-share are only read alongside data-gv-iq-spaces
+  (repositioning frames restate the list).
 - 2026-09-21: Added "Spaces beside the frame" — the four dockable spaces
   (Topology, Evidence, Before·After, Architecture), the reader controls (chip
   toggle, three-pane tiling, long-press drag to any edge, keyboard moves,

@@ -196,7 +196,20 @@ involved; they travel inside the same published frame:
 This is **display-only and advisory**. It is honoured only while the reader is
 following the agent, and only until the reader touches a chip, an edge or the
 reset control — a human choice always wins for the rest of the turn. A new
-turn starts fresh, so the next frame may propose again.
+turn clears that veto, so the next turn's frames may propose again.
+
+The proposal is read from **every published frame**, so the agent can also
+**move the spaces while the turn runs**: open the Evidence dock on the right
+during the working phase, publish the next update with
+`data-gv-iq-layout="bottom"` to slide the whole dock under the frame for a
+comparison, swap the open set with a new `data-gv-iq-spaces` list, widen it
+with a larger `data-gv-iq-share`, and finish with `data-gv-iq-spaces=""` to
+hand the full canvas back to the closing frame. Each frame's attributes
+replace the previous proposal; a frame that omits them leaves the current
+arrangement alone. One rule to remember: `data-gv-iq-layout` and
+`data-gv-iq-share` are only read when `data-gv-iq-spaces` is present on the
+same frame — so when repositioning, restate the space list even if it is
+unchanged.
 
 ### Populate the Architecture space
 
