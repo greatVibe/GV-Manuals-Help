@@ -1,7 +1,7 @@
 file: build-agent-iq-metal-layouts.md
 consumers: [GreatVibe users, AI agents, public visual authors]
 produces: [Agent IQ Metal Design System, responsive layout catalogue, reusable public authoring guidance]
-lastModified: 2026-09-20
+lastModified: 2026-09-21
 ---
 # Purpose
 Explain the shared metal/glass visual language and its wide, phone, compact Fold
@@ -31,3 +31,9 @@ preserve viewer control and distinguish measured progress from illustrative data
 
 # Change History
 - 2026-09-20: Created a public design guide with reusable code and layout advice.
+- 2026-09-21: Added the "Advanced graphics with motion" subsection — animated SVG
+  + SMIL is the standard rich-graphics vehicle (reveal-on-land, turning ring,
+  pulsing status dot, self-contained flowing connector) — plus a caveat that
+  isolated script regions are advanced/optional and may be acknowledged yet not
+  visible (prefer SVG). Reframed "Copyable starting code" so the native/animated
+  SVG path leads and the script-region starter is the optional/advanced example.

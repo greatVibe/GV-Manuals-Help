@@ -196,7 +196,9 @@ allocation rules, reduced-motion support and keyboard-accessible controls.
 Choose Wide opening, Work focus, Verify focus or Deliver focus to see the same
 cells move. Resize the browser to compare desktop, phone and Compact Fold.
 
-For authors using a runtime that supports Agent IQ script regions, copy the
+Most frames need no script region: the native SVG example below, and the
+animated-SVG patterns after it, are the standard starting point. For the
+optional, advanced script-region form, on a runtime that supports it, copy the
 `<section data-gv-iq-script="v1" …>` region, including its style and script. Do
 not send the outer `doctype`, `html`, `head` or `body` preview wrapper as an
 activity update. Replace the illustrative text with observed information and
@@ -265,6 +267,66 @@ Native content is sanitized and inert: no script, event handler, form, embedded
 page or remote asset. Use bounded SVG or supported CSS motion only where it helps
 explain active work. Provide a readable static equivalent for reduced motion.
 
+### Advanced graphics with motion
+
+Animated SVG is the standard way to show live movement in an Agent IQ view. It is
+admitted by the host, needs no script region, degrades safely for reduced motion,
+and renders reliably. Use it to show a result arriving, a check in progress or
+data moving between cells — always to explain real work, never as decoration.
+Keep every animated element inside a role block, and author the still first frame
+to read correctly, because a reduced-motion viewer sees exactly that frame with
+the motion stopped.
+
+Reveal a result as it settles into place:
+
+```html
+<g>
+  <animateTransform attributeName="transform" type="translate" from="0 24" to="0 0" dur="0.8s" fill="freeze"/>
+  <!-- the row or card that just became true -->
+</g>
+```
+
+Show honest, unmeasured progress with a turning ring — no invented percentage:
+
+```html
+<g transform="translate(40,40)">
+  <circle r="26" fill="none" stroke="#1d3646" stroke-width="6"/>
+  <circle r="26" fill="none" stroke="#56d9ec" stroke-width="6" stroke-linecap="round" stroke-dasharray="90 200">
+    <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.1s" repeatCount="indefinite"/>
+  </circle>
+</g>
+```
+
+Mark state with a blinking caret or a pulsing dot — amber for active, green for a
+verified result, muted for pending:
+
+```html
+<circle cx="0" cy="0" r="6" fill="#f5b34d">
+  <animate attributeName="opacity" values="1;0.3;1" dur="1.1s" repeatCount="indefinite"/>
+</circle>
+```
+
+Show a relationship, or data moving between cells, with a flowing connector.
+Define the gradient it references so the snippet works on its own:
+
+```html
+<defs>
+  <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#56d9ec" stop-opacity="0"/>
+    <stop offset="0.5" stop-color="#56d9ec" stop-opacity="0.9"/>
+    <stop offset="1" stop-color="#56d9ec" stop-opacity="0"/>
+  </linearGradient>
+</defs>
+<path d="M0 40 C 120 10,240 70,360 40" fill="none" stroke="url(#flow)" stroke-width="2.4" stroke-dasharray="60 320">
+  <animate attributeName="stroke-dashoffset" values="380;0" dur="5.5s" repeatCount="indefinite"/>
+</path>
+```
+
+Compose these into the shape of the task — a before-and-after comparison, a step
+or file list with a status dot on each row, a timeline or a topology. Keep motion
+gentle and purposeful, and remember that green belongs only beside a checked
+result.
+
 ### Optional isolated script region
 
 Interactive examples, local canvas drawings or richer responsive compositions
@@ -290,6 +352,11 @@ parent APIs, network resources, prompts or gvturn functions. A script region is
 therefore suitable for a local illustrative control or renderer, not for fetching
 live application data or issuing commands. An agent must supply authorized,
 observed information through the supported activity update path.
+
+A script region is advanced and optional, not the default. On some runtimes a
+region can be accepted by the browser yet still not become visible, so treat the
+animated SVG above as the first choice and rely on a script region only when the
+update receipt confirms the scripts ran and the view is visible.
 
 ## Find layouts and inspect the current view
 
