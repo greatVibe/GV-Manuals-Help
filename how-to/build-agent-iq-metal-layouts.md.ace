@@ -30,6 +30,14 @@ preserve viewer control and distinguish measured progress from illustrative data
   or fixed number of panels. Respect actual available width and height.
 
 # Change History
+- 2026-09-21: Added "Spaces beside the frame" — the four dockable spaces
+  (Topology, Evidence, Before·After, Architecture), the reader controls (chip
+  toggle, three-pane tiling, long-press drag to any edge, keyboard moves,
+  reset, per-device persistence), the advisory scene-root layout attributes
+  (data-gv-iq-spaces / data-gv-iq-layout / data-gv-iq-share; display-only,
+  honoured while following, human veto until the next turn) and the
+  Architecture-space declaration primitives (data-gv-iq-arch v1 rows with
+  node/kind/heat/deps limits; heat is declared focus, never telemetry).
 - 2026-09-20: Created a public design guide with reusable code and layout advice.
 - 2026-09-21: Added the "Advanced graphics with motion" subsection — animated SVG
   + SMIL is the standard rich-graphics vehicle (reveal-on-land, turning ring,

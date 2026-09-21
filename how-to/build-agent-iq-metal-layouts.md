@@ -153,6 +153,82 @@ Compact Fold, the status stays small and the most useful cell moves next to it.
 The design should follow the work rather than locking every scene to three
 panes, three stages or six equal cards.
 
+## Spaces beside the frame
+
+Alongside the authored frame, the Agent IQ canvas offers four dockable
+**spaces** the reader can open with the chip toolbar in the corner of the
+canvas: **Topology** (how the work is organised right now), **Evidence**
+(observed results collected during the turn), **Before · After** (a
+side-by-side of the change) and **Architecture** (the system as the agent
+declared it, with a this-turn focus heatmap). The **Frame** chip closes them
+all.
+
+The reader stays in control:
+
+- A chip **toggles** its space open or closed; up to three spaces tile
+  intelligently beside the frame, and each pane has its own close control.
+- **Long-press a pane's header and drag** to move the open spaces to any edge
+  of the canvas — right, left, bottom or top. Dropping on another pane's
+  header reorders the two panes. The same moves are available from the
+  keyboard, and a reset control returns the default arrangement.
+- The choice of open spaces, edge and share of the canvas is remembered on
+  the device between turns.
+
+### The agent can propose the arrangement
+
+The authoring agent may suggest which spaces open and where, using three
+optional attributes on the scene root of a normal frame — no new tool is
+involved; they travel inside the same published frame:
+
+```html
+<section data-gv-iq-scene="v1"
+  data-gv-iq-spaces="architecture,evidence"
+  data-gv-iq-layout="right"
+  data-gv-iq-share="0.34"> … </section>
+```
+
+- `data-gv-iq-spaces` — up to three of `topology`, `evidence`, `beforeafter`,
+  `architecture` (comma-separated); an empty value closes all spaces.
+- `data-gv-iq-layout` — the edge to dock on: `top`, `right`, `bottom` or `left`.
+- `data-gv-iq-share` — the fraction of the canvas the spaces take (a decimal
+  such as `0.34`; the canvas clamps it to a readable range).
+
+This is **display-only and advisory**. It is honoured only while the reader is
+following the agent, and only until the reader touches a chip, an edge or the
+reset control — a human choice always wins for the rest of the turn. A new
+turn starts fresh, so the next frame may propose again.
+
+### Populate the Architecture space
+
+The Architecture space draws the system **as the agent knows it**: components
+laid out by dependency (foundations left, consumers right), a kind glyph per
+component, and a four-step heat ramp showing where the agent expects this
+turn's work to land. Populate it with a flat declaration block anywhere in the
+authored frame — the block is treated as data and never shown as frame text:
+
+```html
+<div data-gv-iq-arch="v1">
+  <div data-arch-node="konui" data-arch-kind="ui" data-arch-heat="3"
+       data-arch-deps="gvmesh">Konui dashboard</div>
+  <div data-arch-node="gvmesh" data-arch-kind="service"
+       data-arch-heat="1">gvmesh</div>
+</div>
+```
+
+- `data-arch-node` — a short id (letter first, up to 32 characters). Up to 12
+  components are drawn per declaration.
+- `data-arch-kind` — one of `ui`, `service`, `data`, `infra`, `agent`, `test`.
+- `data-arch-heat` — `0` to `3`, the **declared** focus for this turn. Hot
+  components (`3`) pulse gently. Say where the work will go; the space itself
+  labels heat as the agent's declaration, never as measured telemetry.
+- `data-arch-deps` — up to six comma-separated ids of other declared
+  components. Unknown or self references are dropped.
+
+A frame **without** a new declaration keeps the previous model, so you can
+re-declare heat as work moves and the map cools and warms across the turn.
+Opening the space before any declaration shows this primitives cheat-sheet in
+place, so the contract is discoverable from the canvas itself.
+
 ## Honest state, progress and evidence
 
 Start with a stage such as “Starting” or “Waiting for an update” when no measured

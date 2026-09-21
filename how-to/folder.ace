@@ -1,4 +1,5 @@
 file: how-to/
+lastModified-agent-iq-spaces: 2026-09-21 — build-agent-iq-metal-layouts.md gains "Spaces beside the frame": the four dockable spaces, viewer controls, advisory scene-root layout attributes and the Architecture-space declaration primitives.
 lastModified-agent-iq-metal: 2026-09-20 — Adds build-agent-iq-metal-layouts.md for users and agents authoring responsive, evidence-led Agent IQ visuals.
 consumers: [GreatVibe users, Mochi agents]
 produces: [task-oriented public guides]
