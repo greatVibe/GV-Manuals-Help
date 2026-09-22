@@ -210,6 +210,26 @@ involved; they travel inside the same published frame:
   `top`, `right`, `bottom` or `left`.
 - `data-gv-iq-share` — the fraction of the canvas the docks take (a decimal
   such as `0.34`; the canvas clamps it to a readable range).
+- `data-gv-iq-spaces-compact` / `data-gv-iq-hero-compact` — a **second
+  arrangement for small screens**, same grammar as the base pair and read only
+  when the base `data-gv-iq-spaces` is also present. A canvas that *measures*
+  compact (a short or narrow band — phones, or a folding phone's main screen
+  with the Interactions drawer open) applies the compact pair instead of the
+  base pair; desktop and roomy canvases read the base pair unchanged. Put your
+  full arrangement in the base tags and the ONE most important space in the
+  compact tags. If a frame has no compact tags, a compact canvas keeps things
+  readable on its own: a multi-space proposal opens only the hero (else the
+  first space) and the remaining chips glow so one tap opens them.
+- `data-gv-iq-mainview` — `off` hides the main view so the open space(s) fill
+  the whole canvas (an explicit hero, else the first open space, takes the
+  primary zone); `on` restores it. It needs at least one open space and obeys
+  the same follow-and-veto rules. Use it when a space *is* the story.
+
+Two automatic behaviours support this on phones — no attributes needed: the
+space chips move into their own reserved lane at the foot of a compact canvas
+(they never sit on pane content), and an ultra-short canvas (for example while
+the on-screen keyboard is open) temporarily hides the main view so the hero
+space fits — the frame returns by itself as soon as the canvas grows back.
 
 This is **display-only and advisory**. It is honoured only while the reader is
 following the agent, and only until the reader touches a chip, an edge or the

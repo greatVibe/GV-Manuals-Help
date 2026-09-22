@@ -1,4 +1,5 @@
 file: build-agent-iq-metal-layouts.md
+lastModified-form-factor-signalling: 2026-09-22 — Arrangement section gains the small-screen controls in public language: data-gv-iq-spaces-compact / data-gv-iq-hero-compact (second arrangement for phones/folding mains, read only beside the base pair; without them compact screens open just the hero and glow the remaining chips), data-gv-iq-mainview="off|on" (spaces own the whole canvas), and the two automatic phone behaviours (chips in their own foot lane; ultra-short canvases such as keyboard-open temporarily hide the main view and restore it automatically). No private paths or internals named.
 consumers: [GreatVibe users, AI agents, public visual authors]
 produces: [Agent IQ Metal Design System, responsive layout catalogue, reusable public authoring guidance]
 lastModified: 2026-09-21
