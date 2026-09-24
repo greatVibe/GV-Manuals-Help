@@ -186,6 +186,26 @@ The reader stays in control:
   closed, on "autopilot" — the agent's opening frame (or your own taps)
   decides what this turn shows. Nothing lingers from the previous turn.
 
+### Fullscreen and Auto, by touch or mouse
+
+Use an empty background in the main view or a space, not a file or button:
+
+| Gesture | What it does |
+|---------|--------------|
+| Single click/tap | Show only that view fullscreen; repeat the single gesture to return |
+| Double click/tap | Show the whole canvas fullscreen; repeat the double gesture to return |
+| Long-press | Toggle agent auto-layout, just like the Auto pill |
+
+Turn end releases either fullscreen mode. AI messages, the Interactions drawer,
+blur, resizing and Escape do not close it. Interactive files, buttons, links and
+inputs keep their normal actions: touching a file inspects its evidence, and
+does not also fullscreen the canvas. Header drag handles remain layout controls.
+
+**Auto off** stops the agent rearranging your spaces; it does not stop live
+activity or file evidence. **Auto on** applies the latest arrangement the agent
+proposed. Manually changing chips, positions, hero or reset pauses Auto until you
+explicitly turn it on again. The agent cannot resume arranging from silence.
+
 ### The agent can propose the arrangement
 
 The authoring agent may suggest which spaces open and where, using three
@@ -234,9 +254,9 @@ the on-screen keyboard is open) temporarily hides the main view so the hero
 space fits — the frame returns by itself as soon as the canvas grows back.
 
 This is **display-only and advisory**. It is honoured only while the reader is
-following the agent, and only until the reader touches a chip, an edge or the
-reset control — a human choice always wins for the rest of the turn. A new
-turn clears that veto, so the next turn's frames may propose again.
+following the agent with Auto enabled. Manual layout changes pause Auto until
+the reader explicitly re-enables it; the latest proposal is retained meanwhile,
+and the native live data keeps updating. A new turn also starts with Auto enabled.
 
 The proposal is read from **every published frame**, so the agent can also
 **move the spaces while the turn runs**: open the Evidence dock on the right
@@ -355,8 +375,8 @@ A short playbook that turns the mechanics above into good turns:
   whole canvas back with an empty spaces list. Remember to restate the spaces
   list on any frame that repositions.
 - **The reader always wins.** Any chip tap, drag, ⛶ or reset overrides your
-  proposals for the rest of the turn — treat that as steering, not failure,
-  and keep declaring the model so their chosen layout stays fed.
+  proposals until the reader explicitly enables Auto again — treat that as
+  steering, not failure, and keep declaring the model so their layout stays fed.
 
 ## Honest state, progress and evidence
 
