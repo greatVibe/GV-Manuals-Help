@@ -31,5 +31,7 @@ find task guidance without reading internal implementation docs.
   should reference private overlays rather than storing real hashes directly.
 
 # Change History
+- 2026-09-24: Public Agent IQ guidance now covers the Files space and local-node
+  orientation.
 - 2026-08-03: Added public help spine folders, catalogue, starter docs, and
   structured video catalogue guidance.

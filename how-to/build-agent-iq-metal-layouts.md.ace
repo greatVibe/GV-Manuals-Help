@@ -54,7 +54,7 @@ preserve viewer control and distinguish measured progress from illustrative data
   that data-gv-iq-layout/-share are only read alongside data-gv-iq-spaces
   (repositioning frames restate the list).
 - 2026-09-21: Added "Spaces beside the frame" — the four dockable spaces
-  (Topology, Evidence, Before·After, Architecture), the reader controls (chip
+  (Topology, Evidence, Files, Before·After, Architecture), the reader controls (chip
   toggle, three-pane tiling, long-press drag to any edge, keyboard moves,
   reset, per-device persistence), the advisory scene-root layout attributes
   (data-gv-iq-spaces / data-gv-iq-layout / data-gv-iq-share; display-only,
@@ -68,3 +68,7 @@ preserve viewer control and distinguish measured progress from illustrative data
   isolated script regions are advanced/optional and may be acknowledged yet not
   visible (prefer SVG). Reframed "Copyable starting code" so the native/animated
   SVG path leads and the script-region starter is the optional/advanced example.
+- 2026-09-24: Add the Files space, keep-live guidance for file/node work,
+  Quick Access node colours and the local “this node” label.
+- 2026-09-24b: Add newest-first mobile ordering and inline quick-diff behavior
+  for written files with observed edit evidence.

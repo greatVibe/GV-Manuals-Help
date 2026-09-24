@@ -155,10 +155,11 @@ panes, three stages or six equal cards.
 
 ## Spaces beside the frame
 
-Alongside the authored frame, the Agent IQ canvas offers four dockable
+Alongside the authored frame, the Agent IQ canvas offers five dockable
 **spaces** the reader can open with the chip toolbar in the corner of the
 canvas: **Topology** (how the work is organised right now), **Evidence**
-(observed results collected during the turn), **Before · After** (a
+(observed results collected during the turn), **Files** (the live file and node
+activity tree), **Before · After** (a
 side-by-side of the change) and **Architecture** (the system as the agent
 declared it, with a this-turn focus heatmap). The **Main view** chip closes
 them all, returning the canvas to the agent's main frame.
@@ -192,14 +193,14 @@ involved; they travel inside the same published frame:
 
 ```html
 <section data-gv-iq-scene="v1"
-  data-gv-iq-spaces="architecture,evidence@bottom"
+  data-gv-iq-spaces="architecture,files@right,evidence@bottom"
   data-gv-iq-hero="architecture"
   data-gv-iq-layout="right"
   data-gv-iq-share="0.34"> … </section>
 ```
 
-- `data-gv-iq-spaces` — up to three of `topology`, `evidence`, `beforeafter`,
-  `architecture` (comma-separated); an empty value closes all spaces. Each
+- `data-gv-iq-spaces` — up to three of `topology`, `evidence`, `files`,
+  `beforeafter`, `architecture` (comma-separated); an empty value closes all spaces. Each
   entry may carry its own edge with `@top`/`@right`/`@bottom`/`@left`
   (`evidence@bottom`) to split that space onto its own dock; a bare name uses
   the default edge.
@@ -248,6 +249,29 @@ arrangement alone. One rule to remember: `data-gv-iq-layout` and
 `data-gv-iq-share` are only read when `data-gv-iq-spaces` is present on the
 same frame — so when repositioning, restate the space list even if it is
 unchanged.
+
+### Keep the Files space current
+
+Files fills itself from operations observed during the running turn. Reads are
+green, writes are red, cache reads are orange only when cache provenance is
+explicit, and node references use the same human name and colour as Quick
+Access. Local filesystem work has its own `node name — this node` pill, so you
+can immediately tell local paths from activity on another node.
+
+The newest observed file activity is always at the top and the oldest is at the
+bottom, keeping current work visible in a phone-sized pane. When a written file
+has edit evidence in the turn eventlog, its row is touch, click and keyboard
+expandable and opens a bounded inline quick diff. If the write event did not
+carry old/new text, a patch hunk or new-file content, the row does not pretend a
+diff is available.
+
+Do not type file rows into the frame and do not guess cache hits from speed or
+repetition. If files or nodes are central to the request, include `files` in the
+opening proposal and keep it open through work and verification; its native
+eventlog feed updates while the turn runs. A later frame can omit the arrangement
+attributes to leave it where it is. Move or close it only when the task reaches
+a real phase boundary. On a compact code-review, build or audit turn, Files is a
+strong single hero.
 
 ### Populate the Architecture space
 
@@ -304,6 +328,10 @@ A short playbook that turns the mechanics above into good turns:
   `data-gv-iq-spaces="architecture,evidence@bottom"` with
   `data-gv-iq-hero="architecture"` is a strong default: the model gets the big
   canvas, evidence stays glanceable, and the frame reads fine as a strip.
+- **Keep Files live for file and node work.** It refreshes from observed
+  running-turn activity without authored rows. It keeps newest work at the top
+  and offers eventlog-backed quick diffs on written rows. Leave it open through
+  verification and move or close it only at a real phase boundary.
 - **Split to monitor, hero to read.** A three-way split is great when each
   pane only needs a glance; a dense model or comparison deserves the hero
   zone. Don't leave an 8-component map squeezed into a side strip.
