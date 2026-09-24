@@ -159,10 +159,11 @@ Alongside the authored frame, the Agent IQ canvas offers five dockable
 **spaces** the reader can open with the chip toolbar in the corner of the
 canvas: **Topology** (how the work is organised right now), **Evidence**
 (observed results collected during the turn), **Files** (the live file and node
-activity tree), **Before · After** (a
+activity map), **Before · After** (a
 side-by-side of the change) and **Architecture** (the system as the agent
-declared it, with a this-turn focus heatmap). The **Main view** chip closes
-them all, returning the canvas to the agent's main frame.
+declared it, with a this-turn focus heatmap). The **Main view** chip hides or
+restores the agent's main frame while keeping the open spaces. Close an
+individual space with its own chip or close control.
 
 The reader stays in control:
 
@@ -258,12 +259,25 @@ explicit, and node references use the same human name and colour as Quick
 Access. Local filesystem work has its own `node name — this node` pill, so you
 can immediately tell local paths from activity on another node.
 
-The newest observed file activity is always at the top and the oldest is at the
-bottom, keeping current work visible in a phone-sized pane. When a written file
-has edit evidence in the turn eventlog, its row is touch, click and keyboard
-expandable and opens a bounded inline quick diff. If the write event did not
-carry old/new text, a patch hunk or new-file content, the row does not pretend a
-diff is available.
+Files uses a connected activity map instead of a deep folder tree. The newest
+filename is prominent even in a short pane. Recent activity is newest-first;
+touch, click or use the keyboard to select a file and inspect its path and
+available evidence. Fullscreen gives the map and details more room on phone and
+desktop. The connections show which node the file belongs to, not guessed
+dependencies between files. The map shows a small recent sample; **Activity**
+provides the remaining retained files in newest-first order. This is a bounded
+view of the turn, not a complete filesystem browser. Shortened labels do not change a file's identity,
+and the same filename on another node remains a separate object.
+
+Brief pulses mark newly observed activity; they do not claim that old work is
+still running. Reduced-motion settings keep the same information without the
+animation. New activity should not steal a file selection you are reading.
+
+A quick diff appears only for a confirmed successful write with matching edit
+evidence. The preview is a bounded excerpt of that operation, not a new read of
+the filesystem or a complete repository diff. Pending or failed attempts are not presented as completed
+changes. If success or edit evidence is unavailable, Files does not invent a
+diff. Names, paths and preview content are displayed as text, never executed.
 
 Do not type file rows into the frame and do not guess cache hits from speed or
 repetition. If files or nodes are central to the request, include `files` in the
@@ -330,7 +344,7 @@ A short playbook that turns the mechanics above into good turns:
   canvas, evidence stays glanceable, and the frame reads fine as a strip.
 - **Keep Files live for file and node work.** It refreshes from observed
   running-turn activity without authored rows. It keeps newest work at the top
-  and offers eventlog-backed quick diffs on written rows. Leave it open through
+  and offers bounded quick diffs for confirmed writes with edit evidence. Leave it open through
   verification and move or close it only at a real phase boundary.
 - **Split to monitor, hero to read.** A three-way split is great when each
   pane only needs a glance; a dense model or comparison deserves the hero

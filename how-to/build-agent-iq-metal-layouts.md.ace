@@ -1,4 +1,6 @@
 file: build-agent-iq-metal-layouts.md
+lastModified-files-map: 2026-09-24 — Explain the responsive activity map, newest-first file access, reader-held selection, observed-event motion/reduced motion and honest quick-diff availability in public-safe language.
+lastModified-files-map-review: 2026-09-24 — Correct Main view to a show/hide toggle that preserves open spaces; distinguish the visible map sample from Activity's bounded recent history and quick-diff excerpts.
 lastModified-form-factor-signalling: 2026-09-22 — Arrangement section gains the small-screen controls in public language: data-gv-iq-spaces-compact / data-gv-iq-hero-compact (second arrangement for phones/folding mains, read only beside the base pair; without them compact screens open just the hero and glow the remaining chips), data-gv-iq-mainview="off|on" (spaces own the whole canvas), and the two automatic phone behaviours (chips in their own foot lane; ultra-short canvases such as keyboard-open temporarily hide the main view and restore it automatically). No private paths or internals named.
 consumers: [GreatVibe users, AI agents, public visual authors]
 produces: [Agent IQ Metal Design System, responsive layout catalogue, reusable public authoring guidance]
