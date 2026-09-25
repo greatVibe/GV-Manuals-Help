@@ -1,4 +1,5 @@
 file: how-to/
+lastModified-lifecycle-space-parity: 2026-09-25 — Public Agent IQ guidance covers Git, Patterns and CI/CD as evidence-led peers with practical selection and responsive reading guidance.
 lastModified-agent-iq-spaces: 2026-09-21 — build-agent-iq-metal-layouts.md gains "Spaces beside the frame": the four dockable spaces, viewer controls, advisory scene-root layout attributes and the Architecture-space declaration primitives.
 lastModified-agent-iq-metal: 2026-09-20 — Adds build-agent-iq-metal-layouts.md for users and agents authoring responsive, evidence-led Agent IQ visuals.
 consumers: [GreatVibe users, Mochi agents]
@@ -41,8 +42,8 @@ Practical task guides that help users get useful work done safely.
   intended for public users.
 
 # Change History
-- 2026-09-25: Public Agent IQ guidance adds the live Tests space, rich observed
-  output, and test-run priority lifecycle.
+- 2026-09-25: Public Agent IQ guidance adds the live Tests space as an
+  evidence-selected peer and explains richer Patterns code-intelligence views.
 - 2026-09-24: Agent IQ layout guidance adds the live Files space and shared node
   identity conventions.
 - 2026-08-03: Added practical guide for choosing gvturn footer actions.

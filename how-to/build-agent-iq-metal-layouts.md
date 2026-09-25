@@ -155,13 +155,16 @@ panes, three stages or six equal cards.
 
 ## Spaces beside the frame
 
-Alongside the authored frame, the Agent IQ canvas offers six dockable
+Alongside the authored frame, the Agent IQ canvas offers nine dockable
 **spaces** the reader can open with the chip toolbar in the corner of the
 canvas: **Topology** (how the work is organised right now), **Evidence**
 (observed results collected during the turn), **Files** (the live file and node
-activity map), **Tests** (test plans, live output and verified results), **Before · After** (a
-side-by-side of the change) and **Architecture** (the system as the agent
-declared it, with a this-turn focus heatmap). The **Main view** chip hides or
+activity map), **Tests** (test plans, live output and verified results), **Git**
+(repository state, dirty files and bounded patches), **Patterns**
+(evidence-linked conceptual and algorithmic structure), **CI/CD** (delivery
+runs, stages and observed progress), **Before · After** (a side-by-side of the
+change) and **Architecture** (the system as the agent declared it, with a
+this-turn focus heatmap). The **Main view** chip hides or
 restores the agent's main frame while keeping the open spaces. Close an
 individual space with its own chip or close control.
 
@@ -220,8 +223,9 @@ involved; they travel inside the same published frame:
   data-gv-iq-share="0.34"> … </section>
 ```
 
-- `data-gv-iq-spaces` — up to three of `topology`, `evidence`, `files`, `tests`,
-  `beforeafter`, `architecture` (comma-separated); an empty value closes all spaces. Each
+- `data-gv-iq-spaces` — up to three of `topology`, `evidence`, `files`,
+  `tests`, `git`, `patterns`, `cicd`, `beforeafter`, `architecture`
+  (comma-separated); an empty value closes all spaces. Each
   entry may carry its own edge with `@top`/`@right`/`@bottom`/`@left`
   (`evidence@bottom`) to split that space onto its own dock; a bare name uses
   the default edge.
@@ -271,6 +275,27 @@ arrangement alone. One rule to remember: `data-gv-iq-layout` and
 same frame — so when repositioning, restate the space list even if it is
 unchanged.
 
+### Choose the space that matches the work
+
+All nine spaces have equal priority. No space, including Tests, is shown just
+because a turn started. The agent should choose the opening arrangement and
+single compact hero from the current goal and evidence:
+
+| Space | Best fit |
+|-------|----------|
+| Topology | Workers and relationships across components |
+| Evidence | Receipts, claims and verification artifacts |
+| Files | Live file/node activity and confirmed write evidence |
+| Tests | The active test/check path |
+| Git | Branch, dirty files, ahead/behind and patch review |
+| Patterns | Recognized code patterns and algorithms with evidence, fit and trade-offs |
+| CI/CD | Delivery runs, pipeline stages and observed progress |
+| Before · After | A concrete comparison |
+| Architecture | The declared system and dependency map |
+
+Keep the chosen space open while it is the critical path, then switch only at a
+real phase boundary. Your manual layout and Auto setting still take priority.
+
 ### Follow test runs in Tests
 
 Tests fills itself from observed test and check commands. A run can appear as
@@ -279,13 +304,11 @@ bounded progress receipts, and passed, failed or blocked results and counts are
 shown only after terminal evidence arrives. The agent does not type results into
 the frame or infer a pass from silence.
 
-When a test is planned, starts or is already running, the agent should put
-`tests` in the next arrangement and keep it open until the terminal result. On a
-phone or short Fold allocation, Tests should be the one compact space and hero
-so the live result remains readable. The pane updates as recognized receipts
-arrive; after the terminal result is recorded, Evidence or Files can become the
-dominant space for review. Your manual arrangement and Auto setting still take
-priority.
+When a test run is the most important current evidence, the agent should put
+`tests` in the next arrangement and keep it open until the terminal result.
+On a phone or short Fold allocation, Tests can be the one compact space and hero
+when that makes the critical path clearest. The pane updates as recognized
+receipts arrive. Your manual arrangement and Auto setting still take priority.
 
 Observed output recognizes common source and configuration formats for syntax
 highlighting, shows additions and removals distinctly, and formats Markdown/ACE
@@ -329,6 +352,78 @@ eventlog feed updates while the turn runs. A later frame can omit the arrangemen
 attributes to leave it where it is. Move or close it only when the task reaches
 a real phase boundary. On a compact code-review, build or audit turn, Files is a
 strong single hero.
+
+### Review dirty repositories in Git
+
+Git is read-only: the space shows sampled repository truth and never runs a Git
+command. Select a repository to see its branch, clean/dirty state, observed
+ahead/behind values and changed-file count. Dirty repositories can expose a
+bounded list of files. The changed-file count reflects the full deduplicated
+bounded sample even when the interactive list is capped. Staged, unstaged,
+untracked and conflicted states remain distinct even when one path appears in
+more than one source list.
+
+Select a file to read its bounded observed diff, patch or preview. If no patch
+was supplied by the sample, Git says it is unavailable instead of reading the
+working tree or inventing one. New samples preserve the selected repository and
+file when they still exist. Unknown remote values remain unknown rather than
+looking like zero.
+
+### Explain structure in Patterns
+
+Patterns should call out a recognizable software pattern, computer-science
+concept or algorithm that is actually present in the code. It is agent analysis
+tied to exact evidence, not measured telemetry or an automatic static-analysis
+verdict. Name the pattern in the row text, then supply:
+
+- exact code references in `data-pattern-evidence`;
+- a short “why it fits” explanation in `data-pattern-fit`;
+- the functions, types or modules playing the roles in
+  `data-pattern-participants`;
+- honest costs or limitations in `data-pattern-tradeoffs`;
+- useful time, space or operational constraints in `data-pattern-complexity`.
+
+Use `data-pattern-shape`, `data-pattern-signal` and
+`data-pattern-concepts` to select the right representation. Tree-like
+algorithms become branches; state machines and event loops become cycles;
+dynamic programming becomes a matrix; map/reduce and producer/consumer become
+fans; graph and observer structures become networks; layered and hexagonal
+architecture keep those forms; other patterns use an ordered flow.
+
+```html
+<div data-gv-iq-patterns="v1">
+  <div data-pattern-id="memoized-search" data-pattern-kind="algorithm"
+    data-pattern-state="recognized" data-pattern-repo="catalog-service"
+    data-pattern-shape="dynamic-programming" data-pattern-signal="invariant"
+    data-pattern-evidence="src/search.ts:lookup;tests/search.test.ts:memoizes"
+    data-pattern-fit="Overlapping subproblems reuse results by normalized key."
+    data-pattern-participants="lookup;cache;key normalizer"
+    data-pattern-tradeoffs="Extra memory;cache invalidation"
+    data-pattern-complexity="time O(states);space O(states)"
+    data-pattern-concepts="state;transition;memo">Memoized search</div>
+</div>
+```
+
+The selected showcase keeps the diagram dominant and groups fit, participants,
+evidence, trade-offs and complexity around it. When concept labels are missing,
+safe algorithmic defaults supply useful vocabulary. The visible label remains
+**Agent analysis · evidence linked**. History is keyed by node, repository,
+stable id and exact evidence so unrelated code is never merged.
+
+### Follow delivery in CI/CD
+
+CI/CD combines correlated receipts from AWS, Azure, Google, GitHub, GitLab,
+Jenkins and on-prem tools. Select a run to see a graphical pipeline: named stage
+nodes connected in order, each coloured from its observed state. A progress bar
+appears only when the stage total is known, and counts only terminal stages; no
+missing stage or duration is guessed.
+
+The normalizer understands provider-native nesting, including AWS stage names
+outside `latestExecution`, Azure terminal `result` fields and GitHub job
+`conclusion` fields. Not-started stays queued, and deployment scripts with
+suffixes such as `deploy-prod.sh` count as on-prem delivery. If a receipt is
+terminal but has no stage detail, the pane says so and keeps the missing stages
+unknown.
 
 ### Populate the Architecture space
 
@@ -385,6 +480,9 @@ A short playbook that turns the mechanics above into good turns:
   `data-gv-iq-spaces="architecture,evidence@bottom"` with
   `data-gv-iq-hero="architecture"` is a strong default: the model gets the big
   canvas, evidence stays glanceable, and the frame reads fine as a strip.
+- **Treat all nine spaces as peers.** Use the current goal and observed evidence,
+  not a fixed Tests-first order. Git, Patterns, CI/CD or any other space can be
+  the compact hero when it best explains the current critical path.
 - **Keep Files live for file and node work.** It refreshes from observed
   running-turn activity without authored rows. It keeps newest work at the top
   and offers bounded quick diffs for confirmed writes with edit evidence. Leave it open through
