@@ -155,11 +155,11 @@ panes, three stages or six equal cards.
 
 ## Spaces beside the frame
 
-Alongside the authored frame, the Agent IQ canvas offers five dockable
+Alongside the authored frame, the Agent IQ canvas offers six dockable
 **spaces** the reader can open with the chip toolbar in the corner of the
 canvas: **Topology** (how the work is organised right now), **Evidence**
 (observed results collected during the turn), **Files** (the live file and node
-activity map), **Before · After** (a
+activity map), **Tests** (test plans, live output and verified results), **Before · After** (a
 side-by-side of the change) and **Architecture** (the system as the agent
 declared it, with a this-turn focus heatmap). The **Main view** chip hides or
 restores the agent's main frame while keeping the open spaces. Close an
@@ -220,7 +220,7 @@ involved; they travel inside the same published frame:
   data-gv-iq-share="0.34"> … </section>
 ```
 
-- `data-gv-iq-spaces` — up to three of `topology`, `evidence`, `files`,
+- `data-gv-iq-spaces` — up to three of `topology`, `evidence`, `files`, `tests`,
   `beforeafter`, `architecture` (comma-separated); an empty value closes all spaces. Each
   entry may carry its own edge with `@top`/`@right`/`@bottom`/`@left`
   (`evidence@bottom`) to split that space onto its own dock; a bare name uses
@@ -271,6 +271,28 @@ arrangement alone. One rule to remember: `data-gv-iq-layout` and
 same frame — so when repositioning, restate the space list even if it is
 unchanged.
 
+### Follow test runs in Tests
+
+Tests fills itself from observed test and check commands. A run can appear as
+queued or running after an observed start; live output is added only from
+bounded progress receipts, and passed, failed or blocked results and counts are
+shown only after terminal evidence arrives. The agent does not type results into
+the frame or infer a pass from silence.
+
+When a test is planned, starts or is already running, the agent should put
+`tests` in the next arrangement and keep it open until the terminal result. On a
+phone or short Fold allocation, Tests should be the one compact space and hero
+so the live result remains readable. The pane updates as recognized receipts
+arrive; after the terminal result is recorded, Evidence or Files can become the
+dominant space for review. Your manual arrangement and Auto setting still take
+priority.
+
+Observed output recognizes common source and configuration formats for syntax
+highlighting, shows additions and removals distinctly, and formats Markdown/ACE
+headings, lists, emphasis, inline code and quotes. JSON is highlighted too.
+Unknown and unsupported formats stay readable as literal text. Output is
+bounded, links are not activated and receipt content is never executed.
+
 ### Keep the Files space current
 
 Files fills itself from operations observed during the running turn. Reads are
@@ -294,7 +316,8 @@ still running. Reduced-motion settings keep the same information without the
 animation. New activity should not steal a file selection you are reading.
 
 A quick diff appears only for a confirmed successful write with matching edit
-evidence. The preview is a bounded excerpt of that operation, not a new read of
+evidence. Native write completion can include a bounded, redacted patch or
+content excerpt for this purpose. The preview is a bounded excerpt of that operation, not a new read of
 the filesystem or a complete repository diff. Pending or failed attempts are not presented as completed
 changes. If success or edit evidence is unavailable, Files does not invent a
 diff. Names, paths and preview content are displayed as text, never executed.

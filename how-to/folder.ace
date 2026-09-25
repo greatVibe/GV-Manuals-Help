@@ -41,6 +41,8 @@ Practical task guides that help users get useful work done safely.
   intended for public users.
 
 # Change History
+- 2026-09-25: Public Agent IQ guidance adds the live Tests space, rich observed
+  output, and test-run priority lifecycle.
 - 2026-09-24: Agent IQ layout guidance adds the live Files space and shared node
   identity conventions.
 - 2026-08-03: Added practical guide for choosing gvturn footer actions.
