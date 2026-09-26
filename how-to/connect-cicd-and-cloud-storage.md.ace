@@ -1,0 +1,29 @@
+file: connect-cicd-and-cloud-storage.md
+consumers: [GreatVibe users, Mochi agents, support writers]
+produces: [public steps to connect CI/CD platforms and object storage]
+---
+# Purpose
+Walks a user through credential, connector, health check and first use for
+CI/CD platforms and object storage (S3, Azure Blob, GCS, S3-compatible).
+
+# Key Sections
+- Credential types and scopes per service.
+- Plain-language prompts to add connectors from templates.
+- Health check results.
+- CI/CD and storage example asks; Agent IQ CI/CD space.
+- Tips: one CI/CD source per account, bucket-scoped keys, settings replace on
+  update, AWS account pin, secrets out of settings.
+
+# Dependencies
+- `../reference/connector-template-types.md`
+- `../concepts/what-is-a-connector.md`
+- `add-aws-credential.md`
+
+# Gotchas
+- Rewritten fresh. Examples use example.com and placeholder names only. No
+  account numbers, node IDs, internal routes or environment variable names.
+- "Updating settings replaces them" reflects whole-map metadata replacement on
+  connector update.
+
+# Change History
+- 2026-09-26: Created CI/CD and cloud storage connection guide.

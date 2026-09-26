@@ -1,0 +1,25 @@
+file: what-is-a-connector.md
+consumers: [GreatVibe users, Mochi agents, support writers]
+produces: [plain-language connector explanation]
+---
+# Purpose
+Explains a GreatVibe connector in user-facing terms: what it holds, where it
+lives, status values, templates and categories.
+
+# Key Sections
+- What a connector holds.
+- Where connectors live (node-owned).
+- Status values.
+- Templates and categories (incl. CI/CD and object storage).
+- Safety.
+
+# Dependencies
+- `../how-to/connect-cicd-and-cloud-storage.md`
+- `../reference/connector-template-types.md`
+
+# Gotchas
+- Rewritten fresh from private engineering docs. No storage paths, internal
+  routes, probe internals, account IDs or node IDs.
+
+# Change History
+- 2026-09-26: Created connector concept guide.

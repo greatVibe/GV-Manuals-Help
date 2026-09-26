@@ -25,6 +25,7 @@ Practical task guides that help users get useful work done safely.
 - `add-codex-oauth-credential.md`
 - `add-aws-credential.md`
 - `connect-a-private-github-repository.md`
+- `connect-cicd-and-cloud-storage.md`
 - `check-eventlog-in-dashboard-console.md`
 - `manage-organizations-meshes-and-nodes.md`
 - `set-your-profile-picture.md`
@@ -42,6 +43,8 @@ Practical task guides that help users get useful work done safely.
   intended for public users.
 
 # Change History
+- 2026-09-26: Added connect-cicd-and-cloud-storage.md (CI/CD and object
+  storage connectors) and linked it from the template guide.
 - 2026-09-25: Public Agent IQ guidance adds the live Tests space as an
   evidence-selected peer and explains richer Patterns code-intelligence views.
 - 2026-09-24: Agent IQ layout guidance adds the live Files space and shared node

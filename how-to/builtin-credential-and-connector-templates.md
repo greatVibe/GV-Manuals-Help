@@ -62,6 +62,9 @@ Before saving a credential or connector from a template, check:
 
 ## Related Guides
 
+- `../concepts/what-is-a-connector.md`
+- `connect-cicd-and-cloud-storage.md`
+- `../reference/connector-template-types.md`
 - `add-ai-agent-credential.md`
 - `add-github-credential.md`
 - `../reference/public-safety-rules.md`

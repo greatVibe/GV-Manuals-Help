@@ -12,6 +12,7 @@ Stable reference docs for public vocabulary and safety rules.
 - `glossary.md`
 - `public-safety-rules.md`
 - `dashboard-console-elements.md`
+- `connector-template-types.md`
 
 # Dependencies
 - `../SANITIZATION.md` for publication rules.
@@ -20,4 +21,5 @@ Stable reference docs for public vocabulary and safety rules.
 - Keep definitions short and public-safe.
 
 # Change History
+- 2026-09-26: Added connector template type reference.
 - 2026-08-03: Created reference section.

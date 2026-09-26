@@ -1,0 +1,23 @@
+file: connector-template-types.md
+consumers: [GreatVibe users, Mochi agents, support writers]
+produces: [public list of built-in connector templates by category]
+---
+# Purpose
+Public reference of built-in connector templates: CI/CD, object storage, AI,
+cloud, data, web API and other templates with credential type, check and
+settings.
+
+# Key Sections
+- CI/CD (7), Object Storage (4), AI, Cloud, Data, Web APIs, Other.
+
+# Dependencies
+- Template list mirrors what `connector_templates` returns on a node (38 as of
+  2026-09-26). Update when templates are added or removed.
+
+# Gotchas
+- Settings names (`region`, `bucket`, `container`, `endpoint`, `account`) are
+  user-entered connector settings, safe to publish. Do not add internal
+  environment variables, probe commands verbatim, routes or account numbers.
+
+# Change History
+- 2026-09-26: Created template type reference (38 templates).
