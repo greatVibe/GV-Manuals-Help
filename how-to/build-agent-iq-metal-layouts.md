@@ -155,7 +155,7 @@ panes, three stages or six equal cards.
 
 ## Spaces beside the frame
 
-Alongside the authored frame, the Agent IQ canvas offers nine dockable
+Alongside the authored frame, the Agent IQ canvas offers fifteen dockable
 **spaces** the reader can open with the chip toolbar in the corner of the
 canvas: **Topology** (how the work is organised right now), **Evidence**
 (observed results collected during the turn), **Files** (the live file and node
@@ -164,7 +164,11 @@ activity map), **Tests** (test plans, live output and verified results), **Git**
 (evidence-linked engineering observations about the code), **CI/CD** (delivery
 runs, stages and observed progress), **Before · After** (a side-by-side of the
 change) and **Architecture** (the system as the agent declared it, with a
-this-turn focus heatmap). The **Main view** chip hides or
+this-turn focus heatmap), **Support** (support-request work), **Builds**
+(compiles and releases), **Docs** (developer and user documentation),
+**Security** (security checks and standards-backed findings), **IaC**
+(infrastructure plans and changes) and **Sleeping** (long waits and background
+work). The **Main view** chip hides or
 restores the agent's main frame while keeping the open spaces. Close an
 individual space with its own chip or close control.
 
@@ -206,7 +210,9 @@ does not also fullscreen the canvas. Header drag handles remain layout controls.
 
 **Auto off** stops the agent rearranging your spaces; it does not stop live
 activity or file evidence. **Auto on** applies the latest arrangement the agent
-proposed. Manually changing chips, positions, hero or reset pauses Auto until you
+proposed and can promote operational spaces when their observed evidence becomes
+important. Failures and critical findings lead, then active work, then completed
+evidence; the layout does not rotate on a timer. Manually changing chips, positions, hero or reset pauses Auto until you
 explicitly turn it on again. The agent cannot resume arranging from silence.
 
 ### The agent can propose the arrangement
@@ -224,7 +230,8 @@ involved; they travel inside the same published frame:
 ```
 
 - `data-gv-iq-spaces` — up to three of `topology`, `evidence`, `files`,
-  `tests`, `git`, `patterns`, `cicd`, `beforeafter`, `architecture`
+  `tests`, `git`, `patterns`, `cicd`, `beforeafter`, `architecture`, `support`,
+  `builds`, `docs`, `security`, `iac`, `sleeping`
   (comma-separated); an empty value closes all spaces. Each
   entry may carry its own edge with `@top`/`@right`/`@bottom`/`@left`
   (`evidence@bottom`) to split that space onto its own dock; a bare name uses
@@ -277,7 +284,7 @@ unchanged.
 
 ### Choose the space that matches the work
 
-All nine spaces have equal priority. No space, including Tests, is shown just
+All fifteen spaces have equal priority. No space, including Tests, is shown just
 because a turn started. The agent should choose the opening arrangement and
 single compact hero from the current goal and evidence:
 
@@ -292,6 +299,12 @@ single compact hero from the current goal and evidence:
 | CI/CD | Delivery runs, pipeline stages and observed progress |
 | Before · After | A concrete comparison |
 | Architecture | The declared system and dependency map |
+| Support | Support-request evidence and lifecycle work |
+| Builds | Compile, package or release work |
+| Docs | Developer and user documentation changed for the task |
+| Security | Security checks, findings and applicable standards |
+| IaC | Infrastructure plans, change sets and stack events |
+| Sleeping | Background work and deliberate waits that will be checked later |
 
 Keep the chosen space open while it is the critical path, then switch only at a
 real phase boundary. Your manual layout and Auto setting still take priority.
@@ -303,6 +316,9 @@ Three proposal rules are not optional for agents:
   propose Patterns, then declare two to six exact evidence-linked observations.
 - **A delivery run is the critical path:** propose CI/CD and query the configured
   delivery source; never manufacture stage progress in frame HTML.
+- **A build or wait will outlive one tool call:** track it as a `build` or
+  `sleep` operation so Builds or Sleeping can remain current; do not call it
+  complete until terminal evidence arrives.
 
 ### Show workers and components in Topology
 
@@ -434,6 +450,9 @@ row text, then supply:
   `data-pattern-participants`;
 - honest costs, fixes or limitations in `data-pattern-tradeoffs`;
 - useful time, space or operational constraints in `data-pattern-complexity`.
+- standards or specifications that explain the decision in
+  `data-pattern-standard`, and up to four allowlisted authoritative references
+  in `data-pattern-refs` using `Title|https-url` entries.
 
 Use `data-pattern-shape` and `data-pattern-concepts` to select the right
 representation. Choose `branch`, `cycle`, `matrix`, `fan`, `network`, `layers`,
@@ -473,6 +492,16 @@ Keep the block hidden inside a detail role so it never shows in the main view:
 Each new block replaces the list, so an agent can refine states
 (`candidate`, `recognized`, `using`, `implementing`, `rejected`) as the turn
 progresses.
+
+Keep two to six distinct stable-id rows when the evidence supports them. The
+left rail is the turn's pattern catalogue, not just a duplicate of the current
+selection. The selected lesson's three “What this means” prose panels finish
+their word reveal in order before the view advances.
+
+Use **Learn more / standards** to explain why the agent implemented the code in
+that way, which standard or specification governs it, or which authoritative
+reference shows how it could improve. Supply those fields whenever they are
+material and evidenced; omit them when they would be filler.
 
 The selected showcase leads with that learning sentence and reveals its words
 once, like a concise narrated insight. Reduced-motion readers receive the full
