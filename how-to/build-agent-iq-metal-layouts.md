@@ -161,7 +161,7 @@ canvas: **Topology** (how the work is organised right now), **Evidence**
 (observed results collected during the turn), **Files** (the live file and node
 activity map), **Tests** (test plans, live output and verified results), **Git**
 (repository state, dirty files and bounded patches), **Patterns**
-(evidence-linked conceptual and algorithmic structure), **CI/CD** (delivery
+(evidence-linked engineering observations about the code), **CI/CD** (delivery
 runs, stages and observed progress), **Before · After** (a side-by-side of the
 change) and **Architecture** (the system as the agent declared it, with a
 this-turn focus heatmap). The **Main view** chip hides or
@@ -288,7 +288,7 @@ single compact hero from the current goal and evidence:
 | Files | Live file/node activity and confirmed write evidence |
 | Tests | The active test/check path |
 | Git | Branch, dirty files, ahead/behind and patch review |
-| Patterns | Recognized code patterns and algorithms with evidence, fit and trade-offs |
+| Patterns | Evidence-linked engineering observations: patterns, structure, security, optimisation, strengths and improvements |
 | CI/CD | Delivery runs, pipeline stages and observed progress |
 | Before · After | A concrete comparison |
 | Architecture | The declared system and dependency map |
@@ -369,29 +369,50 @@ working tree or inventing one. New samples preserve the selected repository and
 file when they still exist. Unknown remote values remain unknown rather than
 looking like zero.
 
-### Explain structure in Patterns
+### Share engineering observations in Patterns
 
-Patterns should call out a recognizable software pattern, computer-science
-concept or algorithm that is actually present in the code. It is agent analysis
-tied to exact evidence, not measured telemetry or an automatic static-analysis
-verdict. Name the pattern in the row text, then supply:
+Patterns holds the agent's evidence-linked observations about the code it read
+or wrote this turn: recognizable software patterns and algorithms, code
+structure, security concerns, architecture and coupling, optimisation
+opportunities, strengths worth keeping and areas to improve. It is agent
+analysis tied to exact code references, not measured telemetry or an automatic
+static-analysis verdict. Two to six honest observations beat a long list.
 
-- exact code references in `data-pattern-evidence`;
+Pick a kind and a signal for each observation. The signal is shown as a
+coloured category chip on the card and in the detail header:
+
+| Observation | Kind | Signal |
+|-------------|------|--------|
+| Pattern or algorithm | `design`, `algorithm`, `concurrency`, `data` | `invariant`, `tradeoff`, `decision` |
+| Code structure | `structure` | `strength`, `improvement` |
+| Security concern | `security` | `risk` |
+| Architecture or coupling | `architecture` | `decision`, `tradeoff`, `risk` |
+| Optimisation | `performance` | `opportunity` (`hotspot` only when measured) |
+| Strength, improvement or test gap | any, or `testing` | `strength`, `improvement` |
+
+An unknown signal is shown as a neutral hypothesis. Name the observation in the
+row text, then supply:
+
+- exact code references in `data-pattern-evidence` — up to eight
+  `path:line` or `path:symbol` references joined by `;`, using only letters,
+  digits, spaces and `_ . / : # @ ( ) -` (a row with other characters there,
+  such as commas, is not shown);
 - a short “why it fits” explanation in `data-pattern-fit`;
 - the functions, types or modules playing the roles in
   `data-pattern-participants`;
-- honest costs or limitations in `data-pattern-tradeoffs`;
+- honest costs, fixes or limitations in `data-pattern-tradeoffs`;
 - useful time, space or operational constraints in `data-pattern-complexity`.
 
-Use `data-pattern-shape`, `data-pattern-signal` and
-`data-pattern-concepts` to select the right representation. Tree-like
-algorithms become branches; state machines and event loops become cycles;
-dynamic programming becomes a matrix; map/reduce and producer/consumer become
-fans; graph and observer structures become networks; layered and hexagonal
-architecture keep those forms; other patterns use an ordered flow.
+Use `data-pattern-shape` and `data-pattern-concepts` to select the right
+representation. Tree-like algorithms become branches; state machines and event
+loops become cycles; dynamic programming becomes a matrix; map/reduce and
+producer/consumer become fans; graph and observer structures become networks;
+layered and hexagonal architecture keep those forms; other observations use an
+ordered flow. Keep the block hidden inside a detail role so it never shows in
+the main view:
 
 ```html
-<div data-gv-iq-patterns="v1">
+<div data-gv-iq-patterns="v1" data-gv-iq-role="detail" style="display:none">
   <div data-pattern-id="memoized-search" data-pattern-kind="algorithm"
     data-pattern-state="recognized" data-pattern-repo="catalog-service"
     data-pattern-shape="dynamic-programming" data-pattern-signal="invariant"
@@ -401,8 +422,28 @@ architecture keep those forms; other patterns use an ordered flow.
     data-pattern-tradeoffs="Extra memory;cache invalidation"
     data-pattern-complexity="time O(states);space O(states)"
     data-pattern-concepts="state;transition;memo">Memoized search</div>
+  <div data-pattern-id="raw-sql-filter" data-pattern-kind="security"
+    data-pattern-state="recognized" data-pattern-signal="risk"
+    data-pattern-evidence="src/search.ts:88-97;src/db/query.ts:buildWhere"
+    data-pattern-fit="User filter text is concatenated into the WHERE clause."
+    data-pattern-concepts="request filter;buildWhere;SQL string"
+    data-pattern-tradeoffs="Bind parameters;allow-list sortable columns">Unparameterised filter SQL</div>
+  <div data-pattern-id="ports-adapters" data-pattern-kind="structure"
+    data-pattern-state="using" data-pattern-shape="hexagonal" data-pattern-signal="strength"
+    data-pattern-evidence="src/core/catalog.ts:Catalog;src/adapters/pg.ts:PgStore"
+    data-pattern-fit="Core logic depends on a store port; Postgres is one adapter.">Ports and adapters core</div>
+  <div data-pattern-id="n-plus-one" data-pattern-kind="performance"
+    data-pattern-state="candidate" data-pattern-signal="opportunity"
+    data-pattern-evidence="src/search.ts:120-134"
+    data-pattern-fit="Each result row triggers its own price lookup inside the loop."
+    data-pattern-complexity="queries O(n) now;O(1) batched"
+    data-pattern-concepts="result rows;per-row lookup;batched IN query">Batch the price lookups</div>
 </div>
 ```
+
+Each new block replaces the list, so an agent can refine states
+(`candidate`, `recognized`, `using`, `implementing`, `rejected`) as the turn
+progresses.
 
 The selected showcase keeps the diagram dominant and groups fit, participants,
 evidence, trade-offs and complexity around it. When concept labels are missing,
