@@ -1,4 +1,5 @@
 file: what-is-gvcontext.md
+lastModified-turn-context-agent-iq: 2026-09-27 — Explains how durable gvContext, per-turn context and Agent IQ work together; routes code-reading agents to explicit evidence-linked Patterns declarations and receipt-led Topology/CI/CD guidance.
 consumers: [new users, Mochi agents, documentation maintainers]
 produces: [public gvContext explanation]
 ---
@@ -10,6 +11,8 @@ Explains gvContext as the guidance layer that helps agents behave consistently.
 - Why local manuals matter.
 - What users should know.
 - What users should not edit casually.
+- How turn context reinforces the active rules and facts.
+- How Agent IQ spaces expose current work without inventing telemetry.
 
 # Dependencies
 - Links to ACE and catalogue docs.

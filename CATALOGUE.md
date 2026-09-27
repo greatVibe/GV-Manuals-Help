@@ -24,7 +24,7 @@ and users. Private employee engineering repositories are not user help sources.
 | Understand a node | `concepts/what-is-a-node.md` | `videos/index.json` tag `node` |
 | Understand a gvturn | `concepts/what-is-a-gvturn.md` | `videos/index.json` tag `gvturn` |
 | Understand the gvturn power footer | `concepts/what-is-the-gvturn-power-footer.md` | No indexed video yet |
-| Understand context | `concepts/what-is-gvcontext.md` | `videos/index.json` tag `context` |
+| Understand context, turn context and Agent IQ spaces | `concepts/what-is-gvcontext.md` | `videos/index.json` tag `context` |
 | Review AI work | `how-to/review-ai-work.md` | `videos/index.json` tag `review` |
 | Build Agent IQ Metal visuals and responsive layouts | [Metal Design System guide](how-to/build-agent-iq-metal-layouts.md) and [self-contained starter](reference/agent-iq-metal-starter.html) | No indexed video yet |
 | Report or follow support | `how-to/report-and-follow-support-requests.md` | No indexed video yet |
@@ -94,6 +94,7 @@ private implementation facts.
 
 - Read this catalogue before recommending a guide or video.
 - For Agent IQ metal/glass styling, Wide opening, Phone portrait, Compact Fold or Adaptive focus layouts, read [the public Metal Design System guide](how-to/build-agent-iq-metal-layouts.md). Its [HTML starter](reference/agent-iq-metal-starter.html) is an illustrative local example, not production telemetry or a data-query API.
+- For code work, open Patterns and declare two to six exact evidence-linked observations; Patterns is agent analysis and never fills itself from telemetry.
 - Read `reference/guidance-markers.md` before converting embedded
   `gv-guidance` markers into one single or grouped bubble presentation.
 - Use `reference/dashboard-console-elements.md` to match a dashboard-console

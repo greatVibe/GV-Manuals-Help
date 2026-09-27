@@ -296,6 +296,27 @@ single compact hero from the current goal and evidence:
 Keep the chosen space open while it is the critical path, then switch only at a
 real phase boundary. Your manual layout and Auto setting still take priority.
 
+Three proposal rules are not optional for agents:
+
+- **Workers or two-plus components:** propose Topology.
+- **Non-trivial code reading, writing, review, root-cause or architecture work:**
+  propose Patterns, then declare two to six exact evidence-linked observations.
+- **A delivery run is the critical path:** propose CI/CD and query the configured
+  delivery source; never manufacture stage progress in frame HTML.
+
+### Show workers and components in Topology
+
+Topology combines two clearly separated layers. Worker status, elapsed time and
+solid tool bubbles come from observed activity. Optional hidden
+`data-gv-iq-topology="v1"` rows add dashed agent explanation; they never turn an
+unknown or stopped worker into a success.
+
+Propose Topology whenever workers run or the task crosses two or more declared
+Architecture components. Use `data-topo-links` and readable worker topics to
+connect workers to `data-gv-iq-arch` nodes. An unmatched row remains visibly
+declared-only. Keep narrative states such as “reviewing” separate from observed
+terminal states such as completed or failed.
+
 ### Follow test runs in Tests
 
 Tests fills itself from observed test and check commands. A run can appear as
@@ -371,12 +392,23 @@ looking like zero.
 
 ### Share engineering observations in Patterns
 
-Patterns holds the agent's evidence-linked observations about the code it read
+**Patterns is required for non-trivial code work.** When the agent reads or
+writes code, reviews a change, investigates a root cause or reasons about
+architecture, it must propose Patterns and declare two to six useful
+observations after reading the code. Patterns does not fill itself.
+
+Patterns holds the agent's evidence-linked learning about the code it read
 or wrote this turn: recognizable software patterns and algorithms, code
 structure, security concerns, architecture and coupling, optimisation
 opportunities, strengths worth keeping and areas to improve. It is agent
 analysis tied to exact code references, not measured telemetry or an automatic
 static-analysis verdict. Two to six honest observations beat a long list.
+
+Think of Patterns as the durable **“what this code teaches”** narrative. It can
+connect evidence within one function, across a module or across the wider
+system. The Interactions drawer has a different job: tactical **“what the agent
+is doing now”** updates. Write each observation's row text as a useful learning
+sentence, not a category label or status report.
 
 Pick a kind and a signal for each observation. The signal is shown as a
 coloured category chip on the card and in the detail header:
@@ -404,18 +436,15 @@ row text, then supply:
 - useful time, space or operational constraints in `data-pattern-complexity`.
 
 Use `data-pattern-shape` and `data-pattern-concepts` to select the right
-representation. Tree-like algorithms become branches; state machines and event
-loops become cycles; dynamic programming becomes a matrix; map/reduce and
-producer/consumer become fans; graph and observer structures become networks;
-layered and hexagonal architecture keep those forms; other observations use an
-ordered flow. Keep the block hidden inside a detail role so it never shows in
-the main view:
+representation. Choose `branch`, `cycle`, `matrix`, `fan`, `network`, `layers`,
+`hexagonal` or `flow`; omit the shape when the evidence does not justify one.
+Keep the block hidden inside a detail role so it never shows in the main view:
 
 ```html
 <div data-gv-iq-patterns="v1" data-gv-iq-role="detail" style="display:none">
   <div data-pattern-id="memoized-search" data-pattern-kind="algorithm"
     data-pattern-state="recognized" data-pattern-repo="catalog-service"
-    data-pattern-shape="dynamic-programming" data-pattern-signal="invariant"
+    data-pattern-shape="matrix" data-pattern-signal="invariant"
     data-pattern-evidence="src/search.ts:lookup;tests/search.test.ts:memoizes"
     data-pattern-fit="Overlapping subproblems reuse results by normalized key."
     data-pattern-participants="lookup;cache;key normalizer"
@@ -445,11 +474,17 @@ Each new block replaces the list, so an agent can refine states
 (`candidate`, `recognized`, `using`, `implementing`, `rejected`) as the turn
 progresses.
 
-The selected showcase keeps the diagram dominant and groups fit, participants,
-evidence, trade-offs and complexity around it. When concept labels are missing,
-safe algorithmic defaults supply useful vocabulary. The visible label remains
-**Agent analysis · evidence linked**. History is keyed by node, repository,
-stable id and exact evidence so unrelated code is never merged.
+The selected showcase leads with that learning sentence and reveals its words
+once, like a concise narrated insight. Reduced-motion readers receive the full
+sentence immediately. The relationship graphic, fit, participants, evidence,
+trade-offs and complexity support the lesson rather than competing with it.
+The story rail and showcase reflow separately for wide, narrow, tall and short
+allocations, so a short band does not become a squeezed table. When concept
+labels are missing, safe algorithmic defaults supply useful vocabulary. Known
+concepts may receive product-allowlisted further-reading links; declaration
+values never become URLs. The visible label is **Agent learning · evidence
+linked**. History is keyed by node, repository, stable id and exact evidence so
+unrelated code is never merged.
 
 ### Follow delivery in CI/CD
 
@@ -458,6 +493,12 @@ Jenkins and on-prem tools. Select a run to see a graphical pipeline: named stage
 nodes connected in order, each coloured from its observed state. A progress bar
 appears only when the stage total is known, and counts only terminal stages; no
 missing stage or duration is guessed.
+
+Agents should first discover the configured CI/CD source and use its advertised
+query tool so the receipt is correlated to this turn. Report by exception:
+show in-flight runs, delivery actions taken this turn and runs whose state has
+changed. Keep unchanged history behind a reader action. Missing stages, links,
+durations and provider detail remain unknown.
 
 The normalizer understands provider-native nesting, including AWS stage names
 outside `latestExecution`, Azure terminal `result` fields and GitHub job

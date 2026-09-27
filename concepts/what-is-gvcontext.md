@@ -27,6 +27,39 @@ The help repo should hold durable public guidance. Long transcripts and manuals
 should stay as normal files, not be copied wholesale into every assistant
 prompt.
 
+## Turn Context
+
+Turn context is the small, current layer supplied at the start of a turn. It
+can identify the selected node, request, theme, outstanding work and the rules
+that matter most for the task. It reinforces the durable gvContext contract;
+it does not create a tool, permission or capability that is not actually
+available.
+
+Good agents keep the distinction clear:
+
+- gvContext holds durable behavior and safety rules.
+- Turn context holds current facts and reminders.
+- Repository ACE files explain the design intent of the files being changed.
+
+## How Agent IQ Fits
+
+Agent IQ is the visible work explanation. Its main view tells the current
+story, while nine optional spaces show the best supporting view: Topology,
+Evidence, Files, Tests, Git, Patterns, CI/CD, Before · After and Architecture.
+The agent chooses spaces from the current task and evidence; there is no fixed
+Tests-first layout, and your manual layout or Auto-off choice always wins.
+
+Some spaces fill from observed activity. Files, Tests and Git must never be
+typed into existence. CI/CD progress comes from correlated delivery receipts
+and is shown only when the stage total is known. Topology keeps observed worker
+facts separate from the agent's declared explanation.
+
+Patterns is deliberately explicit. When an agent reads or writes non-trivial
+code, reviews a change or investigates a root cause, it should open Patterns
+and declare two to six useful observations with exact file-and-line or
+file-and-symbol evidence from that turn. These are labelled as agent analysis,
+not as automatic telemetry or measured truth.
+
 ## What Users Should Do
 
 You can ask:
@@ -38,5 +71,6 @@ You can ask:
 ## Related Guides
 
 - `what-is-ace.md`
+- `../how-to/build-agent-iq-metal-layouts.md`
 - `../CATALOGUE.md`
 - `../videos/README.md`
