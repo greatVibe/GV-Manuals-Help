@@ -155,7 +155,7 @@ panes, three stages or six equal cards.
 
 ## Spaces beside the frame
 
-Alongside the authored frame, the Agent IQ canvas offers nine dockable
+Alongside the authored frame, the Agent IQ canvas offers fifteen dockable
 **spaces** the reader can open with the chip toolbar in the corner of the
 canvas: **Topology** (how the work is organised right now), **Evidence**
 (observed results collected during the turn), **Files** (the live file and node
@@ -163,8 +163,12 @@ activity map), **Tests** (test plans, live output and verified results), **Git**
 (repository state, dirty files and bounded patches), **Patterns**
 (evidence-linked engineering observations about the code), **CI/CD** (delivery
 runs, stages and observed progress), **Before · After** (a side-by-side of the
-change) and **Architecture** (the system as the agent declared it, with a
-this-turn focus heatmap). The **Main view** chip hides or
+change), **Architecture** (the system as the agent declared it, with a
+this-turn focus heatmap), **Support** (support requests), **Builds** (the
+compile and build path), **Docs** (documentation written for the work),
+**Security** (security and compliance of the work), **IaC** (infrastructure as
+code changes and stack activity) and **Sleeping** (turns waiting on background
+work). The **Main view** chip hides or
 restores the agent's main frame while keeping the open spaces. Close an
 individual space with its own chip or close control.
 
@@ -224,7 +228,8 @@ involved; they travel inside the same published frame:
 ```
 
 - `data-gv-iq-spaces` — up to three of `topology`, `evidence`, `files`,
-  `tests`, `git`, `patterns`, `cicd`, `beforeafter`, `architecture`
+  `tests`, `git`, `patterns`, `cicd`, `beforeafter`, `architecture`,
+  `support`, `builds`, `docs`, `security`, `iac`, `sleeping`
   (comma-separated); an empty value closes all spaces. Each
   entry may carry its own edge with `@top`/`@right`/`@bottom`/`@left`
   (`evidence@bottom`) to split that space onto its own dock; a bare name uses
@@ -277,7 +282,7 @@ unchanged.
 
 ### Choose the space that matches the work
 
-All nine spaces have equal priority. No space, including Tests, is shown just
+All fifteen spaces have equal priority. No space, including Tests, is shown just
 because a turn started. The agent should choose the opening arrangement and
 single compact hero from the current goal and evidence:
 
@@ -292,6 +297,12 @@ single compact hero from the current goal and evidence:
 | CI/CD | Delivery runs, pipeline stages and observed progress |
 | Before · After | A concrete comparison |
 | Architecture | The declared system and dependency map |
+| Support | GreatVibe and customer support requests |
+| Builds | The compile and build critical path |
+| Docs | Developer and user documentation written for the work |
+| Security | Security and compliance of the work done and the code written |
+| IaC | Terraform, CloudFormation, CDK or Pulumi changes, change sets, plans and live stack events |
+| Sleeping | Turns waiting on background processes such as long copies or uploads |
 
 Keep the chosen space open while it is the critical path, then switch only at a
 real phase boundary. Your manual layout and Auto setting still take priority.
@@ -507,6 +518,28 @@ suffixes such as `deploy-prod.sh` count as on-prem delivery. If a receipt is
 terminal but has no stage detail, the pane says so and keeps the missing stages
 unknown.
 
+CI/CD also has peripheral vision. The node checks its configured delivery
+sources in the background, so a failing or stopped pipeline appears in CI/CD
+even when nobody queried it this turn, and the agent is told about it at the
+start of the turn. The agent should mention or fix it when it relates to the
+current work. Unsupported providers stay unknown rather than guessed.
+
+### Track long background work
+
+When an agent starts a long copy, upload, download or background process, it
+can register that operation so Files, Topology, the main view and Sleeping show
+live bytes and percent. A percentage appears only when the total size is known;
+otherwise the space shows observed progress without a guessed completion.
+
+### Declare security findings
+
+Security is filled from a hidden declaration, like Patterns. Each row names a
+finding with a kind (`vuln`, `secret`, `authz`, `crypto`, `dependency`,
+`compliance` or `config`), a severity (`info` to `critical`), a state (`open`,
+`mitigated`, `accepted` or `verified`), exact code evidence and an optional
+standard label. Declare only what the turn's work or code shows; `verified`
+needs evidence.
+
 ### Populate the Architecture space
 
 The Architecture space draws the system **as the agent knows it**: components
@@ -562,7 +595,7 @@ A short playbook that turns the mechanics above into good turns:
   `data-gv-iq-spaces="architecture,evidence@bottom"` with
   `data-gv-iq-hero="architecture"` is a strong default: the model gets the big
   canvas, evidence stays glanceable, and the frame reads fine as a strip.
-- **Treat all nine spaces as peers.** Use the current goal and observed evidence,
+- **Treat all fifteen spaces as peers.** Use the current goal and observed evidence,
   not a fixed Tests-first order. Git, Patterns, CI/CD or any other space can be
   the compact hero when it best explains the current critical path.
 - **Keep Files live for file and node work.** It refreshes from observed
@@ -794,7 +827,7 @@ language and reusable examples. If the current tool manifest exposes
 available layouts/templates and the current viewer's Agent IQ state. Check
 availability first; older runtimes may not expose this capability yet.
 
-The tool accepts the authenticated `username` and optional `nodeId`, `turnId`
+The tool accepts the authenticated `username` and optional `nodeId`, `turnId`, `space`, `includeSpaces`
 and command `requestId`. Use the authorized current context rather than
 inventing identifiers. The tool can infer the current node when it is omitted;
 an optional turn selects an expected exact owner. Read the live tool schema
@@ -809,6 +842,13 @@ The bounded version-1 result contains:
 | `canvas` | Read mounted/visible/deferred state and the current width and height |
 | `evidence.script`, `evidence.raster` | Inspect the current mounted update's execution/decode state and proof |
 | `freshness`, `observedAt` | Distinguish authored/telemetry timestamps from the time of this observation |
+| `spaces` | What the reader currently sees: open spaces and edges, hero, fullscreen, Auto, main view, compact mode and a bounded title, summary, visible text and data model per space |
+
+Pass the optional `space` name to read back one space, or `includeSpaces:false`
+to skip the spaces readback. The readback includes native data the agent did
+not author (for example CI/CD, Git and Tests results), so it helps tactical
+decisions mid-turn. Use it sparingly. Older dashboards report the spaces
+readback as unavailable.
 
 An absent owner, panel, revision or timestamp is an unknown state, not zero
 progress. The query does not expose raw authored HTML, prompts or credentials.
