@@ -53,9 +53,13 @@ Agents are asked to keep their steps short so your messages land fast.
 Your message and the agent's reply appear in the **Live Turn Interactions**
 drawer, next to the composer.
 
-The reply under your message is the agent's next update after it reads your
+The reply under your message is the agent's first update after it reads your
 message. It should start with a short acknowledgement, then carry on with the
 work. For example: "Got it, switching to the smaller fix first."
+
+If that first update has no written reply, your message shows
+**Read by Claude · no reply yet**. The agent has your message, but it did not
+answer in words. A later update is never shown as the reply.
 
 If your steer changes the plan, the agent should also refresh its **Agent IQ**
 view so the current focus and next step match the new plan.
@@ -75,6 +79,7 @@ view so the current focus and next step match the new plan.
 
 | What you see | What to do |
 | --- | --- |
+| "Read by Claude · no reply yet" | The agent read your message but did not answer it in words. Watch its next steps, or send a short follow-up. |
 | No reply yet after "Received" | The agent is in a long step. Wait for it to finish, or watch the Interactions drawer. |
 | "Turn is finishing" | Press Send again. Your draft becomes a new turn. |
 | "Delivery could not be confirmed … check for a receipt before retrying." | Your message may have arrived. Check the Interactions drawer for it before you send it again, so the agent does not get it twice. Your draft stays in the box. |
