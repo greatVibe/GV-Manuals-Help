@@ -1,4 +1,5 @@
 file: CATALOGUE.md
+lastModified-agent-iq-player-input: 2026-09-28 — Routes the new public player-input guide (games, pickers, confirmations inside Agent IQ via window.gvIq.emit and konui_agent_iq_get inputsAfter/waitForInputMs) from the task table, topic index, coverage table and agent routing notes.
 lastModified-gvcontext-agent-iq: 2026-09-27 — Routes context readers to the expanded turn-context and Agent IQ explanation and highlights the strong Patterns authoring rule.
 lastModified-agent-iq-metal: 2026-09-20 — Routes Agent IQ design, responsive metal layouts and reusable authoring examples to the public guide and starter.
 lastModified-guidance-markers: 2026-08-28 — Indexes the machine-readable guidance marker reference and marker-backed UI recipes.

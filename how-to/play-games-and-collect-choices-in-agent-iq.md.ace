@@ -1,0 +1,26 @@
+file: play-games-and-collect-choices-in-agent-iq.md
+consumers: [GreatVibe users, AI agents (Claude and Codex), public visual authors]
+produces: [public guide to the Agent IQ player-input loop]
+lastModified: 2026-09-28
+---
+# Purpose
+Explain, in public-safe language, how a reader can play a game or answer a
+picker inside Agent IQ while the agent keeps working, and how an agent runs
+that loop with plain MCP calls (no steering prompt), identically for Claude and
+Codex.
+
+# Dependencies
+- build-agent-iq-metal-layouts.md for frame design and script-region basics.
+- ../CATALOGUE.md routes users and agents here.
+- ../SANITIZATION.md supplies the publication boundary.
+
+# Gotchas
+- Only the documented contract is public: window.gvIq.emit, the
+  konui_agent_iq_get fields inputsAfter/waitForInputMs and the inputs result.
+  Never name private endpoints, storage paths or internal message types.
+- The example is illustrative; it is not live telemetry.
+- Durable gvturn cards are a different surface: their inline scripts start a
+  new turn and cannot feed this loop.
+
+# Change History
+- 2026-09-28: Created with the player-input lane.
