@@ -19,7 +19,7 @@ and adjusts its plan. It works for Claude and Codex turns.
 1. Wait until the turn is running. The console shows live activity.
 2. Type your message in the normal prompt box.
 3. Add images if they help. Use **+** then **Attach**, as you would for any
-   prompt.
+   prompt. A single steer can carry up to five images.
 4. Press **Send**.
 
 While a turn runs, Send delivers your text to that turn. It does not queue a
@@ -29,10 +29,10 @@ new prompt.
 
 | Message | What it means |
 | --- | --- |
-| **Received by Claude…** | Your message reached the running turn. The agent has it but may not have read it yet. |
+| **Received by Claude. Waiting for the agent’s response in the console.** | Your message reached the running turn. The agent has it but may not have read it yet. |
 | **Turn is finishing — press Send again to start a new turn.** | The turn was wrapping up and could not take more input. Your draft stays in the box. Press Send again to send it as a new turn. |
 
-Codex turns show the same kind of confirmation with the Codex name.
+Codex turns show the same confirmation as **Received by Codex runtime.**
 
 ## When The Agent Reads It
 
@@ -42,8 +42,8 @@ agent finishes an action, such as reading a file or running a command.
 - If the agent is doing quick steps, your message lands within seconds.
 - If the agent is in a long step, such as a big build or test run, it reads
   your message when that step ends.
-- If the agent is already writing its final answer, it handles your message in
-  a short extra pass after that answer.
+- If the agent is already writing its final answer, it may handle your
+  message in a short extra pass after that answer.
 
 So the reply time depends on what the agent is doing, not on your connection.
 Agents are asked to keep their steps short so your messages land fast.
@@ -77,6 +77,9 @@ view so the current focus and next step match the new plan.
 | --- | --- |
 | No reply yet after "Received" | The agent is in a long step. Wait for it to finish, or watch the Interactions drawer. |
 | "Turn is finishing" | Press Send again. Your draft becomes a new turn. |
+| "Delivery could not be confirmed … check for a receipt before retrying." | Your message may have arrived. Check the Interactions drawer for it before you send it again, so the agent does not get it twice. Your draft stays in the box. |
+| "The active turn changed before delivery." | The turn ended or moved on before your message arrived. Nothing was sent. Your draft stays; press Send to start a new turn with it. |
+| "Steering is not authorized for this turn." | You can steer only a turn you started or share. Nothing was sent. |
 | Send fails and the draft stays | Nothing was lost. Check that you are on the same node as the running turn, then try again. |
 | The reply under your message does not mention it | The agent skipped the acknowledgement. Watch its next updates, or send a short follow-up. |
 | The agent ignored part of your steer | Send a shorter follow-up that names the missed part. |

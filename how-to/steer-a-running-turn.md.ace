@@ -1,6 +1,7 @@
 file: steer-a-running-turn.md
 created: 2026-09-28
 lastModified: 2026-09-28 — Created the public guide to steering a running Claude or Codex turn from the dashboard composer.
+lastModified-audit: 2026-09-28b — Audit: exact received copy, five-image limit per steer, 'could not be confirmed' / 'active turn changed' / 'not authorized' troubleshooting, final-answer extra pass hedged.
 lastModified-visible-ack: 2026-09-28 — The reply under a steer is the agent's next update after reading it and should open with a short acknowledgement.
 consumers: [GreatVibe users, Mochi agents, support writers]
 produces: [practical guide to mid-turn steering]
@@ -29,11 +30,17 @@ short, specific steers with optional images.
 - Public-safe: no routes, endpoints, env vars, timeouts, byte limits, repo
   names or node details. Say "the agent's next step", not internal
   tool-boundary mechanics beyond plain language.
-- Keep the two exact UI strings in sync with the product: "Received by
-  Claude…" and "Turn is finishing — press Send again to start a new turn."
+- Keep the exact UI strings in sync with the product: "Received by Claude.
+  Waiting for the agent’s response in the console.", "Turn is finishing —
+  press Send again to start a new turn.", "Delivery could not be confirmed
+  … check for a receipt before retrying.", "The active turn changed before
+  delivery." and "Steering is not authorized for this turn."
+- The node accepts at most five images per steer even though the composer
+  holds more; say "up to five" until the product caps align.
 - The reply under the user's message is the agent's next visible update; the
   guide promises only that it should start with an acknowledgement.
 - Steering is not the Agent IQ player-input lane; do not conflate them.
 
 # Change History
+- 2026-09-28b: Audit corrections against the shipped steering code.
 - 2026-09-28: Created for the Claude mid-turn steering release.

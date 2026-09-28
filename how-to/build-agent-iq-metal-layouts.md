@@ -665,7 +665,8 @@ reads it at its next step. See
 
 - **Acknowledge first, in visible text.** The reader sees your next visible
   update as the reply under their message. Make its first sentence a short
-  acknowledgement, then continue. Do not keep the acknowledgement to your own
+  acknowledgement, before any other narration or action, then continue. One
+  line can cover several steers. Do not keep the acknowledgement to your own
   private reasoning, and do not repeat the steer word for word. The
   Interactions drawer carries this conversation; keep it out of the frame.
 - **Refresh the frame when the plan changes.** Publish a new revision so the
