@@ -1,4 +1,5 @@
 file: how-to/
+lastModified-agent-iq-input-hardening: 2026-09-28 — The public player-input guide now documents UTF-8 byte limits, one accepted move per trusted interaction, full wait deadlines, and bounded six-hour storage.
 lastModified-agent-iq-player-input: 2026-09-28 — Added play-games-and-collect-choices-in-agent-iq.md (public player-input loop for Claude and Codex).
 lastModified-pattern-learning-narrative: 2026-09-27 — Public Agent IQ guidance presents Patterns as durable engineering learning, separate from tactical Interactions, with a prose-first typed insight and responsive supporting graphics/evidence.
 lastModified-pattern-observation-categories: 2026-09-27 — build-agent-iq-metal-layouts.md Patterns section documents engineering observation categories and a four-row example.

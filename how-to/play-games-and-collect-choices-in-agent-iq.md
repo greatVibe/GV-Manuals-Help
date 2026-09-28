@@ -25,17 +25,19 @@ The agent receives the moves from all of them.
    that frame, for example as a `data-board` attribute.
 2. **Emit input from the region.** Controls call
    `window.gvIq.emit(name, data)`. `name` is a short identifier
-   (`^[A-Za-z][A-Za-z0-9_.:-]{0,31}$`), `data` is JSON up to 1 KiB, and a
+   (`^[A-Za-z][A-Za-z0-9_.:-]{0,31}$`), `data` is UTF-8 encoded JSON up to 1 KiB, and a
    region can send up to 20 events every 10 seconds. `emit` returns `true`
    when the event was queued.
 3. **Read and wait.** Call
    `konui_agent_iq_get({ username, turnId, inputsAfter: "0", waitForInputMs: 20000, includeSpaces: false })`.
    `turnId` is this turn. The call returns as soon as a new event arrives, or
-   after the wait with no events.
+   after the full bounded wait with no events. The wait is one overall deadline,
+   including each dashboard read.
 4. **Act.** Each event in `receipt.inputs.events` has `cursor`, `at`, `name`,
    `data`, `userActivated`, `region`, `panelId` and `revision`. Treat an event
-   as a player move only when `userActivated` is `true`. That flag means the
-   browser saw a real tap or click.
+   as a player move only when `userActivated` is `true`. That flag consumes one
+   private token minted by a real pointer or keyboard interaction; another emit
+   cannot reuse the same interaction, and a synthetic event cannot mint a token.
 5. **Reply and repeat.** Publish the next frame with a higher `revision` and
    the new state. Read again with `inputsAfter` set to the returned
    `inputs.cursor`, so you never see the same event twice.
@@ -71,7 +73,9 @@ The agent receives the moves from all of them.
   talking to the running script.
 - A read needs one of your dashboards to be open and visible on the node.
   If none is, the read fails. Events already sent stay stored for the turn and
-  arrive on the next successful read.
+  arrive on the next successful read. The newest 256 events are retained for
+  about six hours, with cleanup checked every minute independently of later
+  input traffic.
 - Durable gvturn cards are different. A button in a card starts a new turn
   with a new prompt. Use Agent IQ when the agent should keep working in the
   same turn.

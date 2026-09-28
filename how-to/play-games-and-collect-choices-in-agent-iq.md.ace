@@ -2,6 +2,7 @@ file: play-games-and-collect-choices-in-agent-iq.md
 consumers: [GreatVibe users, AI agents (Claude and Codex), public visual authors]
 produces: [public guide to the Agent IQ player-input loop]
 lastModified: 2026-09-28
+lastModified-agent-iq-input-hardening: 2026-09-28 — Documents the UTF-8 byte limit, one consumable trusted action per accepted move, full wait deadline, and bounded six-hour event retention.
 ---
 # Purpose
 Explain, in public-safe language, how a reader can play a game or answer a
