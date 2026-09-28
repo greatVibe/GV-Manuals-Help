@@ -657,6 +657,26 @@ A short playbook that turns the mechanics above into good turns:
   proposals until the reader explicitly enables Auto again — treat that as
   steering, not failure, and keep declaring the model so their layout stays fed.
 
+## When the reader steers the turn
+
+A reader can send a message into a running Claude or Codex turn. The agent
+reads it at its next step. See
+[Steer a running turn](steer-a-running-turn.md) for the reader's side.
+
+- **Acknowledge first, in visible text.** The reader sees your next visible
+  update as the reply under their message. Make its first sentence a short
+  acknowledgement, then continue. Do not keep the acknowledgement to your own
+  private reasoning, and do not repeat the steer word for word. The
+  Interactions drawer carries this conversation; keep it out of the frame.
+- **Refresh the frame when the plan changes.** Publish a new revision so the
+  focus and next action match the new direction. If the plan does not change,
+  the frame can stay as it is.
+- **Keep steps short.** Short, frequent steps let steers land fast. Run long
+  builds, tests and waits in the background and check on them in short polls.
+- **Steering is not player input.** Taps inside an Agent IQ script region use
+  the [player input loop](play-games-and-collect-choices-in-agent-iq.md), not
+  steering.
+
 ## Honest state, progress and evidence
 
 Start with a stage such as “Starting” or “Waiting for an update” when no measured

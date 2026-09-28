@@ -1,0 +1,39 @@
+file: steer-a-running-turn.md
+created: 2026-09-28
+lastModified: 2026-09-28 — Created the public guide to steering a running Claude or Codex turn from the dashboard composer.
+lastModified-visible-ack: 2026-09-28 — The reply under a steer is the agent's next update after reading it and should open with a short acknowledgement.
+consumers: [GreatVibe users, Mochi agents, support writers]
+produces: [practical guide to mid-turn steering]
+---
+# Purpose
+Show users how to redirect a running turn by sending a message while it works:
+what steering is, how to send, what "Received by Claude" means, why the reply
+comes at the agent's next step, what "Turn is finishing" means, and tips for
+short, specific steers with optional images.
+
+# Key Sections
+- What steering is (and is not: no new turn, no interrupt)
+- Send a steer
+- What the composer tells you (Received / Turn is finishing)
+- When the agent reads it (next step, final-answer second pass)
+- Where the reply shows (Interactions drawer, Agent IQ refresh)
+- Tips and troubleshooting
+
+# Dependencies
+- `use-console-main-row-and-prompt-controls.md` (composer and attachments)
+- `use-the-status-bar-toolbox-and-stop-turns.md` (stopping a turn instead)
+- `build-agent-iq-metal-layouts.md` (Agent IQ behaviour while steering)
+- `../CATALOGUE.md` routes users and agents here.
+
+# Gotchas
+- Public-safe: no routes, endpoints, env vars, timeouts, byte limits, repo
+  names or node details. Say "the agent's next step", not internal
+  tool-boundary mechanics beyond plain language.
+- Keep the two exact UI strings in sync with the product: "Received by
+  Claude…" and "Turn is finishing — press Send again to start a new turn."
+- The reply under the user's message is the agent's next visible update; the
+  guide promises only that it should start with an acknowledgement.
+- Steering is not the Agent IQ player-input lane; do not conflate them.
+
+# Change History
+- 2026-09-28: Created for the Claude mid-turn steering release.
