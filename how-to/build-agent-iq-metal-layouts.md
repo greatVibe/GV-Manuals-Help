@@ -353,6 +353,53 @@ headings, lists, emphasis, inline code and quotes. JSON is highlighted too.
 Unknown and unsupported formats stay readable as literal text. Output is
 bounded, links are not activated and receipt content is never executed.
 
+### See the test plan and what remains before ship
+
+Tests also answers the test manager's questions before any run finishes: what
+will be tested, how widely, at which level, and what is still open before the
+work can ship. When the agent declares a plan, Tests gains **Plan** and
+**Runs** views. Failing or running receipts lead until you pick a view; your
+pick then sticks for the turn.
+
+The Plan view shows:
+
+- **Strategy**: targeted (only the changed surface), full stack (every layer),
+  risk-based or smoke, plus a one-line scope.
+- **Levels**: unit, integration, system and end to end, plus contract, static,
+  manual or performance checks when declared. Core levels with no checks are
+  marked *not planned*, so a targeted change that skips system tests says so
+  plainly.
+- **Lifecycle**: four stages. *This turn* (the agent verifies now), *After this
+  turn* (CI or a follow-up turn), *Before ship* (the release gate, often a
+  human device check) and *After deploy* (smoke in the live system).
+- **Ship gate**: verified, failing and remaining counts, what remains per stage,
+  how many checks need a human, and any observed runs outside the plan.
+
+A plan row is only a declaration. It turns green or red when a real test
+receipt matches it. Select a matched row to open that run in Runs. The gate
+says nothing remains only when every non-waived check has a passing receipt.
+
+```html
+<div data-gv-iq-testplan="v1" data-test-strategy="targeted"
+  data-test-scope="Search service only; no schema change."
+  data-gv-iq-role="detail" style="display:none">
+  <div data-test-id="search-unit" data-test-level="unit" data-test-stage="this-turn"
+    data-test-target="tests/search.test.ts" data-test-match="search.test"
+    data-test-risk="high">Memoized lookup returns cached rows</div>
+  <div data-test-id="api-ci" data-test-level="integration" data-test-stage="after-turn"
+    data-test-owner="ci">Catalog API suite in the pipeline</div>
+  <div data-test-id="phone" data-test-level="manual" data-test-stage="pre-ship"
+    data-test-state="needs-human" data-test-owner="human">Results list on a phone</div>
+  <div data-test-id="smoke" data-test-level="e2e" data-test-stage="post-deploy">Search answers in production</div>
+</div>
+```
+
+Rows need `data-test-id`, `data-test-level` and `data-test-stage`. Optional
+fields are `data-test-state` (planned, deferred, needs-human or waived; never a
+result), `data-test-risk`, `data-test-owner` (agent, human or CI),
+`data-test-target` and `data-test-match` (text found in the matching run's
+label or target). The row text is the test objective.
+
 ### Keep the Files space current
 
 Files fills itself from operations observed during the running turn. Reads are
