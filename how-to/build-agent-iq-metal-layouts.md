@@ -186,8 +186,9 @@ The reader stays in control:
   A red **"Can't span here"** preview means that span would cover part of
   another space; letting go there changes nothing.
 - **When the canvas is full**, drop onto a space to **swap** it out. The one
-  you replace closes and its chip glows so you can bring it back. Nothing
-  is ever closed without you choosing it.
+  you replace closes and its chip glows; tap the chip to bring it back to
+  its old spot. A drop never closes a space without showing you the swap
+  first. If no space can be swapped, the canvas tells you to close one.
 - **From the keyboard**: focus a space's chip or header and press
   **Shift+Enter**. Arrow keys move between cells, **Shift+arrow** stretches
   across the line to a neighbour and, pressed again, to the full outer row
