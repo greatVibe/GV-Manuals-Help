@@ -1,4 +1,5 @@
 file: steer-a-running-turn.md
+lastModified-thirty-images: 2026-09-28 — Steers now carry up to 30 images (platform limit aligned with the composer); was five.
 created: 2026-09-28
 lastModified: 2026-09-28 — Created the public guide to steering a running Claude or Codex turn from the dashboard composer.
 lastModified-audit: 2026-09-28b — Audit: exact received copy, five-image limit per steer, 'could not be confirmed' / 'active turn changed' / 'not authorized' troubleshooting, final-answer extra pass hedged.

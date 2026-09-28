@@ -19,7 +19,7 @@ and adjusts its plan. It works for Claude and Codex turns.
 1. Wait until the turn is running. The console shows live activity.
 2. Type your message in the normal prompt box.
 3. Add images if they help. Use **+** then **Attach**, as you would for any
-   prompt. A single steer can carry up to five images.
+   prompt. A single steer can carry up to 30 images.
 4. Press **Send**.
 
 While a turn runs, Send delivers your text to that turn. It does not queue a
