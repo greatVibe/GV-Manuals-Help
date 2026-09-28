@@ -176,14 +176,29 @@ The reader stays in control:
 
 - A chip **toggles** its space open or closed; up to three spaces can be open
   at once, and each pane has its own close control.
-- Spaces can **split apart**: long-press a pane's header and drag it to any
-  edge — right, left, bottom or top — and only that pane moves there, so
-  different spaces can sit on different edges at the same time. Dropping on
-  another pane's header reorders the two panes. Alt+arrows on a header do
-  the same move from the keyboard, and a reset control returns everything to
-  one dock on the default edge.
-- Any space can become the **hero**: drop a pane on the centre zone while
-  dragging, tap the ⛶ button in its header, or press H on the header. The
+- **Place a space where you want it.** Drag a chip from the **+** list, or
+  long-press a pane's header and drag it over the canvas. A preview shows
+  exactly where it will land:
+  - over a **cell** (top left, centre, bottom right …) it fills one zone;
+  - over the amber band on the **line between two cells** it spans both;
+  - over the slim band at the **outer edge** of the canvas it fills that whole
+    row or column.
+  A red **"Can't span here"** preview means that span would cover part of
+  another space; letting go there changes nothing.
+- **When the canvas is full**, drop onto a space to **swap** it out. The one
+  you replace closes and its chip glows so you can bring it back. Nothing
+  is ever closed without you choosing it.
+- **From the keyboard**: focus a space's chip or header and press
+  **Shift+Enter**. Arrow keys move between cells, **Shift+arrow** stretches
+  across the line to a neighbour and, pressed again, to the full outer row
+  or column. **Enter** places it and **Escape** cancels. Alt+arrows still move a
+  pane to an edge.
+- **Your placements win.** While Auto arranges the canvas, the agent never
+  moves or heroes a space you placed yourself, and your spaces stay open when
+  it suggests others.
+- Any space can become the **hero**: tap the ⛶ button in its header, or
+  press H on the header. (Dropping on the centre cell places a space there;
+  it does not make it the hero.) The
   hero space takes the primary zone and the frame swaps into the hero's dock
   slot. The frame is always the default primary — hero is an explicit,
   reversible choice (toggle ⛶ again to swap back).
@@ -194,6 +209,11 @@ The reader stays in control:
   decides what this turn shows. Nothing lingers from the previous turn.
 
 ### Fullscreen and Auto, by touch or mouse
+
+The agent can also ask for the same fullscreen when a view deserves the whole
+screen. You stay in charge: it only happens while Auto and Follow are on, it
+never replaces a fullscreen you chose, and once you leave it the agent will
+not bring it back for the rest of that turn.
 
 Use an empty background in the main view or a space, not a file or button:
 
