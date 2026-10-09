@@ -1,4 +1,5 @@
 file: index.json
+lastModified-agent-iq-demo-video: 2026-10-09 — The greatvibe-welcome entry now describes the new six-minute welcome and Agent IQ demo recording (Vimeo 1234245120, 1:1, 367 s, title "GreatVibe Agent IQ Demo") with 11 transcript chapters (0, 27, 43, 52, 94, 124, 148, 203, 239, 267, 301 s) and a rewritten transcript page. The embed hash stays out of this index (overlay ref greatvibe-welcome). konui's src/video-catalog.json copies the same slugs, ids and chapter starts.
 lastModified-welcome-video-refresh: 2026-08-14 — Replaces the first-login welcome entry with Vimeo 1217843223 metadata, duration, 1:1 presentation, expanded chapters, and the refreshed public transcript pointer.
 consumers: [Mochi agents, video search tools, documentation readers]
 produces: [public-safe video catalogue entries]

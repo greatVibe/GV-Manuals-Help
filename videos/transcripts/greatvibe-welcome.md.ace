@@ -1,4 +1,5 @@
 file: greatvibe-welcome.md
+lastModified-agent-iq-demo-transcript: 2026-10-09 — Replaces the 26-minute intro transcript with the new six-minute welcome and Agent IQ demo recording (Vimeo 1234245120, 6:07). Built from the Vimeo English auto-generated WebVTT, lightly edited for reading: obvious speech-recognition errors fixed (Johnathon, greatVibe, Mochi, builder, Activity Centre to match the dashboard label), filler trimmed, grouped under the 11 chapters in ../index.json. The Agent IQ demo in konui (agent-iq-demo.ts) is timed to these chapters.
 lastModified-new-welcome-transcript: 2026-08-14 — Replaces the prior welcome transcript with the complete auto-generated English transcript and chapter guide for Vimeo 1217843223.
 consumers: [Mochi agents, users]
 produces: [sanitized auto-generated transcript and chapter notes]
@@ -7,12 +8,9 @@ produces: [sanitized auto-generated transcript and chapter notes]
 Provides transcript status and chapter notes for the GreatVibe welcome video.
 
 # Key Sections
-- Video metadata.
-- Transcript source and status.
-- Editorial review and quote-readiness notes.
-- Edited public-copy excerpts.
-- Sanitized auto-generated transcript.
-- Agent usage notes.
+- Video metadata (Vimeo id, duration, caption source, transcript status).
+- Chapters (same start times as ../index.json).
+- Transcript, grouped under the chapter headings.
 
 # Dependencies
 - Referenced by `../index.json`.
@@ -26,6 +24,8 @@ Provides transcript status and chapter notes for the GreatVibe welcome video.
 - Do not add Vimeo hashes, expiring caption URLs, or download links.
 
 # Change History
+- 2026-10-09: Replaced with the transcript of the new welcome and Agent IQ
+  demo video (Vimeo 1234245120), grouped by chapter.
 - 2026-08-03: Added quote-ready edited public-copy excerpts.
 - 2026-08-03: Added public voice and quote-readiness review notes.
 - 2026-08-03: Added sanitized auto-generated transcript fetched through the

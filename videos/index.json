@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updated_at": "2026-08-14",
+  "updated_at": "2026-10-09",
   "default_aspect_ratio": "1:1",
   "videos": [
     {
@@ -43,12 +43,12 @@
     },
     {
       "slug": "greatvibe-welcome",
-      "title": "Johnathon Intro to GreatVibe",
-      "summary": "A comprehensive first-login introduction to GreatVibe, Mochi, nodes, gvturns, tools, review workflows, and the platform trust model.",
+      "title": "GreatVibe Agent IQ Demo",
+      "summary": "A six-minute first-login tour of the dashboard console and Agent IQ: the prompt bar, Interactions, Agent IQ spaces, attachments and mid-turn steering, Topology, sealed secrets, agent questions, Files and Support, and adding your own node.",
       "provider": "vimeo",
-      "video_id": "1217843223",
+      "video_id": "1234245120",
       "embed_hash_ref": "greatvibe-welcome",
-      "source_url": "https://vimeo.com/1217843223",
+      "source_url": "https://vimeo.com/1234245120",
       "aspect_ratio": "1:1",
       "product_area": "mochi-onboarding",
       "audience": [
@@ -63,9 +63,10 @@
         "mochi",
         "onboarding",
         "first-login",
-        "gvturn",
-        "tools",
-        "trust"
+        "agent-iq",
+        "demo",
+        "sealed-secrets",
+        "nodes"
       ],
       "related_docs": [
         "../getting-started/welcome-to-greatvibe.md",
@@ -76,59 +77,51 @@
       "chapters": [
         {
           "start_seconds": 0,
-          "title": "Welcome and the GreatVibe premise"
+          "title": "Welcome, your trial and the Mochi node"
         },
         {
-          "start_seconds": 38,
-          "title": "AI-centric coding and directed collaboration"
+          "start_seconds": 27,
+          "title": "The prompt bar and the Send button"
         },
         {
-          "start_seconds": 169,
-          "title": "Nodes, gvmesh, gvsandbox, Claude, and Codex"
+          "start_seconds": 43,
+          "title": "Interactions: you and the agent"
         },
         {
-          "start_seconds": 258,
-          "title": "GreatVibe building and operating itself"
+          "start_seconds": 52,
+          "title": "Agent IQ spaces and auto mode"
         },
         {
-          "start_seconds": 623,
-          "title": "Mochi, public manuals, and getting started"
+          "start_seconds": 94,
+          "title": "Attachments and mid-turn steering"
         },
         {
-          "start_seconds": 692,
-          "title": "Sending the first prompt"
+          "start_seconds": 124,
+          "title": "The Topology space, zoom and full screen"
         },
         {
-          "start_seconds": 792,
-          "title": "gvturn cards and follow-up choices"
+          "start_seconds": 148,
+          "title": "Sealed secrets"
         },
         {
-          "start_seconds": 919,
-          "title": "Audits, model switching, and review"
+          "start_seconds": 203,
+          "title": "Questions during a turn"
         },
         {
-          "start_seconds": 1046,
-          "title": "Git, credentials, settings, and files"
+          "start_seconds": 239,
+          "title": "Main view, Files and Support"
         },
         {
-          "start_seconds": 1157,
-          "title": "Meshes, organizations, and collaboration"
+          "start_seconds": 267,
+          "title": "Add a node: region, size or bring your own"
         },
         {
-          "start_seconds": 1336,
-          "title": "Cloning repositories and the Files explorer"
-        },
-        {
-          "start_seconds": 1458,
-          "title": "Secrets Vault and the trust chain"
-        },
-        {
-          "start_seconds": 1560,
-          "title": "Closing"
+          "start_seconds": 301,
+          "title": "Your turn: try the Mochi node"
         }
       ],
-      "updated_at": "2026-08-14",
-      "duration_seconds": 1567
+      "updated_at": "2026-10-09",
+      "duration_seconds": 367
     }
   ]
 }
