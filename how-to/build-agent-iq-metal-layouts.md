@@ -155,7 +155,7 @@ panes, three stages or six equal cards.
 
 ## Spaces beside the frame
 
-Alongside the authored frame, the Agent IQ canvas offers fifteen dockable
+Alongside the authored frame, the Agent IQ canvas offers eighteen dockable
 **spaces** the reader can open with the chip toolbar in the corner of the
 canvas: **Topology** (how the work is organised right now), **Evidence**
 (observed results collected during the turn), **Files** (the live file and node
@@ -168,13 +168,14 @@ this-turn focus heatmap), **Support** (support-request work), **Builds**
 (compiles and releases), **Docs** (developer and user documentation),
 **Security** (security checks and standards-backed findings), **IaC**
 (infrastructure plans and changes) and **Sleeping** (long waits and background
-work). The **Main view** chip hides or
+work), **WOPR** (WarGames), **Video** (one training video) and **Web**
+(website excerpts and welcoming product content). The **Main view** chip hides or
 restores the agent's main frame while keeping the open spaces. Close an
 individual space with its own chip or close control.
 
 The reader stays in control:
 
-- A chip **toggles** its space open or closed; up to three spaces can be open
+- A chip **toggles** its space open or closed; the measured canvas grid determines how many spaces can be open
   at once, and each pane has its own close control.
 - **Place a space where you want it.** Drag a chip from the **+** list, or
   long-press a pane's header and drag it over the canvas. A preview shows
@@ -250,9 +251,9 @@ involved; they travel inside the same published frame:
   data-gv-iq-share="0.34"> … </section>
 ```
 
-- `data-gv-iq-spaces` — up to three of `topology`, `evidence`, `files`,
+- `data-gv-iq-spaces` — up to six of `topology`, `evidence`, `files`,
   `tests`, `git`, `patterns`, `cicd`, `beforeafter`, `architecture`, `support`,
-  `builds`, `docs`, `security`, `iac`, `sleeping`
+  `builds`, `docs`, `security`, `iac`, `sleeping`, `wopr`, `video`, `web`
   (comma-separated); an empty value closes all spaces. Each
   entry may carry its own edge with `@top`/`@right`/`@bottom`/`@left`
   (`evidence@bottom`) to split that space onto its own dock; a bare name uses
@@ -1036,3 +1037,43 @@ For general review and saved results, see [Review AI work](review-ai-work.md)
 and [Use gvturn actions](use-gvturn-actions.md). For console controls, see
 [Use the main row and prompt controls](use-console-main-row-and-prompt-controls.md).
 Return to the [public catalogue](../CATALOGUE.md) to find related guidance.
+
+## Web content during a running turn
+
+Web gives visitors a readable introduction or source excerpt alongside the
+current work. In guest mode, it can welcome people directly into the dashboard
+without filling their first view with technical activity. Open it with the
+ordinary arrangement attributes:
+
+```html
+<section data-gv-iq-scene="v1" data-gv-iq-grammar="preview"
+  data-gv-iq-spaces="web,video" data-gv-iq-hero="web"
+  data-gv-iq-spaces-compact="web" data-gv-iq-hero-compact="web">
+  <!-- Keep the required focus and graphic blocks in the scene. -->
+  <div data-gv-iq-web="v1" data-gv-iq-role="detail" style="display:none">
+    <div data-web-id="welcome" data-web-title="Welcome to greatVibe"
+         data-web-url="https://greatvibe.ai/">Explore the workspace at your own pace. Read an introduction, watch the demo, or prepare a draft.</div>
+  </div>
+</section>
+```
+
+Publish the HTML through `konui_activity_update` with the current raw turn ID.
+A higher revision containing a Web declaration replaces its items; a frame
+without the declaration retains them for the same turn. A new turn clears the
+content. Keep stable item IDs so the reader's selection survives an update.
+
+The native space accepts up to six unique items with bounded titles and plain
+text. The source link is optional and must be a safe public HTTPS URL. Credentials,
+query strings, local/private destinations and active markup are rejected or
+removed by admission. This is agent-supplied content with an explicit source;
+Web does not fetch or embed remote pages, execute scripts, or imply that an
+excerpt was freshly retrieved. Read the source before presenting claims.
+
+Use `konui_agent_iq_get({username, turnId, space:"web"})` to inspect the
+bounded native model and visible text. Readback proves content admission and
+current state; inspect browser screenshots to assess actual visual quality.
+Reader placement, Auto and fullscreen controls keep their normal priority.
+
+The public homepage can continue its current route while this guest welcome
+is tested at `https://greatvibe.ai/dashboard?guest=1`. Making that the main
+landing page is a separate routing change.
