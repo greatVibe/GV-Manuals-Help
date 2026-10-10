@@ -604,6 +604,24 @@ suffixes such as `deploy-prod.sh` count as on-prem delivery. If a receipt is
 terminal but has no stage detail, the pane says so and keeps the missing stages
 unknown.
 
+CI/CD also checks configured delivery sources in the background. A failing or
+stopped pipeline can appear even when nobody queried it during the turn.
+Mention or fix failures related to the current work; unsupported providers
+remain unknown.
+
+### Track long background work
+
+Register long copies, uploads, builds and waits so their observed progress stays
+current in the operational spaces. A percentage needs a known total. Completion
+needs terminal evidence; elapsed time alone does not establish success.
+
+### Declare security findings
+
+Security accepts a hidden declaration like Patterns. Each row includes an
+evidence-linked finding, kind, severity and state, with an optional standard.
+Declare only findings supported by the current work. A verified state requires
+verification evidence.
+
 ### Populate the Architecture space
 
 The Architecture space draws the system **as the agent knows it**: components
@@ -659,7 +677,7 @@ A short playbook that turns the mechanics above into good turns:
   `data-gv-iq-spaces="architecture,evidence@bottom"` with
   `data-gv-iq-hero="architecture"` is a strong default: the model gets the big
   canvas, evidence stays glanceable, and the frame reads fine as a strip.
-- **Treat all nine spaces as peers.** Use the current goal and observed evidence,
+- **Treat all fifteen spaces as peers.** Use the current goal and observed evidence,
   not a fixed Tests-first order. Git, Patterns, CI/CD or any other space can be
   the compact hero when it best explains the current critical path.
 - **Keep Files live for file and node work.** It refreshes from observed
@@ -912,7 +930,7 @@ language and reusable examples. If the current tool manifest exposes
 available layouts/templates and the current viewer's Agent IQ state. Check
 availability first; older runtimes may not expose this capability yet.
 
-The tool accepts the authenticated `username` and optional `nodeId`, `turnId`
+The tool accepts the authenticated `username` and optional `nodeId`, `turnId`, `space`, `includeSpaces`
 and command `requestId`. Use the authorized current context rather than
 inventing identifiers. The tool can infer the current node when it is omitted;
 an optional turn selects an expected exact owner. Read the live tool schema
@@ -927,6 +945,12 @@ The bounded version-1 result contains:
 | `canvas` | Read mounted/visible/deferred state and the current width and height |
 | `evidence.script`, `evidence.raster` | Inspect the current mounted update's execution/decode state and proof |
 | `freshness`, `observedAt` | Distinguish authored/telemetry timestamps from the time of this observation |
+
+The optional `spaces` readback shows the viewer's open spaces, edges, hero,
+fullscreen, Auto and main-view state, plus bounded native content and models.
+Use `space` to inspect one space, or `includeSpaces:false` to skip this data.
+It includes observed native information, such as Git and CI/CD, that the agent
+did not author. Inspect sparingly; older dashboards may not expose it.
 
 An absent owner, panel, revision or timestamp is an unknown state, not zero
 progress. The query does not expose raw authored HTML, prompts or credentials.
