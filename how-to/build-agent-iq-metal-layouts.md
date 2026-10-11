@@ -1,10 +1,10 @@
 # Agent IQ Metal Design System
 
 Agent IQ Metal is a visual language for showing what an agent is doing, what it
-has learned, and what useful result is coming next. Deep navy surfaces,
-illuminated glass and metal edges, cyan connections and a compact greatVibe
-symbol make the work easy to follow. The design adapts to the available space
-and to the current task.
+has learned, and what useful result is coming next. Deep warm rust/espresso
+surfaces, illuminated glass and metal edges, amber connections and a compact
+greatVibe symbol make the work easy to follow. The design adapts to the
+available space and to the current task.
 
 This guide is for people requesting an Agent IQ view and for AI agents or other
 authors building one. Start with the [layout catalogue](#layout-catalogue), then
@@ -34,11 +34,11 @@ still belongs in the final delivery.
 
 | Element | Design rule | Meaning |
 | --- | --- | --- |
-| Canvas | Deep navy, starting at `#10151f` | Quiet background for the work |
+| Canvas | Deep warm rust/espresso, starting at `#17120d` | Quiet background for the work |
 | Metal cells | Fine edge highlights, restrained bevels, precise shadows | Separate related pieces without a wall of identical cards |
 | Glass | Subtle translucent layers over dark surfaces | Depth while keeping text legible |
-| Cyan | Luminous `#56d9ec` structure and connections | Relationships, direction and supporting information |
-| Amber | `#f5b34d` active accent | Work currently happening or a decision still needed |
+| Amber | Luminous `#f59e0b` structure and connections | Relationships, direction and supporting information |
+| Amber (active) | `#f5b34d` active accent | Work currently happening or a decision still needed |
 | Green | `#98c379`, only beside verified results | Evidence that the stated check or result is complete |
 | Pending information | Muted, readable blue-grey | Not yet known or not yet checked |
 | Type | Inter first, with system fallbacks | Short, clear labels and a consistent reading rhythm |
@@ -785,7 +785,7 @@ essential and what can be condensed. This example has no claimed results:
 
 ```html
 <section data-gv-iq-scene="v1"
-  style="min-height:100%;width:100%;box-sizing:border-box;padding:16px;background:#10151f;color:#edf5ff;font-family:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;">
+  style="min-height:100%;width:100%;box-sizing:border-box;padding:16px;background:#17120d;color:#f5ece2;font-family:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;">
   <div data-gv-iq-role="focus" style="margin-bottom:14px;">
     <div style="color:#f5b34d;font-size:12px;">Starting</div>
     <h2 style="margin:6px 0;font-size:22px;">Understand the request</h2>
@@ -795,27 +795,27 @@ essential and what can be condensed. This example has no claimed results:
     style="display:flex;flex-wrap:wrap;gap:12px;align-items:stretch;">
     <svg viewBox="0 0 360 110" role="img" aria-label="The request informs the approach, which produces a useful outcome"
       style="width:100%;max-height:180px;">
-      <rect x="5" y="20" width="100" height="70" rx="12" fill="#1b3040" stroke="#56d9ec"/>
-      <rect x="130" y="20" width="100" height="70" rx="12" fill="#1b3040" stroke="#f5b34d"/>
-      <rect x="255" y="20" width="100" height="70" rx="12" fill="#1b3040" stroke="#56d9ec"/>
+      <rect x="5" y="20" width="100" height="70" rx="12" fill="#2a1810" stroke="#f59e0b"/>
+      <rect x="130" y="20" width="100" height="70" rx="12" fill="#2a1810" stroke="#f5b34d"/>
+      <rect x="255" y="20" width="100" height="70" rx="12" fill="#2a1810" stroke="#f59e0b"/>
       <path d="M105 55 H127 M120 48 L127 55 L120 62 M230 55 H252 M245 48 L252 55 L245 62"
-        fill="none" stroke="#56d9ec" stroke-width="2"/>
-      <text x="55" y="60" text-anchor="middle" fill="#edf5ff" font-size="14">Request</text>
-      <text x="180" y="60" text-anchor="middle" fill="#edf5ff" font-size="14">Approach</text>
-      <text x="305" y="60" text-anchor="middle" fill="#edf5ff" font-size="14">Outcome</text>
+        fill="none" stroke="#f59e0b" stroke-width="2"/>
+      <text x="55" y="60" text-anchor="middle" fill="#f5ece2" font-size="14">Request</text>
+      <text x="180" y="60" text-anchor="middle" fill="#f5ece2" font-size="14">Approach</text>
+      <text x="305" y="60" text-anchor="middle" fill="#f5ece2" font-size="14">Outcome</text>
     </svg>
-    <div style="flex:1 1 180px;padding:18px;border:1px solid #56d9ec;border-radius:12px;background:linear-gradient(145deg,#253d4d,#13202f);">
-      <div style="color:#56d9ec;font-size:12px;">Request → approach</div>
+    <div style="flex:1 1 180px;padding:18px;border:1px solid #f59e0b;border-radius:12px;background:linear-gradient(145deg,#3a2416,#1a1109);">
+      <div style="color:#f59e0b;font-size:12px;">Request → approach</div>
       <h3 style="font-size:18px;margin:8px 0;">Find the useful path</h3>
       <p style="font-size:14px;line-height:1.5;">Choose a method that matches the question.</p>
     </div>
-    <div style="flex:1 1 180px;padding:18px;border:1px solid #416777;border-radius:12px;background:linear-gradient(145deg,#253d4d,#13202f);">
-      <div style="color:#56d9ec;font-size:12px;">Work → useful outcome</div>
+    <div style="flex:1 1 180px;padding:18px;border:1px solid #6b5d4f;border-radius:12px;background:linear-gradient(145deg,#3a2416,#1a1109);">
+      <div style="color:#f59e0b;font-size:12px;">Work → useful outcome</div>
       <h3 style="font-size:18px;margin:8px 0;">Make the answer usable</h3>
       <p style="font-size:14px;line-height:1.5;">Bring back the result with evidence and any limits.</p>
     </div>
   </div>
-  <div data-gv-iq-role="detail" style="margin-top:12px;color:#a2b1c6;font-size:12px;">
+  <div data-gv-iq-role="detail" style="margin-top:12px;color:#c9bcae;font-size:12px;">
     Layout example only. No results have been reported.
   </div>
 </section>
@@ -855,8 +855,8 @@ Show honest, unmeasured progress with a turning ring — no invented percentage:
 
 ```html
 <g transform="translate(40,40)">
-  <circle r="26" fill="none" stroke="#1d3646" stroke-width="6"/>
-  <circle r="26" fill="none" stroke="#56d9ec" stroke-width="6" stroke-linecap="round" stroke-dasharray="90 200">
+  <circle r="26" fill="none" stroke="#2e1f14" stroke-width="6"/>
+  <circle r="26" fill="none" stroke="#f59e0b" stroke-width="6" stroke-linecap="round" stroke-dasharray="90 200">
     <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.1s" repeatCount="indefinite"/>
   </circle>
 </g>
@@ -877,9 +877,9 @@ Define the gradient it references so the snippet works on its own:
 ```html
 <defs>
   <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0" stop-color="#56d9ec" stop-opacity="0"/>
-    <stop offset="0.5" stop-color="#56d9ec" stop-opacity="0.9"/>
-    <stop offset="1" stop-color="#56d9ec" stop-opacity="0"/>
+    <stop offset="0" stop-color="#f59e0b" stop-opacity="0"/>
+    <stop offset="0.5" stop-color="#f59e0b" stop-opacity="0.9"/>
+    <stop offset="1" stop-color="#f59e0b" stop-opacity="0"/>
   </linearGradient>
 </defs>
 <path d="M0 40 C 120 10,240 70,360 40" fill="none" stroke="url(#flow)" stroke-width="2.4" stroke-dasharray="60 320">
