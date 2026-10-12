@@ -115,3 +115,7 @@ private implementation facts.
 This catalogue is public-facing. Anything derived from private source material
 must be rewritten for a public reader and checked against `SANITIZATION.md`
 before publication.
+
+### David’s story
+
+The legacy home film **David telling our story** is indexed as `greatvibe-story` in [the video catalogue](videos/index.json). Read its [official caption transcript](videos/transcripts/greatvibe-story.md). It is separate from the Johnathon Agent IQ demo.

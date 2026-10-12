@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updated_at": "2026-10-09",
+  "updated_at": "2026-10-12",
   "default_aspect_ratio": "1:1",
   "videos": [
     {
@@ -122,6 +122,39 @@
       ],
       "updated_at": "2026-10-09",
       "duration_seconds": 367
+    },
+    {
+      "slug": "greatvibe-story",
+      "title": "David telling our story",
+      "summary": "David explains why we built greatVibe in the legacy home-page film, Why we built greatVibe. Official English captions accompany the recording.",
+      "provider": "vimeo",
+      "video_id": "1223126471",
+      "embed_hash_ref": "greatvibe-story",
+      "aspect_ratio": "16:9",
+      "duration_seconds": 197,
+      "product_area": "welcome",
+      "audience": [
+        "new-users",
+        "developers",
+        "founders"
+      ],
+      "difficulty": "intro",
+      "trust": "owned",
+      "visibility": "unlisted-overlay-required",
+      "tags": [
+        "welcome",
+        "story",
+        "david"
+      ],
+      "related_docs": [],
+      "transcript_path": "transcripts/greatvibe-story.md",
+      "chapters": [
+        {
+          "start_seconds": 0,
+          "title": "Why we built greatVibe"
+        }
+      ],
+      "updated_at": "2026-10-12"
     }
   ]
 }

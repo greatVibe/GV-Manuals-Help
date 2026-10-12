@@ -42,3 +42,4 @@ Machine-readable public index for user-facing manuals and videos.
 - 2026-08-03: Added routing for AI agent credentials, GitHub credentials,
   templates, status bar, and turn management.
 - 2026-08-03: Created initial public catalogue for the new help spine.
+lastModified-david-story: 2026-10-12 — Index the legacy home video Why we built greatVibe as greatvibe-story with the official Vimeo captions and source metadata. Private playback hash remains server-side and is absent from public documentation.
