@@ -18,6 +18,18 @@ and polling do not keep it alive. Its workspace is disposable. Use a
 development node for files or workloads you need to keep. Ending Mochi does
 not sign you out of your account.
 
+## As A Guest
+
+Without an account, Mochi gives you 5 counted turns per rolling 3 hours.
+Questions about greatVibe, Gravient or how to use the service are free (up to
+20 per 3 hours) and do not use a counted turn. The turns panel shows what you
+have left.
+
+To keep going with your own workspace, sign up right in the console: tap
+**Sign up** on the turns panel, or open the **Guest** menu and choose
+**Sign in or register**. Plans and the trial are in
+`../reference/plans-and-pricing.md`.
+
 ## Use This Shape
 
 ```text

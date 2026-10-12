@@ -1,3 +1,4 @@
+lastModified-guest-signup: 2026-10-13 — Route guest sign-up questions to plans-and-pricing rule 9 (in-console sign-up, greatvibe:signup choice) and ask-mochi-for-help.
 lastModified-fast-answers: 2026-10-12 — Adds a Fast Answers block and routes pricing, the founding story and the eight-chapter development manual from starter paths, topic index, coverage and agent routing notes.
 file: CATALOGUE.md
 lastModified-steering: 2026-09-28 — Routes the new steer-a-running-turn.md guide from starter paths, topic index, repository coverage and agent routing notes.

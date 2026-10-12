@@ -11,6 +11,7 @@ and users. Private employee engineering repositories are not user help sources.
 | Question | Read |
 | --- | --- |
 | What does greatVibe cost? Trial? Billing? Enterprise? | `reference/plans-and-pricing.md` (the only public source for prices) |
+| I'm a Mochi guest. How do I sign up? | Right in the console: `reference/plans-and-pricing.md` (rule 9) and `getting-started/ask-mochi-for-help.md` |
 | Why does greatVibe exist? What needs does it fill? | `getting-started/why-we-built-greatvibe.md` + video `greatvibe-story` |
 | How do I develop software with greatVibe? | `manuals/development/overview.md`, then one chapter |
 
@@ -116,7 +117,7 @@ Agents should use this repository as local help memory, not as a source of
 private implementation facts.
 
 - Read this catalogue before recommending a guide or video.
-- Prices, trial and billing: answer only from `reference/plans-and-pricing.md`, never from memory or older videos. Its "Show Pricing In Agent IQ" block is ready to publish in the `web` space.
+- Prices, trial and billing: answer only from `reference/plans-and-pricing.md`, never from memory or older videos. Its "Show Pricing In Agent IQ" block is ready to publish in the `web` space. For guests, follow its rule 9: show the block, offer sign-up in the console and ask, with the `greatvibe:signup` choice.
 - "Why greatVibe?": lead with the short answer in `getting-started/why-we-built-greatvibe.md`; offer the `greatvibe-story` video. Treat "10x" as the founders' experience, not a promise.
 - Development questions: start at `manuals/development/overview.md`, use its quick-reference table to pick one chapter, and describe only shipped behaviour.
 - For Agent IQ metal/glass styling, Wide opening, Phone portrait, Compact Fold or Adaptive focus layouts, read [the public Metal Design System guide](how-to/build-agent-iq-metal-layouts.md). Its [HTML starter](reference/agent-iq-metal-starter.html) is an illustrative local example, not production telemetry or a data-query API.

@@ -17,6 +17,10 @@ hosted-node pricing and Mochi limits. Agents quote prices only from here.
   agents · Agent IQ Web block · What this guide does not cover.
 
 # Gotchas
+- Guests in Mochi sign up inside the console (turns panel Sign up, or Guest
+  menu > Sign in or register). Never send guests to the website to sign up.
+- Choice values greatvibe:signup / greatvibe:login are handled by the guest
+  console (open the account dialog, no turn used). Keep them exact.
 - Publish only what the live website says or what users can see in the
   product today. No Enterprise bands, discounts, add-on prices, node price
   lists, internal costs, roadmap items or features still in design.
@@ -26,5 +30,8 @@ hosted-node pricing and Mochi limits. Agents quote prices only from here.
 - Brand wordmark is "greatVibe"; the primary CTA is "Try greatVibe".
 
 # Change History
+- 2026-10-13: Guests sign up inside the console. New agent rule 9 (Web
+  block + ask, with greatvibe:signup choice) and a signup row in the Web
+  block, at the product owner's request.
 - 2026-10-12: Created from the live website pricing and Terms, at the product
   owner's request. SANITIZATION.md allows published list prices here only.

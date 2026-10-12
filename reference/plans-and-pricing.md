@@ -41,8 +41,10 @@ changes.
 
 How it works:
 
-1. Start from **Try greatVibe** on the website. The signup page reads "Start
-   your 14-day trial."
+1. Sign up. In a Mochi guest session you can do this right in the console:
+   tap **Sign up** on the turns panel, or open the **Guest** menu and choose
+   **Sign in or register**. From the website, use **Try greatVibe**; the
+   signup page reads "Start your 14-day trial."
 2. Add a card. Nothing is charged today.
 3. Use greatVibe for 14 days.
 4. On day 15 your card is charged $199 USD per seat, plus applicable tax, and
@@ -140,11 +142,19 @@ To start, use **Contact sales** and say how many seats you need.
    `billing` category. See `../how-to/report-and-follow-support-requests.md`.
 8. Older videos may describe earlier terms. Where a video and this guide differ,
    this guide wins.
+9. **Guests in Mochi.** When a guest asks about price, the trial or signing
+   up, show the Web block below in the `web` space, tell them they can sign
+   up right here in the console, and ask whether they want to. End the card
+   with a primary choice `{"label": "Sign up now", "value": "greatvibe:signup",
+   "primary": true}` and a second choice to keep exploring. In a guest session
+   `greatvibe:signup` opens the sign-up dialog and `greatvibe:login` opens
+   sign-in, without using a turn. Never send a guest to the website to sign up.
 
 ## Show Pricing In Agent IQ
 
 Agents can show the plan visually by publishing this block inside an Agent IQ
-frame and proposing the `web` space. It contains only the facts above.
+frame and proposing the `web` space. It contains only the facts above. The
+`signup` row is for guest sessions; leave it out for signed-in users.
 
 ```html
 <div data-gv-iq-web="v1" data-gv-iq-role="detail" style="display:none">
@@ -159,6 +169,16 @@ frame and proposing the `web` space. It contains only the facts above.
         <div style="background:#2a1a10;border-radius:8px;padding:8px"><b>BYOK</b><br><span style="font-size:12px;color:#c9bcae">you pay your AI provider</span></div>
       </div>
       <div style="font-size:12px;color:#c9bcae;margin-top:10px">Card required to start. No charge today. Cancel before day 15 and pay nothing. Enterprise: custom pricing, contact sales.</div>
+    </div>
+  </div>
+  <div data-web-id="signup" data-web-space="web" data-web-format="html" data-web-title="Sign up from here">
+    <div style="font-family:Inter,sans-serif;color:#f5ece2;background:#1a1109;border:1px solid #98c379;border-radius:12px;padding:16px">
+      <div style="color:#98c379;font-size:11px;letter-spacing:2px">SIGN UP WITHOUT LEAVING MOCHI</div>
+      <ol style="font-size:13px;line-height:1.6;margin:8px 0 0;padding-left:18px">
+        <li>Tap <b>Sign up</b> on the turns panel, or open the <b>Guest</b> menu and choose <b>Sign in or register</b>.</li>
+        <li>Register with Google, GitHub, a passkey or an email code.</li>
+        <li>Start your 14-day trial. Card required, no charge today.</li>
+      </ol>
     </div>
   </div>
 </div>
