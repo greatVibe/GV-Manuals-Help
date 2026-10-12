@@ -27,6 +27,7 @@ users and node-local agents.
 - Do not list ACE companion files in the user-facing repository map.
 
 # Change History
+- 2026-10-12: Tree and pointers list the pricing reference, founding-story guide and development manual.
 - 2026-08-03: Expanded the repository map to list all 30
   `manuals/productivity/` guides and current video catalogue files.
 - 2026-08-03: Added use-gvturn-actions.md to the repository map.

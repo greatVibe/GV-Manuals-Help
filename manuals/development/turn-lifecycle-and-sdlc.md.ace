@@ -1,0 +1,17 @@
+file: turn-lifecycle-and-sdlc.md
+consumers: [developers, agents explaining status or audit flow]
+produces: [public developer manual chapter]
+---
+# Purpose
+SDLC phases mapped to the turn loop: terminal gvturn, statuses, types, commit-per-turn format, audit turns, steering, chained turns, procedures.
+
+# Dependencies
+- Sibling chapters in manuals/development/ and linked public guides.
+- Facts verified against greatVibe source and tool schemas on 2026-10-12.
+
+# Gotchas
+- Server auto-raises audit_required on very high tool-call counts; card titles max 100 chars; choices 2-5 with one primary.
+- Public-safe: placeholders only (my-service, node_example); no unreleased features.
+
+# Change History
+- 2026-10-12: Created.

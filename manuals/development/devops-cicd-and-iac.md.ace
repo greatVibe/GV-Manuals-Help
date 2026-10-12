@@ -1,0 +1,17 @@
+file: devops-cicd-and-iac.md
+consumers: [developers and platform engineers, agents doing delivery work]
+produces: [public developer manual chapter]
+---
+# Purpose
+CI/CD connector templates, reading pipeline state, background CodePipeline sampling, AWS read vs write-gated tools, CloudFormation and IaC procedures, delivery evidence spaces.
+
+# Dependencies
+- Sibling chapters in manuals/development/ and linked public guides.
+- Facts verified against greatVibe source and tool schemas on 2026-10-12.
+
+# Gotchas
+- No internal pipeline names, accounts or hosts. Write tools need confirmed:true after user approval.
+- Public-safe: placeholders only (my-service, node_example); no unreleased features.
+
+# Change History
+- 2026-10-12: Created.

@@ -1,0 +1,32 @@
+file: manuals/development/
+consumers: [developers and technical founders, Mochi and node agents answering "how do I build X with greatVibe?", documentation maintainers]
+produces: [technical, procedural developer manual: SDLC turn loop, ACE and context, Git, nodes/builds/tests, DevOps (CI/CD, IaC), agile work management, security and secrets]
+---
+# Purpose
+How to develop software with greatVibe, as greatVibe actually works today.
+Agents read `overview.md` first, then one chapter.
+
+# Key Files
+- `overview.md` — the dev loop, quick reference, chapter map.
+- `turn-lifecycle-and-sdlc.md` — SDLC phases mapped to turns and gvturns.
+- `ace-and-context.md` — design-led coding with ACE files and repo context.
+- `git-and-repositories.md` — repositories, branches, commits and pushes.
+- `nodes-builds-and-tests.md` — where code runs, runtimes, tests, long builds.
+- `devops-cicd-and-iac.md` — CI/CD connectors, cloud changes, delivery evidence.
+- `agile-work-management.md` — plans, flows, investigations, work items.
+- `security-and-secrets.md` — secrets, credentials and risky actions.
+
+# Dependencies
+- Links into `../../concepts/`, `../../how-to/` and `../../reference/` rather
+  than repeating them.
+- `../../SANITIZATION.md` publication boundary.
+
+# Gotchas
+- Shipped behaviour only. No features in design, rollout phases, roadmap or
+  internal pipelines. Long-term vision belongs in getting-started.
+- Every procedure must be something a user or their agent can do today with
+  their own permissions. Staff-only support administration is out of scope.
+- Use placeholders: `my-service`, `node_example`, `/workspace/my-service`.
+
+# Change History
+- 2026-10-12: Created the development manual set.

@@ -1,0 +1,17 @@
+file: nodes-builds-and-tests.md
+consumers: [developers, agents running builds/tests]
+produces: [public developer manual chapter]
+---
+# Purpose
+Runtimes, test discovery table, Tests space and test plans, tracked operations for long builds/waits, using other nodes, IDE technical points.
+
+# Dependencies
+- Sibling chapters in manuals/development/ and linked public guides.
+- Facts verified against greatVibe source and tool schemas on 2026-10-12.
+
+# Gotchas
+- Do not promise specific runtime versions; ask the node. Command allowlist varies per node.
+- Public-safe: placeholders only (my-service, node_example); no unreleased features.
+
+# Change History
+- 2026-10-12: Created.

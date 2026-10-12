@@ -10,6 +10,7 @@ session.
 - `welcome-to-greatvibe.md`
 - `first-10-minutes.md`
 - `ask-mochi-for-help.md`
+- `why-we-built-greatvibe.md`
 
 # Dependencies
 - `../CATALOGUE.md` links these guides into public navigation.
@@ -20,4 +21,5 @@ session.
 - Avoid internal platform architecture, private routes, or unreleased promises.
 
 # Change History
+- 2026-10-12: Added the founding-story guide from David's film.
 - 2026-08-03: Created first-session guide set.

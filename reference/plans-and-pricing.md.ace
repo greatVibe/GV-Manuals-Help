@@ -1,0 +1,30 @@
+file: plans-and-pricing.md
+consumers: [users asking about cost, Mochi agents answering plan/price/trial/billing questions, documentation maintainers]
+produces: [public plan, price, trial, billing, node and Mochi limit facts; agent answer rules; a ready Agent IQ Web block]
+---
+# Purpose
+The single public answer source for greatVibe plans, prices, trial, billing,
+hosted-node pricing and Mochi limits. Agents quote prices only from here.
+
+# Sources
+- The live greatvibe.ai Pricing section and Terms (wording mirrored; quoted
+  lines are verbatim).
+- Shipped product behaviour for Mochi limits and the Add Node quote.
+
+# Key Sections
+- At a glance · Self-serve plan · Trial · Billing and cancellation · Tax and
+  currency · Hosted nodes · Mochi · Enterprise · Data and AI costs · Rules for
+  agents · Agent IQ Web block · What this guide does not cover.
+
+# Gotchas
+- Publish only what the live website says or what users can see in the
+  product today. No Enterprise bands, discounts, add-on prices, node price
+  lists, internal costs, roadmap items or features still in design.
+- Keep seat-change wording to what this guide says; do not add billing
+  mechanics the website does not state.
+- When the website pricing or Terms change, update this guide in the same week.
+- Brand wordmark is "greatVibe"; the primary CTA is "Try greatVibe".
+
+# Change History
+- 2026-10-12: Created from the live website pricing and Terms, at the product
+  owner's request. SANITIZATION.md allows published list prices here only.

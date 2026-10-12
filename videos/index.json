@@ -146,7 +146,10 @@
         "story",
         "david"
       ],
-      "related_docs": [],
+      "related_docs": [
+        "getting-started/why-we-built-greatvibe.md",
+        "reference/plans-and-pricing.md"
+      ],
       "transcript_path": "transcripts/greatvibe-story.md",
       "chapters": [
         {

@@ -1,0 +1,33 @@
+file: why-we-built-greatvibe.md
+consumers: [new users, prospective customers, Mochi agents answering "why greatVibe?" or "what is it for?"]
+produces: [plain-language founding story and the user needs greatVibe fills]
+---
+# Purpose
+Explains why the founders built greatVibe and which needs it fills, drawn from
+David's film "Why we built greatVibe" (video slug `greatvibe-story`) and the
+public Directed AI positioning. Gives agents a correct, quotable answer.
+
+# Key Sections
+- The short answer (quotable summary).
+- The story in David's words (paraphrase + short quotes from the captions).
+- The needs greatVibe fills (table: need → what greatVibe does).
+- Who it is for / who it is not for yet.
+- How agents should use this guide (video + pricing hand-off).
+
+# Dependencies
+- `../videos/transcripts/greatvibe-story.md` (caption transcript, source).
+- `../videos/index.json` entry `greatvibe-story` links back via `related_docs`.
+- `../reference/plans-and-pricing.md` owns all trial and price facts.
+
+# Gotchas
+- The captions mis-hear "greatVibe" as "GrapeVibe" and "Johnathon" as
+  "Jonathan". Never quote those errors.
+- The film says "don't have to pay anything" for the 14-day trial. The current
+  rule is card at signup, nothing charged until day 15. Defer trial wording to
+  the pricing guide; never quote the film's trial line as current terms.
+- Keep "10x" as the founders' experience, not a promised customer outcome.
+- Directed AI: the human sets intent and stays accountable. Do not describe
+  greatVibe as autonomous background agents.
+
+# Change History
+- 2026-10-12: Created from David's story transcript and public positioning.

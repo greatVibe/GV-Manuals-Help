@@ -8,6 +8,9 @@ Contains public-safe manual sets grouped by work area.
 # Key Files
 - `productivity/` contains practical document, spreadsheet, review, and
   work-management guides.
+- `development/` is the technical, procedural manual for building software
+  with greatVibe: turn loop, ACE, tests, Git, nodes, CI/CD, IaC, agile work
+  and secrets.
 
 # Dependencies
 - `../CATALOGUE.md` routes users and agents into the relevant manual set.
@@ -15,7 +18,11 @@ Contains public-safe manual sets grouped by work area.
 
 # Gotchas
 - Keep manuals user-facing. Do not include internal systems, private URLs,
-  credentials, customer data, or operational commands.
+  credentials, customer data, or internal operational commands.
+- `development/` may show public agent tool names and generic commands
+  (`deno test`, `go test ./...`) with placeholder repos, paths and nodes. Never
+  real hostnames, accounts, buckets, private repos or staff-only tools.
 
 # Change History
+- 2026-10-12: Added the development manual set.
 - 2026-08-03: Added folder ACE for the public manuals area.

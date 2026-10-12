@@ -1,0 +1,17 @@
+file: ace-and-context.md
+consumers: [developers adopting ACE, agents explaining CLAUDE.md/AGENTS.md]
+produces: [public developer manual chapter]
+---
+# Purpose
+ACE-first procedure, .ace format, update rules, testing per turn, coding standards, gvContext layers and repo context via analysis.
+
+# Dependencies
+- Sibling chapters in manuals/development/ and linked public guides.
+- Facts verified against greatVibe source and tool schemas on 2026-10-12.
+
+# Gotchas
+- System targets cannot be recompiled from a turn; repo targets can via repository analysis.
+- Public-safe: placeholders only (my-service, node_example); no unreleased features.
+
+# Change History
+- 2026-10-12: Created.

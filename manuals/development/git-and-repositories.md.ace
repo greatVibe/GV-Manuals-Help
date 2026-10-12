@@ -1,0 +1,17 @@
+file: git-and-repositories.md
+consumers: [developers, agents doing Git work]
+produces: [public developer manual chapter]
+---
+# Purpose
+Git tool map, repo_id rules, ff-only pulls, parallel bulk ops, push retry, force-with-lease gate, merge-to-branch, credentials, branching patterns, recovery.
+
+# Dependencies
+- Sibling chapters in manuals/development/ and linked public guides.
+- Facts verified against greatVibe source and tool schemas on 2026-10-12.
+
+# Gotchas
+- Git tools act on the main checkout; worktrees via node commands. Force push off by default.
+- Public-safe: placeholders only (my-service, node_example); no unreleased features.
+
+# Change History
+- 2026-10-12: Created.

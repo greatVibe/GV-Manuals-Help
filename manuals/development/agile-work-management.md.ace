@@ -1,0 +1,17 @@
+file: agile-work-management.md
+consumers: [teams, agents managing work]
+produces: [public developer manual chapter]
+---
+# Purpose
+Levels of work (turn, plan, investigation, flow, issue), customer_project issues as backlog items, cadence mapping, collaboration features.
+
+# Dependencies
+- Sibling chapters in manuals/development/ and linked public guides.
+- Facts verified against greatVibe source and tool schemas on 2026-10-12.
+
+# Gotchas
+- Planning fields and lifecycle changes are support-managed; customers create and annotate their own issues.
+- Public-safe: placeholders only (my-service, node_example); no unreleased features.
+
+# Change History
+- 2026-10-12: Created.

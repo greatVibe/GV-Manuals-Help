@@ -6,6 +6,14 @@ when an agent needs to choose the right local guide before answering.
 This node-seeded repository is the only manuals and help authority for agents
 and users. Private employee engineering repositories are not user help sources.
 
+## Fast Answers
+
+| Question | Read |
+| --- | --- |
+| What does greatVibe cost? Trial? Billing? Enterprise? | `reference/plans-and-pricing.md` (the only public source for prices) |
+| Why does greatVibe exist? What needs does it fill? | `getting-started/why-we-built-greatvibe.md` + video `greatvibe-story` |
+| How do I develop software with greatVibe? | `manuals/development/overview.md`, then one chapter |
+
 ## How To Use This Catalogue
 
 1. Match the user's intent to a topic below.
@@ -19,6 +27,16 @@ and users. Private employee engineering repositories are not user help sources.
 | User intent | Start here | Related videos |
 | --- | --- | --- |
 | First time in GreatVibe | `getting-started/welcome-to-greatvibe.md` | `videos/index.json` tag `welcome` |
+| Understand why greatVibe exists | `getting-started/why-we-built-greatvibe.md` | `videos/index.json` slug `greatvibe-story` |
+| Plans, prices, trial and billing | `reference/plans-and-pricing.md` | No indexed video yet |
+| Develop software with greatVibe (SDLC overview) | `manuals/development/overview.md` | No indexed video yet |
+| Turn loop, statuses, commits and audits | `manuals/development/turn-lifecycle-and-sdlc.md` | No indexed video yet |
+| ACE files, tests per turn and repo context | `manuals/development/ace-and-context.md` | No indexed video yet |
+| Git: status, commit, push, merge, recover | `manuals/development/git-and-repositories.md` | No indexed video yet |
+| Builds, tests, long jobs and other nodes | `manuals/development/nodes-builds-and-tests.md` | No indexed video yet |
+| CI/CD pipelines, AWS and infrastructure as code | `manuals/development/devops-cicd-and-iac.md` | No indexed video yet |
+| Plans, investigations, flows and backlog issues | `manuals/development/agile-work-management.md` | No indexed video yet |
+| Secrets, credentials and risky actions in dev work | `manuals/development/security-and-secrets.md` | No indexed video yet |
 | Learn what to do in the first session | `getting-started/first-10-minutes.md` | `videos/index.json` tag `first-session` |
 | Ask Mochi for help | `getting-started/ask-mochi-for-help.md` | `videos/index.json` tag `mochi` |
 | Understand a node | `concepts/what-is-a-node.md` | `videos/index.json` tag `node` |
@@ -61,7 +79,9 @@ and users. Private employee engineering repositories are not user help sources.
 
 | Topic | Public docs |
 | --- | --- |
-| Getting started | `getting-started/welcome-to-greatvibe.md`, `getting-started/first-10-minutes.md`, `getting-started/ask-mochi-for-help.md` |
+| Getting started | `getting-started/welcome-to-greatvibe.md`, `getting-started/why-we-built-greatvibe.md`, `getting-started/first-10-minutes.md`, `getting-started/ask-mochi-for-help.md` |
+| Plans and pricing | `reference/plans-and-pricing.md` |
+| Software development (SDLC, DevOps, agile) | `manuals/development/overview.md`, `manuals/development/turn-lifecycle-and-sdlc.md`, `manuals/development/ace-and-context.md`, `manuals/development/git-and-repositories.md`, `manuals/development/nodes-builds-and-tests.md`, `manuals/development/devops-cicd-and-iac.md`, `manuals/development/agile-work-management.md`, `manuals/development/security-and-secrets.md` |
 | Core concepts | `concepts/what-is-a-node.md`, `concepts/what-is-a-connector.md`, `concepts/what-is-a-gvturn.md`, `concepts/what-is-the-gvturn-power-footer.md`, `concepts/what-is-gvcontext.md`, `concepts/what-is-ace.md` |
 | Practical workflows | `how-to/review-ai-work.md`, `how-to/work-with-files.md`, `how-to/recover-a-failed-turn.md`, `how-to/report-and-follow-support-requests.md` |
 | Agent IQ Metal Design System | [Visual language and layout catalogue](how-to/build-agent-iq-metal-layouts.md), [copyable local HTML starter](reference/agent-iq-metal-starter.html), [player input: games and choices](how-to/play-games-and-collect-choices-in-agent-iq.md) |
@@ -69,7 +89,7 @@ and users. Private employee engineering repositories are not user help sources.
 | CI/CD and object storage | `how-to/connect-cicd-and-cloud-storage.md`, `reference/connector-template-types.md` |
 | Console, Account Admin, IDE, and turns | `how-to/understand-the-status-bar.md`, `how-to/use-console-main-row-and-prompt-controls.md`, `how-to/manage-turns-with-gv-menu-eventlog-gvturns.md`, `how-to/check-eventlog-in-dashboard-console.md`, `how-to/manage-organizations-meshes-and-nodes.md`, `how-to/set-your-profile-picture.md`, `how-to/view-turns-across-nodes.md`, `how-to/use-the-status-bar-toolbox-and-stop-turns.md`, `how-to/ask-an-agent-to-open-the-right-ui.md`, `how-to/use-gvturn-actions.md`, `how-to/use-and-watch-the-v2-ide.md`, `how-to/use-tandem-turns.md`, `how-to/steer-a-running-turn.md` |
 | Productivity | `manuals/productivity/overview.md` and the guides in `manuals/productivity/` |
-| Reference | `reference/glossary.md`, `reference/public-safety-rules.md`, `reference/guidance-markers.md`, `reference/dashboard-console-elements.md`, `reference/connector-template-types.md` |
+| Reference | `reference/glossary.md`, `reference/public-safety-rules.md`, `reference/plans-and-pricing.md`, `reference/guidance-markers.md`, `reference/dashboard-console-elements.md`, `reference/connector-template-types.md` |
 | Videos | `videos/README.md`, `videos/index.json`, `videos/index.schema.json`, `videos/mochi-experience-map.json`, `videos/mochi-experience-map.schema.json`, `videos/private-overlays/README.md`, transcripts in `videos/transcripts/` |
 
 ## Repository Coverage
@@ -82,7 +102,8 @@ as user-facing help.
 | --- | --- |
 | Repository guide | `README.md`, `CATALOGUE.md`, `SANITIZATION.md` |
 | Agent IQ design and examples | `how-to/build-agent-iq-metal-layouts.md`, `reference/agent-iq-metal-starter.html`, `how-to/play-games-and-collect-choices-in-agent-iq.md` |
-| Getting started | `getting-started/welcome-to-greatvibe.md`, `getting-started/first-10-minutes.md`, `getting-started/ask-mochi-for-help.md` |
+| Getting started | `getting-started/welcome-to-greatvibe.md`, `getting-started/why-we-built-greatvibe.md`, `getting-started/first-10-minutes.md`, `getting-started/ask-mochi-for-help.md` |
+| Development manual | `manuals/development/overview.md`, `manuals/development/turn-lifecycle-and-sdlc.md`, `manuals/development/ace-and-context.md`, `manuals/development/git-and-repositories.md`, `manuals/development/nodes-builds-and-tests.md`, `manuals/development/devops-cicd-and-iac.md`, `manuals/development/agile-work-management.md`, `manuals/development/security-and-secrets.md` |
 | Concepts | `concepts/what-is-a-node.md`, `concepts/what-is-a-connector.md`, `concepts/what-is-a-gvturn.md`, `concepts/what-is-the-gvturn-power-footer.md`, `concepts/what-is-gvcontext.md`, `concepts/what-is-ace.md` |
 | How-to guides | `how-to/review-ai-work.md`, `how-to/work-with-files.md`, `how-to/recover-a-failed-turn.md`, `how-to/add-ai-agent-credential.md`, `how-to/add-github-credential.md`, `how-to/builtin-credential-and-connector-templates.md`, `how-to/connect-cicd-and-cloud-storage.md`, `how-to/understand-the-status-bar.md`, `how-to/use-console-main-row-and-prompt-controls.md`, `how-to/use-gvturn-actions.md`, `how-to/manage-turns-with-gv-menu-eventlog-gvturns.md`, `how-to/use-and-watch-the-v2-ide.md`, `how-to/use-tandem-turns.md`, `how-to/steer-a-running-turn.md` |
 | Productivity manuals | `manuals/productivity/approval-requests.md`, `manuals/productivity/calendar-planning.md`, `manuals/productivity/change-logs.md`, `manuals/productivity/csv-files.md`, `manuals/productivity/data-cleanup.md`, `manuals/productivity/data-validation.md`, `manuals/productivity/decision-records.md`, `manuals/productivity/document-review.md`, `manuals/productivity/email-writing.md`, `manuals/productivity/excel-formulas.md`, `manuals/productivity/exporting-files.md`, `manuals/productivity/feedback-tracking.md`, `manuals/productivity/file-naming.md`, `manuals/productivity/follow-up-actions.md`, `manuals/productivity/issue-reporting.md`, `manuals/productivity/meeting-notes.md`, `manuals/productivity/overview.md`, `manuals/productivity/pdf-review.md`, `manuals/productivity/presentation-prep.md`, `manuals/productivity/prioritising-work.md`, `manuals/productivity/project-summaries.md`, `manuals/productivity/recover-failed-dashboard-turn.md`, `manuals/productivity/recurring-reviews.md`, `manuals/productivity/review-checklists.md`, `manuals/productivity/sharing-files.md`, `manuals/productivity/spreadsheet-formatting.md`, `manuals/productivity/status-updates.md`, `manuals/productivity/task-tracking.md`, `manuals/productivity/troubleshooting.md`, `manuals/productivity/work-handoffs.md` |
@@ -95,6 +116,9 @@ Agents should use this repository as local help memory, not as a source of
 private implementation facts.
 
 - Read this catalogue before recommending a guide or video.
+- Prices, trial and billing: answer only from `reference/plans-and-pricing.md`, never from memory or older videos. Its "Show Pricing In Agent IQ" block is ready to publish in the `web` space.
+- "Why greatVibe?": lead with the short answer in `getting-started/why-we-built-greatvibe.md`; offer the `greatvibe-story` video. Treat "10x" as the founders' experience, not a promise.
+- Development questions: start at `manuals/development/overview.md`, use its quick-reference table to pick one chapter, and describe only shipped behaviour.
 - For Agent IQ metal/glass styling, Wide opening, Phone portrait, Compact Fold or Adaptive focus layouts, read [the public Metal Design System guide](how-to/build-agent-iq-metal-layouts.md). Its [HTML starter](reference/agent-iq-metal-starter.html) is an illustrative local example, not production telemetry or a data-query API.
 - For games, pickers or confirmations the reader answers mid-turn, read [the player input guide](how-to/play-games-and-collect-choices-in-agent-iq.md): script regions call `window.gvIq.emit`, and the agent polls `konui_agent_iq_get` with `turnId`, `inputsAfter` and `waitForInputMs`. It works the same for Claude and Codex and needs no steering prompt.
 - For changing a running turn by sending a message while it works, read [the steering guide](how-to/steer-a-running-turn.md). Steers reach the agent at its next step, not by polling. The reader sees the agent's next visible update as the reply, so its first sentence must be a short acknowledgement (never only in private reasoning); agents also refresh Agent IQ when the plan changes.

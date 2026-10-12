@@ -1,0 +1,17 @@
+file: overview.md
+consumers: [developers, agents choosing a chapter]
+produces: [public developer manual chapter]
+---
+# Purpose
+Entry page of the development manual: model in one minute, dev loop, quick reference, chapter map, where to develop, agent ground rules.
+
+# Dependencies
+- Sibling chapters in manuals/development/ and linked public guides.
+- Facts verified against greatVibe source and tool schemas on 2026-10-12.
+
+# Gotchas
+- Keep the quick-reference table in sync with chapter names. Shipped behaviour only.
+- Public-safe: placeholders only (my-service, node_example); no unreleased features.
+
+# Change History
+- 2026-10-12: Created.

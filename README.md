@@ -46,6 +46,7 @@ GV-Manuals-Help/
 |-- CATALOGUE.md
 |-- getting-started/
 |   |-- welcome-to-greatvibe.md
+|   |-- why-we-built-greatvibe.md
 |   |-- first-10-minutes.md
 |   `-- ask-mochi-for-help.md
 |-- concepts/
@@ -67,6 +68,15 @@ GV-Manuals-Help/
 |   |-- use-and-watch-the-v2-ide.md
 |   `-- manage-turns-with-gv-menu-eventlog-gvturns.md
 |-- manuals/
+|   |-- development/
+|   |   |-- overview.md
+|   |   |-- turn-lifecycle-and-sdlc.md
+|   |   |-- ace-and-context.md
+|   |   |-- git-and-repositories.md
+|   |   |-- nodes-builds-and-tests.md
+|   |   |-- devops-cicd-and-iac.md
+|   |   |-- agile-work-management.md
+|   |   `-- security-and-secrets.md
 |   |-- productivity/
 |   |   |-- approval-requests.md
 |   |   |-- calendar-planning.md
@@ -101,6 +111,7 @@ GV-Manuals-Help/
 |-- reference/
 |   |-- agent-iq-metal-starter.html
 |   |-- glossary.md
+|   |-- plans-and-pricing.md
 |   `-- public-safety-rules.md
 `-- videos/
     |-- README.md
@@ -123,6 +134,8 @@ Start with `CATALOGUE.md`, then choose the topic closest to your task:
 - For GreatVibe vocabulary, see `concepts/`.
 - For practical task workflows, see `how-to/`.
 - For responsive Agent IQ visuals, read the [Metal Design System guide](how-to/build-agent-iq-metal-layouts.md) and try the [self-contained starter](reference/agent-iq-metal-starter.html).
+- For plans, prices and the trial, see `reference/plans-and-pricing.md`.
+- For building software with greatVibe, start at `manuals/development/overview.md`.
 - For document workflows, see `manuals/productivity/`.
 - For safety rules and definitions, see `reference/`.
 - For training videos, see `videos/index.json`.

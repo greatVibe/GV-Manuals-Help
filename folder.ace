@@ -19,6 +19,8 @@ find task guidance without reading internal implementation docs.
 - `reference/` contains glossary and safety reference material.
 - `reference/dashboard-console-elements.md` documents every current dashboard-console guidance element and its bubble marker.
 - `videos/` contains structured training-video metadata and schemas.
+- `manuals/development/` is the technical developer manual (SDLC, DevOps, agile).
+- `reference/plans-and-pricing.md` holds published list prices and trial terms.
 
 # Dependencies
 - `SANITIZATION.md` is the publication safety checklist.
@@ -26,11 +28,14 @@ find task guidance without reading internal implementation docs.
 
 # Gotchas
 - Do not publish credentials, private URLs, internal routes, private hostnames,
-  customer data, roadmap commitments, or pricing strategy.
+  customer data, roadmap commitments, features still in design, or pricing
+  strategy. Published list prices live only in reference/plans-and-pricing.md.
 - Vimeo `embed_hash` values are access-control data. Public catalogue entries
   should reference private overlays rather than storing real hashes directly.
 
 # Change History
+- 2026-10-12: Added pricing reference, founding-story guide and the
+  development manual; CATALOGUE gained a Fast Answers block.
 - 2026-09-28: Added the public steering guide (how-to/steer-a-running-turn.md)
   and Agent IQ guidance for acknowledging steers.
 - 2026-09-26: Added connector concept, CI/CD and cloud storage how-to, and

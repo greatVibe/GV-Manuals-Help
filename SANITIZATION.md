@@ -66,7 +66,7 @@ Avoid:
 - Roadmap dates
 - Unreleased feature claims
 - Customer commitments
-- Pricing statements
+- Pricing statements, except published list prices and trial terms that mirror the live greatVibe website and appear only in `reference/plans-and-pricing.md`
 - Security guarantees beyond documented practice
 - Claims that require legal or commercial review
 
@@ -81,7 +81,7 @@ Before publishing, confirm:
 - Links are public-safe.
 - No private customer or staff context remains.
 - No implementation contract is exposed.
-- No roadmap or pricing claim slipped in.
+- No roadmap or pricing claim slipped in. Published list prices live only in `reference/plans-and-pricing.md` and match the live website.
 - The exact final text has been reviewed and approved.
 
 ## 7. Review Record

@@ -21,6 +21,7 @@ Lists known GreatVibe videos in structured form without raw iframe HTML.
 - Keep `video_id` strings quoted.
 
 # Change History
+- 2026-10-12: greatvibe-story related_docs link the founding-story guide and pricing reference.
 - 2026-08-03: Created initial catalogue with two Vimeo welcome videos supplied
   by the user, using overlay refs for private embed hashes.
 lastModified-david-story: 2026-10-12 — Index the legacy home video Why we built greatVibe as greatvibe-story with the official Vimeo captions and source metadata. Private playback hash remains server-side and is absent from public documentation.
