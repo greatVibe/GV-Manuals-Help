@@ -1,3 +1,4 @@
+lastModified: 2026-10-12 — Describe the shared guest/member temporary Mochi assignment, idle expiry and dot states validated against the console/runtime implementation.
 file: manage-organizations-meshes-and-nodes.md
 consumers: [GreatVibe users, Mochi agents]
 produces: [public Account Admin organization, mesh, and node guide]

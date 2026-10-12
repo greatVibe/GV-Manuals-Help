@@ -1,3 +1,4 @@
+lastModified: 2026-10-12 — Describe the shared guest/member temporary Mochi assignment, idle expiry and dot states validated against the console/runtime implementation.
 file: ask-mochi-for-help.md
 consumers: [new users, Mochi agents]
 produces: [prompting guidance for user help requests]
