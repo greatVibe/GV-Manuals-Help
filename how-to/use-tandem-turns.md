@@ -4,7 +4,7 @@ Use this guide when you want to write one prompt together with teammates and
 send it as a single turn.
 
 Tandem Turns (TT) is live co-editing for the dashboard console prompt box. Up
-to four people type into the same draft at the same time, watch each other's
+to six people type into the same draft at the same time, watch each other's
 changes appear as they type, and send the finished prompt as one turn.
 
 ## What A Tandem Turns Session Is
@@ -48,7 +48,7 @@ This also keeps your session alive across devices: if the device that
 created the session closes or loses connection, your other connected device
 takes over as controller instead of the session ending.
 
-Each device still takes one of the four seats.
+Each device still takes one of the six seats.
 
 ## While You Are Co-Editing
 
@@ -83,7 +83,7 @@ area — nothing forks or copies.
   everyone back to normal.
 - The prompt box border glows gold while a session is active, so you always
   know your text is shared.
-- Up to four people can be in one session.
+- Up to six people can be in one session.
 
 ## Share Attachments
 
@@ -138,7 +138,7 @@ sending the preserved final draft again.
 | Symptom | What it means |
 | --- | --- |
 | "Join request timed out" | The controller did not answer within 30 seconds. Ask them to watch for the popup and click TT again. |
-| "Session is full" | Four people are already in the session. |
+| "Session is full" | Six seats are already taken in the session. |
 | "Not available on this node" | Your account is not subscribed to that node's console. Reselect the node or check your access. |
 | Your typing stops appearing | Your connection dropped. Reconnect within about 90 seconds; retained server changes are merged with your unsent typing. If safe merging is no longer possible, Tandem mode closes and keeps your local draft in the normal composer. |
 | Draft frozen unexpectedly | Someone pressed send. Wait for the turn to start or for editing to reopen. |

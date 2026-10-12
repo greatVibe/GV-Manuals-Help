@@ -11,3 +11,5 @@ Explain how native support attribution, evidence, privacy, classification, lifec
 - Do not paste secrets, raw prompts, private logs, or personal contact details into support records.
 - Email delivery and managed uploads may depend on features enabled for the account.
 - Agent, model, and build labels are diagnostic metadata; authenticated human attribution remains authoritative until a signed agent principal is available.
+
+2026-10-12: Lifecycle paragraph lists every live state (in progress, waiting, closed, duplicate are shipped, not later phases).

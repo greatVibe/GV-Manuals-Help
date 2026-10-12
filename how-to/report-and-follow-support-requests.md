@@ -38,7 +38,7 @@ Allowed evidence depends on your account policy. GreatVibe validates the referen
 
 <!-- gv-guidance: {"id":"support-history","target":"support-history","message":"Follow state changes and updates in this ticket history.","surface":"support","action":"default","group":"support-detail-tour","order":2,"mode":"concurrent"} -->
 
-The shipped lifecycle states are new, triaged, acknowledged, resolved, and dismissed. Later SDLC rollout phases add in progress, waiting for customer, waiting internally, closed, and explicit duplicate outcomes. Konui shows only transitions currently enabled for your account.
+A request moves through these states: new, triaged, acknowledged, in progress, waiting for customer, waiting internally, resolved, and closed. It can also end as dismissed or duplicate. A resolved request can be reopened to in progress. Konui shows only the transitions your account is allowed to make.
 
 Severity describes impact. Priority describes delivery order. They can differ. An SLA panel may show acknowledgement and resolution targets, pauses, and breach risk according to your support plan.
 

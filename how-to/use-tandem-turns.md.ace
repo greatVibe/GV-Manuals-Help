@@ -29,3 +29,5 @@ session in the dashboard console.
   no approval, share one colour, and inherit control if the creating device
   goes away; node-switch TT click now starts/joins on the new node.
 - 2026-08-31: Created for the Tandem Turns v1 browser release.
+
+2026-10-12: Seat limit corrected from four to six to match the live session limit.
