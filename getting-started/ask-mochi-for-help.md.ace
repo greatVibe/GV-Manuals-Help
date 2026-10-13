@@ -2,6 +2,7 @@
 lastModified-guest-signup: 2026-10-13 — Guest limits (5 counted turns per rolling 3 hours, free greatVibe help questions) and in-console sign-up (turns panel Sign up, Guest menu > Sign in or register).
 lastModified: 2026-10-12 — Describe the shared guest/member temporary Mochi assignment, idle expiry and dot states validated against the console/runtime implementation.
 file: ask-mochi-for-help.md
+lastModified-demo-bar-visibility: 2026-10-13 — Explain that the quota/account bar hides during an active or paused demo and returns on stop/end; story restart hides only while the welcome sequence plays. Playback remains in the floating selector.
 lastModified-contextual-playback: 2026-10-13 — Story navigation and supported video/demo playback controls live in the floating space selector, including fullscreen. Controls hide when no sequence or video is active; the turns-left bar keeps its allowance and welcome content.
 lastModified-guest-story: 2026-10-13 — Explain eight-part guest story, normal Agent IQ layout, fullscreen footer, rotating hints, demo and story restart; distinguish signed-in temporary Mochi.
 consumers: [new users, Mochi agents]

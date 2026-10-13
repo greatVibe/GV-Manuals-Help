@@ -32,9 +32,14 @@ floating space selector. It also shows **Play**, **Pause** and **Stop** when
 the current story, video or demo supports them. Playback controls hide when
 no sequence or video is active.
 
-**greatVibe story** restarts the story from its first page. **Start demo**
+**greatVibe story** restarts the story from its first page. It hides while
+the story plays and returns when you pause or stop the story. **Start demo**
 shows how to use greatVibe. These are different from sending your own
 question to an agent.
+
+During the demo, the turns-left bar hides to leave more room for the demo.
+Pause, resume or stop from the floating space selector. The bar returns when
+the demo ends or stops, with **Log in** and **Sign up** on its right.
 
 Without an account, Mochi gives you 5 counted turns per rolling 3 hours.
 Questions about greatVibe, Gravient or how to use the service are free (up to
