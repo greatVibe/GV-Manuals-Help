@@ -1,0 +1,18 @@
+file: use-research-in-agent-iq.md
+created: 2026-10-13
+audience: public
+consumers: [CATALOGUE.md, people and agents using Agent IQ]
+produces: [Research source review workflow and declaration reference]
+---
+# Purpose
+Show how to use the Research space for sources actually consulted this turn,
+including source medium, research method, topic/genre, purpose and findings.
+Explain declaration provenance, safe links, filtering and turn ownership.
+# Source review
+Native Research renderer and tests were inspected. Risk: implementation
+details and local/private source references. Rewrite-only public guidance;
+include the supported authoring contract, neutral examples and user controls.
+Exclude internal routes, repositories, local identities and deployment details.
+# Verification
+Matched to strict native parser, real panel lifecycle tests and Chromium
+phone/Fold/tablet/landscape checks. Example is illustrative, not a research receipt.

@@ -1,3 +1,4 @@
+2026-10-13 Architecture: use-architecture-in-agent-iq.md explains green declared focus, red stated concerns, diagram modes and accessible component details.
 file: how-to/
 lastModified-steering-audit: 2026-09-28b — steer-a-running-turn.md and the Agent IQ steering section corrected after a code audit.
 lastModified-steering: 2026-09-28 — Added steer-a-running-turn.md and a steering section in build-agent-iq-metal-layouts.md.
@@ -17,6 +18,7 @@ lastModified-guidance-markers: 2026-08-28 — Adds marker-backed single and grou
 Practical task guides that help users get useful work done safely.
 
 # Key Files
+- `use-terminal-with-your-agent.md`
 - `review-ai-work.md`
 - `work-with-files.md`
 - `recover-a-failed-turn.md`
@@ -64,3 +66,5 @@ Practical task guides that help users get useful work done safely.
 - 2026-08-03: Created initial how-to guide set.
 
 2026-10-10: Integrate iq/new-spaces guidance while retaining subsequent reader placement, fullscreen, test-plan and steering sections; document CI/CD watch, tracked operations, Security declarations and bounded spaces readback.
+
+2026-10-13 Research: native consulted-source analysis with bounded source references, research method, topic/genre, purpose and findings; explicit declaration provenance and exact-turn ownership. Public guide: how-to/use-research-in-agent-iq.md.

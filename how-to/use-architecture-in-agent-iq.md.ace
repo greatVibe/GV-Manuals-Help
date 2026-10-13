@@ -1,0 +1,16 @@
+file: use-architecture-in-agent-iq.md
+created: 2026-10-13
+consumers: [GreatVibe users, public help agents]
+produces: [Architecture focus, concern and component-reading guide]
+---
+# Purpose
+Public guide to reading declared Architecture diagrams, changing Focus/Flow/
+Layers layouts and opening keyboard/touch component details. Clarify that green
+is focus, red is an explained concern, and graph reach is not measured impact.
+# Privacy
+Product-facing behavior only. No private sources, hostnames, account data,
+implementation routes, secrets or promises of automatic verification.
+# Verification
+Cross-checked against the native Architecture renderer and responsive Chromium
+fixture. CATALOGUE entry is coordinated with the public help maintainer.
+lastModified: 2026-10-13 — Explain kind symbols, declared part chips and direct Depends on/Used by counts; distinguish these from indirect reach in details and note retained reading position during updates.

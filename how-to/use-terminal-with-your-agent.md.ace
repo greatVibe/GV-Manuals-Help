@@ -1,0 +1,17 @@
+file: use-terminal-with-your-agent.md
+consumers: [GreatVibe users, Mochi agents]
+produces: [public native Terminal usage guidance]
+---
+# Purpose
+Explain the shared Terminal space and Quick Access shell, how to request visible
+work, automatic session resume, passive output following and human controls.
+# Source Review
+Rewritten from the current native Terminal UI and bounded tool contract.
+Source risk: internal implementation. Reuse only verified reader-visible actions.
+Excluded: private paths, routing, credentials, account identifiers and service details.
+# Gotchas
+Tool availability varies by node and session. Guest utility access does not imply
+agent access to a shared shell. Stop interrupts work; New session replaces it.
+# Review
+Public-facing wording checked against SANITIZATION.md. No private source excerpts.
+2026-10-13: Added alongside native Terminal behavior and targeted UI verification.

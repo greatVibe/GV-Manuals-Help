@@ -1,6 +1,8 @@
+2026-10-13 Architecture: index how-to/use-architecture-in-agent-iq.md for reading nodes, relationships, focus, concerns and evidence.
 lastModified-guest-signup: 2026-10-13 — Route guest sign-up questions to plans-and-pricing rule 9 (in-console sign-up, greatvibe:signup choice) and ask-mochi-for-help.
 lastModified-fast-answers: 2026-10-12 — Adds a Fast Answers block and routes pricing, the founding story and the eight-chapter development manual from starter paths, topic index, coverage and agent routing notes.
 file: CATALOGUE.md
+lastModified-terminal-guest: 2026-10-13 — Index native Terminal guide and direct guest-story questions to Ask Mochi. Public user guidance contains no private routing or account-detection implementation.
 lastModified-steering: 2026-09-28 — Routes the new steer-a-running-turn.md guide from starter paths, topic index, repository coverage and agent routing notes.
 lastModified-agent-iq-player-input: 2026-09-28 — Routes the new public player-input guide (games, pickers, confirmations inside Agent IQ via window.gvIq.emit and konui_agent_iq_get inputsAfter/waitForInputMs) from the task table, topic index, coverage table and agent routing notes.
 lastModified-gvcontext-agent-iq: 2026-09-27 — Routes context readers to the expanded turn-context and Agent IQ explanation and highlights the strong Patterns authoring rule.
@@ -45,3 +47,5 @@ Machine-readable public index for user-facing manuals and videos.
   templates, status bar, and turn management.
 - 2026-08-03: Created initial public catalogue for the new help spine.
 lastModified-david-story: 2026-10-12 — Index the legacy home video Why we built greatVibe as greatvibe-story with the official Vimeo captions and source metadata. Private playback hash remains server-side and is absent from public documentation.
+
+2026-10-13 Research: native consulted-source analysis with bounded source references, research method, topic/genre, purpose and findings; explicit declaration provenance and exact-turn ownership. Public guide: how-to/use-research-in-agent-iq.md.

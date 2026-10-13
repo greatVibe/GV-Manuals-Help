@@ -20,6 +20,19 @@ not sign you out of your account.
 
 ## As A Guest
 
+The welcome story opens in the normal Agent IQ layout with eight chapters:
+**Welcome**, **Platform**, **Nodes**, **Trust**, **Velocity**, **Discipline**,
+**Pricing** and **Trial**. Trust explains context, sealed secrets, access
+scopes, Tandem Turns and traceable work. Use **Back** and **Next** in the
+bottom bar to browse.
+The middle of the bar starts with **Welcome greatVibe Guest** and cycles short
+tips.
+
+Tap a Web space's background to read it fullscreen. The turns and demo controls
+stay at the bottom so you can still move on. **greatVibe story** restarts the
+story from its first page. **Start demo** shows how to use greatVibe. These are
+different from sending your own question to an agent.
+
 Without an account, Mochi gives you 5 counted turns per rolling 3 hours.
 Questions about greatVibe, Gravient or how to use the service are free (up to
 20 per 3 hours) and do not use a counted turn. The turns panel shows what you
@@ -29,6 +42,9 @@ To keep going with your own workspace, sign up right in the console: tap
 **Sign up** on the turns panel, or open the **Guest** menu and choose
 **Sign in or register**. Plans and the trial are in
 `../reference/plans-and-pricing.md`.
+
+If you opened Mochi while signed in, you are still a member using a temporary
+workspace. You do not need to register again.
 
 ## Use This Shape
 
