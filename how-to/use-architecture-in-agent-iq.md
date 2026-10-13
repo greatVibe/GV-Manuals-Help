@@ -6,8 +6,8 @@ focus, and explain any concerns.”** Then open **Architecture** in Agent IQ.
 
 ## Read The Colours
 
-**Green means focus.** Brighter green marks the main subject of the turn.
-Lighter attention uses a quieter green; related components stay neutral.
+**Green marks the main focus.** Active neighbours use amber. Components with
+less attention use blue, cyan or grey accents on charcoal surfaces.
 Green does not mean a test passed or a service is healthy.
 
 **Red means a stated concern.** The agent can distinguish a concern, a problem
@@ -50,12 +50,19 @@ Use the layout menu to arrange the same declared components:
 
 | View | Use it for |
 | --- | --- |
+| Auto (default) | Cycle through the three views with a gentle fade |
 | Focus map | See the current focus and the components around it |
 | Dependency flow | Trace dependencies through the system |
 | Component layers | Group interface, service, data, machine, agent and test components |
 
-Changing the view keeps your selected component. Your mode and selection belong
-to the current turn. A new turn starts with its own map.
+Auto waits 12 seconds between views and uses a brief fade. It pauses while you
+hover, touch, scroll, select text, focus a control or read component details.
+Hidden views and reduced-motion settings keep it static. After interaction, a
+full reading interval passes before it changes again.
+
+Choosing a named view pins it until you select Auto. Changing the view keeps
+your selected component. Your mode and selection belong to the current turn.
+A new turn starts with its own map and Auto selected.
 
 On a phone or a short pane, scroll inside the diagram to reach the remaining
 components. You can use the normal Agent IQ fullscreen gesture for more reading
@@ -69,7 +76,8 @@ not evidence that they do not exist.
 
 If the space says no components were declared, ask the agent to add a map. If a
 label or concern is unclear, ask for a note and evidence. A map can remain
-unchanged while work continues; it does not animate to imply activity.
+unchanged while work continues. Auto rearranges the same map for reading;
+its fades do not indicate progress, new evidence or service health.
 
 ## Related
 

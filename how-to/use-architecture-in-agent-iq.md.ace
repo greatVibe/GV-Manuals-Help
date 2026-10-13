@@ -1,3 +1,4 @@
+2026-10-13 refinement: reserve green for main focus; amber for active neighbours and cool/grey lower attention on charcoal. Document default Auto, 12-second dwell, 240ms fade, manual pinning and reader/reduced-motion pause.
 file: use-architecture-in-agent-iq.md
 created: 2026-10-13
 consumers: [GreatVibe users, public help agents]
