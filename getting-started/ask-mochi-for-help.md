@@ -24,14 +24,17 @@ The welcome story opens in the normal Agent IQ layout with eight chapters:
 **Welcome**, **Platform**, **Nodes**, **Trust**, **Velocity**, **Discipline**,
 **Pricing** and **Trial**. Trust explains context, sealed secrets, access
 scopes, Tandem Turns and traceable work. Use **Back** and **Next** in the
-bottom bar to browse.
-The middle of the bar starts with **Welcome greatVibe Guest** and cycles short
-tips.
+floating space selector to browse. The turns-left bar keeps the welcome
+message, short tips and remaining-turn count.
 
-Tap a Web space's background to read it fullscreen. The turns and demo controls
-stay at the bottom so you can still move on. **greatVibe story** restarts the
-story from its first page. **Start demo** shows how to use greatVibe. These are
-different from sending your own question to an agent.
+Tap a Web space's background to read it fullscreen. Navigation stays in the
+floating space selector. It also shows **Play**, **Pause** and **Stop** when
+the current story, video or demo supports them. Playback controls hide when
+no sequence or video is active.
+
+**greatVibe story** restarts the story from its first page. **Start demo**
+shows how to use greatVibe. These are different from sending your own
+question to an agent.
 
 Without an account, Mochi gives you 5 counted turns per rolling 3 hours.
 Questions about greatVibe, Gravient or how to use the service are free (up to
