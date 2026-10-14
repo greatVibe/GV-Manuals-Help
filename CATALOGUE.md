@@ -122,7 +122,7 @@ private implementation facts.
 
 - Read this catalogue before recommending a guide or video.
 - Prices, trial and billing: answer only from `reference/plans-and-pricing.md`, never from memory or older videos. Its "Show Pricing In Agent IQ" block is ready to publish in the `web` space. For guests, follow its rule 9: show the block, offer sign-up in the console and ask, with the `greatvibe:signup` choice.
-- "Why greatVibe?": lead with the short answer in `getting-started/why-we-built-greatvibe.md`; offer the `greatvibe-story` video. Treat "10x" as the founders' experience, not a promise.
+- "Why greatVibe?": lead with the short answer in `getting-started/why-we-built-greatvibe.md`; offer the `greatvibe-story` video. Keep the human judgment and production-discipline story grounded in the current transcript.
 - Development questions: start at `manuals/development/overview.md`, use its quick-reference table to pick one chapter, and describe only shipped behaviour.
 - For Agent IQ metal/glass styling, Wide opening, Phone portrait, Compact Fold or Adaptive focus layouts, read [the public Metal Design System guide](how-to/build-agent-iq-metal-layouts.md). Its [HTML starter](reference/agent-iq-metal-starter.html) is an illustrative local example, not production telemetry or a data-query API.
 - For games, pickers or confirmations the reader answers mid-turn, read [the player input guide](how-to/play-games-and-collect-choices-in-agent-iq.md): script regions call `window.gvIq.emit`, and the agent polls `konui_agent_iq_get` with `turnId`, `inputsAfter` and `waitForInputMs`. It works the same for Claude and Codex and needs no steering prompt.
@@ -149,4 +149,4 @@ before publication.
 
 ### David’s story
 
-The legacy home film **David telling our story** is indexed as `greatvibe-story` in [the video catalogue](videos/index.json). Read its [official caption transcript](videos/transcripts/greatvibe-story.md). It is separate from the Johnathon Agent IQ demo.
+**Take on more. Stay in control.** features David Jenkinson, CEO of greatVibe by Gravient (7 minutes 6 seconds, Vimeo `1235643218`). It is indexed as `greatvibe-story` in [the video catalogue](videos/index.json). Read its [caption transcript](videos/transcripts/greatvibe-story.md) or [original WebVTT](videos/transcripts/greatvibe-story.vtt). This October 2026 recording replaces the earlier home film. Johnathon’s Agent IQ demo remains separate.

@@ -2,48 +2,41 @@
 
 ## The Short Answer
 
-greatVibe started as a tool the founders built for themselves. AI coding agents
-had already made them roughly ten times more productive. They wanted a second
-jump on top of that, so they built an AI-centric workspace around the agents
-instead of plugging agents into tools designed for people.
+greatVibe started as a tool the founders built for themselves. Coding agents
+were getting more capable, and they wanted to take on more engineering while
+keeping visibility, judgment and control as the work grew.
 
-The result is a directed AI platform. You set the intent, AI does the work, and
-every result comes back as a structured record you can review, with you still
-in command.
+They built an environment that keeps context, evidence and decisions with the
+work. You set the intent, inspect what happened, steer the work and decide what
+is ready to ship.
 
-Watch David tell the story in **Why we built greatVibe** (3 minutes 17 seconds,
-video slug `greatvibe-story`). The caption transcript is in
-`../videos/transcripts/greatvibe-story.md`.
+Watch **Take on more. Stay in control.** with **David Jenkinson, CEO of greatVibe
+by Gravient** (7 minutes 6 seconds, video slug `greatvibe-story`). Read the
+[caption transcript](../videos/transcripts/greatvibe-story.md).
 
 ## The Story
 
-greatVibe has two founders with different backgrounds.
+As coding agents became faster, the work around the code became harder to
+keep under control: context, decisions, dependencies, tests, tools and the
+question of what was safe to ship. The founders asked what would happen if
+they built the environment around AI work.
 
-- **Johnathon** is an engineer. He has spent his career building production
-  business systems and specialises in cloud architecture.
-- **David** is the business side. He has spent his career starting, building
-  and growing technology businesses.
+> “We wanted to give frontier AI much more of the engineering work without
+> losing visibility, and without losing our judgment or control as the work
+> grew and got bigger.”
 
-> "We originally built greatVibe for us."
+David calls the surrounding practice **production discipline**. You need to
+see what changed and why, which tests ran, what passed or failed, and what
+assumptions were made. You need to change direction while work is happening
+and pick up later with the context intact.
 
-They had already felt the first jump. Working with frontier coding agents such
-as Claude Code and Codex, they could do far more than before. In David's
-words, it was "a magnification, a 10X as you could call it."
+> “But the context stays with the work. The evidence stays with the work.
+> The decisions stay connected to the work. And ultimately, it's your
+> judgment that decides what gets shipped.”
 
-Then they asked a second question. The agents were strong, but they were still
-working inside tools and habits built for people. What would happen if the
-whole environment was built for AI work instead?
-
-> "We wanted to explore whether or not we could create another magnification
-> moment, another 10X on top of the one that we'd already experienced."
-
-They built that environment. When David recorded the film they had been
-using it for six months. The gain did not come from writing code faster. It
-came from the engineering work that sits around the code: context, review,
-evidence, files, nodes, credentials, delivery and the record of what was done.
-
-> "It certainly magnified our capabilities and enabled us to do a lot more
-> than we could just with pure AI coding."
+Better models should help more engineering reach production. greatVibe
+connects the tools, code, data and systems involved, with scoped access and a
+record you can inspect.
 
 ## The Needs greatVibe Fills
 
@@ -64,43 +57,35 @@ human is always in command. You set the intent. The platform carries it out
 across your tools, your data and your own environment. Every result comes back
 as a structured, reviewable output.
 
-As AI gets more capable you can give it more room, but the accountability stays
-with you. That is the design, not a limit.
-
 ## Who It Is For
 
-greatVibe fits you best when you are:
-
-- A developer or technical founder building real products for production.
-- Building a business or any complex system where the work around the code
-  matters as much as the code.
-- Already getting value from AI coding agents and wanting more than a chat
-  window.
-
-> "If you're building real products and systems for production environments,
-> if you're building a business, anything complex … greatVibe might be able to
-> give you more than what you can currently do."
+greatVibe is for developers and founders using frontier AI on real engineering
+who want to take more work from an idea through implementation, testing,
+iteration and production while remaining in control of the outcome.
 
 ## Try It
 
-There is a 14-day trial. A card is required to start, nothing is charged
-today, and payment starts on day 15 unless you cancel. Read
-`../reference/plans-and-pricing.md` for the full plan, price and trial details.
-You can also try Mochi, the temporary help workspace, without an account.
+David invites you to try a piece of real work you care about, with enough
+complexity to see whether greatVibe changes what you can take on.
 
-## For Agents Answering "Why greatVibe?"
+Read [Plans and pricing](../reference/plans-and-pricing.md) for current plan,
+price and trial details. The recording does not replace those terms. You can
+also try Mochi, the temporary help workspace, without an account.
+
+## For Agents Answering “Why greatVibe?”
 
 1. Lead with the short answer above, in plain words.
-2. Offer the `greatvibe-story` video when the user wants the founders' view.
-3. Use the needs table to match the user's own problem. Do not list every row.
-4. Send plan, trial and price questions to `../reference/plans-and-pricing.md`.
-5. Treat "10x" as the founders' own experience, never as a promised result.
+2. Offer `greatvibe-story` when the user wants the founders' view.
+3. Match the user's problem to a relevant row in the needs table.
+4. Use the current pricing guide for every plan, trial and billing answer.
+5. Keep claims tied to the transcript and shipped behaviour. Do not promise a
+   productivity multiplier or treat the older film as the current story.
 
 ## Related Guides
 
-- `welcome-to-greatvibe.md`
-- `first-10-minutes.md`
-- `../reference/plans-and-pricing.md`
-- `../concepts/what-is-a-gvturn.md`
-- `../concepts/what-is-a-node.md`
-- `../concepts/what-is-gvcontext.md`
+- [Welcome](welcome-to-greatvibe.md)
+- [First 10 minutes](first-10-minutes.md)
+- [Plans and pricing](../reference/plans-and-pricing.md)
+- [What is a gvturn?](../concepts/what-is-a-gvturn.md)
+- [What is a node?](../concepts/what-is-a-node.md)
+- [What is gvContext?](../concepts/what-is-gvcontext.md)

@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updated_at": "2026-10-12",
+  "updated_at": "2026-10-14",
   "default_aspect_ratio": "1:1",
   "videos": [
     {
@@ -125,13 +125,13 @@
     },
     {
       "slug": "greatvibe-story",
-      "title": "David telling our story",
-      "summary": "David explains why we built greatVibe in the legacy home-page film, Why we built greatVibe. Official English captions accompany the recording.",
+      "title": "Take on more. Stay in control.",
+      "summary": "David Jenkinson, CEO of greatVibe by Gravient, explains why better AI needs an engineering environment that keeps context, evidence and human judgment with the work.",
       "provider": "vimeo",
-      "video_id": "1223126471",
+      "video_id": "1235643218",
       "embed_hash_ref": "greatvibe-story",
       "aspect_ratio": "16:9",
-      "duration_seconds": 197,
+      "duration_seconds": 426,
       "product_area": "welcome",
       "audience": [
         "new-users",
@@ -144,7 +144,9 @@
       "tags": [
         "welcome",
         "story",
-        "david"
+        "david",
+        "directed-ai",
+        "production-discipline"
       ],
       "related_docs": [
         "getting-started/why-we-built-greatvibe.md",
@@ -154,10 +156,46 @@
       "chapters": [
         {
           "start_seconds": 0,
+          "title": "The capability of coding agents"
+        },
+        {
+          "start_seconds": 25,
+          "title": "Keeping the work under control"
+        },
+        {
+          "start_seconds": 53,
           "title": "Why we built greatVibe"
+        },
+        {
+          "start_seconds": 96,
+          "title": "Seeing what changed and why"
+        },
+        {
+          "start_seconds": 159,
+          "title": "Production discipline"
+        },
+        {
+          "start_seconds": 181,
+          "title": "Intent, evidence and human judgment"
+        },
+        {
+          "start_seconds": 215,
+          "title": "Taking engineering into production"
+        },
+        {
+          "start_seconds": 263,
+          "title": "Connected tools, projects and nodes"
+        },
+        {
+          "start_seconds": 315,
+          "title": "Who greatVibe is for"
+        },
+        {
+          "start_seconds": 372,
+          "title": "Try a piece of real work"
         }
       ],
-      "updated_at": "2026-10-12"
+      "updated_at": "2026-10-14"
     }
   ]
 }

@@ -49,3 +49,6 @@ Machine-readable public index for user-facing manuals and videos.
 lastModified-david-story: 2026-10-12 — Index the legacy home video Why we built greatVibe as greatvibe-story with the official Vimeo captions and source metadata. Private playback hash remains server-side and is absent from public documentation.
 
 2026-10-13 Research: native consulted-source analysis with bounded source references, research method, topic/genre, purpose and findings; explicit declaration provenance and exact-turn ownership. Public guide: how-to/use-research-in-agent-iq.md.
+
+# 2026-10-14 — David story replacement
+Replaces the legacy 197-second story with Vimeo 1235643218 (426 seconds, 16:9), titled "Take on more. Stay in control." and attributed to David Jenkinson, CEO of greatVibe by Gravient. Captions track 331810675 is preserved byte-for-byte; readable transcript corrects GrapeVibe to greatVibe only. Public metadata contains no playback hash, API secret or signed caption URL. Current pricing guide remains authoritative. Stable greatvibe-story slug is preserved.
