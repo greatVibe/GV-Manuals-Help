@@ -1,0 +1,489 @@
+WEBVTT
+
+1
+00:00:01.740 --> 00:00:02.000
+Hiya.
+
+2
+00:00:02.980 --> 00:00:06.620
+If you're already using Claude Code, Codex, or one of the other
+
+3
+00:00:06.700 --> 00:00:10.580
+frontier coding agents seriously, then you probably don't need me to
+
+4
+00:00:10.620 --> 00:00:13.160
+tell you how good they've become, right? They're amazing.
+
+5
+00:00:14.000 --> 00:00:14.080
+We
+
+6
+00:00:14.940 --> 00:00:18.700
+were already using them pretty heavily ourselves, and the amount of
+
+7
+00:00:18.760 --> 00:00:21.920
+coding work a person could suddenly take on
+
+8
+00:00:23.200 --> 00:00:24.160
+changed dramatically.
+
+9
+00:00:24.980 --> 00:00:28.500
+But something else became pretty obvious to us as well.
+
+10
+00:00:29.220 --> 00:00:33.060
+The faster these models got, the more work we could throw at them, sure,
+
+11
+00:00:33.600 --> 00:00:37.340
+and then the harder it became to keep everything around that work under control.
+
+12
+00:00:37.880 --> 00:00:41.460
+Not just the code, the context, the decisions, dependencies,
+
+13
+00:00:42.040 --> 00:00:45.840
+the tests, the tools. What had actually happened?
+
+14
+00:00:46.400 --> 00:00:50.280
+What still needed to be checked? What had we agreed
+
+15
+00:00:50.340 --> 00:00:52.600
+on earlier, and what was safe to ship?
+
+16
+00:00:53.060 --> 00:00:55.160
+And that led us to a fairly simple question.
+
+17
+00:00:55.820 --> 00:00:59.480
+The agents were getting incredibly capable, but they were still
+
+18
+00:00:59.600 --> 00:01:03.000
+largely working inside environments that had been designed for people.
+
+19
+00:01:03.820 --> 00:01:05.401
+So what would happen
+
+20
+00:01:06.260 --> 00:01:07.800
+if we built the environment
+
+21
+00:01:08.720 --> 00:01:10.540
+around the AI itself?
+
+22
+00:01:11.760 --> 00:01:13.960
+That's really where GrapeVibe came from.
+
+23
+00:01:14.400 --> 00:01:17.480
+We built it for ourselves, quite literally we built it for ourselves.
+
+24
+00:01:18.020 --> 00:01:21.300
+We weren't sitting around trying to think of an AI product to launch.
+
+25
+00:01:21.940 --> 00:01:25.300
+We were trying to figure out how to work differently.
+
+26
+00:01:25.820 --> 00:01:29.640
+We wanted to give frontier AI much more of the engineering work
+
+27
+00:01:29.840 --> 00:01:33.520
+without losing visibility, and without losing our judgment or
+
+28
+00:01:33.600 --> 00:01:35.960
+control as the work grew and got bigger.
+
+29
+00:01:36.600 --> 00:01:38.640
+And I reckon that distinction really matters,
+
+30
+00:01:39.660 --> 00:01:41.080
+because I don't think
+
+31
+00:01:42.020 --> 00:01:45.940
+the real problem with AI coding is simply whether the model writes good
+
+32
+00:01:46.000 --> 00:01:49.960
+code, because sometimes it does. Sometimes it gets something
+
+33
+00:01:50.200 --> 00:01:54.180
+almost right. Sometimes it gets something wrong in a
+
+34
+00:01:54.220 --> 00:01:58.180
+way that's completely obvious, and sometimes it gets something wrong in a way
+
+35
+00:01:58.240 --> 00:02:02.100
+that isn't obvious at all. But that's always been true, right?
+
+36
+00:02:02.760 --> 00:02:06.560
+In one form or another, with software engineering, because
+
+37
+00:02:06.820 --> 00:02:10.720
+people make mistakes too. So the important question
+
+38
+00:02:10.940 --> 00:02:14.860
+is what happens around the work? Can you see what
+
+39
+00:02:14.920 --> 00:02:17.320
+changed? Can you see why it changed?
+
+40
+00:02:17.900 --> 00:02:21.500
+Did the tests actually run? What passed? What failed?
+
+41
+00:02:21.880 --> 00:02:25.640
+What assumptions were made? Does the agent understand the
+
+42
+00:02:25.680 --> 00:02:26.500
+rest of the system?
+
+43
+00:02:27.480 --> 00:02:29.360
+Can you change direction while it's working?
+
+44
+00:02:29.960 --> 00:02:33.940
+Can another piece of work pick up where this one stopped and
+
+45
+00:02:34.560 --> 00:02:36.180
+without starting from scratch again?
+
+46
+00:02:36.800 --> 00:02:38.840
+Can you actually stand behind the result?
+
+47
+00:02:39.420 --> 00:02:42.520
+And that's what we mean when we talk about production discipline.
+
+48
+00:02:43.120 --> 00:02:46.800
+GrapeVibe isn't asking you to blindly trust AI.
+
+49
+00:02:47.300 --> 00:02:49.400
+In fact, we're doing the opposite.
+
+50
+00:02:49.920 --> 00:02:53.700
+We think the way you give AI more responsibility
+
+51
+00:02:53.860 --> 00:02:57.520
+is by building an engineering system around it that gives you
+
+52
+00:02:58.020 --> 00:02:59.920
+more visibility into what it's doing.
+
+53
+00:03:01.000 --> 00:03:04.980
+Your intent starts to work. The agent can inspect the code,
+
+54
+00:03:05.560 --> 00:03:09.120
+work with files, use tools, run tests, make changes,
+
+55
+00:03:09.360 --> 00:03:11.640
+and basically carry the work forward.
+
+56
+00:03:12.220 --> 00:03:14.280
+But the context stays with the work.
+
+57
+00:03:14.780 --> 00:03:18.420
+The evidence stays with the work. The decisions stay connected to the
+
+58
+00:03:18.520 --> 00:03:22.480
+work. And ultimately, it's your judgment that decides what gets
+
+59
+00:03:22.520 --> 00:03:26.460
+shipped. That's a very different idea from just generating more
+
+60
+00:03:26.520 --> 00:03:30.400
+code. Code generation is already becoming
+
+61
+00:03:30.440 --> 00:03:30.660
+cheap.
+
+62
+00:03:31.860 --> 00:03:35.080
+In a few years, it's going to be ridiculously cheap.
+
+63
+00:03:35.640 --> 00:03:39.140
+So the interesting question to me becomes how much
+
+64
+00:03:39.600 --> 00:03:43.540
+real engineering can one capable person take responsibility for?
+
+65
+00:03:44.180 --> 00:03:46.660
+Not how many lines of code can they generate.
+
+66
+00:03:47.260 --> 00:03:50.760
+How much can they actually take from an idea through
+
+67
+00:03:50.820 --> 00:03:54.700
+implementation, testing, iteration, and then into production?
+
+68
+00:03:55.240 --> 00:03:58.700
+That's the thing we actually care about, and it's also why
+
+69
+00:03:58.780 --> 00:04:02.760
+GrapeVibe is designed around whichever frontier models you
+
+70
+00:04:02.820 --> 00:04:05.960
+choose. We're not trying to replace Claude or Codex.
+
+71
+00:04:06.460 --> 00:04:10.440
+In fact, we actually want them to become way better than they
+
+72
+00:04:10.480 --> 00:04:14.240
+are now. Because if the models become twice as capable,
+
+73
+00:04:14.760 --> 00:04:17.481
+we think you should be able to take on a whole lot more.
+
+74
+00:04:17.940 --> 00:04:21.620
+If they become 10 times as capable, the surrounding engineering
+
+75
+00:04:21.721 --> 00:04:25.620
+system needs to let you take advantage of that
+
+76
+00:04:25.780 --> 00:04:29.640
+rather than simply creating 10 times more stuff for someone to review.
+
+77
+00:04:30.460 --> 00:04:33.040
+That's the bet we've made behind GrapeVibe.
+
+78
+00:04:34.100 --> 00:04:36.780
+Better models should translate into
+
+79
+00:04:37.500 --> 00:04:41.100
+more engineering reaching production,
+
+80
+00:04:41.560 --> 00:04:43.320
+not just more code being produced.
+
+81
+00:04:43.980 --> 00:04:47.940
+And as the work gets bigger, GrapeVibe can grow around it.
+
+82
+00:04:48.680 --> 00:04:51.420
+You can connect the tools you already use.
+
+83
+00:04:51.700 --> 00:04:54.920
+You can work across your code, your data, your systems.
+
+84
+00:04:56.020 --> 00:04:58.020
+You can run different projects on different nodes.
+
+85
+00:04:58.560 --> 00:04:59.740
+Those nodes can
+
+86
+00:05:00.720 --> 00:05:04.140
+work together. You can give agents access to what they need
+
+87
+00:05:04.560 --> 00:05:06.320
+without simply handing them everything.
+
+88
+00:05:06.860 --> 00:05:10.360
+You can keep context close to the work,
+
+89
+00:05:11.060 --> 00:05:14.800
+and you can inspect what happened rather than just hoping it worked.
+
+90
+00:05:15.460 --> 00:05:16.300
+We're still building it.
+
+91
+00:05:18.020 --> 00:05:18.260
+There are
+
+92
+00:05:19.640 --> 00:05:22.300
+most likely things we'll want to improve.
+
+93
+00:05:22.960 --> 00:05:26.880
+There are things in here that probably won't look or work exactly the
+
+94
+00:05:26.920 --> 00:05:30.840
+way you're used to. And that's partly because we've tried
+
+95
+00:05:30.880 --> 00:05:32.660
+to solve a slightly different problem.
+
+96
+00:05:33.640 --> 00:05:37.500
+If what you want is an AI autocomplete
+
+97
+00:05:37.860 --> 00:05:39.680
+or another coding assistant,
+
+98
+00:05:40.720 --> 00:05:42.900
+there are already brilliant products out there for that.
+
+99
+00:05:43.960 --> 00:05:47.480
+We built GrapeVibe for people who want to put frontier
+
+100
+00:05:47.660 --> 00:05:51.600
+AI to work across real engineering and remain in control of the
+
+101
+00:05:51.660 --> 00:05:55.460
+outcome. People who look at what Claude and Codex can
+
+102
+00:05:55.520 --> 00:05:59.380
+already do and think, "I should be able to take on more than I could
+
+103
+00:05:59.420 --> 00:06:01.540
+before." That's how we think as well.
+
+104
+00:06:02.060 --> 00:06:06.040
+Not only that, but that's how we've learned to work every
+
+105
+00:06:06.100 --> 00:06:10.080
+day. And GrapeVibe is the system we built around that way of
+
+106
+00:06:10.120 --> 00:06:11.280
+working. So
+
+107
+00:06:12.680 --> 00:06:13.040
+if this
+
+108
+00:06:13.980 --> 00:06:17.840
+sounds like the way you'd like to work or want
+
+109
+00:06:17.900 --> 00:06:18.320
+to work,
+
+110
+00:06:19.860 --> 00:06:22.120
+give it a go. Give GrapeVibe a proper go.
+
+111
+00:06:22.700 --> 00:06:26.400
+You get 14 days. That's more than enough time to put
+
+112
+00:06:26.460 --> 00:06:28.480
+something real through it. And I mean
+
+113
+00:06:29.300 --> 00:06:33.180
+real. Don't give it a demo task. Give it a piece of work
+
+114
+00:06:33.240 --> 00:06:37.160
+you actually care about. Something with enough complexity that
+
+115
+00:06:37.220 --> 00:06:40.140
+you can see whether this changes what you're able to take on.
+
+116
+00:06:40.940 --> 00:06:43.640
+If it's not for you, no stress, just cancel it.
+
+117
+00:06:44.300 --> 00:06:48.140
+But we think that if you're already working seriously with
+
+118
+00:06:48.180 --> 00:06:51.620
+frontier AI, you'll understand pretty quickly why we built
+
+119
+00:06:51.660 --> 00:06:55.220
+GrapeVibe and why we now work this way ourselves.
+
+120
+00:06:55.780 --> 00:06:59.680
+Again, we built it for ourselves, literally, and
+
+121
+00:06:59.740 --> 00:07:03.340
+now we want to see what other people like us can do with it.
+
+122
+00:07:04.340 --> 00:07:05.440
+Thanks so much for your time.
