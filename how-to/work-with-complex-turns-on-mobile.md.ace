@@ -1,0 +1,20 @@
+file: work-with-complex-turns-on-mobile.md
+consumers: [mobile users, developers, Mochi agents]
+produces: [complex mobile-turn workflow and transcript navigation]
+---
+# Purpose
+Teach prompt editing, images, Tandem Turns, Agent IQ, support, steering, delivery
+and review using the Galaxy Z Fold7 recording as an optional concrete example.
+
+# Dependencies
+- ../videos/index.json: greatvibe-mobile-tips, 1462 seconds, 9:10.
+- ../videos/transcripts/greatvibe-mobile-tips.md and original VTT.
+- Existing footer, steering, Tandem Turns, Architecture and support guides.
+
+# Gotchas
+Recorded account/node/worker counts are historical examples, not guarantees.
+Apply authorization and runtime capability limits. Guest real turns cannot be
+steered mid-turn. No publication of secrets, signed URLs or playback hashes.
+
+# Change History
+- 2026-10-15: Add thirteen-chapter guide and mobile fullscreen/supporting copy.

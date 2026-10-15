@@ -1,0 +1,20 @@
+file: watch-the-guest-tour.md
+consumers: [guest users, Mochi agents]
+produces: [guest-tour walkthrough and current-policy interpretation]
+---
+# Purpose
+Explain the replacement 12:14 guest tour through six transcript-derived chapters,
+including safe demo Send behavior and the explicit handoff to a real request.
+
+# Dependencies
+- ../videos/index.json: greatvibe-welcome.
+- ../videos/transcripts/greatvibe-welcome.md and original VTT.
+- ../getting-started/ask-mochi-for-help.md and current task/reference guides.
+
+# Gotchas
+Recorded free-trial, retention and security statements do not override current
+policy. Do not imply guest mid-turn steering or durable Mochi files. The mobile
+tutorial is optional learning and must not replace or extend the guest demo.
+
+# Change History
+- 2026-10-15: Add transcript-grounded guest walkthrough and agent answer routing.

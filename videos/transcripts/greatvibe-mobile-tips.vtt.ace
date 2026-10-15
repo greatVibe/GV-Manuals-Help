@@ -1,0 +1,20 @@
+file: greatvibe-mobile-tips.vtt
+consumers: [caption readers, transcript maintainers]
+produces: [original automatic English WebVTT captions]
+---
+# Purpose
+Preserve the downloaded active English automatic captions for Vimeo 1236054521,
+track 332135652, for the user's approved mobile tutorial publication.
+
+# Integrity
+- Duration: 1462 seconds. Source: 1080x1200, portrait 9:10.
+- SHA-256: b85986c2ae8cec8d1b2e26e2d5fa853ee0e29f98da67881e0e7246df9376bae2.
+- 359 cues. Raw captions are byte-preserved, including recognition errors.
+
+# Gotchas
+Optional tutorial, never the guest demo. Recorded node names, work counts,
+permissions and system descriptions are examples, not current account facts.
+No signed download URL, private playback hash or credential belongs here.
+
+# Change History
+- 2026-10-15: Downloaded official Vimeo automatic captions and preserved source.

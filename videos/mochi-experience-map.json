@@ -1,10 +1,12 @@
 {
   "version": "1.0.0",
-  "updated_at": "2026-10-09",
+  "updated_at": "2026-10-15",
   "source_notes": [
-    "Mapping was checked against the live Mochi Experience record and Vimeo player metadata on 2026-08-14.",
+    "Legacy Mochi Experience publication state was last checked on 2026-08-14; it has not been rechecked or republished as part of the 2026-10-15 video refresh.",
     "This file is public-safe routing metadata. It intentionally excludes Vimeo embed hashes, expiring playback URLs, download URLs, credentials, and private connector state.",
-    "Live Experience HTML remains the source of truth for the rendered card. This mapping is for agents deciding which video belongs with which slot."
+    "Live Experience HTML remains the source of truth for the rendered card. This mapping is for agents deciding which video belongs with which slot.",
+    "On 2026-10-15 at 04:18 UTC, Vimeo returned successful folder-move writes (HTTP 204): 1236068377 to 00 Welcome and 1236054521 to 20 Turns And Review. Independent folder readback was not available after these writes.",
+    "The optional greatvibe-mobile-tips tutorial belongs in guest Web/Video content, not the first-login demo or a replacement Experience slot."
   ],
   "vimeo_folders": [
     {
@@ -12,7 +14,7 @@
       "name": "00 Welcome",
       "vimeo_project_uri": "/users/261676826/projects/30103803",
       "purpose": "Landing area for polished welcome videos that introduce GreatVibe to new users.",
-      "status": "empty-ready",
+      "status": "active",
       "expected_mochi_slots": [
         "first-login"
       ],
@@ -36,13 +38,13 @@
       "name": "20 Turns And Review",
       "vimeo_project_uri": "/users/261676826/projects/30103805",
       "purpose": "Videos about gvturn cards, review states, power footer actions, audits, and delivery status.",
-      "status": "empty-ready",
+      "status": "active",
       "expected_mochi_slots": [
         "broadcast",
         "second-login"
       ],
       "catalogue_video_slugs": [
-        "greatvibe-first-screen-recording"
+        "greatvibe-mobile-tips"
       ]
     },
     {
@@ -77,14 +79,12 @@
       "key": "johnathon-quick-vids",
       "name": "JohnathonQuickVids",
       "vimeo_project_uri": "/users/261676826/projects/30087306",
-      "purpose": "Legacy active folder currently holding the two catalogue videos used by Mochi Experiences.",
+      "purpose": "Legacy folder for the older first-screen recording; the current guest tour and mobile tutorial use the topic folders.",
       "status": "legacy-active",
       "expected_mochi_slots": [
-        "first-login",
         "broadcast"
       ],
       "catalogue_video_slugs": [
-        "greatvibe-welcome",
         "greatvibe-first-screen-recording"
       ]
     }
@@ -97,15 +97,15 @@
       "status": "active",
       "published_version": 11,
       "catalogue_video_slug": "greatvibe-welcome",
-      "vimeo_video_id": "1234245120",
+      "vimeo_video_id": "1236068377",
       "vimeo_folder_key": "welcome",
-      "use_when": "Give a new user a six-minute tour of the Mochi demo and Agent IQ before their first serious Mochi request.",
+      "use_when": "Use the greatvibe-welcome catalogue entry for the 12:14 guest console and Agent IQ tour; the guest demo uses this stable slug.",
       "related_docs": [
-        "../getting-started/welcome-to-greatvibe.md",
+        "../how-to/watch-the-guest-tour.md",
         "../getting-started/ask-mochi-for-help.md",
         "../concepts/what-is-a-node.md"
       ],
-      "notes": "Since 2026-10-09 greatvibe-welcome is the square 6:07 GreatVibe Agent IQ Demo; the dashboard demo and fallback card resolve it by slug. Published Experience v11 still embeds the old recording (1217843223) and 11:32-24:18 chapters: republish with the new video and chapters 0:27 prompt bar, 1:34 attach, 2:28 sealed secrets, 3:23 questions, 4:27 add a node. The private embed hash stays only in the Experience record."
+      "notes": "Catalogue target: 1236068377, 12:14, 1:1; six chapters start at 0, 68, 167, 342, 459 and 560 seconds. The dashboard demo resolves the stable slug. Legacy Experience v11 was last recorded embedding 1217843223; its HTML was not rechecked or republished in this refresh. Do not infer live Experience content from the catalogue target. Private playback hashes remain in server-side overlays."
     },
     {
       "slot": "broadcast",

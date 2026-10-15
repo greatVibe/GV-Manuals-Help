@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updated_at": "2026-10-14",
+  "updated_at": "2026-10-15",
   "default_aspect_ratio": "1:1",
   "videos": [
     {
@@ -43,12 +43,12 @@
     },
     {
       "slug": "greatvibe-welcome",
-      "title": "GreatVibe Agent IQ Demo",
-      "summary": "A six-minute first-login tour of the dashboard console and Agent IQ: the prompt bar, Interactions, Agent IQ spaces, attachments and mid-turn steering, Topology, sealed secrets, agent questions, Files and Support, and adding your own node.",
+      "title": "greatVibe Guest Tour: Prompts, Agent IQ and Turn Cards",
+      "summary": "Johnathon introduces the guest console, prompts and Agent IQ, Mochi and development nodes, Sealed Secrets, Interactions, credentials and reviewing work. The 12:14 tour accompanies the synthetic guest demo; stop the demo before sending a real request.",
       "provider": "vimeo",
-      "video_id": "1234245120",
+      "video_id": "1236068377",
       "embed_hash_ref": "greatvibe-welcome",
-      "source_url": "https://vimeo.com/1234245120",
+      "source_url": "https://vimeo.com/1236068377",
       "aspect_ratio": "1:1",
       "product_area": "mochi-onboarding",
       "audience": [
@@ -69,59 +69,41 @@
         "nodes"
       ],
       "related_docs": [
-        "../getting-started/welcome-to-greatvibe.md",
+        "../how-to/watch-the-guest-tour.md",
         "../getting-started/ask-mochi-for-help.md",
-        "../concepts/what-is-a-node.md"
+        "../concepts/what-is-a-node.md",
+        "../how-to/use-gvturn-actions.md",
+        "../reference/plans-and-pricing.md"
       ],
       "transcript_path": "transcripts/greatvibe-welcome.md",
       "chapters": [
         {
           "start_seconds": 0,
-          "title": "Welcome, your trial and the Mochi node"
+          "title": "Welcome and guest console"
         },
         {
-          "start_seconds": 27,
-          "title": "The prompt bar and the Send button"
+          "start_seconds": 68,
+          "title": "Prompts and Agent IQ"
         },
         {
-          "start_seconds": 43,
-          "title": "Interactions: you and the agent"
+          "start_seconds": 167,
+          "title": "Mochi nodes and live work"
         },
         {
-          "start_seconds": 52,
-          "title": "Agent IQ spaces and auto mode"
+          "start_seconds": 342,
+          "title": "Sealed Secrets"
         },
         {
-          "start_seconds": 94,
-          "title": "Attachments and mid-turn steering"
+          "start_seconds": 459,
+          "title": "Interactions and steering"
         },
         {
-          "start_seconds": 124,
-          "title": "The Topology space, zoom and full screen"
-        },
-        {
-          "start_seconds": 148,
-          "title": "Sealed secrets"
-        },
-        {
-          "start_seconds": 203,
-          "title": "Questions during a turn"
-        },
-        {
-          "start_seconds": 239,
-          "title": "Main view, Files and Support"
-        },
-        {
-          "start_seconds": 267,
-          "title": "Add a node: region, size or bring your own"
-        },
-        {
-          "start_seconds": 301,
-          "title": "Your turn: try the Mochi node"
+          "start_seconds": 560,
+          "title": "Credentials history and next steps"
         }
       ],
-      "updated_at": "2026-10-09",
-      "duration_seconds": 367
+      "updated_at": "2026-10-15",
+      "duration_seconds": 734
     },
     {
       "slug": "greatvibe-story",
@@ -196,6 +178,99 @@
         }
       ],
       "updated_at": "2026-10-14"
+    },
+    {
+      "slug": "greatvibe-mobile-tips",
+      "title": "Complex Turns on Mobile: greatVibe on Galaxy Z Fold7",
+      "summary": "Johnathon uses the greatVibe PWA on a Galaxy Z Fold7 to edit Turn Card actions, add images, explain Tandem Turns, inspect Agent IQ spaces, follow support and builds, steer work and review changes. An optional 24:22 screen recording, separate from the guest demo.",
+      "provider": "vimeo",
+      "video_id": "1236054521",
+      "embed_hash_ref": "greatvibe-mobile-tips",
+      "source_url": "https://vimeo.com/1236054521",
+      "aspect_ratio": "9:10",
+      "duration_seconds": 1462,
+      "product_area": "dashboard-console",
+      "audience": [
+        "users",
+        "developers"
+      ],
+      "difficulty": "intermediate",
+      "trust": "owned",
+      "visibility": "unlisted-overlay-required",
+      "tags": [
+        "mobile",
+        "pwa",
+        "galaxy-z-fold7",
+        "turn-cards",
+        "agent-iq",
+        "steering",
+        "tandem-turns",
+        "support",
+        "review"
+      ],
+      "related_docs": [
+        "../how-to/work-with-complex-turns-on-mobile.md",
+        "../how-to/use-gvturn-actions.md",
+        "../how-to/use-tandem-turns.md",
+        "../how-to/steer-a-running-turn.md",
+        "../how-to/report-and-follow-support-requests.md"
+      ],
+      "transcript_path": "transcripts/greatvibe-mobile-tips.md",
+      "chapters": [
+        {
+          "start_seconds": 0,
+          "title": "Turn Cards and recommended actions"
+        },
+        {
+          "start_seconds": 125,
+          "title": "Hold to edit and the prompt composer"
+        },
+        {
+          "start_seconds": 193,
+          "title": "Inline images and clear instructions"
+        },
+        {
+          "start_seconds": 256,
+          "title": "Co-write with Tandem Turns"
+        },
+        {
+          "start_seconds": 317,
+          "title": "Send the prompt and read Agent IQ"
+        },
+        {
+          "start_seconds": 400,
+          "title": "Fullscreen and choosing spaces"
+        },
+        {
+          "start_seconds": 501,
+          "title": "Read Architecture and Patterns"
+        },
+        {
+          "start_seconds": 673,
+          "title": "Handle support while work continues"
+        },
+        {
+          "start_seconds": 927,
+          "title": "Follow builds pipelines and file changes"
+        },
+        {
+          "start_seconds": 1046,
+          "title": "Inspect Topology and workers"
+        },
+        {
+          "start_seconds": 1164,
+          "title": "Steer work across authorized nodes"
+        },
+        {
+          "start_seconds": 1347,
+          "title": "Deploy and verify the work"
+        },
+        {
+          "start_seconds": 1414,
+          "title": "Review changes and wrap up"
+        }
+      ],
+      "updated_at": "2026-10-15"
     }
   ]
 }

@@ -1,4 +1,5 @@
 file: mochi-experience-map.json
+lastModified-guest-mobile-videos: 2026-10-15 — Record successful Vimeo folder write receipts for the replacement tour in 00 Welcome and mobile tutorial in 20 Turns And Review. Update intended first-login catalogue binding while explicitly preserving the unverified legacy Experience publication state. Mobile tutorial has no first-login slot and is optional Web/Video content.
 lastModified-agent-iq-demo-video: 2026-10-09 — first-login slot now binds the greatvibe-welcome slug's new 6:07 GreatVibe Agent IQ Demo (Vimeo 1234245120, folder key welcome / 00 Welcome); notes record that published Experience v11 still embeds 1217843223 and must be republished in Go Central with the new video and chapters before the binding is live.
 lastModified-first-login-v11: 2026-08-14 — Records live First Login v11 with executable chapter navigation and expandable prompt, audit, and Secrets Vault SVG learning maps.
 lastModified-first-login-v9: 2026-08-14 — Records the transcript-guided live first-login v9 with chapter cues for first turns, gvturn evidence, audits, workspace tools, and Secrets Vault.

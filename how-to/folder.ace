@@ -1,5 +1,6 @@
 2026-10-13 Architecture: use-architecture-in-agent-iq.md explains green declared focus, red stated concerns, diagram modes and accessible component details.
 file: how-to/
+lastModified-guest-mobile-videos: 2026-10-15 — Add watch-the-guest-tour.md and work-with-complex-turns-on-mobile.md with transcript-grounded chapters, actionable workflows, current behavior caveats and links to narrower public guides.
 lastModified-steering-audit: 2026-09-28b — steer-a-running-turn.md and the Agent IQ steering section corrected after a code audit.
 lastModified-steering: 2026-09-28 — Added steer-a-running-turn.md and a steering section in build-agent-iq-metal-layouts.md.
 lastModified-agent-iq-input-hardening: 2026-09-28 — The public player-input guide now documents UTF-8 byte limits, one accepted move per trusted interaction, full wait deadlines, and bounded six-hour storage.

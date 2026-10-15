@@ -1,8 +1,9 @@
 file: greatvibe-welcome.md
+lastModified-guest-tour-replacement: 2026-10-15 — Replace old 6:07 transcript with Vimeo 1236068377, 734 seconds, active automatic-English track 332147214. Retain all cue wording/order apart from listed brand/name corrections and line wrapping, group under six canonical chapters, and link byte-preserved VTT plus current-behavior notes. Recording claims do not override current guest Send, trial, retention or credential policies.
 lastModified-agent-iq-demo-transcript: 2026-10-09 — Replaces the 26-minute intro transcript with the new six-minute welcome and Agent IQ demo recording (Vimeo 1234245120, 6:07). Built from the Vimeo English auto-generated WebVTT, lightly edited for reading: obvious speech-recognition errors fixed (Johnathon, greatVibe, Mochi, builder, Activity Centre to match the dashboard label), filler trimmed, grouped under the 11 chapters in ../index.json. The Agent IQ demo in konui (agent-iq-demo.ts) is timed to these chapters.
 lastModified-new-welcome-transcript: 2026-08-14 — Replaces the prior welcome transcript with the complete auto-generated English transcript and chapter guide for Vimeo 1217843223.
 consumers: [Mochi agents, users]
-produces: [sanitized auto-generated transcript and chapter notes]
+produces: [annotated auto-generated recording transcript and chapter notes]
 ---
 # Purpose
 Provides transcript status and chapter notes for the GreatVibe welcome video.
@@ -16,9 +17,10 @@ Provides transcript status and chapter notes for the GreatVibe welcome video.
 - Referenced by `../index.json`.
 
 # Gotchas
-- Transcript is auto-generated, lightly cleaned, and sanitized for public
-  documentation. Do not treat it as a verbatim quote source until editorial
-  review is complete.
+- Transcript is auto-generated with explicitly documented brand/name
+  corrections. The original VTT is preserved without changes under the
+  user's publication instruction. Do not treat it as a verified quotation
+  or current product-policy authority; use the linked current guides.
 - Public-copy excerpts are edited/paraphrased copy prepared from transcript
   themes. They are quote-ready as public copy, not as verbatim transcript text.
 - Do not add Vimeo hashes, expiring caption URLs, or download links.

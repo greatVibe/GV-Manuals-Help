@@ -2,6 +2,7 @@
 lastModified-guest-signup: 2026-10-13 — Route guest sign-up questions to plans-and-pricing rule 9 (in-console sign-up, greatvibe:signup choice) and ask-mochi-for-help.
 lastModified-fast-answers: 2026-10-12 — Adds a Fast Answers block and routes pricing, the founding story and the eight-chapter development manual from starter paths, topic index, coverage and agent routing notes.
 file: CATALOGUE.md
+lastModified-guest-mobile-videos: 2026-10-15 — Route guest-tour and complex-mobile-turn questions to dedicated guides, timestamp transcripts and preserved automatic VTT captions; keep optional mobile learning separate from the guest demo.
 lastModified-terminal-guest: 2026-10-13 — Index native Terminal guide and direct guest-story questions to Ask Mochi. Public user guidance contains no private routing or account-detection implementation.
 lastModified-steering: 2026-09-28 — Routes the new steer-a-running-turn.md guide from starter paths, topic index, repository coverage and agent routing notes.
 lastModified-agent-iq-player-input: 2026-09-28 — Routes the new public player-input guide (games, pickers, confirmations inside Agent IQ via window.gvIq.emit and konui_agent_iq_get inputsAfter/waitForInputMs) from the task table, topic index, coverage table and agent routing notes.

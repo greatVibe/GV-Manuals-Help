@@ -1,0 +1,26 @@
+file: greatvibe-mobile-tips.md
+consumers: [Mochi agents, users, video maintainers]
+produces: [annotated timestamp transcript and thirteen chapter guide]
+---
+# Purpose
+Readable transcript of Complex Turns on Mobile: greatVibe on Galaxy Z Fold7,
+Vimeo 1236054521, active English automatic track 332135652, 1462 seconds.
+
+# Structure
+Source provenance, explicit recognition corrections, current-behavior cautions,
+thirteen timestamp chapters and all cue text in source order. Line wraps and
+paragraph grouping change; wording changes only through documented corrections.
+
+# Dependencies
+- ../index.json owns slug greatvibe-mobile-tips and canonical chapter starts.
+- greatvibe-mobile-tips.vtt is the byte-preserved automatic source.
+- ../../how-to/work-with-complex-turns-on-mobile.md explains current workflows.
+
+# Gotchas
+Keep this optional tutorial separate from the guest demo. Recorded private-node
+examples are published at the recording owner's instruction, never suggested as
+nodes available to viewers. No raw credentials, hashes or signed media URLs.
+Do not present automatic captions as verified verbatim quotes or current policy.
+
+# Change History
+- 2026-10-15: Add full transcript, source integrity and public workflow coverage.

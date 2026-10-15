@@ -1,0 +1,1437 @@
+WEBVTT
+
+1
+00:00:03.240 --> 00:00:08.041
+Hey, I'm Jonathan from Graviant, and I'm the builder behind Great Vibe and one of
+
+2
+00:00:08.041 --> 00:00:12.780
+the co-founders. And I'm on my Android Mobile here, where I've built most of the
+
+3
+00:00:12.840 --> 00:00:17.790
+platform. And I'm just going to show you some tips and tricks while I've got a turn
+
+4
+00:00:17.820 --> 00:00:20.670
+running. Well, I'm going to kick off a turn, but anyway, a couple of tips and
+
+5
+00:00:20.701 --> 00:00:22.680
+tricks and kind of useful things to know.
+
+6
+00:00:24.451 --> 00:00:27.690
+So I'm in our console here. This is our PWA app.
+
+7
+00:00:27.750 --> 00:00:30.901
+You can install it on Android, iOS, and desktop, et cetera.
+
+8
+00:00:31.951 --> 00:00:36.990
+Every turn ends with turn cards, and you can see here I'm in the turn cards mode.
+
+9
+00:00:38.220 --> 00:00:39.510
+And this turn
+
+10
+00:00:40.981 --> 00:00:45.450
+ran for two hours. It was a Codex Astra turn, a bunch of work we're doing on the
+
+11
+00:00:45.481 --> 00:00:49.530
+provisioning engine. We built our entire platform with Great Vibe itself.
+
+12
+00:00:50.340 --> 00:00:54.420
+And you can see what came out of this particular turn.
+
+13
+00:00:54.840 --> 00:00:59.401
+And I've got some tabs here you can click on, gives you more information.
+
+14
+00:01:00.030 --> 00:01:05.250
+The real powerful thing is down the bottom
+
+15
+00:01:05.401 --> 00:01:10.801
+and the, what we call the power footer and the
+
+16
+00:01:11.430 --> 00:01:16.080
+choice buttons. And you can see there's two here, Audit Now and Override Audit.
+
+17
+00:01:16.110 --> 00:01:21.150
+Now, here's a tip and a trick. With any of these buttons, and these come up at the
+
+18
+00:01:21.211 --> 00:01:24.720
+end of every turn, and they give you recommendations what to do next.
+
+19
+00:01:24.780 --> 00:01:26.370
+It knows the work you're working on.
+
+20
+00:01:27.030 --> 00:01:30.840
+If you keep the model informed and give it your objectives, tell it the project
+
+21
+00:01:30.870 --> 00:01:34.620
+you're working on, if it's got great context, these buttons will come up, and
+
+22
+00:01:34.650 --> 00:01:36.689
+there'll be up to five or six of them.
+
+23
+00:01:37.560 --> 00:01:41.641
+And they'll give you the most recommended kind of next steps and next things to do.
+
+24
+00:01:42.570 --> 00:01:44.461
+On this particular case, it wants me to do an audit.
+
+25
+00:01:44.551 --> 00:01:50.430
+We do technical audits of code reviews after most turns
+
+26
+00:01:50.521 --> 00:01:53.670
+where we change code. This time it wants to do an audit.
+
+27
+00:01:54.630 --> 00:01:57.990
+Now, what I can do here, rather than just clicking the button and going, and that
+
+28
+00:01:58.051 --> 00:02:02.340
+means it's going to send a prompt with the run the audit now, check the code, all
+
+29
+00:02:02.370 --> 00:02:04.680
+that sort of thing. That's a pre-canned prompt.
+
+30
+00:02:05.430 --> 00:02:09.301
+But instead of doing that, more often than not, you want to modify the prompt and
+
+31
+00:02:09.360 --> 00:02:14.310
+add some more things to it. Make use of the tokens you're using in a particular
+
+32
+00:02:14.370 --> 00:02:18.210
+turn. So to do that, hold it down, and you can see me here holding it down,
+
+33
+00:02:20.130 --> 00:02:24.660
+and you see a little animation at the bottom of the button.
+
+34
+00:02:25.080 --> 00:02:26.851
+That means it's copied it into the prompt box.
+
+35
+00:02:26.940 --> 00:02:31.080
+We're in full screen at the moment, so I'll do one click on the screen to go back
+
+36
+00:02:31.141 --> 00:02:35.101
+to non-full screen mode. And here you can see the actual input here at the bottom,
+
+37
+00:02:35.220 --> 00:02:38.730
+and the prompt is there, but it's not submitted. It's not kicked off.
+
+38
+00:02:39.300 --> 00:02:41.250
+I can now go and click on the
+
+39
+00:02:42.810 --> 00:02:46.650
+third button from the right, and that's the prompt composer.
+
+40
+00:02:47.340 --> 00:02:49.830
+And you can see the prompt composer on the screen now.
+
+41
+00:02:49.891 --> 00:02:54.660
+And so there's the prompt that it just provided. And I can go and edit it.
+
+42
+00:02:54.750 --> 00:02:58.351
+I can add some more things to it. So I'm going to just paste some extra text in
+
+43
+00:02:58.410 --> 00:02:58.650
+here,
+
+44
+00:02:59.880 --> 00:03:02.580
+just some corrections to the way our provisioning code works.
+
+45
+00:03:03.360 --> 00:03:08.641
+We're right on the verge of launching, so we've just got some final tweaks to do
+
+46
+00:03:08.671 --> 00:03:13.110
+with our provisioning engine. So my prompt here does some corrections.
+
+47
+00:03:13.410 --> 00:03:19.351
+Now, I need to also-- A couple other things I can do here is I can add some
+
+48
+00:03:19.410 --> 00:03:20.671
+images to the prompt.
+
+49
+00:03:21.870 --> 00:03:25.470
+And I can just go and attach them as files like normal, like from the normal
+
+50
+00:03:25.860 --> 00:03:29.160
+non-composer mode, or I can do inline images.
+
+51
+00:03:29.640 --> 00:03:32.940
+And I'll do an inline image here, and there's two of them that I want.
+
+52
+00:03:33.421 --> 00:03:39.120
+I want these ones here. If I just go and add those, you see they get added in line.
+
+53
+00:03:39.510 --> 00:03:43.351
+And then I can go-- The cool thing about inline images is I can go and then
+
+54
+00:03:45.150 --> 00:03:49.560
+place text strategically. Again, the model sees this, right?
+
+55
+00:03:49.650 --> 00:03:52.470
+We send rich prompts through to the models.
+
+56
+00:03:53.220 --> 00:03:56.041
+This is quite different to what you'll get with the normal CLI tools.
+
+57
+00:03:57.480 --> 00:04:00.781
+And I can see here, I can give this extra context.
+
+58
+00:04:02.310 --> 00:04:07.590
+This is the error we saw during testing, right?
+
+59
+00:04:07.710 --> 00:04:10.531
+So, I don't need to be too verbose. I'm pretty vague.
+
+60
+00:04:10.980 --> 00:04:12.750
+The models are so smart, they figure it out.
+
+61
+00:04:13.351 --> 00:04:16.320
+Likewise, you can go and bullet your text and everything here in the prompt
+
+62
+00:04:16.351 --> 00:04:21.451
+composer. And one of the coolest features about prompt composer is one of your
+
+63
+00:04:21.541 --> 00:04:26.850
+coworkers that have access to the same node in the same organization and mesh, they
+
+64
+00:04:26.880 --> 00:04:29.640
+can join you in here. And so we call that a tandem turn.
+
+65
+00:04:30.031 --> 00:04:32.790
+So you can see at the top, it's got single user tandem off.
+
+66
+00:04:33.510 --> 00:04:35.730
+If one of my coworkers,
+
+67
+00:04:37.170 --> 00:04:40.440
+or one of the testers, or other developers wants to just kind of contribute to
+
+68
+00:04:40.470 --> 00:04:42.000
+this, maybe they've got their own images to add to it.
+
+69
+00:04:42.420 --> 00:04:45.300
+They can just come to this node, hit Tandem Turn, the same button, the prompt
+
+70
+00:04:45.330 --> 00:04:51.210
+composer. It'll send me a pop-up saying, "Sophia, David wants to join
+
+71
+00:04:51.300 --> 00:04:55.830
+this tandem turn." And then they'll be able to see me typing, and I'll be able to
+
+72
+00:04:55.860 --> 00:04:58.290
+see them typing, and we can kind of curate the prompt.
+
+73
+00:04:58.680 --> 00:05:02.550
+That's really useful for when you know you're going to kick off a turn that's going
+
+74
+00:05:02.580 --> 00:05:06.570
+to run for a couple of hours, and you want really precise instructions.
+
+75
+00:05:07.290 --> 00:05:10.800
+The better and more precision to your prompts, the better an outcome you're going
+
+76
+00:05:10.800 --> 00:05:14.940
+to have. Just like sometimes the more vague you are or more open, the more
+
+77
+00:05:14.970 --> 00:05:17.160
+creativity you're going to see in response from the model.
+
+78
+00:05:17.250 --> 00:05:21.060
+So anyway, all I have to do now, I'm kind of finished formatting here.
+
+79
+00:05:21.120 --> 00:05:25.260
+You can sort of see in the UI, in the prompt composer that it's a really rich user
+
+80
+00:05:25.290 --> 00:05:29.341
+interface. So anyway, I'm going to send this prompt. And there you go.
+
+81
+00:05:29.400 --> 00:05:33.240
+It's sent, right? If I just click on Show More, we can see the inline images there
+
+82
+00:05:33.960 --> 00:05:38.160
+in the interactions panel. So now that turn is running, and
+
+83
+00:05:39.510 --> 00:05:41.040
+it's going to find out what went down.
+
+84
+00:05:41.490 --> 00:05:46.710
+And so now if we just wait for this turn to kind of spin up, right?
+
+85
+00:05:48.240 --> 00:05:51.031
+We'll start to see in the top half of the screen the Activity Center.
+
+86
+00:05:51.600 --> 00:05:57.420
+That area is called Agent IQ, and that is an area of the screen that is pretty
+
+87
+00:05:57.451 --> 00:06:01.290
+much dedicated to AI. So it's got a channel that it can talk to.
+
+88
+00:06:01.350 --> 00:06:05.910
+It can control what we see there. And pretty soon as we get deeper into the turn
+
+89
+00:06:06.270 --> 00:06:11.640
+finding the fixes, it's going to start to display some of the spaces, the Agent IQ
+
+90
+00:06:11.730 --> 00:06:15.990
+spaces. And here you can see it here, it's just brought up the evidence doc.
+
+91
+00:06:16.080 --> 00:06:19.230
+Look, it knows how big my screen is. It knows I'm on a mobile.
+
+92
+00:06:20.070 --> 00:06:22.890
+On desktop, it's different. It'll bring up more spaces, lay it out differently.
+
+93
+00:06:23.281 --> 00:06:29.279
+If we've got three or four users watching this one turn from their logins, it'll
+
+94
+00:06:29.311 --> 00:06:30.811
+lay it out differently for each of them.
+
+95
+00:06:31.201 --> 00:06:36.331
+So there's a lot of intelligence that goes on here where we really do kind of give
+
+96
+00:06:36.750 --> 00:06:40.860
+the agent and the user interface superpowers together in terms of working with you
+
+97
+00:06:40.890 --> 00:06:45.780
+during the turn. Now, if I single-click on this Agent IQ space, kind of pretty much
+
+98
+00:06:45.870 --> 00:06:51.240
+anywhere where it's not got content, so I just single-click that particular space,
+
+99
+00:06:51.331 --> 00:06:54.451
+and this is the evidence doc space, goes full screen.
+
+100
+00:06:54.510 --> 00:06:58.680
+So the turn's only just begun, so it's kind of not a lot of information here.
+
+101
+00:06:58.710 --> 00:07:02.670
+It's still working out what it wants to do. But single-click again, goes back.
+
+102
+00:07:02.970 --> 00:07:08.640
+Now, if I double-click it, double-tap on my mobile, it goes into full-screen Agent
+
+103
+00:07:08.701 --> 00:07:14.160
+IQ. And this is where we see some of the other spaces the agent has already opened
+
+104
+00:07:14.220 --> 00:07:17.070
+and gotten ready to show me stuff really there.
+
+105
+00:07:17.130 --> 00:07:18.570
+And so the first one is the main one.
+
+106
+00:07:18.630 --> 00:07:24.300
+This is called the main view, and this is 100% pure AI, so nothing about this
+
+107
+00:07:24.360 --> 00:07:28.350
+layout is chosen in advance. It's not templated. It's not coded.
+
+108
+00:07:28.710 --> 00:07:31.500
+It is pretty much an empty canvas with a whole set of rules around it.
+
+109
+00:07:31.951 --> 00:07:37.890
+And this is where continually the AI agent is updating it and
+
+110
+00:07:37.920 --> 00:07:40.110
+putting in what it's working on, what it's going to do.
+
+111
+00:07:40.170 --> 00:07:43.800
+So you get a sense here straight away, pretty quickly in the main view, in this one
+
+112
+00:07:43.860 --> 00:07:44.040
+here,
+
+113
+00:07:45.240 --> 00:07:48.720
+of what it's going to do in this turn, what its objectives are so far.
+
+114
+00:07:49.980 --> 00:07:55.320
+Down the bottom there, you're seeing the live interactions from the agent, from the
+
+115
+00:07:55.350 --> 00:07:59.250
+model come up, and so they'll just stream on top of full-screen mode.
+
+116
+00:07:59.640 --> 00:08:02.790
+If I single-click, I go back to here, but I'm going to go to double-click and go
+
+117
+00:08:02.850 --> 00:08:07.201
+back into full-screen Agent IQ. Down the bottom is files and nodes.
+
+118
+00:08:07.591 --> 00:08:10.440
+So it's decided to show me this because it thinks it's going to start working with
+
+119
+00:08:10.500 --> 00:08:13.440
+some files. So it's kind of got it ready in advance.
+
+120
+00:08:14.341 --> 00:08:17.701
+At the moment, there's no file or file activity there, so I might as well just go
+
+121
+00:08:17.760 --> 00:08:20.581
+back. I go back to full-screen mode.
+
+122
+00:08:21.300 --> 00:08:23.850
+On the right-hand side is the evidence doc.
+
+123
+00:08:24.210 --> 00:08:25.890
+But likewise, I can go and click
+
+124
+00:08:27.630 --> 00:08:30.240
+this doc down the bottom. I'll just wait for this to clear.
+
+125
+00:08:32.220 --> 00:08:34.951
+And these interactions only stay on screen for 15 seconds.
+
+126
+00:08:35.280 --> 00:08:37.020
+I can just drag this up, so it's not going to cover it.
+
+127
+00:08:37.290 --> 00:08:42.870
+Click on the plus sign, and there's a number of different other spaces you can
+
+128
+00:08:42.901 --> 00:08:45.420
+choose from and just kind of look at while the turn's running.
+
+129
+00:08:45.690 --> 00:08:49.320
+The other one I like is architecture. There may not be information.
+
+130
+00:08:49.380 --> 00:08:52.530
+So this has been populated already by the agent. These are all dynamic.
+
+131
+00:08:52.890 --> 00:08:54.811
+This starts as a blank slate in the turn.
+
+132
+00:08:55.380 --> 00:09:00.450
+If I just go full screen on that, you'll see that in here we have some really
+
+133
+00:09:00.990 --> 00:09:06.330
+useful rich information. So this is in auto mode at the moment, but top right, you
+
+134
+00:09:06.360 --> 00:09:09.960
+can click on the drop-down. There's a focus map mode, a dependency flow, and
+
+135
+00:09:10.020 --> 00:09:13.410
+component layers. So this is the-- Which mode is this one?
+
+136
+00:09:13.440 --> 00:09:14.100
+This is the
+
+137
+00:09:16.515 --> 00:09:20.235
+The main focus or the focus map, I think it is.
+
+138
+00:09:20.295 --> 00:09:22.605
+So it's chosen this particular view.
+
+139
+00:09:22.905 --> 00:09:24.585
+If I just go to the component layers,
+
+140
+00:09:26.625 --> 00:09:31.065
+there are some subtle differences between these of what it shows you.
+
+141
+00:09:31.125 --> 00:09:35.985
+But the whole object of the architecture space is to show you where it's focusing,
+
+142
+00:09:36.015 --> 00:09:39.405
+the components it's focusing on. So it's not showing you code, right?
+
+143
+00:09:39.436 --> 00:09:43.725
+There's too much code kind of being changed in most of our turns.
+
+144
+00:09:44.205 --> 00:09:47.026
+So we want to know where's it working, what's it touching, why is it touching it?
+
+145
+00:09:47.085 --> 00:09:50.565
+And this is the where's it touching and where does it think it's going to spend its
+
+146
+00:09:50.625 --> 00:09:54.075
+time in this turn? And so these are the different components in our
+
+147
+00:09:54.105 --> 00:09:55.995
+multi-component, multi-tier architecture.
+
+148
+00:09:56.505 --> 00:09:58.905
+And the Grapevine system is really large and complex.
+
+149
+00:09:58.995 --> 00:10:01.605
+There's a lot of moving parts to it to get it to work.
+
+150
+00:10:02.355 --> 00:10:05.686
+And so, this we see at kind of a component level.
+
+151
+00:10:05.776 --> 00:10:10.575
+So anyway, if I go out of this space, the other one that's really useful is
+
+152
+00:10:11.295 --> 00:10:16.485
+patterns. And let's see if that may not be... Yeah, there's patterns there.
+
+153
+00:10:18.195 --> 00:10:18.315
+And
+
+154
+00:10:19.695 --> 00:10:25.065
+if I just go full screen on that, patterns is when it's changing code or working on
+
+155
+00:10:25.155 --> 00:10:27.825
+code, what's it seeing and why is it doing it, sort of thing.
+
+156
+00:10:28.936 --> 00:10:34.785
+And one of the concepts here is find the useful things the user,
+
+157
+00:10:34.936 --> 00:10:36.975
+myself, needs to know during this turn.
+
+158
+00:10:37.485 --> 00:10:39.225
+And then give it some categories,
+
+159
+00:10:40.635 --> 00:10:44.955
+and some useful insights into why you're making these technical decisions on this
+
+160
+00:10:45.015 --> 00:10:48.765
+code. Again, I don't want to zoom in and focus on the code because there's just too
+
+161
+00:10:48.795 --> 00:10:51.105
+much code now. There's too many components.
+
+162
+00:10:51.165 --> 00:10:53.895
+This one turn is working with let alone all the turns.
+
+163
+00:10:54.315 --> 00:10:54.405
+And
+
+164
+00:10:55.665 --> 00:11:01.575
+11 months in, we're at 22,000 turns, and well over a million lines of code now.
+
+165
+00:11:02.085 --> 00:11:06.975
+So, I try everything possible not to zoom on code. I know it can write good code.
+
+166
+00:11:08.175 --> 00:11:12.436
+What I need to make sure is, is it working on the right things?
+
+167
+00:11:13.306 --> 00:11:17.565
+Now, what's just come up on screen at the moment is a support ticket.
+
+168
+00:11:17.625 --> 00:11:19.905
+So it found a problem with the Grape By platform.
+
+169
+00:11:20.445 --> 00:11:25.035
+And when the agent sees a problem with the Grape By platform itself, we have an
+
+170
+00:11:25.125 --> 00:11:29.776
+inbuilt support ticketing system, support request system, and it opens a support
+
+171
+00:11:29.806 --> 00:11:30.945
+request. So this one here,
+
+172
+00:11:32.145 --> 00:11:35.175
+and it's kind of related to the turn I just ran.
+
+173
+00:11:35.595 --> 00:11:38.745
+Sign up to recommend a server outside a recipient's ground quotation, right?
+
+174
+00:11:39.436 --> 00:11:41.715
+So it's opened a support ticket for this.
+
+175
+00:11:42.885 --> 00:11:45.675
+And there's a few things I can do here as a Grape By user.
+
+176
+00:11:45.765 --> 00:11:45.975
+So
+
+177
+00:11:48.105 --> 00:11:53.355
+as a user, you won't see this for my code. And the Grape By platform is my code.
+
+178
+00:11:53.385 --> 00:11:55.605
+It knows the difference between itself and you as a user.
+
+179
+00:11:56.505 --> 00:12:00.405
+But you may see this exact same thing if it's your code that's got a problem.
+
+180
+00:12:00.495 --> 00:12:02.565
+So you may want to use this as a support system.
+
+181
+00:12:02.865 --> 00:12:05.295
+It's not just for our support tickets.
+
+182
+00:12:05.625 --> 00:12:10.665
+You can use it for your own code as well, where it'll open support requests on
+
+183
+00:12:10.725 --> 00:12:15.465
+yourself. All your users open support requests, find a bug in your code, and then
+
+184
+00:12:15.495 --> 00:12:17.625
+it'll come through to you kind of natively.
+
+185
+00:12:18.436 --> 00:12:24.135
+One of the cool things we can do here with this really support in the inner kernel,
+
+186
+00:12:24.225 --> 00:12:28.154
+the inner engine is, first of all, I get to see it straight away here.
+
+187
+00:12:28.425 --> 00:12:31.995
+So I can see how it's assigned. I can go and attach it to a prompt and kind of ask
+
+188
+00:12:32.056 --> 00:12:36.585
+about it. Or I can just acknowledge it, and then it goes into my kind of queue of
+
+189
+00:12:36.615 --> 00:12:39.405
+stuff to work on, and I'll include it in the next sprint or whatever.
+
+190
+00:12:40.485 --> 00:12:43.965
+Or just have reports on this new issue found.
+
+191
+00:12:45.526 --> 00:12:51.015
+But another thing I can do is while the turn's running is we have a space called
+
+192
+00:12:51.045 --> 00:12:51.556
+support.
+
+193
+00:12:52.815 --> 00:12:56.595
+And let's just find it. It may already be open. Is it open?
+
+194
+00:12:57.855 --> 00:13:01.665
+No, I'll just find it. Give me a sec. Give me a second.
+
+195
+00:13:02.265 --> 00:13:05.955
+If I go to support. There's support. Right.
+
+196
+00:13:06.345 --> 00:13:09.645
+I need to get out of full screen mode to get into additional. There it is there.
+
+197
+00:13:10.605 --> 00:13:15.705
+Take him to full screen mode. Now, with support tickets, and these are all my
+
+198
+00:13:15.765 --> 00:13:19.246
+different support tickets that are open, the latest one's at the top there.
+
+199
+00:13:20.205 --> 00:13:24.135
+Now I can choose while this turn is running, and this turn is still running, right?
+
+200
+00:13:24.195 --> 00:13:29.655
+So I'm in AgentIQ here. I can grab it, and I can drag it into a fix on this turn,
+
+201
+00:13:29.776 --> 00:13:31.665
+right? And I can do this with any of my support tickets.
+
+202
+00:13:32.026 --> 00:13:34.515
+And you can do this with your own projects and code too.
+
+203
+00:13:34.725 --> 00:13:38.746
+A support system is not just for us, it's for you to use to manage your code too.
+
+204
+00:13:39.255 --> 00:13:40.695
+And in fact, it'll open support tickets.
+
+205
+00:13:40.755 --> 00:13:43.605
+I know the difference between problems with your code and problems with my code,
+
+206
+00:13:43.665 --> 00:13:48.286
+Grape By code. And so it'll give me support tickets on Grape By, but it won't give
+
+207
+00:13:48.315 --> 00:13:52.935
+me support tickets on your stuff. It'll give you support tickets on your stuff.
+
+208
+00:13:53.026 --> 00:13:58.036
+If you wanted to do that. Now you can tell your context, your model, your agents
+
+209
+00:13:58.815 --> 00:14:01.485
+not to open support tickets and stuff. But this is really powerful.
+
+210
+00:14:01.575 --> 00:14:06.015
+So now I can just go through my backlog here or my queue of support tickets.
+
+211
+00:14:07.155 --> 00:14:11.715
+And ones that I know that I've solved, I can just drop them into resolve with a
+
+212
+00:14:11.746 --> 00:14:14.415
+close. I'll just do this, and it'll take care of it in this turn.
+
+213
+00:14:14.985 --> 00:14:19.996
+So I got one opened in the ticket, and I can choose if I just want to quickly jump
+
+214
+00:14:20.056 --> 00:14:23.085
+through here and go looking for other ones working and think, "Oh, that's related."
+
+215
+00:14:23.445 --> 00:14:25.965
+The agent didn't pick up on it's related, but it is related.
+
+216
+00:14:27.556 --> 00:14:31.335
+And for example, this one here, right, this is resolved.
+
+217
+00:14:31.395 --> 00:14:35.776
+So I can click on resolve for that. And then in this turn, it'll mark them as
+
+218
+00:14:35.806 --> 00:14:41.565
+resolved. So, that's the support space, and this is why I am
+
+219
+00:14:41.655 --> 00:14:45.885
+totally in love with AgentIQ. Because while we've got this big turn, and most of
+
+220
+00:14:45.915 --> 00:14:46.935
+our turns are pretty big now,
+
+221
+00:14:48.465 --> 00:14:51.885
+both Codex and Claude support really long turns, and they do a lot of work.
+
+222
+00:14:52.695 --> 00:14:55.125
+And they'll keep working for as much work as we give them.
+
+223
+00:14:55.515 --> 00:14:56.895
+And we do a lot of mid-turn steering.
+
+224
+00:14:56.985 --> 00:14:59.536
+So here I can go and add additional things to do in this turn.
+
+225
+00:15:00.465 --> 00:15:04.515
+But anyway, I'm going to go back to just a full screen mode again in AgentIQ.
+
+226
+00:15:05.265 --> 00:15:07.815
+I can get rid of support requests. I don't really need it, or I can just click on
+
+227
+00:15:07.905 --> 00:15:08.265
+auto.
+
+228
+00:15:10.545 --> 00:15:15.556
+When I click on auto, it just gives me the information it thinks I need to see the
+
+229
+00:15:15.585 --> 00:15:17.746
+work it's doing or done or got coming up.
+
+230
+00:15:18.705 --> 00:15:22.635
+And it's just done and closed out that support ticket when I set to mark as
+
+231
+00:15:22.665 --> 00:15:26.746
+resolved. So it's showing me now the support space.
+
+232
+00:15:27.526 --> 00:15:33.105
+And builds, this is really useful as this turn gets on because there's CI/CD
+
+233
+00:15:33.165 --> 00:15:36.135
+pipelines attached to this code base.
+
+234
+00:15:36.195 --> 00:15:40.545
+So a lot of our GitHub repos, they trigger CI/CD pipelines.
+
+235
+00:15:40.996 --> 00:15:44.926
+So this is intelligent enough to know, and it's the same with you, you don't really
+
+236
+00:15:44.955 --> 00:15:47.685
+need to do much. You just need to tell it about your different systems.
+
+237
+00:15:48.615 --> 00:15:53.505
+In a turn, this knows that on the Git repo it's working on, it'll cause it
+
+238
+00:15:53.565 --> 00:15:57.526
+triggering off a CI/CD pipeline, and then it will appear in here, and it'll watch
+
+239
+00:15:57.585 --> 00:16:01.665
+it to the end. If we want it to, we can just tell it to kick it off, do the commit,
+
+240
+00:16:01.725 --> 00:16:03.135
+and then it's just going to end the turn there.
+
+241
+00:16:03.615 --> 00:16:05.415
+Or we can tell it to monitor completion.
+
+242
+00:16:05.445 --> 00:16:08.145
+And I'll do this with that with turn steering, depending on what I want during a
+
+243
+00:16:08.176 --> 00:16:13.185
+given turn. If I go back in here, there's a few other things.
+
+244
+00:16:13.845 --> 00:16:16.276
+Files and nodes should have data now.
+
+245
+00:16:16.665 --> 00:16:21.676
+And so in files, you can see what it's read, what it's created, what's new, what's
+
+246
+00:16:21.705 --> 00:16:24.165
+been edited. I can click on this one here.
+
+247
+00:16:24.195 --> 00:16:26.985
+This is a Go file, so I'll just bring it up. Whoops.
+
+248
+00:16:28.996 --> 00:16:30.015
+And bring it up.
+
+249
+00:16:31.665 --> 00:16:32.355
+And
+
+250
+00:16:36.015 --> 00:16:40.395
+bring it up. And here you can see the actual source for that particular file.
+
+251
+00:16:40.665 --> 00:16:43.426
+If I click on the diff, if it's changed, so,
+
+252
+00:16:44.746 --> 00:16:47.715
+this was a read, I think. This was a read rather than a change.
+
+253
+00:16:47.776 --> 00:16:52.905
+Yeah, it was a read. Of the ones that have got edits or writes, you can click and
+
+254
+00:16:52.965 --> 00:16:57.045
+see the diff inside here. The reason this is a very different interface to your
+
+255
+00:16:57.105 --> 00:17:01.965
+normal kind of file structure or your normal IDE, is because we're looking for
+
+256
+00:17:02.085 --> 00:17:06.195
+collective topics or groups of activity.
+
+257
+00:17:06.615 --> 00:17:12.435
+Again, so much is going on in this turn that I want to get a sense of where's it
+
+258
+00:17:12.465 --> 00:17:15.315
+spending time, what's it working on? Not necessarily code level.
+
+259
+00:17:15.405 --> 00:17:18.345
+If I want to go code level, I can go in here and go pursue the code and go and see
+
+260
+00:17:18.375 --> 00:17:21.885
+exactly what it's doing and stuff. But normally I'll do that through turns.
+
+261
+00:17:22.065 --> 00:17:25.095
+I won't normally necessarily do it through here or the IDE, et cetera.
+
+262
+00:17:26.056 --> 00:17:28.996
+Which leads me to the next kind of really useful,
+
+263
+00:17:30.255 --> 00:17:36.045
+kind of critical space or tool, and that's topology. And that's this one here.
+
+264
+00:17:36.705 --> 00:17:39.075
+And this shows you all the workers it's got going on.
+
+265
+00:17:39.135 --> 00:17:41.805
+So at the moment, there's three workers, and the three of them are active.
+
+266
+00:17:42.105 --> 00:17:46.755
+I've seen some of my turns, because Codex and Claude are both incredible now when
+
+267
+00:17:46.755 --> 00:17:48.015
+it comes to use of workers,
+
+268
+00:17:50.535 --> 00:17:55.125
+using up to like 40 workers on a single machine. And we're multi-machine.
+
+269
+00:17:55.246 --> 00:17:58.785
+So, this has got three workers on it.
+
+270
+00:18:00.105 --> 00:18:05.565
+And if I go down to here to our node list, see we've got 19 nodes that we
+
+271
+00:18:06.195 --> 00:18:10.426
+use every day. These are our dev machines, dev and build, and test.
+
+272
+00:18:11.475 --> 00:18:15.615
+And so on just one of them, we can have a dozen workers working, and you've got it
+
+273
+00:18:15.645 --> 00:18:19.695
+happening across multiple. At the moment, I'm the only one doing work.
+
+274
+00:18:19.815 --> 00:18:25.395
+I can see here from the node list that my Codex animation's moving.
+
+275
+00:18:25.725 --> 00:18:29.805
+So I know there's a turn running on the Tui node, and I'm on the Tui node at the
+
+276
+00:18:29.835 --> 00:18:33.015
+moment, but there's no other animation on the logos.
+
+277
+00:18:33.405 --> 00:18:36.765
+I'm not seeing a Claude or a Codex logo on the other nodes, so there's no turns
+
+278
+00:18:36.825 --> 00:18:37.725
+running on those. So
+
+279
+00:18:39.075 --> 00:18:41.415
+one of the team members not running turns at the moment.
+
+280
+00:18:41.625 --> 00:18:47.565
+But if I just go back here, and go back to topology, getting
+
+281
+00:18:47.625 --> 00:18:52.125
+visibility into the workers and what node they're working on.
+
+282
+00:18:52.185 --> 00:18:55.335
+So at the moment, there's all of these workers are running on this particular node.
+
+283
+00:18:56.655 --> 00:19:00.496
+And I can click on each one of these workers and see what it's doing.
+
+284
+00:19:01.155 --> 00:19:02.655
+So you can see here,
+
+285
+00:19:03.855 --> 00:19:07.095
+this is working on the mochi handoff, this one. This one's working on...
+
+286
+00:19:08.805 --> 00:19:11.715
+This is the main thread. Let me just go back.
+
+287
+00:19:14.670 --> 00:19:20.371
+This is actually the main thread, and then there's another worker here on our
+
+288
+00:19:20.430 --> 00:19:24.450
+grant subsystem. And so these are all happening on the same node.
+
+289
+00:19:24.510 --> 00:19:30.121
+What I can also do is I can just mid-turn status and say, "Don't
+
+290
+00:19:30.510 --> 00:19:33.000
+forget to use
+
+291
+00:19:34.290 --> 00:19:39.301
+Falcon or Mac Studio Max nodes
+
+292
+00:19:39.900 --> 00:19:45.720
+for extra worker capacity." So I don't have to restrict this
+
+293
+00:19:45.780 --> 00:19:49.890
+turn just to this node. We've got a mesh infrastructure.
+
+294
+00:19:50.010 --> 00:19:53.910
+All the nodes are connected to each other through highly encrypted channels.
+
+295
+00:19:53.970 --> 00:19:55.801
+They share information about turns they're running.
+
+296
+00:19:56.520 --> 00:20:02.280
+They share information about topics and of user, and they'll flag, and
+
+297
+00:20:02.700 --> 00:20:06.270
+they'll semaphore each other when they start and stop different activities.
+
+298
+00:20:06.330 --> 00:20:09.390
+So there's a lot of information they share between each other, and they share
+
+299
+00:20:09.420 --> 00:20:14.640
+credentials. So we can have one set of Claude credentials, and we put it onto one
+
+300
+00:20:14.670 --> 00:20:18.000
+node, and then we can share it to the other nodes so that we don't have to keep
+
+301
+00:20:18.030 --> 00:20:21.180
+copying it around and worrying about token refreshes and stuff like that.
+
+302
+00:20:21.570 --> 00:20:27.150
+If it's not a Claude setup token, if, say, a Codex OAuth, where it's refreshing
+
+303
+00:20:27.210 --> 00:20:31.350
+every seven days or five days, whatever it is, you only really want to put it in
+
+304
+00:20:31.410 --> 00:20:34.470
+one place and have that node refreshing it, and then it shares it with the others.
+
+305
+00:20:34.801 --> 00:20:39.330
+And so we've got a really rich, encrypted communications channel called Gossip
+
+306
+00:20:39.810 --> 00:20:42.871
+between the different nodes. Anyway, on this particular one, I'm going to just say,
+
+307
+00:20:43.020 --> 00:20:48.930
+"Hey, don't forget to use Falcon or Mac Studio Max nodes." So Falcon is in the same
+
+308
+00:20:48.960 --> 00:20:51.900
+organization, but different mesh, but there's a trust between the meshes.
+
+309
+00:20:52.380 --> 00:20:58.350
+And Mac Studio Max is my desktop Mac here, which has a ton of RAM
+
+310
+00:20:58.410 --> 00:21:03.240
+and a ton of cores and loads of capacity. It doesn't mean it'll run a prompt on it.
+
+311
+00:21:03.301 --> 00:21:07.020
+I can tell it, do everything through prompting on it, so it's using the agent.
+
+312
+00:21:07.320 --> 00:21:12.630
+Otherwise, it'll just use it over the mesh communications channel and just do the
+
+313
+00:21:12.660 --> 00:21:17.220
+work. So if there's a user on that node, they can still keep working.
+
+314
+00:21:17.460 --> 00:21:20.400
+They're not going to be any the wiser. We're just using its resources.
+
+315
+00:21:21.240 --> 00:21:23.220
+And now if I go back to
+
+316
+00:21:25.621 --> 00:21:29.430
+the worker topology, go full screen on this, get rid of this.
+
+317
+00:21:30.150 --> 00:21:31.500
+We might see,
+
+318
+00:21:32.790 --> 00:21:37.170
+if it decides to make use of those other nodes, you'll see it here at the bottom in
+
+319
+00:21:37.200 --> 00:21:40.980
+the components, you'll see the other nodes used.
+
+320
+00:21:41.070 --> 00:21:44.371
+So it'll start to say either Mac Studio Max or Falcon, any other node that it's
+
+321
+00:21:44.400 --> 00:21:47.520
+kind of working on in that turn. And it's all transparent.
+
+322
+00:21:48.600 --> 00:21:49.950
+And you don't have to worry about it.
+
+323
+00:21:50.040 --> 00:21:55.980
+So as long as the nodes are in either the same mesh or the meshes, you'll
+
+324
+00:21:56.010 --> 00:22:00.871
+set up a trust and so it can't happen, then just use the power of the platform, and
+
+325
+00:22:00.900 --> 00:22:04.770
+it works incredibly well to the point where 11 months, we've done 22,000 turns
+
+326
+00:22:04.830 --> 00:22:08.070
+building this entire platform with this kind of architecture.
+
+327
+00:22:08.130 --> 00:22:11.070
+It wasn't like that in the beginning. All these features weren't there.
+
+328
+00:22:11.551 --> 00:22:14.070
+But there you go. So what's it saying?
+
+329
+00:22:14.160 --> 00:22:16.680
+"I'll check Falcon is active and perform verification job while the release
+
+330
+00:22:16.710 --> 00:22:22.290
+continues." So there you go. It's going to use Mac Studio Max and Falcon for the
+
+331
+00:22:22.380 --> 00:22:27.210
+code reviews and work verification as it gets further into the turn.
+
+332
+00:22:27.301 --> 00:22:29.580
+So there's quite a few moving parts happening in this turn.
+
+333
+00:22:30.030 --> 00:22:35.611
+These are complex server infrastructure in different geographies worldwide.
+
+334
+00:22:36.510 --> 00:22:41.520
+It is connecting to them. We've got in our credential system credentials for it to
+
+335
+00:22:41.580 --> 00:22:46.621
+connect to the infrastructure. If it can't get there through the Great Five GD mesh
+
+336
+00:22:47.850 --> 00:22:51.480
+bus system, it'll get there over network transports that we give it.
+
+337
+00:22:51.570 --> 00:22:56.790
+So these turns can be really complex, and sometimes there's a gray line
+
+338
+00:22:56.820 --> 00:23:00.930
+between turns that are infrastructure turns and turns that are coding turns.
+
+339
+00:23:01.230 --> 00:23:03.510
+So, we use turns for deployment as well.
+
+340
+00:23:04.020 --> 00:23:06.570
+We use CI/CD, so everything's automated and repeatable.
+
+341
+00:23:07.621 --> 00:23:11.820
+But we will use turns for triggering and eventing and watching and monitoring and
+
+342
+00:23:11.880 --> 00:23:14.310
+making sure the environment's going to be the way we want it to be.
+
+343
+00:23:14.580 --> 00:23:20.100
+Anyway, this video's now 23 minutes long, and I've shown you just what is a really
+
+344
+00:23:20.160 --> 00:23:25.650
+complex turn in progress and both development work going on,
+
+345
+00:23:26.190 --> 00:23:30.570
+code being changed, and we can see just the level of code being changed.
+
+346
+00:23:30.630 --> 00:23:31.500
+If I just get out of here,
+
+347
+00:23:32.730 --> 00:23:38.190
+and go back, you can see down here at the bottom, where it's got N26.
+
+348
+00:23:38.220 --> 00:23:41.640
+So this is the GitHub, the Git repo list.
+
+349
+00:23:41.730 --> 00:23:45.420
+So at the moment, all the work's been done in one repo, the identity account
+
+350
+00:23:45.480 --> 00:23:49.380
+service. So this is where we identify users and manage their accounts, et cetera.
+
+351
+00:23:49.470 --> 00:23:52.710
+This is our repo for that. 26 changes
+
+352
+00:23:54.240 --> 00:23:57.960
+so far in that turn, in this turn. I think it's 26.
+
+353
+00:23:58.020 --> 00:23:59.970
+I didn't actually remember to check at the beginning.
+
+354
+00:24:00.450 --> 00:24:04.290
+We may have not got a commit out of the previous turn, which is why it needed all.
+
+355
+00:24:04.380 --> 00:24:04.740
+Anyway,
+
+356
+00:24:05.970 --> 00:24:10.470
+thanks for watching the video. I'm going to record more of these on tips and tricks
+
+357
+00:24:10.500 --> 00:24:14.820
+and how we use Great Five and how to build with it at scale, and how to build it
+
+358
+00:24:14.850 --> 00:24:20.160
+with a team and review code and make the most out of the platform. All right.
+
+359
+00:24:20.760 --> 00:24:21.450
+Thanks for watching.

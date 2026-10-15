@@ -1,0 +1,20 @@
+file: greatvibe-welcome.vtt
+consumers: [caption readers, transcript maintainers]
+produces: [original automatic English WebVTT captions]
+---
+# Purpose
+Preserve the downloaded active English automatic captions for Vimeo 1236068377,
+track 332147214, for the user's approved guest-tour publication.
+
+# Integrity
+- Duration: 734 seconds. Source: 1440x1440, square 1:1.
+- SHA-256: a04c482cc3589d46a1ff7bd333a4bc4491e2daa4ebb0f26fc6b633bf9268f996.
+- 179 cues. Raw captions are byte-preserved, including recognition errors.
+
+# Gotchas
+No signed download URL, private playback hash or credential belongs here.
+Recorded claims/examples are not current product policy. See the annotated
+Markdown transcript and how-to/watch-the-guest-tour.md before answering users.
+
+# Change History
+- 2026-10-15: Downloaded official Vimeo automatic captions and preserved source.

@@ -13,6 +13,8 @@ and users. Private employee engineering repositories are not user help sources.
 | What does greatVibe cost? Trial? Billing? Enterprise? | `reference/plans-and-pricing.md` (the only public source for prices) |
 | I'm a Mochi guest. How do I sign up? | Right in the console: `reference/plans-and-pricing.md` (rule 9) and `getting-started/ask-mochi-for-help.md` |
 | Why does greatVibe exist? What needs does it fill? | `getting-started/why-we-built-greatvibe.md` + video `greatvibe-story` |
+| How does the guest demo work? Will Send use a free turn? | `how-to/watch-the-guest-tour.md` + video `greatvibe-welcome` |
+| How do I manage a complex turn on a folding phone? | `how-to/work-with-complex-turns-on-mobile.md` + optional video `greatvibe-mobile-tips` |
 | How do I develop software with greatVibe? | `manuals/development/overview.md`, then one chapter |
 
 ## How To Use This Catalogue
@@ -76,7 +78,9 @@ and users. Private employee engineering repositories are not user help sources.
 | Share Terminal with an agent | [Terminal guide](how-to/use-terminal-with-your-agent.md) | No indexed video yet |
 | Review consulted sources and findings | [Research guide](how-to/use-research-in-agent-iq.md) | No indexed video yet |
 | Read and explore Architecture in Agent IQ | [Architecture guide](how-to/use-architecture-in-agent-iq.md) | No indexed video yet |
-| Browse the guest story and demo | [Ask Mochi for help](getting-started/ask-mochi-for-help.md#as-a-guest) | No indexed video yet |
+| Browse the guest story and demo | [Ask Mochi for help](getting-started/ask-mochi-for-help.md#as-a-guest) and [guest tour guide](how-to/watch-the-guest-tour.md) | `greatvibe-welcome` (12:14) |
+| Watch the guest tour or read its transcript | [Guest tour guide](how-to/watch-the-guest-tour.md) and [timestamped transcript](videos/transcripts/greatvibe-welcome.md) | `greatvibe-welcome` |
+| Work with complex turns on mobile | [Galaxy Z Fold7 workflow](how-to/work-with-complex-turns-on-mobile.md) and [timestamped transcript](videos/transcripts/greatvibe-mobile-tips.md) | `greatvibe-mobile-tips` (24:22; optional, separate from the demo) |
 | Co-write one prompt with Tandem Turns | `how-to/use-tandem-turns.md` | No indexed video yet |
 | Change what a running turn does | `how-to/steer-a-running-turn.md` | No indexed video yet |
 
@@ -89,6 +93,7 @@ and users. Private employee engineering repositories are not user help sources.
 | Software development (SDLC, DevOps, agile) | `manuals/development/overview.md`, `manuals/development/turn-lifecycle-and-sdlc.md`, `manuals/development/ace-and-context.md`, `manuals/development/git-and-repositories.md`, `manuals/development/nodes-builds-and-tests.md`, `manuals/development/devops-cicd-and-iac.md`, `manuals/development/agile-work-management.md`, `manuals/development/security-and-secrets.md` |
 | Core concepts | `concepts/what-is-a-node.md`, `concepts/what-is-a-connector.md`, `concepts/what-is-a-gvturn.md`, `concepts/what-is-the-gvturn-power-footer.md`, `concepts/what-is-gvcontext.md`, `concepts/what-is-ace.md` |
 | Practical workflows | `how-to/review-ai-work.md`, `how-to/work-with-files.md`, `how-to/recover-a-failed-turn.md`, `how-to/report-and-follow-support-requests.md` |
+| Guest tour and mobile learning | `how-to/watch-the-guest-tour.md`, `how-to/work-with-complex-turns-on-mobile.md`, `videos/transcripts/greatvibe-welcome.md`, `videos/transcripts/greatvibe-mobile-tips.md` |
 | Agent IQ Metal Design System | [Visual language and layout catalogue](how-to/build-agent-iq-metal-layouts.md), [copyable local HTML starter](reference/agent-iq-metal-starter.html), [player input: games and choices](how-to/play-games-and-collect-choices-in-agent-iq.md), [Research sources and findings](how-to/use-research-in-agent-iq.md), [Architecture nodes and evidence](how-to/use-architecture-in-agent-iq.md) |
 | Credentials and connectors | `how-to/add-ai-agent-credential.md`, `how-to/add-anthropic-oauth-credential.md`, `how-to/add-codex-oauth-credential.md`, `how-to/add-aws-credential.md`, `how-to/add-github-credential.md`, `how-to/connect-a-private-github-repository.md`, `how-to/builtin-credential-and-connector-templates.md`, `concepts/what-is-a-connector.md`, `how-to/connect-cicd-and-cloud-storage.md`, `reference/connector-template-types.md` |
 | CI/CD and object storage | `how-to/connect-cicd-and-cloud-storage.md`, `reference/connector-template-types.md` |
@@ -106,6 +111,7 @@ as user-facing help.
 | Area | Public files |
 | --- | --- |
 | Repository guide | `README.md`, `CATALOGUE.md`, `SANITIZATION.md` |
+| Guest tour and mobile learning | `how-to/watch-the-guest-tour.md`, `how-to/work-with-complex-turns-on-mobile.md`, `videos/transcripts/greatvibe-welcome.md`, `videos/transcripts/greatvibe-welcome.vtt`, `videos/transcripts/greatvibe-mobile-tips.md`, `videos/transcripts/greatvibe-mobile-tips.vtt` |
 | Agent IQ design and examples | `how-to/build-agent-iq-metal-layouts.md`, `reference/agent-iq-metal-starter.html`, `how-to/play-games-and-collect-choices-in-agent-iq.md`, `how-to/use-research-in-agent-iq.md`, `how-to/use-architecture-in-agent-iq.md` |
 | Getting started | `getting-started/welcome-to-greatvibe.md`, `getting-started/why-we-built-greatvibe.md`, `getting-started/first-10-minutes.md`, `getting-started/ask-mochi-for-help.md` |
 | Development manual | `manuals/development/overview.md`, `manuals/development/turn-lifecycle-and-sdlc.md`, `manuals/development/ace-and-context.md`, `manuals/development/git-and-repositories.md`, `manuals/development/nodes-builds-and-tests.md`, `manuals/development/devops-cicd-and-iac.md`, `manuals/development/agile-work-management.md`, `manuals/development/security-and-secrets.md` |
@@ -121,6 +127,10 @@ Agents should use this repository as local help memory, not as a source of
 private implementation facts.
 
 - Read this catalogue before recommending a guide or video.
+- For the guest demo, use `greatvibe-welcome` (12:14); for the optional Galaxy Z
+  Fold7 tutorial, use `greatvibe-mobile-tips` (24:22). Never substitute the mobile
+  recording for the demo. Read the timestamped transcripts for recording content
+  and the companion guides for current instructions and policy caveats.
 - Prices, trial and billing: answer only from `reference/plans-and-pricing.md`, never from memory or older videos. Its "Show Pricing In Agent IQ" block is ready to publish in the `web` space. For guests, follow its rule 9: show the block, offer sign-up in the console and ask, with the `greatvibe:signup` choice.
 - "Why greatVibe?": lead with the short answer in `getting-started/why-we-built-greatvibe.md`; offer the `greatvibe-story` video. Keep the human judgment and production-discipline story grounded in the current transcript.
 - Development questions: start at `manuals/development/overview.md`, use its quick-reference table to pick one chapter, and describe only shipped behaviour.

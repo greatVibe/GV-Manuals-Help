@@ -41,6 +41,18 @@ During the demo, the turns-left bar hides to leave more room for the demo.
 Pause, resume or stop from the floating space selector. The bar returns when
 the demo ends or stops, with **Log in** and **Sign up** on its right.
 
+If you press **Send** while the guest demo is playing or paused, the demo
+shows a labelled synthetic reaction. No real agent request starts and no
+free turn is used. Choose **Stop demo**, then enter your request and press
+**Send** when you want a real response. Demo prompts are not replayed when
+you stop.
+
+The [12:14 guest tour](../how-to/watch-the-guest-tour.md) explains the demo
+with a timestamped transcript. The
+[24:22 mobile tutorial](../how-to/work-with-complex-turns-on-mobile.md) is
+optional learning about complex turns on a Galaxy Z Fold7, separate from
+the guest demo.
+
 Without an account, Mochi gives you 5 counted turns per rolling 3 hours.
 Questions about greatVibe, Gravient or how to use the service are free (up to
 20 per 3 hours) and do not use a counted turn. The turns panel shows what you

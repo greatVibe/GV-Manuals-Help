@@ -1,4 +1,5 @@
 file: videos/
+lastModified-guest-mobile-videos: 2026-10-15 — Index the 12:14 guest tour and separate 24:22 Galaxy Z Fold7 tutorial. Published source dimensions determine 1:1 and 9:10 aspect ratios. Preserve raw English captions beside annotated readable transcripts and link current task guides.
 consumers: [Mochi agents, video catalogue maintainers, users]
 produces: [video metadata schema, public video index, transcript references]
 ---
