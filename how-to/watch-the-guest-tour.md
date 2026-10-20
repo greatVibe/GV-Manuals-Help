@@ -52,7 +52,7 @@ temporary workspace. Wait for readiness before sending work. Mochi is for
 questions, public help and light assistance; use a development node for
 sustained builds or files you need to keep.
 
-Mochi has a 15-minute idle lease and a one-hour maximum. Its files are
+Mochi has a 30-minute idle lease and a one-hour maximum. Its files are
 disposable. Selecting a managed or bring-your-own node is a separate step.
 Read [what a node is](../concepts/what-is-a-node.md) and
 [manage organisations, meshes and nodes](manage-organizations-meshes-and-nodes.md).

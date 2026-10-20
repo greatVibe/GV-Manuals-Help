@@ -18,3 +18,4 @@ tutorial is optional learning and must not replace or extend the guest demo.
 
 # Change History
 - 2026-10-15: Add transcript-grounded guest walkthrough and agent answer routing.
+- 2026-10-20: Mochi idle lease is 30 minutes (gvmesh 0.6.360).

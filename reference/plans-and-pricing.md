@@ -93,8 +93,8 @@ light help. It is not a development node and it keeps no files after it ends.
 | Limit | Value |
 | --- | --- |
 | Turns | 5 turns per rolling 3 hours |
-| One turn | Up to 2 minutes |
-| Idle | Ends after 15 minutes without activity |
+| One turn | Up to 15 minutes |
+| Idle | Ends after 30 minutes without activity |
 | Maximum | 1 hour per workspace |
 
 For sustained builds, large repositories or files you need to keep, use a

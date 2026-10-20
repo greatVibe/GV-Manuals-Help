@@ -35,3 +35,4 @@ hosted-node pricing and Mochi limits. Agents quote prices only from here.
   block, at the product owner's request.
 - 2026-10-12: Created from the live website pricing and Terms, at the product
   owner's request. SANITIZATION.md allows published list prices here only.
+- 2026-10-20: Mochi limits: one turn up to 15 minutes (live since 0.6.359) and idle end after 30 minutes (0.6.360, guests and members), at the product owner's request.
