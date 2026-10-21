@@ -13,7 +13,7 @@ The dot is grey before assignment, green when ready or answering, amber in
 the final two idle minutes, and red while the workspace is terminating.
 Assignment also uses amber while it is being prepared.
 
-Mochi ends after 15 idle minutes and has a one-hour maximum. Passive reading
+Mochi ends after 30 idle minutes and has a one-hour maximum. Passive reading
 and polling do not keep it alive. Its workspace is disposable. Use a
 development node for files or workloads you need to keep. Ending Mochi does
 not sign you out of your account.

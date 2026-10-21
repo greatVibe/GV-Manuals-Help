@@ -3,6 +3,7 @@ file: manage-organizations-meshes-and-nodes.md
 consumers: [GreatVibe users, Mochi agents]
 produces: [public Account Admin organization, mesh, and node guide]
 ---
+2026-10-21 — Mochi idle limit now 30 minutes (gvmesh 0.6.360, guests and members).
 # Purpose
 Routes organization and mesh work to Account Admin and node creation to the native Add Node sheet.
 # Dependencies

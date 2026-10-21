@@ -9,6 +9,7 @@ lastModified-guest-story: 2026-10-13 — Explain eight-part guest story, normal 
 consumers: [new users, Mochi agents]
 produces: [prompting guidance for user help requests]
 ---
+2026-10-21 — Mochi idle limit now 30 minutes (gvmesh 0.6.360, guests and members).
 # Purpose
 Shows users how to ask Mochi for clear, actionable help.
 
