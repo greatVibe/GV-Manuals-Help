@@ -16,6 +16,7 @@ and users. Private employee engineering repositories are not user help sources.
 | How does the guest demo work? Will Send use a free turn? | `how-to/watch-the-guest-tour.md` + video `greatvibe-welcome` |
 | How do I manage a complex turn on a folding phone? | `how-to/work-with-complex-turns-on-mobile.md` + optional video `greatvibe-mobile-tips` |
 | How do I develop software with greatVibe? | `manuals/development/overview.md`, then one chapter |
+| What can greatVibe do? Where do I start? Ideas for my industry? | `reference/greatvibe-example-prompts.md` |
 
 ## How To Use This Catalogue
 
@@ -41,6 +42,7 @@ and users. Private employee engineering repositories are not user help sources.
 | Plans, investigations, flows and backlog issues | `manuals/development/agile-work-management.md` | No indexed video yet |
 | Secrets, credentials and risky actions in dev work | `manuals/development/security-and-secrets.md` | No indexed video yet |
 | Learn what to do in the first session | `getting-started/first-10-minutes.md` | `videos/index.json` tag `first-session` |
+| Find a first prompt or industry idea | `reference/greatvibe-example-prompts.md` | No indexed video yet |
 | Ask Mochi for help | `getting-started/ask-mochi-for-help.md` | `videos/index.json` tag `mochi` |
 | Understand a node | `concepts/what-is-a-node.md` | `videos/index.json` tag `node` |
 | Understand a gvturn | `concepts/what-is-a-gvturn.md` | `videos/index.json` tag `gvturn` |

@@ -53,3 +53,6 @@ lastModified-david-story: 2026-10-12 — Index the legacy home video Why we buil
 
 # 2026-10-14 — David story replacement
 Replaces the legacy 197-second story with Vimeo 1235643218 (426 seconds, 16:9), titled "Take on more. Stay in control." and attributed to David Jenkinson, CEO of greatVibe by Gravient. Captions track 331810675 is preserved byte-for-byte; readable transcript corrects GrapeVibe to greatVibe only. Public metadata contains no playback hash, API secret or signed caption URL. Current pricing guide remains authoritative. Stable greatvibe-story slug is preserved.
+
+# 2026-10-24 — Example prompts
+Adds reference/greatvibe-example-prompts.md (starter and "Build what you used to buy" industry examples, the three-part prompt shape, agent rules) to Fast Answers and Starter Paths.

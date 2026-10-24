@@ -1,4 +1,5 @@
 file: reference/
+lastModified-example-prompts: 2026-10-24 — Adds greatvibe-example-prompts.md: the public starter and industry example prompts users see in the product, with a generated example block kept in step with the product list.
 lastModified-agent-iq-metal: 2026-09-20 — Adds agent-iq-metal-starter.html, a network-free illustrative layout example linked from the public design guide.
 lastModified-guidance-markers: 2026-08-28 — Adds the stable public guidance-marker schema for agents and documentation maintainers.
 lastModified-dashboard-guidance-coverage: 2026-08-31 — Adds complete concise coverage for the current closed dashboard-console guidance vocabulary.
@@ -9,6 +10,7 @@ produces: [public reference material]
 Stable reference docs for public vocabulary and safety rules.
 
 # Key Files
+- `greatvibe-example-prompts.md` (generated block between gv:examples markers; edit only around it)
 - `glossary.md`
 - `public-safety-rules.md`
 - `dashboard-console-elements.md`
