@@ -1,0 +1,25 @@
+file: greatvibe-example-prompts.md
+consumers: [users looking for a first prompt, Mochi and node agents asked "what can greatVibe do?" or "where do I start?", documentation maintainers]
+produces: [the public list of greatVibe example prompts (starters and industry systems), the three-part prompt shape, agent rules for suggesting examples]
+---
+# Purpose
+Inspiration and starting points. The same examples appear on the guest welcome
+screen and on the signed-in "Your work starts here" card, so this page matches
+what users see in the product.
+
+# Generated block
+The text between the gv:examples markers is generated from the product's
+example list and replaced on every sync. Edit the guidance around the markers by
+hand; never edit inside them. When the product adds an industry, the block is
+regenerated and committed here in the same change.
+
+# Gotchas
+- Public page: no private repositories, paths, hostnames or internals in the
+  markers, the generated text or this file.
+- Examples are starting points. Do not promise certified designs, compliance
+  sign-off or finished systems.
+- Keep the guidance in brand voice: small words, one idea per sentence.
+
+# Change History
+- 2026-10-24: Created at the product owner's request: one shared example list
+  for guests, signed-in users and agents.
