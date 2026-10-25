@@ -44,9 +44,19 @@ The node's Settings tab also lists what is sent to the node and where each
 value comes from. A note can be up to 160 characters, with no hidden or
 control characters.
 
-Saving needs the same passkey check as other organisation changes. Today
-only organisation owners and admins can save; everyone else sees the section
-read-only. Changes reach a connected node within two minutes.
+## Who can save
+
+Saving needs the same passkey check as other organisation changes.
+
+| You are | You can save |
+|---|---|
+| Organisation owner or admin | Organisation, mesh and node settings |
+| Mesh owner or admin | That mesh and its nodes |
+| Anyone else | Nothing. You see the settings read-only. |
+
+Node owners can't save yet, because the passkey check works per organisation
+or mesh. Ask a mesh or organisation admin to change a node for you. Changes
+reach a connected node within two minutes.
 
 ## Optional: settings on the machine itself
 

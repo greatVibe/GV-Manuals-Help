@@ -18,10 +18,13 @@ node owners set themselves.
 - Defaults must match the product (BYO always/3/note/on; hosted always/2/
   note/off; guest never/0/note/off, locked).
 - Account Admin edits need a passkey check like other org/mesh/node edits.
-- Only org owners/admins can save today; update the guide if mesh admins or
-  node owners are allowed later.
+- Org owners/admins save every level; mesh owners/admins save their mesh and
+  its nodes; node owners cannot save yet (passkey check is org/mesh only).
+  Update the "Who can save" table if that changes.
 
 # Change History
 - 2026-10-25: Created.
 - 2026-10-25 (audit): who can save (org owners/admins only), note limits,
   the node tab's "sent to this node" list.
+- 2026-10-25: "Who can save" table: mesh owners/admins can save their
+  mesh and nodes; node owners not yet.
