@@ -15,3 +15,5 @@ konui_console_open_surface({username: "<dashboard-user>", surface: "node-create"
 ```
 
 The Add Node sheet starts with the active organisation and mesh. You can deploy a GreatVibe-hosted development node or follow the BYO path for an on-premises/cloud node. Signup sets up your personal organisation and mesh. Mochi is a temporary workspace for help and general questions. Select Mochi in Quick Access to request an assignment and switch when it is ready. Guest and signed-in Mochi workspaces follow the same disposable design. They end after 30 idle minutes and have a one-hour maximum. Keep work you need on a development node.
+
+To control where agents run heavy work on your nodes, see [Set Node Work Settings](set-node-work-settings.md).

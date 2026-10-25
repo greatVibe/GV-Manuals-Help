@@ -1,0 +1,23 @@
+file: set-node-work-settings.md
+created: 2026-10-25
+consumers: [GreatVibe users, Mochi agents]
+produces: [public guide to node work settings (heavy work, max heavy jobs, note, bandwidth check) in Account Admin]
+---
+# Purpose
+Explains the four node work settings agents read when choosing where heavy
+work runs, where to set them (org, mesh, node), how inheritance works, the
+defaults for your own machines, hosted nodes and guest workspaces, and the
+optional local env override on a node.
+
+# Sanitization
+Written fresh from the private design (rewrite-only): no storage, service
+or routing internals; only user-visible behaviour and node env names that
+node owners set themselves.
+
+# Gotchas
+- Defaults must match the product (BYO always/3/note/on; hosted always/2/
+  note/off; guest never/0/note/off, locked).
+- Account Admin edits need a passkey check like other org/mesh/node edits.
+
+# Change History
+- 2026-10-25: Created.

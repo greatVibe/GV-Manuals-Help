@@ -1,4 +1,5 @@
 2026-10-13 Architecture: index how-to/use-architecture-in-agent-iq.md for reading nodes, relationships, focus, concerns and evidence.
+lastModified-node-work-settings: 2026-10-25 — Indexed how-to/set-node-work-settings.md (Account Admin node work settings: heavy work, max heavy jobs, note, bandwidth check; org/mesh/node inheritance; BYO/hosted/guest defaults).
 lastModified-guest-signup: 2026-10-13 — Route guest sign-up questions to plans-and-pricing rule 9 (in-console sign-up, greatvibe:signup choice) and ask-mochi-for-help.
 lastModified-fast-answers: 2026-10-12 — Adds a Fast Answers block and routes pricing, the founding story and the eight-chapter development manual from starter paths, topic index, coverage and agent routing notes.
 file: CATALOGUE.md
