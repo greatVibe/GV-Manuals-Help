@@ -40,9 +40,13 @@ default applies:
 
 Guest workspaces are always locked to their row. Nothing can change them.
 
-Saving needs the same passkey check as other organisation, mesh and node
-changes, and only people who can edit that organisation, mesh or node can
-save. Changes reach a connected node within two minutes.
+The node's Settings tab also lists what is sent to the node and where each
+value comes from. A note can be up to 160 characters, with no hidden or
+control characters.
+
+Saving needs the same passkey check as other organisation changes. Today
+only organisation owners and admins can save; everyone else sees the section
+read-only. Changes reach a connected node within two minutes.
 
 ## Optional: settings on the machine itself
 
