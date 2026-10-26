@@ -34,6 +34,8 @@ find task guidance without reading internal implementation docs.
   should reference private overlays rather than storing real hashes directly.
 
 # Change History
+- 2026-10-26: Added concepts/what-is-slopguard.md (draft; hold publication
+  until SlopGuard ships, per SANITIZATION.md section 5).
 - 2026-10-12: Added pricing reference, founding-story guide and the
   development manual; CATALOGUE gained a Fast Answers block.
 - 2026-09-28: Added the public steering guide (how-to/steer-a-running-turn.md)

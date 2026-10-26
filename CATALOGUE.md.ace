@@ -3,6 +3,7 @@ lastModified-node-work-settings: 2026-10-25 — Indexed how-to/set-node-work-set
 lastModified-guest-signup: 2026-10-13 — Route guest sign-up questions to plans-and-pricing rule 9 (in-console sign-up, greatvibe:signup choice) and ask-mochi-for-help.
 lastModified-fast-answers: 2026-10-12 — Adds a Fast Answers block and routes pricing, the founding story and the eight-chapter development manual from starter paths, topic index, coverage and agent routing notes.
 file: CATALOGUE.md
+lastModified-slopguard: 2026-10-26 — Indexes concepts/what-is-slopguard.md (AI slop definition, causes, ten SlopGuard checks, card line) from starter paths, core concepts topic row, repository coverage and agent routing notes. Draft: do not publish before SlopGuard ships.
 lastModified-guest-mobile-videos: 2026-10-15 — Route guest-tour and complex-mobile-turn questions to dedicated guides, timestamp transcripts and preserved automatic VTT captions; keep optional mobile learning separate from the guest demo.
 lastModified-terminal-guest: 2026-10-13 — Index native Terminal guide and direct guest-story questions to Ask Mochi. Public user guidance contains no private routing or account-detection implementation.
 lastModified-steering: 2026-09-28 — Routes the new steer-a-running-turn.md guide from starter paths, topic index, repository coverage and agent routing notes.
