@@ -1,17 +1,17 @@
 file: what-is-slopguard.md
 created: 2026-10-26
 consumers: [GreatVibe users, Mochi agents, documentation maintainers]
-produces: [public explanation of AI slop, its causes, the ten SlopGuard checks and how results appear on turn cards]
+produces: [public explanation of AI slop, its causes, the twelve SlopGuard checks and how results appear on turn cards]
 ---
 # Purpose
 Explains SlopGuard in plain words: what AI slop is, why AI produces it, the
-ten checks every turn runs before it claims a result, the independent check
+twelve checks every turn runs before it claims a result, the independent check
 for substantive work, and what the human can do with the result.
 
 # Key Sections
 - What AI slop is (one-paragraph definition covering prose, code, UI and agent work).
 - Why it happens (model side and process side).
-- The ten SlopGuard checks, each with a one-line test.
+- The twelve SlopGuard checks, each with a one-line test, and the full-compliance proof rule.
 - What you see in greatVibe (the SlopGuard line on result cards).
 - What you can do as the human.
 - Sources (public URLs only).
@@ -31,10 +31,12 @@ implementation contracts. Research citations are public URLs only.
   instruction and audit brief) and konui 373ef03d (SlopGuard space, Files
   badges). If shipped behaviour changes (check names, card wording), update
   this page first.
-- The ten check names and order must match the engineering spec (SG1-SG10).
+- The twelve check names and order must match the engineering spec (SG1-SG12).
 - Keep brand voice: no filler words, no competitor names, no em-dash
   trailing qualifiers. This page is itself held to SlopGuard.
 
 # Change History
 - 2026-10-26: Created (draft, unpublished).
 - 2026-10-26: Published after the gvmesh 0.6.384 and konui release.
+
+2026-10-27 — Twelve checks (11 No leaks, 12 Side effects named; 8 adds untrusted text); full-compliance rule: proof needed for every check including not-applicable, proven not-applicable is green; tap a light to see what it guards. Publish only with the matching gvmesh/konui release (no unreleased feature claims).

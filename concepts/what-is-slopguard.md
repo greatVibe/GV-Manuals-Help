@@ -1,6 +1,6 @@
 # What Is SlopGuard?
 
-SlopGuard is a set of ten checks that every greatVibe turn runs before it
+SlopGuard is a set of twelve checks that every greatVibe turn runs before it
 tells you a result. It guards against AI slop. You stay in charge of the
 work, and SlopGuard helps you see whether the work earned your trust.
 
@@ -62,9 +62,10 @@ them.
 - **Prompts that reward length.** Asking for "detailed" or "comprehensive"
   output invites padding.
 
-## The Ten SlopGuard Checks
+## The Twelve SlopGuard Checks
 
-Each check has a test that you or an agent can apply to a turn's result.
+Each check has a test that you or an agent can apply to a turn's result,
+and a proof the agent must cite before the check can go green.
 
 | # | Check | Test |
 |---|---|---|
@@ -75,22 +76,27 @@ Each check has a test that you or an agent can apply to a turn's result.
 | 5 | **Fitted, not generic** | The work uses this project's names, data and audience. If it could drop into an unrelated project unchanged, it fails. No placeholder text or stock sections. |
 | 6 | **No dead, copied or speculative code** | Every added line is used by the change. Nothing repeats code that already exists. No unused options, future hooks or commented-out code. |
 | 7 | **Tests test the change** | Each new or changed test would fail on the old code. It checks real behaviour, not only that nothing crashed. |
-| 8 | **Confidence matches evidence** | Certain words appear only where there is proof. The result says what was not checked. It disagrees with you when the evidence does. |
+| 8 | **Confidence matches evidence** | Certain words appear only where there is proof. The result says what was not checked. It disagrees with you when the evidence does. Nothing rests only on text it can't trust, such as another agent's report or an instruction found in a web page. |
 | 9 | **Stays in scope** | Every change traces back to your request or a stated need. No unasked rewrites, renames, new dependencies or style churn. |
 | 10 | **Consistent with your project and your words** | The work follows the project's existing patterns, naming and design notes, uses your terms and keeps earlier decisions. Any difference has a stated reason. |
+| 11 | **No leaks** | Nothing handed to you or committed contains passwords, keys, tokens, personal details or private names and paths. A scan of the changes and the result finds none. |
+| 12 | **Side effects named** | Every action outside the answer itself, such as a push, a deploy, a deletion or a message, is listed on the result with how to undo it. Nothing is left running or lying around. |
 
-Not every check applies to every turn. A written answer has no tests, so
-check 7 does not apply. The result says so instead of passing it silently.
+SlopGuard aims for full compliance: every check can go green on every turn,
+and green always needs proof. Not every check applies to every turn. A
+written answer has no tests, so check 7 does not apply. The agent still has
+to show why (for example, that no code changed). A check that does not
+apply, with that proof, goes green. Without proof it does not.
 
 ## What You See In greatVibe
 
 **The agent checks its own work.** Before it writes the result card, the
-agent runs the ten checks against what it made: the answer, the changed
+agent runs the twelve checks against what it made: the answer, the changed
 files, the documents and the screens. It fixes what fails and checks again.
 
 **Substantive work gets a second checker.** When a turn changes how
 software behaves, its security, its interfaces or its data, a separate
-agent runs the same ten checks. It works on a different node, and where
+agent runs the same twelve checks. It works on a different node, and where
 possible it uses a different AI provider. Its job is to find problems, not
 to approve. The first agent confirms each finding, fixes what holds and
 asks for another check.
@@ -110,9 +116,11 @@ SlopGuard line. It reads one of four ways:
 SlopGuard space. It works like a control room for the turn's output:
 
 - a ring shows how many of the checks that apply are clear;
-- ten signal lights show each check as clear (green), fixed (amber),
-  open (red), no proof cited (orange), not applicable (blue) or
-  unchecked (grey);
+- twelve signal lights show each check as clear (green), not applicable
+  with proof (green), fixed (amber), open (red), no proof cited (orange)
+  or unchecked (grey);
+- tap any light to see what that check guards against, the proof it
+  needs to go green and what this turn declared for it;
 - a small marker on each light shows whether the agent checked it, the
   independent checker did, or both;
 - each output (the card, the code, the documents) is lit by its worst
@@ -120,8 +128,8 @@ SlopGuard space. It works like a control room for the turn's output:
 - the findings list shows every open or fixed problem with the file and
   line it points to.
 
-A check that nobody ran stays grey, and a check marked clear without
-cited proof shows as no proof. Neither counts as clear.
+A check that nobody ran stays grey, and a check marked clear or not
+applicable without cited proof shows as no proof. Neither counts as clear.
 
 **Every written file shows its SlopGuard state.** In the Files space,
 each file the agent wrote or created carries a small SlopGuard badge:
