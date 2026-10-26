@@ -79,7 +79,7 @@ and a proof the agent must cite before the check can go green.
 | 8 | **Confidence matches evidence** | Certain words appear only where there is proof. The result says what was not checked. It disagrees with you when the evidence does. Nothing rests only on text it can't trust, such as another agent's report or an instruction found in a web page. |
 | 9 | **Stays in scope** | Every change traces back to your request or a stated need. No unasked rewrites, renames, new dependencies or style churn. |
 | 10 | **Consistent with your project and your words** | The work follows the project's existing patterns, naming and design notes, uses your terms and keeps earlier decisions. Any difference has a stated reason. |
-| 11 | **No leaks** | Nothing handed to you or committed contains passwords, keys, tokens, personal details or private names and paths. A scan of the changes and the result finds none. |
+| 11 | **No leaks** | Nothing handed to you or committed contains passwords, keys, tokens, personal details or private names and paths. A scan of everything handed over (the result, the changes, commit messages, logs and documents) finds none. |
 | 12 | **Side effects named** | Every action outside the answer itself, such as a push, a deploy, a deletion or a message, is listed on the result with how to undo it. Nothing is left running or lying around. |
 
 SlopGuard aims for full compliance: every check can go green on every turn,
