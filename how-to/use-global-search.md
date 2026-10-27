@@ -43,6 +43,9 @@ choose which full card to read.
 
 Status and work-type facets help narrow a large result set. Check coverage
 alongside the results: an empty or partial search is not proof that no work exists.
+Older nodes may not support field queries. Unsupported peers are reported as
+partial coverage; narrow to upgraded nodes or use ordinary words and date order.
+
 If available, ask for an explanation to inspect the interpreted terms, operators,
 sort order and paging warning.
 

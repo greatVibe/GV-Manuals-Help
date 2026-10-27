@@ -12,3 +12,5 @@ paths, deployment details, identity values, or release promises. Product behavio
 must be verified against the final search commit before publication.
 # Coverage
 Link checker and sanitization scan cover this document and catalogue entry.
+
+- Mixed-version field queries require explicit peer support; unsupported peers make coverage partial.
