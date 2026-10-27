@@ -1,7 +1,5 @@
 # Find past work across nodes
 
-Draft guide for the matching search release. Hold publication until that release is verified.
-
 Start with a question such as “Find the decision about our release checklist.”
 Your agent can search saved result cards, show where each result came from,
 and read the relevant card before continuing the work.

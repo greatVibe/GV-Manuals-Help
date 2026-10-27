@@ -1,5 +1,5 @@
 file: use-global-search.md
-status: draft - hold publication until matching search release
+status: verified - matching search release verified
 consumers: [GreatVibe users, agents reading public manuals]
 produces: [practical search workflow]
 ---
@@ -20,4 +20,4 @@ Link checker and sanitization scan cover this document and catalogue entry.
 Keep the guide about options requested through an agent. Clarify choice actions,
 pre-filter facet counts and unavailable continuation. Examples remain fictional;
 no private paths, identifiers, source excerpts or deployment details are included.
-Publication remains held until the matching release is verified.
+Matching release verified on 2026-10-27; the Search publication hold is removed.

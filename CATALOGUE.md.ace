@@ -59,4 +59,4 @@ Replaces the legacy 197-second story with Vimeo 1235643218 (426 seconds, 16:9), 
 # 2026-10-24 — Example prompts
 Adds reference/greatvibe-example-prompts.md (starter and "Build what you used to buy" industry examples, the three-part prompt shape, agent rules) to Fast Answers and Starter Paths.
 
-2026-10-27 — Index draft global-search guidance for scoped targets, field queries, relevance, facets, coverage, continuation and explanation. Hold publication until matching feature release.
+2026-10-27 — Index global-search guidance for scoped targets, field queries, relevance, facets, coverage, continuation and explanation. Matching release verified before removing the Search publication hold.
