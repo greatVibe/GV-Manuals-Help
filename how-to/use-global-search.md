@@ -5,6 +5,7 @@ Draft guide for the matching search release. Hold publication until that release
 Start with a question such as “Find the decision about our release checklist.”
 Your agent can search saved result cards, show where each result came from,
 and read the relevant card before continuing the work.
+Ask your agent to use the search options below.
 
 ## Start nearby, then widen
 
@@ -26,7 +27,7 @@ alternatives and a leading `-` to exclude a word.
 | --- | --- |
 | A named decision | `title:"release checklist"` |
 | A detail inside a card | `body:"retry budget"` |
-| A suggested next action | `choice:"run integration tests"` |
+| A suggested card action | `choice:"run integration tests"` |
 | Recent unfinished work | `status:pending after:7d` |
 | Work in either area | `mesh:demo-a release or mesh:demo-b rollback` |
 
@@ -41,7 +42,8 @@ but not the date. Relevance ranks matching words and fields. It does not prove
 a card is current or correct. A result snippet and its matched fields help you
 choose which full card to read.
 
-Status and work-type facets help narrow a large result set. Check coverage
+Status and work-type facets count matches before the separate status and
+work-type filters. Ask your agent to use them to narrow a large result set. Check coverage
 alongside the results: an empty or partial search is not proof that no work exists.
 Older nodes may not support field queries. Unsupported peers are reported as
 partial coverage; narrow to upgraded nodes or use ordinary words and date order.
@@ -55,6 +57,8 @@ When more results are available, ask for the next page using the returned cursor
 Keep the query, targets, sort order and other result settings unchanged. To
 change those settings, start a new search. Cursors expire after one hour, and
 access is checked again on every page.
+If more matches are reported but no next cursor is available, refine the query
+to stay within the reported limits.
 
 Pages reflect live data. New or changed cards can move between pages, so a page
 sequence is not a fixed snapshot or an exhaustive audit. Ask which nodes answered
