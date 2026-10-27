@@ -16,6 +16,7 @@ and users. Private employee engineering repositories are not user help sources.
 | How does the guest demo work? Will Send use a free turn? | `how-to/watch-the-guest-tour.md` + video `greatvibe-welcome` |
 | How do I manage a complex turn on a folding phone? | `how-to/work-with-complex-turns-on-mobile.md` + optional video `greatvibe-mobile-tips` |
 | How do I develop software with greatVibe? | `manuals/development/overview.md`, then one chapter |
+| Find previous work across nodes, meshes or organisations? | `how-to/use-global-search.md` (draft for matching search release) |
 | What can greatVibe do? Where do I start? Ideas for my industry? | `reference/greatvibe-example-prompts.md` |
 
 ## How To Use This Catalogue

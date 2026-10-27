@@ -1,0 +1,14 @@
+file: use-global-search.md
+status: draft - hold publication until matching search release
+consumers: [GreatVibe users, agents reading public manuals]
+produces: [practical search workflow]
+---
+# Purpose
+Find past work by starting nearby, then widening only when useful. Explain target
+selection, title/body/choice queries, relevance, facets, coverage and continuation.
+# Publication boundary
+Fresh public rewrite using fictional search terms. No private source excerpts,
+paths, deployment details, identity values, or release promises. Product behavior
+must be verified against the final search commit before publication.
+# Coverage
+Link checker and sanitization scan cover this document and catalogue entry.
