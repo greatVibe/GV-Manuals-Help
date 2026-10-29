@@ -28,3 +28,4 @@ node owners set themselves.
   the node tab's "sent to this node" list.
 - 2026-10-25: "Who can save" table: mesh owners/admins can save their
   mesh and nodes; node owners not yet.
+- 2026-10-29: Fifth setting Delegated turns (on|off; defaults on, guest off), separate from Heavy work; env GVMESH_NODE_DELEGATED_TURNS; fallback to Heavy work until a node reports it.

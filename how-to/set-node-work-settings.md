@@ -1,8 +1,8 @@
 # Set Node Work Settings
 
 Agents can spread work across your nodes. Before they start a build, a test
-suite or another heavy job, they check each node's **work settings** to decide
-where it may run. You set these in **Account Admin**, so they stay with the
+suite or another heavy job, or hand a whole turn to another node, they check
+each node's **work settings** to decide where it may run. You set these in **Account Admin**, so they stay with the
 node even after you reinstall or rebuild it.
 
 Ask: **"Open Account Admin so I can set work settings for my nodes."**
@@ -11,7 +11,7 @@ Ask: **"Open Account Admin so I can set work settings for my nodes."**
 konui_console_open_surface({username: "<dashboard-user>", surface: "account-admin", action: "default", requestId: "<current-request-id>"})
 ```
 
-## The four settings
+## The five settings
 
 | Setting | Choices | What agents do with it |
 |---|---|---|
@@ -19,6 +19,12 @@ konui_console_open_surface({username: "<dashboard-user>", surface: "account-admi
 | Max heavy jobs | 1 to 64 | How many heavy jobs agents may run there at once. |
 | Note | Up to 160 characters | A short hint for agents, for example "Home internet, prefer for CPU work". |
 | Bandwidth check | On, Off | Whether the node measures its internet speed (a small download and upload every six hours) so agents can tell fast links from slow ones. |
+| Delegated turns | On, Off | Whether agents on your other nodes may start turns on this node. Heavy work still decides when builds and test suites run there. |
+
+Heavy work and delegated turns are separate. A phone set to Heavy work
+**Never** and Delegated turns **On** takes light turns such as reviews and
+plans, but no builds. Turn Delegated turns **Off** to keep other nodes out
+entirely.
 
 ## Set once, override where needed
 
@@ -32,11 +38,11 @@ Leave a field on **Inherit** to use the level above. Each field shows what it
 currently inherits and where that comes from. If nothing is set, the node's
 default applies:
 
-| Node type | Heavy work | Max heavy jobs | Note | Bandwidth check |
-|---|---|---|---|---|
-| Your own machine (BYO) | Always | 3 | Home internet, prefer for CPU work | On |
-| greatVibe hosted node | Always | 2 | greatVibe hosted node | Off |
-| Guest workspace | Never | 0 | Guest container node with restrictions | Off |
+| Node type | Heavy work | Max heavy jobs | Note | Bandwidth check | Delegated turns |
+|---|---|---|---|---|---|
+| Your own machine (BYO) | Always | 3 | Home internet, prefer for CPU work | On | On |
+| greatVibe hosted node | Always | 2 | greatVibe hosted node | Off | On |
+| Guest workspace | Never | 0 | Guest container node with restrictions | Off | Off |
 
 Guest workspaces are always locked to their row. Nothing can change them.
 
@@ -69,6 +75,7 @@ GVMESH_NODE_HEAVY_WORK=always|night|never
 GVMESH_NODE_MAX_HEAVY_JOBS=3
 GVMESH_NODE_NOTE=Home internet, prefer for CPU work
 GVMESH_BANDWIDTH_PROBE=on|off
+GVMESH_NODE_DELEGATED_TURNS=on|off
 ```
 
 Prefer Account Admin: environment variables are easy to lose when a machine
@@ -80,4 +87,6 @@ is rebuilt.
 - Agents see these settings only for nodes you can already reach, in your
   mesh and in meshes it trusts.
 - Updating a node to the latest version lets it pick up Account Admin
-  settings and report its time zone.
+  settings and report its time zone. Until a node reports Delegated turns,
+  delegated turns follow its Heavy work setting: Never or outside the night
+  window means no delegated turns.
