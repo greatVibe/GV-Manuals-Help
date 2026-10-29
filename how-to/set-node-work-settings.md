@@ -23,8 +23,11 @@ konui_console_open_surface({username: "<dashboard-user>", surface: "account-admi
 
 Heavy work and delegated turns are separate. A phone set to Heavy work
 **Never** and Delegated turns **On** takes light turns such as reviews and
-plans, but no builds. Turn Delegated turns **Off** to keep other nodes out
-entirely.
+plans. greatVibe refuses a delegated turn there when it is a build, a test
+suite or a release, or when the agent does not say what kind of work it is.
+With Heavy work **Night**, those heavy turns are accepted only between 22:00
+and 07:00 in the node's time zone. Turn Delegated turns **Off** to keep other
+nodes out entirely.
 
 ## Set once, override where needed
 
