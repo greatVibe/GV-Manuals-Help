@@ -1,4 +1,5 @@
 file: what-is-gvcontext.md
+lastModified-personas: 2026-11-01 — Explains active persona, task-scoped engineering rules and persona-aware Agent IQ space choices. Hold publication until the matching feature is released.
 lastModified-turn-context-agent-iq: 2026-09-27 — Explains how durable gvContext, per-turn context and Agent IQ work together; routes code-reading agents to explicit evidence-linked Patterns declarations and receipt-led Topology/CI/CD guidance.
 consumers: [new users, Mochi agents, documentation maintainers]
 produces: [public gvContext explanation]
@@ -19,6 +20,7 @@ Explains gvContext as the guidance layer that helps agents behave consistently.
 
 # Gotchas
 - Do not expose internal context compilation routes or operational details.
+- Keep shared authorization, privacy and evidence rules universal across all personas. Describe persona as a lens, not a capability or a new Agent IQ space.
 
 # Change History
 - 2026-08-03: Created public gvContext concept guide.

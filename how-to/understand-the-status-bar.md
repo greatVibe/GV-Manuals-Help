@@ -22,6 +22,29 @@ Some controls appear only when relevant. The timer is normally empty while no
 turn is running, and compact layouts may hide optional model controls to make
 room for higher-priority status.
 
+## Choose A Persona
+
+Open the profile picker in the status bar and use the **Persona** field. The
+profile modal offers the same choice. Persona guides how the agent approaches
+your work; you choose the AI profile and model separately.
+
+| Persona | Useful for |
+| --- | --- |
+| General | Everyday questions and mixed tasks. The agent adapts to your request. |
+| Developer | Building software, debugging and explaining technical designs. |
+| Creative | Original ideas, writing, stories and exploring different directions. |
+| Executive | Decisions, priorities, strategy and clear communication. |
+| Analyst | Research, evidence, calculations and comparisons. |
+| Tester | Finding failure cases, testing assumptions and checking quality. |
+
+**General** is the default. You can ask for any kind of work in any persona.
+For example, Creative can help with a software concept, and Developer can help
+write an explanation for a customer.
+
+Your selection applies to future turns. A turn already sent keeps its original
+persona, including when it waits in a queue or appears in history. Changing the
+persona does not change access, permissions or the checks needed for code work.
+
 ## Status Bar Versus The Power Footer
 
 The status bar describes the selected console and active turn. A gvturn power

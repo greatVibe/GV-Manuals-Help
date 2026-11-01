@@ -41,13 +41,30 @@ Good agents keep the distinction clear:
 - Turn context holds current facts and reminders.
 - Repository ACE files explain the design intent of the files being changed.
 
+## Your Active Persona
+
+Choose General, Developer, Creative, Executive, Analyst or Tester in the profile
+picker. General is the default. Each turn receives the selected persona so the
+agent can adjust its approach: creative options and finished writing, for
+example, or evidence and calculations for an analysis.
+
+Persona is guidance, not a limit on what you can ask. Your request comes first.
+Shared privacy, permission, safety and evidence rules still apply. Engineering
+workflows such as reading ACE files, running tests and reviewing code apply
+when the task involves that work, whichever persona you chose.
+
 ## How Agent IQ Fits
 
 Agent IQ is the visible work explanation. Its main view tells the current
-story, while nine optional spaces show the best supporting view: Topology,
+story, while optional spaces show supporting views such as Topology,
 Evidence, Files, Tests, Git, Patterns, CI/CD, Before · After and Architecture.
 The agent chooses spaces from the current task and evidence; there is no fixed
 Tests-first layout, and your manual layout or Auto-off choice always wins.
+
+Persona helps the agent choose a useful starting view. Creative work may use
+Web to show concepts, while analysis may use Research and Evidence. Actual work
+and available evidence determine which spaces belong on screen. Choosing a
+persona does not create new spaces or fill them with invented activity.
 
 Some spaces fill from observed activity. Files, Tests and Git must never be
 typed into existence. CI/CD progress comes from correlated delivery receipts

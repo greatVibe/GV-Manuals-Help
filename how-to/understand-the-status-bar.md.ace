@@ -1,4 +1,5 @@
 file: understand-the-status-bar.md
+lastModified-personas: 2026-11-01 — Documents the six persona lenses in the profile picker and modal. Hold publication until the matching persona feature is released and UI labels verified.
 lastModified: 2026-08-27 — Documents every current status-bar control in visual order, its click behavior, and its guidance target.
 consumers: [GreatVibe users, Mochi agents, support writers]
 produces: [public status bar orientation guide]
@@ -21,6 +22,7 @@ state.
 
 # Gotchas
 - Keep the documented left-to-right order synchronized with the dashboard shell and guidance target vocabulary.
+- Persona guides the response; it does not choose a model or grant permissions. Future-turn choices must not relabel running or historical work.
 
 # Change History
 - 2026-08-03: Clarified status bar vs gvturn power footer roles.
