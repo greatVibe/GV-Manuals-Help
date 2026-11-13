@@ -1,0 +1,94 @@
+# Use the Agenda
+
+The Agenda is your day in one panel: your tasks, the organisation's open work,
+schedules, projects and the current sprint. It is for signed-in members; guest
+workspaces do not show it.
+
+## Open it
+
+Select the **☰** button at the left of the top bar, beside the greatVibe
+logo. The Agenda slides out from the left. **Expand agenda to full screen**
+grows it over the page (select it again to shrink it back), and the Agenda
+can also open in its own pop-out window. On wider screens you can switch to
+a week or month calendar.
+
+The Agenda refreshes about once a minute while it is open.
+
+## What you see, top to bottom
+
+| Section | What it shows |
+| --- | --- |
+| Today headline | One line about the organisation's day, from the [org brain](../concepts/what-is-the-org-brain.md). Select **Why?** for the reasoning. |
+| Plan your day | Your late, started, urgent and due-today tasks with rough time estimates against the time left before 18:00. |
+| Sprint | The active sprint's name, day and goal, with **Plan with AI** and **Stand-up with AI**. |
+| Projects | Pills that filter the task lists to one project. |
+| My tasks | Open tasks assigned to you. |
+| Org tasks | Other open work you can see (titled "Your org" when you belong to one organisation). |
+| Done today | What was finished today. |
+| Snoozed | Tasks you snoozed, with their wake time. |
+| Schedules | Repeating work and its next runs. |
+
+If part of the Agenda cannot load, it says that part is unavailable instead
+of showing an empty list.
+
+## Plan your day
+
+Plan your day ranks what needs you today. Its estimates follow a simple,
+labelled rule: about 30 minutes per task plus 10 per extra open checklist
+item, 10 minutes to review AI-prepared work, and nothing for work an AI or
+script does. A bar compares the planned time with the time left before 18:00
+your time. Select **Plan my day with AI** to put a planning prompt in your
+prompt box; it is not sent until you send it.
+
+## Work a task
+
+Select a task to see its details, checklist, evidence, history and comments.
+Depending on your permissions:
+
+| Action | What it does |
+| --- | --- |
+| **Claim** | Assigns an unassigned task to you and starts it |
+| **Start** | Marks it in progress (it does not run anything) |
+| **Complete** | Finishes it (evidence rules still apply) |
+| **Defer** | Moves its due time |
+| **Snooze** | Hides it from reminders: 1 h, 3 h, **Tomorrow 9:00**, or **Clear** |
+| **Run on node** | Picks the node an AI task should use (**Default** restores it) |
+| **Run now with AI** | For AI tasks: sends a prompt to your dashboard console so an agent does the task now and records the result |
+| **Run in console** | Puts the task into your prompt box so you can edit and send it yourself |
+| **Open full task** | Opens the complete task view |
+
+**Run now with AI** starts a normal turn in your own console. Nothing else
+starts AI tasks automatically yet; see
+[org tasks](plan-work-with-org-tasks-and-schedules.md#who-does-the-work).
+
+## Calendar
+
+Switch to the calendar for a week or month grid. Select a task or a scheduled
+run to open a full-width day view with a countdown, an hour timeline with a
+"now" line, and actions grouped as Do and Move. Back or Escape returns to the
+calendar.
+
+- Drag a task to another day to move it. On touch screens, hold first.
+- With the keyboard, Alt + Left or Right Arrow moves a selected task by a day.
+- The side panel lists Next up, Overdue, No due date, Done today and Snoozed.
+- Opening the Agenda always returns the calendar to today; a cue jumps to
+  overdue work from earlier weeks.
+
+## Reminders
+
+Due and overdue reminders appear as small notices in any open dashboard tab,
+even with the Agenda closed. In the Agenda you can turn on a chime and allow
+browser notifications.
+
+## Watching agents work with tasks
+
+When an agent creates or changes tasks and schedules during a turn, the
+**Agenda** space in Agent IQ shows those changes beside a live view of what
+is due now. The **Org brain** space shows the agent's questions to the org
+brain.
+
+## Related
+
+- [Plan work with org tasks and schedules](plan-work-with-org-tasks-and-schedules.md)
+- [Run sprints and projects](run-sprints-and-projects.md)
+- [Understand the status bar](understand-the-status-bar.md)

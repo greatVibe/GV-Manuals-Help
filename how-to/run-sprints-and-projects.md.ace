@@ -1,0 +1,23 @@
+file: run-sprints-and-projects.md
+created: 2026-11-13
+consumers: [GreatVibe users, Mochi agents]
+produces: [public guide to sprints (dates, one active per scope, close and carry-over, ceremonies, Agenda card) and projects (code, customer, billable, repos, archive/restore, Agenda chips and filter), who manages them, prompts, agent tools]
+---
+# Purpose
+Explains how teams time-box work in sprints and group it in projects.
+
+# Sanitization
+Written fresh from the engine contract and code (rewrite-only): no
+version numbers, services or error codes; example repository names use
+example-org.
+
+# Gotchas
+- Projects record no time (time entries are not built); keep that line true.
+- Ceremony preparation is an AI task and does not start by itself.
+- Code rule: 2-16 of A-Z, 0-9, hyphen, starting with a letter or digit;
+  unique among active projects; restore needs the code to be free.
+- Sprint and project agent tools need recent node versions; the update
+  button is "Update to …" on the gv.system Settings card.
+
+# Change History
+- 2026-11-13: Created (docs turn c345a346).

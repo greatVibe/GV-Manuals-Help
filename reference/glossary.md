@@ -6,6 +6,13 @@ Short definitions for common GreatVibe terms.
 | --- | --- |
 | Agent | An AI assistant that can answer, inspect, draft, or perform allowed work. |
 | ACE | Design notes that travel with files so agents can understand intent before working. |
+| Agenda | The slide-out panel with your tasks, the organisation's open work, schedules, projects and the current sprint. |
+| Org brain | Your organisation's shared memory of facts, decisions and running work, which agents can ask. |
+| Org task | A piece of work in your organisation's shared task list, done by a person, an agent or both. |
+| Project | A group of tasks for a customer or internal effort, with a short code and a billable label. |
+| Schedule | A rule that creates a task on repeating dates. |
+| Sprint | A time box of up to 42 days with one goal, for organisation or mesh work. |
+| To-do | A private task only you (and anyone you assign) can see. |
 | Catalogue | An index that helps users and agents find the right document or video. |
 | Context | Guidance that helps an agent understand local rules, docs, and expectations. |
 | GvContext | GreatVibe's context guidance system for agents and nodes. |

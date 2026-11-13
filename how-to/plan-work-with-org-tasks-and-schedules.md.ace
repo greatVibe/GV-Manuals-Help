@@ -1,0 +1,25 @@
+file: plan-work-with-org-tasks-and-schedules.md
+created: 2026-11-13
+consumers: [GreatVibe users, Mochi agents]
+produces: [public guide to org tasks, to-dos and schedules: scopes, performers, lifecycle, evidence and approval rules, reminders and snooze, permissions, schedule options, prompts, agent tools]
+---
+# Purpose
+One guide for the shared task list people and agents use for work that
+outlives a turn.
+
+# Sanitization
+Written fresh from the engine contract and authorization code
+(rewrite-only): no service names, routes, ports, stores or error codes.
+
+# Gotchas
+- AI and script tasks do NOT start by themselves; keep the bold warning while
+  that is true. Update it in the same change that turns runs on.
+- The permission table mirrors the engine's single authorization function
+  (org: members read, admins manage, assigned member acts; mesh: mesh
+  admins manage, assigned mesh member acts; node follows mesh plus node
+  owners/admins; private: creator manages, creator and assignee act).
+- Schedule limits: lead time 15 min to 7 days (12 h default), catch-up all
+  capped at 7, rules DAILY/WEEKLY(BYDAY)/MONTHLY(BYMONTHDAY), interval ≤99.
+
+# Change History
+- 2026-11-13: Created (docs turn c345a346).

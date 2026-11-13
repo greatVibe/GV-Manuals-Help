@@ -17,6 +17,10 @@ and users. Private employee engineering repositories are not user help sources.
 | How do I manage a complex turn on a folding phone? | `how-to/work-with-complex-turns-on-mobile.md` + optional video `greatvibe-mobile-tips` |
 | How do I develop software with greatVibe? | `manuals/development/overview.md`, then one chapter |
 | Find previous work across nodes, meshes or organisations? | `how-to/use-global-search.md` |
+| What is the org brain? Who is working on what? | `concepts/what-is-the-org-brain.md` |
+| Tasks, to-dos, schedules and reminders for my team? | `how-to/plan-work-with-org-tasks-and-schedules.md` |
+| Where are my tasks today? Calendar? Plan my day? | `how-to/use-the-agenda.md` |
+| Sprints, ceremonies, projects and billable work? | `how-to/run-sprints-and-projects.md` |
 | What can greatVibe do? Where do I start? Ideas for my industry? | `reference/greatvibe-example-prompts.md` |
 
 ## How To Use This Catalogue
@@ -54,6 +58,10 @@ and users. Private employee engineering repositories are not user help sources.
 | Build Agent IQ Metal visuals and responsive layouts | [Metal Design System guide](how-to/build-agent-iq-metal-layouts.md) and [self-contained starter](reference/agent-iq-metal-starter.html) | No indexed video yet |
 | Play a game or answer a choice inside Agent IQ | [Player input guide](how-to/play-games-and-collect-choices-in-agent-iq.md) | No indexed video yet |
 | Report or follow support | `how-to/report-and-follow-support-requests.md` | No indexed video yet |
+| Share team memory with the org brain | `concepts/what-is-the-org-brain.md` | No indexed video yet |
+| Plan work with org tasks, to-dos and schedules | `how-to/plan-work-with-org-tasks-and-schedules.md` | No indexed video yet |
+| Use the Agenda (today, calendar, reminders) | `how-to/use-the-agenda.md` | No indexed video yet |
+| Run sprints and projects | `how-to/run-sprints-and-projects.md` | No indexed video yet |
 | Use gvturn actions | `how-to/use-gvturn-actions.md` | No indexed video yet |
 | Work with files | `how-to/work-with-files.md` | `videos/index.json` tag `files` |
 | Recover after a failed turn | `manuals/productivity/recover-failed-dashboard-turn.md` and `how-to/recover-a-failed-turn.md` | `videos/index.json` tag `troubleshooting` |
@@ -97,6 +105,7 @@ and users. Private employee engineering repositories are not user help sources.
 | Plans and pricing | `reference/plans-and-pricing.md` |
 | Software development (SDLC, DevOps, agile) | `manuals/development/overview.md`, `manuals/development/turn-lifecycle-and-sdlc.md`, `manuals/development/ace-and-context.md`, `manuals/development/git-and-repositories.md`, `manuals/development/nodes-builds-and-tests.md`, `manuals/development/devops-cicd-and-iac.md`, `manuals/development/agile-work-management.md`, `manuals/development/security-and-secrets.md` |
 | Core concepts | `concepts/what-is-a-node.md`, `concepts/what-is-a-connector.md`, `concepts/what-is-a-gvturn.md`, `concepts/what-is-the-gvturn-power-footer.md`, `concepts/what-is-gvcontext.md`, `concepts/what-is-ace.md`, `concepts/what-is-slopguard.md` |
+| Team work: org brain, tasks, Agenda, sprints, projects | `concepts/what-is-the-org-brain.md`, `how-to/plan-work-with-org-tasks-and-schedules.md`, `how-to/use-the-agenda.md`, `how-to/run-sprints-and-projects.md` |
 | Practical workflows | `how-to/review-ai-work.md`, `how-to/work-with-files.md`, `how-to/recover-a-failed-turn.md`, `how-to/report-and-follow-support-requests.md` |
 | Guest tour and mobile learning | `how-to/watch-the-guest-tour.md`, `how-to/work-with-complex-turns-on-mobile.md`, `videos/transcripts/greatvibe-welcome.md`, `videos/transcripts/greatvibe-mobile-tips.md` |
 | Agent IQ Metal Design System | [Visual language and layout catalogue](how-to/build-agent-iq-metal-layouts.md), [copyable local HTML starter](reference/agent-iq-metal-starter.html), [player input: games and choices](how-to/play-games-and-collect-choices-in-agent-iq.md), [Research sources and findings](how-to/use-research-in-agent-iq.md), [Architecture nodes and evidence](how-to/use-architecture-in-agent-iq.md) |
@@ -120,7 +129,8 @@ as user-facing help.
 | Agent IQ design and examples | `how-to/build-agent-iq-metal-layouts.md`, `reference/agent-iq-metal-starter.html`, `how-to/play-games-and-collect-choices-in-agent-iq.md`, `how-to/use-research-in-agent-iq.md`, `how-to/use-architecture-in-agent-iq.md` |
 | Getting started | `getting-started/welcome-to-greatvibe.md`, `getting-started/why-we-built-greatvibe.md`, `getting-started/first-10-minutes.md`, `getting-started/ask-mochi-for-help.md` |
 | Development manual | `manuals/development/overview.md`, `manuals/development/turn-lifecycle-and-sdlc.md`, `manuals/development/ace-and-context.md`, `manuals/development/git-and-repositories.md`, `manuals/development/nodes-builds-and-tests.md`, `manuals/development/devops-cicd-and-iac.md`, `manuals/development/agile-work-management.md`, `manuals/development/security-and-secrets.md` |
-| Concepts | `concepts/what-is-a-node.md`, `concepts/what-is-a-connector.md`, `concepts/what-is-a-gvturn.md`, `concepts/what-is-the-gvturn-power-footer.md`, `concepts/what-is-gvcontext.md`, `concepts/what-is-ace.md`, `concepts/what-is-slopguard.md` |
+| Concepts | `concepts/what-is-a-node.md`, `concepts/what-is-a-connector.md`, `concepts/what-is-a-gvturn.md`, `concepts/what-is-the-gvturn-power-footer.md`, `concepts/what-is-gvcontext.md`, `concepts/what-is-ace.md`, `concepts/what-is-slopguard.md`, `concepts/what-is-the-org-brain.md` |
+| Team work | `how-to/plan-work-with-org-tasks-and-schedules.md`, `how-to/use-the-agenda.md`, `how-to/run-sprints-and-projects.md` |
 | How-to guides | `how-to/review-ai-work.md`, `how-to/work-with-files.md`, `how-to/recover-a-failed-turn.md`, `how-to/add-ai-agent-credential.md`, `how-to/add-github-credential.md`, `how-to/builtin-credential-and-connector-templates.md`, `how-to/connect-cicd-and-cloud-storage.md`, `how-to/understand-the-status-bar.md`, `how-to/use-console-main-row-and-prompt-controls.md`, `how-to/use-gvturn-actions.md`, `how-to/manage-turns-with-gv-menu-eventlog-gvturns.md`, `how-to/use-and-watch-the-v2-ide.md`, `how-to/use-terminal-with-your-agent.md`, `how-to/use-tandem-turns.md`, `how-to/steer-a-running-turn.md` |
 | Productivity manuals | `manuals/productivity/approval-requests.md`, `manuals/productivity/calendar-planning.md`, `manuals/productivity/change-logs.md`, `manuals/productivity/csv-files.md`, `manuals/productivity/data-cleanup.md`, `manuals/productivity/data-validation.md`, `manuals/productivity/decision-records.md`, `manuals/productivity/document-review.md`, `manuals/productivity/email-writing.md`, `manuals/productivity/excel-formulas.md`, `manuals/productivity/exporting-files.md`, `manuals/productivity/feedback-tracking.md`, `manuals/productivity/file-naming.md`, `manuals/productivity/follow-up-actions.md`, `manuals/productivity/issue-reporting.md`, `manuals/productivity/meeting-notes.md`, `manuals/productivity/overview.md`, `manuals/productivity/pdf-review.md`, `manuals/productivity/presentation-prep.md`, `manuals/productivity/prioritising-work.md`, `manuals/productivity/project-summaries.md`, `manuals/productivity/recover-failed-dashboard-turn.md`, `manuals/productivity/recurring-reviews.md`, `manuals/productivity/review-checklists.md`, `manuals/productivity/sharing-files.md`, `manuals/productivity/spreadsheet-formatting.md`, `manuals/productivity/status-updates.md`, `manuals/productivity/task-tracking.md`, `manuals/productivity/troubleshooting.md`, `manuals/productivity/work-handoffs.md` |
 | Reference | `reference/glossary.md`, `reference/public-safety-rules.md`, `reference/guidance-markers.md`, `reference/dashboard-console-elements.md`, `reference/connector-template-types.md` |
@@ -144,6 +154,7 @@ private implementation facts.
 - For changing a running turn by sending a message while it works, read [the steering guide](how-to/steer-a-running-turn.md). Steers reach the agent at its next step, not by polling. The reader sees the agent's next visible update as the reply, so its first sentence must be a short acknowledgement (never only in private reasoning); agents also refresh Agent IQ when the plan changes.
 - For "is this AI slop?", "what does the SlopGuard line mean?" or reviewing a result before approval, read `concepts/what-is-slopguard.md`. Report SlopGuard results honestly: passed, fixed N, or not run with the reason.
 - For code work, open Patterns and declare two to six exact evidence-linked observations; Patterns is agent analysis and never fills itself from telemetry.
+- For the org brain, org tasks, to-dos, schedules, the Agenda, sprints or projects, start at `how-to/plan-work-with-org-tasks-and-schedules.md` or the Fast Answers rows. Never tell a user an AI or script task will run by itself at its due time: today it runs only through **Run now with AI** or an agent asked to do it. Projects do not record time.
 - For visible shell work, read [Use Terminal with your agent](how-to/use-terminal-with-your-agent.md). Check the tools available in the current session before promising control.
 - For guest story pages, fullscreen navigation, the demo or story restart, read [Ask Mochi for help](getting-started/ask-mochi-for-help.md#as-a-guest). A signed-in member using temporary Mochi remains a member.
 - Read `reference/guidance-markers.md` before converting embedded

@@ -1,0 +1,24 @@
+file: what-is-the-org-brain.md
+created: 2026-11-13
+consumers: [GreatVibe users, Mochi agents]
+produces: [public explanation of the org brain: notes (fact, decision, intent, finding), asking, running-work awareness, Today headline, Agent IQ Org brain space, privacy, agent tools]
+---
+# Purpose
+Explains what the org brain is and how a member or agent uses it, without
+service internals.
+
+# Sanitization
+Written fresh from private design and shipped code (rewrite-only): no hosts,
+rings, ports, model routes, env names, repository names or org ids. Model
+answers are described as an organisation setting; the "may not be available
+for every organisation" line reflects that the brain is not on for all orgs.
+
+# Gotchas
+- Running-work summaries are org-wide (not filtered per viewer); the privacy
+  section must keep saying so while that is true.
+- Writers can only replace their own notes; note text max 2,000 characters.
+- Without model answers, ask matches words, not meaning.
+- Never claim the brain creates, assigns or cancels tasks.
+
+# Change History
+- 2026-11-13: Created (docs turn c345a346).

@@ -18,5 +18,7 @@ Defines common GreatVibe terms in plain language.
 - Avoid internal implementation terms unless the public reader needs them.
 
 # Change History
+- 2026-11-13: Added team-work terms (Agenda, org brain, org task, project,
+  schedule, sprint, to-do) matching the new guides (docs turn c345a346).
 - 2026-08-03: Added power footer vocabulary.
 - 2026-08-03: Created initial glossary.

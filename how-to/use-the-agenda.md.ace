@@ -1,0 +1,25 @@
+file: use-the-agenda.md
+created: 2026-11-13
+consumers: [GreatVibe users, Mochi agents]
+produces: [public guide to the Agenda panel: opening it, sections in render order, Plan your day rule, task actions, calendar and day view, reminders, Agent IQ Agenda and Org brain spaces]
+---
+# Purpose
+Shows members how to use the Agenda, naming only labels that exist in the
+current dashboard.
+
+# Sanitization
+Written fresh from the dashboard source (rewrite-only): button labels and
+behaviour only; no routes, file names or internal ids.
+
+# Gotchas
+- Section order follows the drawer's render order (headline, Plan your day,
+  sprint, projects, My tasks, Org tasks / "Your org", Done today, Snoozed,
+  Schedules); update the table if the drawer changes.
+- Members only: guest workspaces have no Agenda.
+- Start does not run anything; Run now with AI sends a normal prompt in the
+  user's own console. Plan my day / Plan with AI / Stand-up with AI only
+  stage prompts.
+- The calendar needs a wider screen (it is off on narrow layouts).
+
+# Change History
+- 2026-11-13: Created (docs turn c345a346).

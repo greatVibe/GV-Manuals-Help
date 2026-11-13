@@ -1,5 +1,6 @@
 2026-10-13 Architecture: use-architecture-in-agent-iq.md explains green declared focus, red stated concerns, diagram modes and accessible component details.
 file: how-to/
+lastModified-team-work: 2026-11-13 — Add plan-work-with-org-tasks-and-schedules.md, use-the-agenda.md and run-sprints-and-projects.md (org tasks, to-dos, schedules, reminders, Agenda, sprints, projects; AI/script tasks do not auto-run) (docs turn c345a346).
 lastModified-guest-mobile-videos: 2026-10-15 — Add watch-the-guest-tour.md and work-with-complex-turns-on-mobile.md with transcript-grounded chapters, actionable workflows, current behavior caveats and links to narrower public guides.
 lastModified-steering-audit: 2026-09-28b — steer-a-running-turn.md and the Agent IQ steering section corrected after a code audit.
 lastModified-steering: 2026-09-28 — Added steer-a-running-turn.md and a steering section in build-agent-iq-metal-layouts.md.
@@ -19,6 +20,9 @@ lastModified-guidance-markers: 2026-08-28 — Adds marker-backed single and grou
 Practical task guides that help users get useful work done safely.
 
 # Key Files
+- `plan-work-with-org-tasks-and-schedules.md`
+- `use-the-agenda.md`
+- `run-sprints-and-projects.md`
 - `use-terminal-with-your-agent.md`
 - `review-ai-work.md`
 - `work-with-files.md`
