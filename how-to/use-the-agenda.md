@@ -24,7 +24,7 @@ The Agenda refreshes about once a minute while it is open.
 | Projects | Pills that filter the task lists to one project. |
 | My tasks | Open tasks assigned to you. |
 | Org tasks | Other open work you can see (titled "Your org" when you belong to one organisation). |
-| Done today | What was finished today. |
+| Done today | What was finished today, with each task's outcome. |
 | Snoozed | Tasks you snoozed, with their wake time. |
 | Schedules | Repeating work and its next runs. |
 
@@ -43,15 +43,21 @@ prompt box; it is not sent until you send it.
 ## Work a task
 
 Select a task to see its details, checklist, evidence, history and comments.
+The details show its status, priority, due time, scope, owner, performer and
+creator. A finished task also shows when it was **Completed**, its
+**Outcome** and who **Completed by**. Open tasks show an **AI fit** hint: who
+does the work (you, AI, AI then a person, or a script) and why.
+
 Depending on your permissions:
 
 | Action | What it does |
 | --- | --- |
 | **Claim** | Assigns an unassigned task to you and starts it |
 | **Start** | Marks it in progress (it does not run anything) |
-| **Complete** | Finishes it (evidence rules still apply) |
+| **Complete** | Opens **What was done**: write a short summary, then **Complete**. See below |
 | **Defer** | Moves its due time |
 | **Snooze** | Hides it from reminders: 1 h, 3 h, **Tomorrow 9:00**, or **Clear** |
+| **Change assignment** | Picks the owner (people the organisation's tasks already name, or **Unassigned**) and the performer: Human, AI, or AI then a human |
 | **Run on node** | Picks the node an AI task should use (**Default** restores it) |
 | **Run now with AI** | For AI tasks: sends a prompt to your dashboard console so an agent does the task now and records the result |
 | **Run in console** | Puts the task into your prompt box so you can edit and send it yourself |
@@ -60,6 +66,22 @@ Depending on your permissions:
 **Run now with AI** starts a normal turn in your own console. Nothing else
 starts AI tasks automatically yet; see
 [org tasks](plan-work-with-org-tasks-and-schedules.md#who-does-the-work).
+
+### Complete and the completion record
+
+**Complete** always asks **What was done** (up to 500 characters). The label
+says "required" when the task needs a summary: a person's task in a sprint,
+an AI-prepared draft that has no summary yet, and an AI or script task you
+finish yourself without the agent's result card. Otherwise it says
+"optional". A draft waiting for approval shows
+**Approve and complete** instead.
+
+Complete takes the task through every step it needs (it starts an open task
+first) and always shows the result. If the task list refuses, you see why,
+for example a checklist item that still needs evidence; the task never just
+stays where it was. The summary then shows as the task's **Outcome** and in
+**Done today**. The performer cannot change while a draft waits for approval
+or an AI run is active.
 
 ## Calendar
 

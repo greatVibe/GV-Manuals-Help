@@ -16,6 +16,7 @@ Stable reference docs for public vocabulary and safety rules.
 - `dashboard-console-elements.md`
 - `connector-template-types.md`
 - `plans-and-pricing.md` — the only public source for prices and trial terms.
+- `org-work-tools.md` — agent reference for the org brain, task, to-do, schedule, sprint and project tools.
 
 # Dependencies
 - `../SANITIZATION.md` for publication rules.
@@ -24,6 +25,7 @@ Stable reference docs for public vocabulary and safety rules.
 - Keep definitions short and public-safe.
 
 # Change History
+- 2026-11-14: Added org-work-tools.md (docs turn 664d6afc).
 - 2026-10-12: Added the public plans, pricing and trial reference.
 - 2026-09-26: Added connector template type reference.
 - 2026-08-03: Created reference section.

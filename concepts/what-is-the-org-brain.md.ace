@@ -10,8 +10,9 @@ service internals.
 # Sanitization
 Written fresh from private design and shipped code (rewrite-only): no hosts,
 rings, ports, model routes, env names, repository names or org ids. Model
-answers are described as an organisation setting; the "may not be available
-for every organisation" line reflects that the brain is not on for all orgs.
+answers are described as an organisation setting. Since 2026-11-14 every
+organisation can start its own brain (one brain per organisation, isolated
+by the node's organisation); new brains match words only (no model answers).
 
 # Gotchas
 - Running-work summaries are org-wide (not filtered per viewer); the privacy
@@ -19,6 +20,10 @@ for every organisation" line reflects that the brain is not on for all orgs.
 - Writers can only replace their own notes; note text max 2,000 characters.
 - Without model answers, ask matches words, not meaning.
 - Never claim the brain creates, assigns or cancels tasks.
+- Isolation line must stay true: the node's organisation picks the brain.
+- New organisations get a brain by default only where brains are available
+  (one region today); keep the "where available" wording.
 
 # Change History
+- 2026-11-14: One brain per organisation, deploy link, isolation, notes list/delete, full brain tool table (docs turn 664d6afc).
 - 2026-11-13: Created (docs turn c345a346).

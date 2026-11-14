@@ -12,6 +12,8 @@ Levels of work (turn, plan, investigation, flow, issue), customer_project issues
 # Gotchas
 - Planning fields and lifecycle changes are support-managed; customers create and annotate their own issues.
 - Public-safe: placeholders only (my-service, node_example); no unreleased features.
+- Support-issue sprint/estimate fields are support-managed and separate from org sprints; keep the two distinct.
 
 # Change History
+- 2026-11-14: Org tasks, sprints and projects as levels of work; cadence uses real sprints, ceremonies, Complete and the org brain (docs turn 664d6afc).
 - 2026-10-12: Created.

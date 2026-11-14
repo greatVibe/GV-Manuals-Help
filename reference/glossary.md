@@ -13,6 +13,10 @@ Short definitions for common GreatVibe terms.
 | Schedule | A rule that creates a task on repeating dates. |
 | Sprint | A time box of up to 42 days with one goal, for organisation or mesh work. |
 | To-do | A private task only you (and anyone you assign) can see. |
+| Completion record | What a finished org task produced: a short summary, who finished it, when, and its evidence. Shown as the task's outcome. |
+| Draft ready | An org task an agent prepared that waits for a person to approve it. |
+| Ceremony | A sprint's repeating stand-up, review or retro task, prepared by an agent and run by people. |
+| Proposal | A suggested org task that only the scope's managers see until one accepts it. |
 | Catalogue | An index that helps users and agents find the right document or video. |
 | Context | Guidance that helps an agent understand local rules, docs, and expectations. |
 | GvContext | GreatVibe's context guidance system for agents and nodes. |

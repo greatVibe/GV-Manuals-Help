@@ -18,8 +18,16 @@ A sprint covers organisation or mesh work. Private to-dos never join one.
 
 Only one sprint can be active per scope at a time. A sprint goes from
 **planned** to **active** when someone starts it, and to **closed** when it
-ends. When you close a sprint, unfinished tasks move to another open sprint
-you choose, or back to the backlog. A closed sprint does not change.
+ends. When you close a sprint, the unfinished tasks you can manage move to
+another open sprint you choose, or back to the backlog. A closed sprint does
+not change; if some work was left behind, ask your agent to carry it over
+again.
+
+A person's task in a sprint needs a short summary of what was done when it
+finishes. **Complete** in the [Agenda](use-the-agenda.md) asks for it, and
+the summary becomes the task's outcome. Agents cannot write that summary
+yet, so they leave such a task in progress with a comment and you complete
+it.
 
 Each sprint shows simple counts over the tasks you can see: total, done,
 open, in progress, blocked and overdue.
@@ -37,7 +45,8 @@ three repeating tasks in the sprint's time zone:
 
 They are "AI then human" tasks: an agent can prepare each one and people run
 it. Like other AI tasks, the preparation does not start by itself yet; open
-the task and choose **Run now with AI**, or ask your agent.
+the task and choose **Run now with AI**, or ask your agent. A person
+approves the prepared stand-up, review or retro with a short summary.
 
 ### Sprints in the Agenda
 
@@ -100,7 +109,8 @@ Anyone who can edit a task can put it into a sprint or project they can see.
 
 Sprint tools need a recent node version, and project tools a newer one. If a
 tool is missing, the node's owner can update it with **Update to …** on the
-`gv.system` card in Settings.
+`gv.system` card in Settings. Inputs, limits and errors:
+[Org work tools for agents](../reference/org-work-tools.md).
 
 ## Related
 

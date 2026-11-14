@@ -32,6 +32,10 @@ A task's scope cannot change after it is created.
 | AI then human | An agent prepares the work; a person reviews and approves it. |
 | Script | A registered script on one node would do it, without an AI turn. |
 
+People change who does a task, and who owns it, with **Change assignment**
+in the [Agenda](use-the-agenda.md). The performer cannot change while an
+AI-prepared draft waits for approval or an AI run is active.
+
 **AI and script tasks do not start by themselves yet.** A due time on an AI
 task is a reminder, not a promise that it will run. To have an agent do it
 now, open the task in the Agenda and choose **Run now with AI**, or ask your
@@ -60,13 +64,32 @@ Rules worth knowing:
 - **Proposals.** A task created as a proposal is visible only to the people
   who can accept it. They accept it or turn it down.
 - **Private to-dos** can be marked done in one step.
+- **Some steps need a reason:** blocking, skipping a scheduled occurrence and
+  reopening a finished task.
+
+## Finishing a task: the completion record
+
+Every finished task keeps a short record of what was done, who finished it
+and when, with its evidence. The Agenda shows it as **Outcome** on the task
+and in **Done today**.
+
+| Task | What finishing needs |
+| --- | --- |
+| Human task | Nothing extra; a short summary is welcome |
+| Human task in a sprint | A summary of what was done (up to 500 characters) |
+| AI or script task | Its result card as evidence. A person may instead finish it with a summary |
+| AI then human | The agent submits its card; a person approves with a summary |
+
+Select **Complete** in the Agenda and fill in **What was done**. It says
+"required" when the task needs it. Reopening or rejecting a task clears its
+record.
 
 ## Due times, reminders and snoozing
 
-Give a task a due time and time zone. You can also ask for a reminder before
-it is due and an escalation after it is overdue. Reminders reach the
-assignee (or the queue, or the creator when nobody is assigned); later
-escalations also reach the people who manage the scope.
+Give a task a due time and time zone. When it falls due, a reminder reaches
+the assignee (or the queue, or the creator when nobody is assigned). Earlier
+reminders and escalations after a task is overdue exist in the task list but
+cannot be set from the Agenda or by agents yet.
 
 Snooze a task to hide it from reminders for a while (up to 90 days). It stays
 on the list and shows as snoozed.
@@ -105,6 +128,11 @@ A schedule creates one task per occurrence. Set:
 Each occurrence is created once, even if something retries. You can pause,
 resume or delete a schedule; the Agenda shows its next runs.
 
+Today you can schedule work for people and for scripts. Repeating AI work
+exists only as a sprint's ceremonies (see
+[Run sprints and projects](run-sprints-and-projects.md)); other AI schedules
+cannot be created yet.
+
 ## Try these prompts
 
 - "Create an org task for Sam to renew the example.com certificate, due
@@ -113,7 +141,9 @@ resume or delete a schedule; the Agenda shows its next runs.
 - "Every weekday at 09:30, create a task to check the overnight build."
 - "List my open tasks that are overdue."
 - "Propose a task for the team admins: tidy the old staging buckets."
-- "Snooze task <id> until Monday 9:00."
+- "Snooze task <id> until Monday 9:00." (in the Agenda)
+- "Find duplicate or stale tasks we could merge."
+- "Write a report of what the team finished this week for the leads."
 
 ## For agents
 
@@ -122,15 +152,19 @@ resume or delete a schedule; the Agenda shows its next runs.
 | `org_task_create` / `org_task_update` | Create; edit fields or move status with `op` (start, submit, approve, reject, block, unblock, skip, cancel, reopen, accept) |
 | `org_task_list` / `org_task_get` | Filter by mine, status, scope, label, sprint, project or due date |
 | `org_task_claim`, `org_task_tick`, `org_task_comment`, `org_task_report` | Claim, tick a checklist item with evidence, comment, attach a result card or link |
+| `org_task_suggestions` / `org_report_create` | Stale or duplicate pairs to merge / a read-only written report |
 | `org_todo_add` / `org_todo_list` / `org_todo_done` | Private to-dos |
 | `org_schedule_create` / `_list` / `_pause` / `_delete` | Schedules (`pause` with `resume: true` resumes) |
 
 Writes need the task's current version. Check the list before creating, so
 you update or comment instead of duplicating. Never put secrets, tokens or
-personal data in task text.
+personal data in task text. Every input, the status table, the completion
+record rules and the errors you may see are in
+[Org work tools for agents](../reference/org-work-tools.md).
 
 ## Related
 
 - [Use the Agenda](use-the-agenda.md)
 - [Run sprints and projects](run-sprints-and-projects.md)
 - [What is the org brain?](../concepts/what-is-the-org-brain.md)
+- [Org work tools for agents](../reference/org-work-tools.md)

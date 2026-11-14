@@ -1,8 +1,10 @@
 # Agile Work Management
 
-greatVibe tracks work at three levels: the **turn** (minutes), the **plan or
-flow** (hours to days), and the **issue** (a bug or request with a lifecycle).
-This chapter shows how to run an agile cadence with them.
+greatVibe tracks work at several levels: the **turn** (minutes), the **plan
+or flow** (hours to days), the **org task** (team work that outlives a turn,
+grouped into **sprints** and **projects**), and the **issue** (a bug or
+request with a lifecycle). This chapter shows how to run an agile cadence
+with them.
 
 ## Levels Of Work
 
@@ -12,7 +14,17 @@ This chapter shows how to run an agile cadence with them.
 | Plan | `plan` gvturn with steps | A story broken into tasks |
 | Investigation | `investigation` gvturn with findings | A spike |
 | Flow | A thread of related turns | A feature in progress |
-| Issue | Support issue | A backlog item, bug or request |
+| Org task | A task in your organisation's shared list, for a person, an agent or both | A backlog item or story card |
+| Sprint | A time box of org tasks with one goal and ceremonies | A sprint |
+| Project | Org tasks grouped by customer or effort, with a code | An epic or client engagement |
+| Issue | Support issue | A support or platform bug or request |
+
+Org tasks, sprints and projects live in the
+[Agenda](../../how-to/use-the-agenda.md); see
+[Plan work with org tasks and schedules](../../how-to/plan-work-with-org-tasks-and-schedules.md)
+and [Run sprints and projects](../../how-to/run-sprints-and-projects.md).
+The [org brain](../../concepts/what-is-the-org-brain.md) remembers the team's
+decisions and knows who is working on what.
 
 ## Plans
 
@@ -90,12 +102,13 @@ state) are managed by support. You see them on the request. See
 
 | Ceremony | How to run it in greatVibe |
 | --- | --- |
-| Backlog refinement | "List my open customer project issues for `my-service`, highest severity first." |
-| Sprint planning | Pick items; ask for a `plan` per item |
-| Daily work | One plan step per turn; audit risky turns |
-| Stand-up | "Summarise yesterday's turns across my nodes." |
-| Review | Walk the cards and the CI/CD space for what shipped |
-| Retro | "Which turns needed audit fixes this week, and why?" |
+| Backlog refinement | "List open org tasks with no sprint, highest priority first." / "Find duplicate or stale tasks we could merge." |
+| Sprint planning | "Create a two-week sprint starting Monday, goal: …, with ceremonies." Then "Put tasks … into the sprint." **Plan with AI** on the Agenda's sprint card stages a planning prompt. Ask for a `plan` per large task |
+| Daily work | Claim a task, one plan step per turn, audit risky turns; finish with **Complete** and a short "What was done" |
+| Stand-up | The sprint's stand-up task, or **Stand-up with AI** on the sprint card; "Summarise yesterday's turns across my nodes." |
+| Review | The sprint's review task; **Done today** and task outcomes; the CI/CD space for what shipped |
+| Retro | The sprint's retro task; "Which turns needed audit fixes this sprint, and why?" Record the decisions as org brain notes |
+| Close | "Close the sprint and move unfinished work to the next one." |
 
 ## Working Together
 
@@ -109,5 +122,8 @@ state) are managed by support. You see them on the request. See
 ## Related
 
 - `turn-lifecycle-and-sdlc.md`
+- `../../how-to/run-sprints-and-projects.md`
+- `../../how-to/plan-work-with-org-tasks-and-schedules.md`
+- `../../reference/org-work-tools.md`
 - `../../how-to/report-and-follow-support-requests.md`
 - `../../how-to/manage-turns-with-gv-menu-eventlog-gvturns.md`

@@ -1,0 +1,31 @@
+file: deploy-and-run-your-org-brain.md
+created: 2026-11-14
+consumers: [GreatVibe org owners and admins, Mochi agents]
+produces: [public guide to the Account Admin Org brain tab: who sees it, opening it, deploying a brain (new-org option and Deploy button with status lines), reading status groups and history, normal readings for a new brain, resetting, and who can reach an org's brain]
+---
+# Purpose
+Shows organisation owners and admins how to start their own org brain and
+keep an eye on it, and states the isolation rule in plain words.
+
+# Sanitization
+Rewrite-only from the Account Admin Org brain tab and the deploy flow.
+Quotes only on-screen text (status lines, button names, group names). No
+rings, hosts, ports, services, request ids or release numbers; "the ring"
+appears only inside quoted on-screen lines.
+
+# Gotchas (keep these true)
+- The panel is shown to org owners/admins (and greatVibe admin staff), not
+  members or guests.
+- Deploy and reset need passkey verification; the new-org deploy does not.
+- The tab switches to the hosted view by itself (it checks for up to about
+  150 s after a deploy) since 2026-11-14; before that it waited for the
+  minute refresh.
+- A new brain: 0 live turns, CPU "no samples" for the first minute, Deep ask
+  Off (no model answers for new brains yet).
+- Process restart is staff-only and deliberately not described here.
+- Isolation: the organisation comes from the node, so trusted meshes and
+  members of two organisations never reach another org's brain from the
+  wrong node.
+
+# Change History
+- 2026-11-14: Created (docs turn 664d6afc).

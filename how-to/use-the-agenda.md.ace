@@ -20,6 +20,14 @@ behaviour only; no routes, file names or internal ids.
   user's own console. Plan my day / Plan with AI / Stand-up with AI only
   stage prompts.
 - The calendar needs a wider screen (it is off on narrow layouts).
+- Complete: "What was done" is required exactly when the Agenda marks it
+  (a person's task in a sprint; a draft without a summary; an AI or script
+  task without its result card), matching the task list's rule; up to 500
+  characters. A draft shows "Approve and complete".
+- Action labels as shown on screen (Claim, Start, Complete, Defer, Snooze,
+  Run on node, Change assignment); performer choices Human, AI, AI then a
+  human (script tasks are created by agents only).
 
 # Change History
+- 2026-11-14: Complete with What was done, Approve and complete, Change assignment, AI fit, Outcome and Completed by facts (docs turn 664d6afc).
 - 2026-11-13: Created (docs turn c345a346).
