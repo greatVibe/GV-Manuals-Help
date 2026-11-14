@@ -12,18 +12,25 @@ grows it over the page (select it again to shrink it back), and the Agenda
 can also open in its own pop-out window. On wider screens you can switch to
 a week or month calendar.
 
+The Agenda shows one organisation at a time. It opens on the organisation of
+the node selected in the console, so a node in your company shows your
+company's work and a node in a customer's organisation shows theirs. If you
+belong to more than one organisation, the **Org** buttons at the top switch
+between them.
+
 The Agenda refreshes about once a minute while it is open.
 
 ## What you see, top to bottom
 
 | Section | What it shows |
 | --- | --- |
-| Today headline | One line about the organisation's day, from the [org brain](../concepts/what-is-the-org-brain.md). Select **Why?** for the reasoning. |
+| Org | One button per organisation you belong to, shown when there is more than one; the selected one is highlighted. |
+| Today headline | One line about the selected organisation's day, from the [org brain](../concepts/what-is-the-org-brain.md). Select **Why?** for the reasoning. |
 | Plan your day | Your late, started, urgent and due-today tasks with rough time estimates against the time left before 18:00. |
 | Sprint | The active sprint's name, day and goal, with **Plan with AI** and **Stand-up with AI**. |
 | Projects | Pills that filter the task lists to one project. |
 | My tasks | Open tasks assigned to you. |
-| Org tasks | Other open work you can see (titled "Your org" when you belong to one organisation). |
+| Org tasks | Other open work you can see in the selected organisation (titled "Your org"). |
 | Done today | What was finished today, with each task's outcome. |
 | Snoozed | Tasks you snoozed, with their wake time. |
 | Schedules | Repeating work and its next runs. |
