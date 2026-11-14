@@ -106,8 +106,10 @@ browser notifications.
 
 When an agent creates or changes tasks and schedules during a turn, the
 **Agenda** space in Agent IQ shows those changes beside a live view of what
-is due now. The **Org brain** space shows the agent's questions to the org
-brain.
+is due now. Tap any card to see more: a task opens its details and
+actions, a schedule shows its rule and next runs, and an agent's call shows
+what it asked for and, if it failed, the reason. The **Org brain** space
+shows the agent's questions to the org brain.
 
 ## Related
 
