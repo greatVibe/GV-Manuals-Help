@@ -23,13 +23,15 @@ Written fresh from the engine contract and authorization code
 - Completion record table mirrors the engine outcome rules (summary ≤500
   characters; required for sprint human tasks and ai_then_human approval;
   a person may finish an AI/script task with a summary instead of a card).
-- Reminders: only the due-time reminder fires today; remind-before and
-  escalation exist in the task list but no screen or tool can set them
-  yet. Update when they ship.
-- Schedules: people and scripts only; AI schedules exist only as sprint
-  ceremonies (same task).
+- Reminders: due-time reminder for every task; a schedule's notify adds
+  remind-before and overdue alerts (agent tool only; the Agenda cannot set
+  them). Delivery is an open dashboard only, never phones yet.
+- Schedules: people, scripts and AI (kind + instructions); AI occurrences
+  still wait for a person to run them. Nodes not updated refuse the new
+  fields; the guide says "update from the System card", no release numbers.
 - Performer/owner changes are the Agenda's Change assignment; agents cannot.
 
 # Change History
-- 2026-11-14: Completion record, reasons, Change assignment, honest reminder and schedule limits, suggestions and reports, link to the agent reference (docs turn 664d6afc).
+- 2026-11-14: Reminder settings and AI schedules can be created by agents (after the schedule fields fix).
+- 2026-11-14: Completion record, reasons, Change assignment, honest reminder and schedule limits, suggestions and reports, link to the agent reference.
 - 2026-11-13: Created (docs turn c345a346).

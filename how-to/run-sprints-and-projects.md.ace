@@ -20,9 +20,10 @@ example-org.
   button is "Update to …" on the gv.system Settings card.
 - Close carries only the unfinished tasks the closer manages; op carry
   re-runs it on a closed sprint.
-- A human task in a sprint needs an outcome summary to finish; the agent
-  tools cannot send one yet; update when they can.
+- A human task in a sprint needs an outcome summary to finish; agents send
+  it as org_task_update outcome on submit.
 
 # Change History
-- 2026-11-14: Completion summary for sprint tasks, carry-over limits, ceremony approval, link to the agent reference (docs turn 664d6afc).
+- 2026-11-14: Agents write the sprint completion summary themselves.
+- 2026-11-14: Completion summary for sprint tasks, carry-over limits, ceremony approval, link to the agent reference.
 - 2026-11-13: Created (docs turn c345a346).

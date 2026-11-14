@@ -25,9 +25,8 @@ again.
 
 A person's task in a sprint needs a short summary of what was done when it
 finishes. **Complete** in the [Agenda](use-the-agenda.md) asks for it, and
-the summary becomes the task's outcome. Agents cannot write that summary
-yet, so they leave such a task in progress with a comment and you complete
-it.
+the summary becomes the task's outcome. An agent that finishes such a task
+writes the summary itself when it submits.
 
 Each sprint shows simple counts over the tasks you can see: total, done,
 open, in progress, blocked and overdue.

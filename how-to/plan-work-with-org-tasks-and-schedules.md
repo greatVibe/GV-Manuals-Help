@@ -87,9 +87,11 @@ record.
 ## Due times, reminders and snoozing
 
 Give a task a due time and time zone. When it falls due, a reminder reaches
-the assignee (or the queue, or the creator when nobody is assigned). Earlier
-reminders and escalations after a task is overdue exist in the task list but
-cannot be set from the Agenda or by agents yet.
+the assignee (or the queue, or the creator when nobody is assigned). A
+schedule can add an earlier reminder and an overdue alert for each task it
+creates: ask your agent, for example "remind me two hours before and tell
+me if it is still open a day later". The Agenda cannot set these yet, and
+reminders show in an open dashboard; they are not sent to phones yet.
 
 Snooze a task to hide it from reminders for a while (up to 90 days). It stays
 on the list and shows as snoozed.
@@ -128,10 +130,13 @@ A schedule creates one task per occurrence. Set:
 Each occurrence is created once, even if something retries. You can pause,
 resume or delete a schedule; the Agenda shows its next runs.
 
-Today you can schedule work for people and for scripts. Repeating AI work
-exists only as a sprint's ceremonies (see
-[Run sprints and projects](run-sprints-and-projects.md)); other AI schedules
-cannot be created yet.
+You can schedule work for people, for scripts and for AI. An AI schedule
+says what kind of work it is (research, review or build) and what the AI
+should do; each occurrence then waits for someone to run it, because AI
+work does not start by itself yet. A sprint's ceremonies are AI schedules
+too (see [Run sprints and projects](run-sprints-and-projects.md)). A node
+that has not updated yet cannot create AI schedules or reminder settings;
+update it from its System card.
 
 ## Try these prompts
 

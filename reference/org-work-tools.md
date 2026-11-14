@@ -55,13 +55,17 @@ People do not need this page. Ask your agent in plain words; it picks the tool.
 | `org_task_create` | `scope`, `title` (up to 200), `body`, `performer`, `assignee` (`user` or `queue`), `priority`, `due`, `tz`, `checklist`, `labels`, `sprint`, `project`, `script`, `proposed` | Create a task |
 | `org_task_get` | `id` | The task, your allowed actions, its history and comments |
 | `org_task_list` | `mine`, `status`, `scope`, `meshId`, `nodeId`, `label`, `sprint`, `project`, `dueBefore`, `limit` (up to 100), `cursor` | Filtered list; continue with `cursor` |
-| `org_task_update` | `id`, `version`, then **either** `op` (+ `reason`) **or** fields (`title`, `body`, `priority`, `due`, `labels`, `assignee`, `sprint`, `project`) | Move the task through its life, or edit it. Never both in one call |
+| `org_task_update` | `id`, `version`, then **either** `op` (+ `reason`, + `outcome` on `submit` or `approve`) **or** fields (`title`, `body`, `priority`, `due`, `labels`, `assignee`, `sprint`, `project`) | Move the task through its life, or edit it. Never both in one call |
 | `org_task_claim` | `id`, `version` | Assign an unassigned or queued task to you and start it |
 | `org_task_tick` | `id`, `itemId`, `evidenceRef` | Mark one checklist item done, citing evidence |
 | `org_task_comment` | `id`, `text` (up to 2,000) | Add a comment |
 | `org_task_report` | `id`, `kind` (`note`, `gvturn`, `file`, `link`, `support_issue`), `ref` (up to 500) | Attach evidence, such as your result card |
 | `org_task_suggestions` | none | Pairs of stale or duplicate tasks you can read that could be merged (`keep`, `merge`). Comment or propose; never cancel someone else's task |
 | `org_report_create` | `title`, `audience` (up to 20 user ids) | A read-only written report of the work you can read; cites only work every audience member can read. Nothing is stored |
+
+**Ids:** always pass the full id a tool returned (`task_` followed by 26
+characters). Cards and the Agenda show ids shortened, and a shortened id
+answers `not_found`.
 
 **Scope** is `{kind: org}`, `{kind: mesh, meshId}`, `{kind: node, meshId,
 nodeId}` or `{kind: private}`. It cannot change after create.
@@ -97,7 +101,18 @@ reopening, editing and accepting need the right to manage the scope.
 ### Finishing a task: evidence and the completion record
 
 A finished task keeps a short completion record: what was done, by whom and
-when, with its evidence.
+when, with its evidence. Send it as `outcome` with `op: submit` or
+`op: approve`:
+
+```json
+{"id": "task_…", "version": 4, "op": "submit",
+ "outcome": {"summary": "Fixed the retry loop and added a test.",
+             "evidence": [{"kind": "gvturn", "ref": "gvturn_…"}]}}
+```
+
+`summary` is up to 500 characters; `evidence` is up to 8 references with the
+same kinds as `org_task_report`. Who and when are recorded for you. An
+`outcome` with any other `op`, or with field edits, is refused.
 
 - **AI, AI-then-human and script tasks** need their result card as evidence
   before they can be submitted. Do the work, create your result card, attach
@@ -105,10 +120,8 @@ when, with its evidence.
 - **AI-then-human drafts** need a person to approve them, with a short
   summary of what was done.
 - **Human tasks in a sprint** need a summary of what was done when they
-  finish. The agent tools cannot send that summary yet, so an agent cannot
-  submit one: leave it in progress with a comment saying what was done, and
-  a person finishes it with **Complete** in the Agenda. AI and script tasks
-  in a sprint finish with their result card as above.
+  finish: submit them with `outcome: {summary}`. AI and script tasks in a
+  sprint finish with their result card as above.
 - Reopening or rejecting clears the record.
 
 ### Doing a task an agent was given
@@ -117,7 +130,8 @@ when, with its evidence.
 2. Do the work. Tick checklist items with `org_task_tick` and an
    `evidenceRef` where evidence is required.
 3. Write your result card, then `org_task_report` with `kind: gvturn`.
-4. `op: submit`. AI-then-human work lands in **draft ready** for a person.
+4. `op: submit` with `outcome: {summary}`, one line from your card.
+   AI-then-human work lands in **draft ready** for a person.
 5. If you cannot finish, `op: block` with a one-line reason.
 
 ## Private to-dos
@@ -132,7 +146,7 @@ when, with its evidence.
 
 | Tool | Input | Use |
 | --- | --- | --- |
-| `org_schedule_create` | `scope`, `title`, `schedule`, plus the task fields (`body`, `performer`, `assignee`, `priority`, `checklist`, `labels`, `sprint`, `project`, `script`) | A rule that creates one task per occurrence |
+| `org_schedule_create` | `scope`, `title`, `schedule`, plus the task fields (`body`, `performer`, `assignee`, `priority`, `checklist`, `labels`, `sprint`, `project`, `script`), `notify`, and for AI work `kind` and `instructions` | A rule that creates one task per occurrence |
 | `org_schedule_list` | none | Your schedules and their next runs |
 | `org_schedule_pause` | `id`, `resume` | Pause, or resume with `resume: true` |
 | `org_schedule_delete` | `id` | Delete a schedule |
@@ -149,12 +163,33 @@ when, with its evidence.
 - `catchUp`: `latest_only` (default), `all` (up to 7) or `none`, for
   occurrences missed during an outage.
 
-Today agents can create **human** and **script** schedules, without reminder
-settings. A schedule for AI or AI-then-human work, or one with reminder
-settings (`notify`), is refused. The AI-then-human schedules that exist come
-from a sprint's ceremonies. Each occurrence still reminds its assignee at its
-due time. Do not tell a user a schedule will start AI work on its own: AI and
-script tasks do not run by themselves yet.
+Durations (`leadTime`, `dueAfter` and the `notify` times) are written like
+`"30m"`, `"2h"` or `"1h30m"`.
+
+- `notify`: `{remindBefore?, escalateAfter?}`, each up to 30 days. Every
+  occurrence reminds its assignee when it falls due. `remindBefore` adds a
+  reminder that long before. `escalateAfter` adds an overdue alert that
+  long after the due time to the assignee and the person who created it;
+  for organisation tasks a second alert at twice that delay goes to the
+  organisation's managers. Reminders show in an open dashboard (Agenda);
+  they are not sent to phones yet.
+- **AI and AI-then-human schedules** need `kind` (`research`, `review` or
+  `build`) and `instructions` (what the AI should do, up to 8 KB). Human and
+  script schedules must not have either.
+
+```json
+{"scope": {"kind": "org"}, "title": "Weekly pull request review",
+ "performer": "ai_then_human", "kind": "review",
+ "instructions": "Summarise open pull requests and flag stale ones.",
+ "notify": {"remindBefore": "2h", "escalateAfter": "24h"},
+ "schedule": {"tz": "Pacific/Auckland", "rule": "FREQ=WEEKLY;BYDAY=FR",
+              "at": "15:00", "startOn": "2026-11-20", "leadTime": "12h"}}
+```
+
+On a node that has not updated yet, `notify`, `kind` and `instructions` are
+refused; update the node from its System card. Do not tell a user a
+schedule will start AI work on its own: AI and script tasks do not run by
+themselves yet, so each occurrence waits for a person to run it.
 
 ## Sprints
 
@@ -186,7 +221,7 @@ organisation's active projects. Projects do not record time.
 | `conflict` | `version` is out of date | Read the item again; retry once |
 | `lifecycle` | This step is not allowed from the current status; the message says why | Read the task; follow the `op` table |
 | `authorization_denied` | You can see it but not do this | Comment, or create a `proposed: true` task for its managers |
-| `not_found` | No such item, or you cannot read it | Check the id and scope |
+| `not_found` | No such item, or you cannot read it | Check the id and scope. A shortened id (as cards show) always answers this: use the full id |
 | `assignee_out_of_scope` | The assignee cannot see the task | Pick someone with access to the scope |
 | `scope_mismatch` | The node is not in the named mesh | Check `meshId` and `nodeId` |
 | `sprint_active` | The scope already has an active sprint | Close it first |
