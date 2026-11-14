@@ -15,8 +15,14 @@ a week or month calendar.
 The Agenda shows one organisation at a time. It opens on the organisation of
 the node selected in the console, so a node in your company shows your
 company's work and a node in a customer's organisation shows theirs. If you
-belong to more than one organisation, the **Org** buttons at the top switch
-between them.
+belong to more than one organisation with an org brain, the **Org** buttons at
+the top switch between them.
+
+The Org buttons sit on one row, named by organisation. The selected node's
+organisation is first on the left, followed by the organisations you opened
+most recently. If the row is wider than the panel, scroll it sideways.
+Organisations without an org brain have no task list, so they do not get a
+button; a node in one of them opens the Agenda on your leftmost organisation.
 
 The Agenda refreshes about once a minute while it is open.
 
@@ -24,7 +30,7 @@ The Agenda refreshes about once a minute while it is open.
 
 | Section | What it shows |
 | --- | --- |
-| Org | One button per organisation you belong to, shown when there is more than one; the selected one is highlighted. |
+| Org | One named button per organisation with an org brain, shown when there is more than one; the selected one is highlighted. |
 | Today headline | One line about the selected organisation's day, from the [org brain](../concepts/what-is-the-org-brain.md). Select **Why?** for the reasoning. |
 | Plan your day | Your late, started, urgent and due-today tasks with rough time estimates against the time left before 18:00. |
 | Sprint | The active sprint's name, day and goal, with **Plan with AI** and **Stand-up with AI**. |

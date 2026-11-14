@@ -29,6 +29,7 @@ behaviour only; no routes, file names or internal ids.
   human (script tasks are created by agents only).
 
 # Change History
+- 2026-11-14: Org buttons show names on one scrolling row, node's org first then most recently opened; organisations without an org brain are hidden (owner request).
 - 2026-11-14: The Agenda shows one organisation, opens on the selected node's organisation, and has Org buttons to switch (owner request).
 - 2026-11-14: Agenda space cards open task, schedule and call details (owner request).
 - 2026-11-14: Complete with What was done, Approve and complete, Change assignment, AI fit, Outcome and Completed by facts.
