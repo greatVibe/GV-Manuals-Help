@@ -1,5 +1,6 @@
 2026-10-13 Architecture: use-architecture-in-agent-iq.md explains green declared focus, red stated concerns, diagram modes and accessible component details.
 file: how-to/
+lastModified-brain-talk: 2026-11-15 — Adds talk-to-your-org-brain.md: native browser input and temporary reading history, independent asks, source checks, explicit shared notes and the terminal alternative. Publication waits for the matching browser release.
 lastModified-org-brain-deploy: 2026-11-14 — Add deploy-and-run-your-org-brain.md (Account Admin Org brain tab: deploy, status, history, reset, isolation); team-work guides gain the completion record, Change assignment and honest reminder/schedule limits (docs turn 664d6afc).
 lastModified-team-work: 2026-11-13 — Add plan-work-with-org-tasks-and-schedules.md, use-the-agenda.md and run-sprints-and-projects.md (org tasks, to-dos, schedules, reminders, Agenda, sprints, projects; AI/script tasks do not auto-run) (docs turn c345a346).
 lastModified-guest-mobile-videos: 2026-10-15 — Add watch-the-guest-tour.md and work-with-complex-turns-on-mobile.md with transcript-grounded chapters, actionable workflows, current behavior caveats and links to narrower public guides.
@@ -25,6 +26,7 @@ Practical task guides that help users get useful work done safely.
 - `use-the-agenda.md`
 - `run-sprints-and-projects.md`
 - `deploy-and-run-your-org-brain.md`
+- `talk-to-your-org-brain.md`
 - `use-terminal-with-your-agent.md`
 - `review-ai-work.md`
 - `work-with-files.md`

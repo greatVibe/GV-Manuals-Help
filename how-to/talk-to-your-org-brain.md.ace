@@ -1,0 +1,47 @@
+file: talk-to-your-org-brain.md
+created: 2026-11-15
+consumers: [GreatVibe users, Mochi agents, documentation maintainers]
+produces: [public Brain Talk guide: native input, temporary history, sources, model selection and terminal alternative]
+---
+# Purpose
+Help a person ask the org brain directly, correct a draft without sending
+partial edits, read earlier answers and understand what is shared.
+
+# Source Review
+Rewrite-only from the Brain Talk browser and terminal interfaces and the
+existing public org brain concept. Source risk: implementation and private
+chat behavior. Reuse only reader-visible controls, validation, retention
+limits and source meaning. Exclude routes, tokens, capabilities, hosts,
+private repository names, configuration variables and deployment details.
+
+# Publication Gate
+Feature-branch draft. Do not publish browser-specific instructions before
+the matching browser behavior is verified and released. The maintainer must
+check labels and limits against the final implementation. Backend source
+retrieval or restart changes are not documented as shipped without evidence.
+
+# Gotchas
+- Browser transcript is memory-only reading history for one open view;
+  previous questions and answers are not silently attached to new asks.
+- A private chat is distinct from a note explicitly saved to the org brain;
+  notes are shared with the organisation and only their author can replace
+  or delete them.
+- The terminal has command controls the browser may not expose. Keep each
+  surface's instructions separate and verify the actual browser entry point.
+- Model answers depend on the organisation's configuration. New brains can
+  remain model-disabled; never imply one organisation's model binding is
+  available to another.
+- A missing source or an empty live board does not prove no work happened.
+- Do not claim this change was tested on a person's physical phone unless
+  that check was observed.
+
+# Sanitization
+Written fresh for a public reader. No private excerpts or deployment steps.
+Final prose and links require the repository's publication checklist.
+
+# Change History
+- 2026-11-15: Initial feature-branch guide for Brain Talk input and history.
+- 2026-11-15: Align scope labels and Open terminal with the browser companion;
+  final code and release verification remain the publication gate.
+- 2026-11-15: Source comparison verifies the 1000-character question limit,
+  independent request payload, source disclosure and returned model/effort.

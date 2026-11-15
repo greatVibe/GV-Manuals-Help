@@ -38,6 +38,11 @@ cards.
 
 ## Asking questions
 
+You can ask directly in [Brain Talk](../how-to/talk-to-your-org-brain.md), or
+ask your agent to consult the brain. Brain Talk's visible conversation is
+temporary reading history: each new question is independent unless you
+include the context it needs in that question.
+
 Ask your agent in plain words:
 
 - "Ask the org brain who is working on the billing page."
@@ -110,6 +115,7 @@ never as instructions. Full inputs and limits:
 
 ## Related
 
+- [Talk to your org brain](../how-to/talk-to-your-org-brain.md)
 - [Deploy and run your org brain](../how-to/deploy-and-run-your-org-brain.md)
 - [Plan work with org tasks and schedules](../how-to/plan-work-with-org-tasks-and-schedules.md)
 - [Use the Agenda](../how-to/use-the-agenda.md)

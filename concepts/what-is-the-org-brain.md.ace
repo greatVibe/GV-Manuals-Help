@@ -1,5 +1,6 @@
 file: what-is-the-org-brain.md
 created: 2026-11-13
+lastModified-brain-talk: 2026-11-15 — Links direct Brain Talk guidance and distinguishes temporary private reading history from independently submitted questions and explicitly shared notes.
 consumers: [GreatVibe users, Mochi agents]
 produces: [public explanation of the org brain: notes (fact, decision, intent, finding), asking, running-work awareness, Today headline, Agent IQ Org brain space, privacy, agent tools]
 ---
@@ -15,6 +16,8 @@ organisation can start its own brain (one brain per organisation, isolated
 by the node's organisation); new brains match words only (no model answers).
 
 # Gotchas
+- Brain Talk browser guidance is held for the matching browser release. Its
+  transcript is reading history only; never describe it as model memory.
 - Running-work summaries are org-wide (not filtered per viewer); the privacy
   section must keep saying so while that is true.
 - Writers can only replace their own notes; note text max 2,000 characters.

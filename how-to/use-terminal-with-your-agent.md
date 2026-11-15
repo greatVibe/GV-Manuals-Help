@@ -55,6 +55,8 @@ Sealed Secret control when a supported task needs a secret.
 
 ## Related Guides
 
+- [Talk to your org brain](talk-to-your-org-brain.md) — direct questions,
+  native browser text editing and a temporary conversation view
 - [Use and watch the v2 IDE](use-and-watch-the-v2-ide.md)
 - [Change a running turn](steer-a-running-turn.md)
 - [Ask Mochi for help](../getting-started/ask-mochi-for-help.md)
