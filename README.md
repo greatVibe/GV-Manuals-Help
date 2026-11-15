@@ -57,6 +57,7 @@ GV-Manuals-Help/
 |   `-- what-is-ace.md
 |-- how-to/
 |   |-- build-agent-iq-metal-layouts.md
+|   |-- talk-to-your-org-brain.md
 |   |-- review-ai-work.md
 |   |-- work-with-files.md
 |   |-- recover-a-failed-turn.md
