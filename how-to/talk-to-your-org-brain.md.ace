@@ -32,6 +32,10 @@ retrieval or restart changes are not documented as shipped without evidence.
   remain model-disabled; never imply one organisation's model binding is
   available to another.
 - A missing source or an empty live board does not prove no work happened.
+- Sources contains returned records matched to citations. Unverified citations
+  have no matching returned record; Retrieved notes were returned without
+  citations. Coverage not reported means no usable coverage details arrived.
+  None of these labels independently verifies the answer's claims.
 - Do not claim this change was tested on a person's physical phone unless
   that check was observed.
 
@@ -45,3 +49,5 @@ Final prose and links require the repository's publication checklist.
   final code and release verification remain the publication gate.
 - 2026-11-15: Source comparison verifies the 1000-character question limit,
   independent request payload, source disclosure and returned model/effort.
+- 2026-11-15: Reconcile the revised Sources, Unverified citations, Retrieved
+  notes and Coverage not reported labels. Keep the publication gate unchanged.

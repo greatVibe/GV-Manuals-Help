@@ -83,9 +83,15 @@ Check the cited source before acting on an answer. In particular:
   Ask your agent for a scoped investigation when you need code or deployment
   proof.
 
-Expand **Sources** to read the source details returned with an answer. When
-**Coverage** is shown, it distinguishes available, partial and unavailable
-evidence. Missing coverage information is not proof of complete coverage.
+Expand **Sources** to read returned records that match the answer's citations.
+**Unverified citations** have no matching returned source record, so do not
+treat them as evidence. **Retrieved notes** were returned without citations;
+their presence does not show that the answer used them. Read the source itself
+before relying on the answer's claim.
+
+**Coverage** reports whether a source is available, partial, unavailable or
+unknown. **Coverage not reported** means no usable coverage details were
+returned. It does not mean the brain searched all your organisation's records.
 
 The reply shows the answering model and effort when that information is returned.
 Your organisation controls its configured default and backup. Model answers
