@@ -152,7 +152,15 @@ terminal shows **Esc: recover paste**. Wait for this notice, then press
 are ready to send. During a paste, Escape only recovers after the notice
 appears. Recovering the paste does not send the draft or cancel an answer
 already in progress. Pasted line breaks stay in the draft instead of sending
-a question, both before and during the recovery notice.
+a question while a recognised paste remains active, both before and during
+the recovery notice. Pause after pressing Esc before continuing to type.
+
+The terminal must recognise where a paste starts. A severely delayed or
+damaged paste boundary may be treated as typed text, so a pasted line break
+can send a question. If a broken terminal control sequence makes a character
+disappear, press **Esc once** and pause before typing again. Outside paste,
+Esc cancels a waiting request or clears an idle draft. Check the remaining
+draft before pressing Enter.
 
 Cancelling a note save does not prove the note was not saved. Check `/notes`
 before saving it again.

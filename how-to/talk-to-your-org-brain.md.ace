@@ -72,3 +72,11 @@ the warning must keep paste mode active; verify the final correction before
 publication. Recovery neither submits nor cancels an
 in-flight answer. Keep this separate from browser controls and preserve the
 matching-release publication hold; the observed PTY check is not phone use.
+
+# 2026-11-16 Terminal input qualification
+Limit pasted-newline protection to a recognized paste boundary. Explain that
+severely delayed or damaged terminal controls can be treated as typing, cause
+submission or consume a character. Give the verified fresh-Escape-and-pause
+recovery with its normal cancel/draft effects; do not expose protocol bytes,
+private source references or claim complete prevention. Keep public release
+gates and the distinction from browser controls unchanged.
