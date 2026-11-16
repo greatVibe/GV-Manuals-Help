@@ -21,6 +21,14 @@ check labels and limits against the final implementation. Backend source
 retrieval or restart changes are not documented as shipped without evidence.
 
 # Gotchas
+- Org + general and Organisation only keep web tools off. Public web is an
+  explicit choice that excludes organisation records and previous messages;
+  the current question can still be used for web research. Do not imply it
+  redacts private text the person types, or enables disabled model access.
+- Terminal /web is one request; the next ordinary question uses the default
+  org-and-general mode. Unsupported web requests must not silently change mode.
+- Browser scope stays selected through Clear until changed or the view closes;
+  its pending reply and answer retain the scope captured at submit.
 - Browser transcript is memory-only reading history for one open view;
   previous questions and answers are not silently attached to new asks.
 - A private chat is distinct from a note explicitly saved to the org brain;
@@ -44,6 +52,10 @@ Written fresh for a public reader. No private excerpts or deployment steps.
 Final prose and links require the repository's publication checklist.
 
 # Change History
+- 2026-11-16: Verify final browser scope controls and literal help against
+  source; describe scope on the pending reply and answer, not on the user row.
+- 2026-11-16: Document explicit Public web, renamed org scopes, question-only
+  research and one-request /web. Retain the matching-release publication hold.
 - 2026-11-15: Initial feature-branch guide for Brain Talk input and history.
 - 2026-11-15: Align scope labels and Open terminal with the browser companion;
   final code and release verification remain the publication gate.

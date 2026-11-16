@@ -11,8 +11,8 @@ Brain Talk does not change files, run commands or assign work for you.
 
 1. Select a node in the organisation you want to ask about.
 2. Open **Brain Talk** from Quick Access.
-3. Choose **Organisation** for questions about your team's records, or
-   **Open questions** for broader questions. Open questions is selected initially.
+3. Choose a question scope: **Org + general**, **Organisation only** or
+   **Public web**. Org + general is selected initially.
 4. Write your question and select **Send**.
 
 The selected node determines which organisation's brain answers. Switching
@@ -56,6 +56,8 @@ job?" is clearer than "What about that?"
 
 **Clear** removes the displayed questions, answers and draft. A reply that
 arrives after that clear does not restore the old conversation.
+Your selected question scope stays selected until you change it or close the
+view.
 
 **Close** discards this view's conversation and stops waiting for any reply.
 The conversation is kept only while the view is open. Reopening starts an
@@ -66,10 +68,22 @@ card. Those are separate records.
 
 ## Understand the answer and its sources
 
-**Organisation** asks concern your organisation's records. **Open questions** also
-allows general knowledge and, when available, web search. The answer should
-identify the sources it used. A web answer is not evidence of what your team
-has done.
+**Org + general** uses your accessible organisation records and general model
+knowledge. **Organisation only** relies on your organisation's records. Both
+keep web research off. A question about recent public information does not
+automatically switch either mode to web research.
+
+Choose **Public web** explicitly when you want web research. The explanation
+beside the composer says that your question may be used for web research and
+that organisation context is excluded. This mode does not attach org notes,
+live-work records or earlier messages. It still sends the question you type:
+use a question suitable for a public web search.
+
+The pending reply and answer show the scope used when the question was sent.
+Check the reply's web status and sources; choosing Public web does not prove
+a search ran or that an answer is current. If web research is unavailable, the reply
+reports that limit. The request is not silently resent in another mode.
+A web answer is not evidence of what your team has done.
 
 Check the cited source before acting on an answer. In particular:
 
@@ -97,6 +111,9 @@ The reply shows the answering model and effort when that information is returned
 Your organisation controls its configured default and backup. Model answers
 can be off for a newly started brain; then it matches words in the available
 notes. See [Deploy and run your org brain](deploy-and-run-your-org-brain.md).
+Selecting Public web does not turn on model access for an organisation where
+it is disabled. Model answers in any mode still use the configured provider;
+web research being off does not mean the question stays in your browser.
 
 ## Use the terminal version
 
@@ -111,6 +128,7 @@ they differ from the browser view above. Type **/help** for its controls.
 | `/today` | Read the organisation's Today headline |
 | `/note` | Prepare a shared note; review the exact text and confirm before saving |
 | `/model` | List available models; `/model auto` returns to the configured default |
+| `/web <question>` | Request public web research for this question only, without attaching organisation context |
 | `/clear` | Clear the chat and request that the node's terminal copy is cleared |
 | Esc | Cancel waiting for the current request |
 | `/quit` | Leave the terminal app |
@@ -118,6 +136,10 @@ they differ from the browser view above. Type **/help** for its controls.
 The terminal lists only models configured for the organisation. Choose one
 with `/model` followed by its displayed number or name. A choice affects
 later questions in that terminal session.
+
+After `/web`, the next ordinary question returns to the default org-and-general
+mode. If the terminal or brain cannot support web research, it reports that
+limit rather than silently sending the question in another mode.
 
 Use Up/Down to move through history a line at a time, Page Up/Page Down for
 a page, and Home/End for the top or latest text. On a phone, terminal swipes
