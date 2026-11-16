@@ -66,7 +66,9 @@ Final prose and links require the repository's publication checklist.
 
 # 2026-11-16 Interrupted terminal paste
 Source review confirms the terminal's five-second idle warning begins with
-Esc: recover paste. Describe one Escape to recover the retained draft, then
-review and deliberate Enter to send. Recovery neither submits nor cancels an
+Esc: recover paste. Describe one new Escape after that warning to recover the
+retained draft, then review and deliberate Enter to send. Escape bytes before
+the warning must keep paste mode active; verify the final correction before
+publication. Recovery neither submits nor cancels an
 in-flight answer. Keep this separate from browser controls and preserve the
 matching-release publication hold; the observed PTY check is not phone use.

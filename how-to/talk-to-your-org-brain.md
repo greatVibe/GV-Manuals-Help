@@ -130,7 +130,7 @@ they differ from the browser view above. Type **/help** for its controls.
 | `/model` | List available models; `/model auto` returns to the configured default |
 | `/web <question>` | Request public web research for this question only, without attaching organisation context |
 | `/clear` | Clear the chat and request that the node's terminal copy is cleared |
-| Esc | Recover an interrupted paste; otherwise cancel waiting for the current request |
+| Esc | After the paste recovery notice, recover the draft; outside paste, cancel waiting for the current request |
 | `/quit` | Leave the terminal app |
 
 The terminal lists only models configured for the organisation. Choose one
@@ -147,11 +147,12 @@ may be translated into app keys; the browser conversation uses native
 scrolling.
 
 If a paste is interrupted and no more input arrives for five seconds, the
-terminal shows **Esc: recover paste**. Press **Esc once** to recover your
-draft, review it, then press **Enter** when you are ready to send. Recovering
-the paste does not send the draft or cancel an answer already in progress.
-While the recovery notice is shown, pasted line breaks remain in the draft
-instead of sending a question.
+terminal shows **Esc: recover paste**. Wait for this notice, then press
+**Esc once** to recover your draft. Review it and press **Enter** when you
+are ready to send. During a paste, Escape only recovers after the notice
+appears. Recovering the paste does not send the draft or cancel an answer
+already in progress. Pasted line breaks stay in the draft instead of sending
+a question, both before and during the recovery notice.
 
 Cancelling a note save does not prove the note was not saved. Check `/notes`
 before saving it again.
