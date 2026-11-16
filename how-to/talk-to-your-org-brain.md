@@ -141,10 +141,11 @@ After `/web`, the next ordinary question returns to the default org-and-general
 mode. If the terminal or brain cannot support web research, it reports that
 limit rather than silently sending the question in another mode.
 
-Use Up/Down to move through history a line at a time, Page Up/Page Down for
-a page, and Home/End for the top or latest text. On a phone, terminal swipes
-may be translated into app keys; the browser conversation uses native
-scrolling.
+Use Up/Down to move through history a line at a time and Page Up/Page Down
+for a page. With an empty draft, Home/End moves to the top or latest text.
+While editing a draft, Home/End moves to its start or end. On a phone,
+terminal swipes may be translated into app keys; the browser conversation
+uses native scrolling.
 
 If a paste is interrupted and no more input arrives for five seconds, the
 terminal shows **Esc: recover paste**. Wait for this notice, then press

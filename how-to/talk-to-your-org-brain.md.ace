@@ -80,3 +80,8 @@ submission or consume a character. Give the verified fresh-Escape-and-pause
 recovery with its normal cancel/draft effects; do not expose protocol bytes,
 private source references or claim complete prevention. Keep public release
 gates and the distinction from browser controls unchanged.
+
+# 2026-11-16 Home and End controls
+Source review confirms Home and End navigate the chat history only with an
+empty draft. With a nonempty draft they move to the start or end of that
+draft. Keep the public keyboard description conditional on the draft state.
