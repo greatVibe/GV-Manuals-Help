@@ -63,3 +63,10 @@ Final prose and links require the repository's publication checklist.
   independent request payload, source disclosure and returned model/effort.
 - 2026-11-15: Reconcile the revised Sources, Unverified citations, Retrieved
   notes and Coverage not reported labels. Keep the publication gate unchanged.
+
+# 2026-11-16 Interrupted terminal paste
+Source review confirms the terminal's five-second idle warning begins with
+Esc: recover paste. Describe one Escape to recover the retained draft, then
+review and deliberate Enter to send. Recovery neither submits nor cancels an
+in-flight answer. Keep this separate from browser controls and preserve the
+matching-release publication hold; the observed PTY check is not phone use.
