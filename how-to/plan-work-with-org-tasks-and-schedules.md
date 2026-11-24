@@ -36,11 +36,17 @@ People change who does a task, and who owns it, with **Change assignment**
 in the [Agenda](use-the-agenda.md). The performer cannot change while an
 AI-prepared draft waits for approval or an AI run is active.
 
-**AI and script tasks do not start by themselves yet.** A due time on an AI
-task is a reminder, not a promise that it will run. To have an agent do it
-now, open the task in the Agenda and choose **Run now with AI**, or ask your
-agent: "Do task <id> and report the result." Script tasks are recorded and
-shown but are not run automatically.
+**A due time alone does not authorise an AI run.** Choose **Run now with AI**
+to start permitted work now. **Run at due** explicitly prepares and confirms
+a one-off future run where available. Accepted AI schedules can create and
+run occurrences through the enabled run service, subject to their confirmed
+authority and current permissions. Read the run receipt and task status;
+a saved task is not proof that a worker started.
+
+Brain Talk can propose work or run a cited existing task. A current owner or
+admin mandate can allow covered work without another confirmation. Requests
+outside that mandate still need review. Script tasks are recorded, but do not
+assume automatic script execution is available.
 
 ## A task's life
 
@@ -132,11 +138,20 @@ resume or delete a schedule; the Agenda shows its next runs.
 
 You can schedule work for people, for scripts and for AI. An AI schedule
 says what kind of work it is (research, review or build) and what the AI
-should do; each occurrence then waits for someone to run it, because AI
-work does not start by itself yet. A sprint's ceremonies are AI schedules
-too (see [Run sprints and projects](run-sprints-and-projects.md)). A node
+should do. Future execution requires accepted run authority and an enabled
+run service. A task occurrence or due reminder alone does not grant it.
+A sprint's ceremonies are AI schedules too (see
+[Run sprints and projects](run-sprints-and-projects.md)). A node
 that has not updated yet cannot create AI schedules or reminder settings;
 update it from its System card.
+
+## Short conversational checks
+
+For a one-off read-only follow-up such as "Check this review again in 3
+minutes", use [Brain Talk](talk-to-your-org-brain.md#short-delayed-checks).
+It can save a lightweight delayed check separately from this task list.
+Look for the receipt and due time. Do not mistake a promised answer for a
+saved check, or a saved check for permission to change anything.
 
 ## Try these prompts
 

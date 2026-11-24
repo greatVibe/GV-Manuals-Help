@@ -34,3 +34,6 @@ behaviour only; no routes, file names or internal ids.
 - 2026-11-14: Agenda space cards open task, schedule and call details (owner request).
 - 2026-11-14: Complete with What was done, Approve and complete, Change assignment, AI fit, Outcome and Completed by facts.
 - 2026-11-13: Created (docs turn c345a346).
+
+# 2026-11-24 Agenda reconciliation
+Supersedes own-console-only Run now description above. Document Mine/Everyone, ranked Auto one-press Run now, separate Choose node/manual review, changed-task/agreement gates, Run at due explicit confirmation, Run again/Dismiss run and refresh feedback. Read source for actual labels. Do not claim every due task runs or invent permission changes.

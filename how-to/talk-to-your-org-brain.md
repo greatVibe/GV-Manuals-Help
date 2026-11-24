@@ -1,124 +1,149 @@
 # Talk to your org brain
 
-Brain Talk lets you ask your organisation's brain directly. Use it to find
-team decisions, understand current work or ask a general question without
-starting a work turn.
-
-The [org brain](../concepts/what-is-the-org-brain.md) supplies the answer.
-Brain Talk does not change files, run commands or assign work for you.
+Brain Talk helps you find team decisions, understand current work and ask a
+general question. It can also propose work, link to an existing task and
+start permitted work through your organisation's run controls.
 
 ## Open Brain Talk
 
 1. Select a node in the organisation you want to ask about.
 2. Open **Brain Talk** from Quick Access.
-3. Choose a question scope: **Org + general**, **Organisation only** or
-   **Public web**. Org + general is selected initially.
-4. Write your question and select **Send**.
+3. Write your question and select **Send**.
 
 The selected node determines which organisation's brain answers. Switching
-nodes closes this view; reopen Brain Talk on the new node. A brain must be
-available for that organisation, and your access is checked when you ask.
+nodes closes the view. Reopen it on the new node. Your access is checked when
+you ask. **Pop out**, where offered, opens a separate view without sending a
+question or copying your current conversation into it.
 
-## Write and correct a question
+## Write a question
 
-The message box holds your draft until you send it. You can select text,
-replace a word, use backspace or paste several lines before submitting.
-Your draft edits are not sent as separate questions.
+Your draft stays in the message box until you send it. Select text, replace a
+word or paste several lines before submitting.
 
-- **Enter** sends the question. **Shift+Enter** adds a new line.
-- While your keyboard is composing a character or word, Enter finishes that
-  composition. It does not also send the question.
-- Only one question waits for an answer at a time. Empty questions are not
-  sent. Keep each question within 1,000 characters; the message box reports
-  when a question is too long.
-- **Stop waiting** stops this view waiting for a reply. The brain may still
-  finish the request. It is not automatically sent again.
+- **Enter** sends. **Shift+Enter** adds a new line. While your keyboard is
+  composing a character, Enter finishes that composition first.
+- The composer accepts up to 50,000 characters. A serving brain or older
+  node may enforce a smaller request limit and reports a refusal.
+- Up to two questions can wait for answers. Each answer stays beside its
+  own question, even when the second finishes first. Network commands are
+  unavailable while ordinary questions are pending.
+- **Stop waiting** stops this view waiting. The brain may still finish.
+  It does not automatically resend the question.
 
-If sending fails, read the message before trying again. A timed-out request
-may have reached the brain; retrying is a new question.
+Elapsed time means how long you have waited. It is not a completion estimate.
+Progress labels describe returned stages only. An unavailable update does not
+prove the answer failed. A timed-out request may have reached the brain;
+retrying sends a new question.
 
-## Read earlier answers
+Scroll to read earlier replies. New replies preserve your reading position.
+Select **Jump to latest** to return to the newest reply.
 
-Scroll the conversation with your finger, mouse wheel or keyboard. If you
-are reading an earlier answer, a new reply leaves your reading position in
-place. Select **Jump to latest** when you want to return to the newest reply.
+## Conversation memory and scopes
 
-The view keeps a bounded amount of recent text. Older text can fall out of
-the view during a long session. It is not an archive of your organisation's
-work; use [global search](use-global-search.md) for result cards.
+The brain remembers your answered private conversations for follow-up
+questions and later recall. This memory belongs to you within the organisation.
+Other members do not see it. Reopening can restore recent exchanges. The
+visible transcript and remembered material are bounded; use
+[global search](use-global-search.md) for saved result cards.
 
-**Questions are independent.** Earlier questions and answers remain visible
-for you to read, but are not silently attached to the next question. Include
-the necessary subject in each question: "What did we decide about the import
-job?" is clearer than "What about that?"
+Use the scope controls beside the composer:
 
-## Clear or close the view
+| Scope | What the answer can use |
+| --- | --- |
+| **Org + general** | Accessible organisation records, remembered conversation and general model knowledge. Web research stays off. |
+| **Org + web** | Organisation context and conversation for the answer, with only the current question sent to web research. The exchange can join your remembered conversation. |
+| **Organisation only** | Organisation records and conversation. Web research stays off. |
 
-**Clear** removes the displayed questions, answers and draft. A reply that
-arrives after that clear does not restore the old conversation.
-Your selected question scope stays selected until you change it or close the
-view.
+Check your question before using Org + web: its text goes to web research.
+Selecting it does not prove a search ran. Read the returned web status and
+sources. Restored older **Public web** answers describe a separate scope that
+excluded organisation context and prior messages.
 
-**Close** discards this view's conversation and stops waiting for any reply.
-The conversation is kept only while the view is open. Reopening starts an
-empty view; it does not restore a previous browser or terminal conversation.
+**Clear** removes the visible conversation and draft. It keeps your chosen
+scope, and does not erase remembered conversations, saved notes, tasks or
+result cards. **Close** stops this view waiting and discards its displayed
+text. **Forget remembered conversations** erases your remembered exchanges;
+it does not delete shared org notes or tasks.
 
-Clearing this view does not delete a saved org-brain note, task or result
-card. Those are separate records.
+## Read sources before acting
 
-## Understand the answer and its sources
+Answers can show numbered citation chips and expandable evidence. A cited task
+can open from its chip or **Open task**. Sources report returned records,
+with their dates and relevant details. A repository name alone does not prove
+the brain read current files or verified a deployment.
 
-**Org + general** uses your accessible organisation records and general model
-knowledge. **Organisation only** relies on your organisation's records. Both
-keep web research off. A question about recent public information does not
-automatically switch either mode to web research.
+**Unverified citations** have no matching returned record. **Retrieved notes**
+were returned without being cited. Neither proves the answer used that source.
+Coverage can be available, partial, unavailable, unknown or **not checked**.
+A quick question may skip evidence it did not need. **Coverage not reported**
+means no usable coverage details arrived. Missing access and empty results do
+not prove that no work happened.
 
-Choose **Public web** explicitly when you want web research. The explanation
-beside the composer says that your question may be used for web research and
-that organisation context is excluded. This mode does not attach org notes,
-live-work records or earlier messages. It still sends the question you type:
-use a question suitable for a public web search.
+The answer shows its model and effort when supplied. Model access depends on
+your organisation's current configuration and availability. A configured
+choice does not guarantee it can answer at that moment.
 
-The pending reply and answer show the scope used when the question was sent.
-Check the reply's web status and sources; choosing Public web does not prove
-a search ran or that an answer is current. If web research is unavailable, the reply
-reports that limit. The request is not silently resent in another mode.
-A web answer is not evidence of what your team has done.
+## Ask for work
 
-Check the cited source before acting on an answer. In particular:
+Ask plainly, for example: "Run the report review task" or "Close this sprint
+and start the next one." The brain can return an action card. Check its
+summary and current instructions before confirming a change.
 
-- A note records what someone wrote. Read its date and the current task
-  outcome before treating an old finding as an unresolved problem.
-- A live-work view shows the work it can currently observe. An empty view
-  does not establish that nobody worked during the last six hours.
-- A document describes the version it covers. A repository name alone does
-  not mean the brain has read its files or verified the current code.
-- Missing access or an unavailable source means the evidence is incomplete.
-  Ask your agent for a scoped investigation when you need code or deployment
-  proof.
+A run can start without another confirmation only when an owner or admin has
+given the brain a current mandate that covers that work. Permissions, allowed
+kinds, node eligibility, expiry and limits still apply. A mandate never
+approves an AI-prepared draft on a person's behalf. Requests requiring review
+show that reason instead of claiming they started.
 
-Expand **Sources** to read returned records that match the answer's citations.
-**Unverified citations** have no matching returned source record, so do not
-treat them as evidence. **Retrieved notes** were returned without citations;
-their presence does not show that the answer used them. Read the source itself
-before relying on the answer's claim.
+Read the result: **Started**, **Scheduled**, **Not started automatically** and
+a proposal awaiting confirmation mean different things. Open the linked task
+for its current run and outcome. An answer saying it intends to work is not a
+run receipt. See [org tasks](plan-work-with-org-tasks-and-schedules.md) and
+[the Agenda](use-the-agenda.md).
 
-**Coverage** reports whether a source is available, partial, unavailable or
-unknown. **Coverage not reported** means no usable coverage details were
-returned. It does not mean the brain searched all your organisation's records.
+## Short delayed checks
 
-The reply shows the answering model and effort when that information is returned.
-Your organisation controls its configured default and backup. Model answers
-can be off for a newly started brain; then it matches words in the available
-notes. See [Deploy and run your org brain](deploy-and-run-your-org-brain.md).
-Selecting Public web does not turn on model access for an organisation where
-it is disabled. Model answers in any mode still use the configured provider;
-web research being off does not mean the question stays in your browser.
+A short request such as "Check the review progress again in 3
+minutes" uses a lightweight read-only check where the serving brain
+supports it. It does not need a repeating Agenda schedule.
+
+Treat it as scheduled only after Brain Talk shows a saved receipt with a due
+time. Use **Cancel** on that receipt to withdraw a pending check. A refusal,
+clarification or sentence promising to come back is not a saved receipt.
+Checking status later does not grant permission to change files, start a job
+or deploy something.
+
+The server handles an accepted check independently of the open view. Brain
+Talk retrieves the result while open and can restore it later in the same
+conversation. Clear starts a different conversation and stops showing those
+checks; it does not promise server cancellation. Older nodes can report that
+delayed results are unavailable. A successful scheduling receipt proves the
+request was saved, not that due-time delivery has succeeded. If no result
+arrives, ask for a scoped investigation of that receipt. Browser notifications
+and delivery to a closed phone are not guaranteed.
+
+## Useful commands
+
+Use **/help** for the commands supported by your current view.
+
+- **/model** lists model choices. **/model auto** restores automatic selection.
+- **/deep <question>** asks with the full available notes and activity.
+- **/web <question>** selects Org + web and asks the question.
+- **/charter** reads the owner's priorities. **/guide** shows guidance help.
+- **/mandate** shows what the brain may start and when that permission ends.
+  Owners and admins can set or revoke it through the command's instructions.
+- **/checkins off** stops quiet-time follow-ups. **/checkins on** allows a
+  relevant check-in after 20 quiet minutes while the view is open, up to three
+  until you interact. These are separate from saved delayed checks.
+
+Reply chips are suggested next questions. Tapping one sends that text.
+Shared notes are separate from private conversation memory; save only material
+you intend the organisation to read.
 
 ## Use the terminal version
 
 Select **Open terminal** to switch to the terminal version on a node with the
-Brain Talk utility installed. This clears the browser conversation first.
+Brain Talk utility installed. This clears the visible browser conversation first.
 The terminal's input and history controls belong to the terminal app, so
 they differ from the browser view above. Type **/help** for its controls.
 
@@ -166,19 +191,16 @@ draft before pressing Enter.
 Cancelling a note save does not prove the note was not saved. Check `/notes`
 before saving it again.
 
-## Keep private chat and shared notes distinct
+## Privacy and shared notes
 
-Asking a question does not automatically save it as an org-brain note.
-Explicitly saved notes are visible to your organisation. Only the author can
-replace or delete their note.
-
-Do not include passwords, keys or tokens in a question or note. The temporary
-browser history is not a promise about every system's retention: the question
-still goes to the brain and, for model answers, its configured provider.
+An explicitly saved note is visible to your organisation. Private conversation
+memory is separate. Do not include passwords, keys or tokens in a question or
+note. Questions go to the brain and, for model answers, its configured provider.
+Turning web research off does not keep the question inside your browser.
 
 ## Related
 
 - [What is the org brain?](../concepts/what-is-the-org-brain.md)
-- [Use Terminal with your agent](use-terminal-with-your-agent.md)
-- [Find past work across nodes](use-global-search.md)
-- [Org work tools for agents](../reference/org-work-tools.md)
+- [Deploy and run your org brain](deploy-and-run-your-org-brain.md)
+- [Plan work with org tasks and schedules](plan-work-with-org-tasks-and-schedules.md)
+- [Use the Agenda](use-the-agenda.md)

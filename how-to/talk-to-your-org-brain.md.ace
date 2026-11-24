@@ -1,7 +1,7 @@
 file: talk-to-your-org-brain.md
 created: 2026-11-15
 consumers: [GreatVibe users, Mochi agents, documentation maintainers]
-produces: [public Brain Talk guide: native input, temporary history, sources, model selection and terminal alternative]
+produces: [public Brain Talk guide: native input, private memory, sources, work authority, delayed-check receipts and terminal alternative]
 ---
 # Purpose
 Help a person ask the org brain directly, correct a draft without sending
@@ -21,16 +21,17 @@ check labels and limits against the final implementation. Backend source
 retrieval or restart changes are not documented as shipped without evidence.
 
 # Gotchas
-- Org + general and Organisation only keep web tools off. Public web is an
-  explicit choice that excludes organisation records and previous messages;
-  the current question can still be used for web research. Do not imply it
+- Org + general and Organisation only keep web tools off. Org + web sends only the current question to public research, then can
+  synthesize with accessible org context and private conversation. Legacy
+  Public web excludes org records and earlier messages. Do not imply it
   redacts private text the person types, or enables disabled model access.
 - Terminal /web is one request; the next ordinary question uses the default
   org-and-general mode. Unsupported web requests must not silently change mode.
 - Browser scope stays selected through Clear until changed or the view closes;
   its pending reply and answer retain the scope captured at submit.
-- Browser transcript is memory-only reading history for one open view;
-  previous questions and answers are not silently attached to new asks.
+- The visible browser transcript is bounded. The brain separately remembers
+  answered private exchanges for follow-up context; Clear and Close do not
+  mean Forget. Explain that boundary before suggesting private recall.
 - A private chat is distinct from a note explicitly saved to the org brain;
   notes are shared with the organisation and only their author can replace
   or delete them.
@@ -85,3 +86,16 @@ gates and the distinction from browser controls unchanged.
 Source review confirms Home and End navigate the chat history only with an
 empty draft. With a nonempty draft they move to the start or end of that
 draft. Keep the public keyboard description conditional on the draft state.
+
+# 2026-11-24 Release reconciliation
+Supersedes dated independence, temporary-only memory, 1000-character, Public web picker and no-actions notes above. Public guide describes released remembered private conversations, Org + web, 50000-character composer, two concurrent asks, brain-written reply chips, /model /deep /charter /guide /mandate /checkins, task links, explicit confirmation and current mandate enforcement. Short callbacks are distinguished from Agenda work; a durable scheduled receipt is required, and live delivery is not certified. New image attachment, registry availability/ranking, unlimited quota and progress-recovery changes remain feature-branch work and are excluded until matching release. Rewrite-only public surface; no source identifiers, deployment detail, private excerpts or roadmap promises.
+
+# Final prose review
+Use a verified timing suffix without extra words after the duration. Describe
+network commands as unavailable while asks are pending, not queued. Existing
+dated history is retained only as history; current gotchas match the guide.
+
+# Retained terminal controls
+Keep the existing independently described terminal commands, keyboard and paste
+recovery instructions. Their question-only /web behavior is not the browser
+Org + web contract. Preserve the private-chat/shared-note and provider boundary.

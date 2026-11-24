@@ -35,3 +35,6 @@ Written fresh from the engine contract and authorization code
 - 2026-11-14: Reminder settings and AI schedules can be created by agents (after the schedule fields fix).
 - 2026-11-14: Completion record, reasons, Change assignment, honest reminder and schedule limits, suggestions and reports, link to the agent reference.
 - 2026-11-13: Created (docs turn c345a346).
+
+# 2026-11-24 Run authority correction
+Supersedes blanket AI-runs-off statements above. Explicit Run now, confirmed Run at due and accepted AI schedules use enabled run services and current permissions; due time alone does not grant execution. Brain mandates cover only admitted kinds and nodes with expiry/limits, never approval of AI drafts. Script auto-execution remains unverified. Distinguish lightweight read-only Brain Talk callback receipts from task/schedule records; do not promise live delivery without proof.

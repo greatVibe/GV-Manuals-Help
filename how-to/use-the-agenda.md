@@ -24,7 +24,11 @@ most recently. If the row is wider than the panel, scroll it sideways.
 Organisations without an org brain have no task list, so they do not get a
 button; a node in one of them opens the Agenda on your leftmost organisation.
 
-The Agenda refreshes about once a minute while it is open.
+The Agenda opens on **Mine**, your own work. **Everyone** includes other
+visible work in the selected organisation. That choice is remembered.
+The Agenda refreshes about once a minute while open. Manual refresh shows
+**Refreshing** and then the sample's update time. Returning to the view can
+refresh it. A cached sample can lead to a later follow-up check.
 
 ## What you see, top to bottom
 
@@ -72,13 +76,22 @@ Depending on your permissions:
 | **Snooze** | Hides it from reminders: 1 h, 3 h, **Tomorrow 9:00**, or **Clear** |
 | **Change assignment** | Picks the owner (people the organisation's tasks already name, or **Unassigned**) and the performer: Human, AI, or AI then a human |
 | **Run on node** | Picks the node an AI task should use (**Default** restores it) |
-| **Run now with AI** | For AI tasks: sends a prompt to your dashboard console so an agent does the task now and records the result |
+| **Run now with AI** | Requests a permitted run now, using the ranked Auto node and the task's suggested kind. Changed instructions or an agreement gate can require review. |
+| **Choose node** | Opens the node and kind chooser for manual preparation and confirmation. |
+| **Run at due** | Prepares a future run that you explicitly confirm. A due date alone does not start it. |
+| **Run again** / **Dismiss run** | Retries eligible failed work or clears its run notice, according to your permissions. |
 | **Run in console** | Puts the task into your prompt box so you can edit and send it yourself |
 | **Open full task** | Opens the complete task view |
 
-**Run now with AI** starts a normal turn in your own console. Nothing else
-starts AI tasks automatically yet; see
-[org tasks](plan-work-with-org-tasks-and-schedules.md#who-does-the-work).
+**Run now with AI** is an execution request. Auto ranks current eligible
+nodes and explains its choice. Choosing a node manually keeps a confirmation
+step. If run services are unavailable, a console fallback may be offered.
+Read the returned reason and run state; a refused request has not started.
+See [org tasks](plan-work-with-org-tasks-and-schedules.md#who-does-the-work).
+
+Task details put **Run task** and **Progress** before expandable details and
+**More actions**. Opening a task from Brain Talk brings the task above that
+conversation; closing it returns you to Brain Talk.
 
 ### Complete and the completion record
 
