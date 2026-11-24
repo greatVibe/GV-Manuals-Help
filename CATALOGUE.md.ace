@@ -64,3 +64,9 @@ Adds reference/greatvibe-example-prompts.md (starter and "Build what you used to
 2026-10-27 — Index global-search guidance for scoped targets, field queries, relevance, facets, coverage, continuation and explanation. Matching release verified before removing the Search publication hold.
 
 2026-11-14 — Org work docs refresh (docs turn 664d6afc): adds how-to/deploy-and-run-your-org-brain.md and reference/org-work-tools.md to Fast Answers, the topic table, Team work rows, Reference row and the agent routing note (agents read the tool reference first; brains are reachable only from their organisation's nodes).
+
+# 2026-11-24 Run authority routing correction
+Replace the obsolete blanket AI-runs-off note with current Run now, confirmed
+Run at due and accepted AI schedule authority. Due time alone grants nothing;
+script auto-execution stays unverified. Route short read-only checks to Brain
+Talk and require its saved due receipt. No rollout or callback success claim.

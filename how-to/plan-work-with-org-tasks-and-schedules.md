@@ -147,11 +147,15 @@ update it from its System card.
 
 ## Short conversational checks
 
-For a one-off read-only follow-up such as "Check this review again in 3
-minutes", use [Brain Talk](talk-to-your-org-brain.md#short-delayed-checks).
-It can save a lightweight delayed check separately from this task list.
-Look for the receipt and due time. Do not mistake a promised answer for a
-saved check, or a saved check for permission to change anything.
+For a one-off read-only follow-up such as "Check this review again in three
+minutes" or "Check the review in 3mins from now and report back to me", use
+[Brain Talk](talk-to-your-org-brain.md#short-delayed-checks). Name one check
+and one delay. It can save a lightweight delayed check separately from this
+task list, without a repeating schedule.
+
+Look for the saved receipt and due time. A promised answer is not a saved
+check, and a saved check is not proof that its result was delivered. This
+path grants no permission to edit files, start jobs or deploy anything.
 
 ## Try these prompts
 

@@ -38,3 +38,9 @@ Written fresh from the engine contract and authorization code
 
 # 2026-11-24 Run authority correction
 Supersedes blanket AI-runs-off statements above. Explicit Run now, confirmed Run at due and accepted AI schedules use enabled run services and current permissions; due time alone does not grant execution. Brain mandates cover only admitted kinds and nodes with expiry/limits, never approval of AI drafts. Script auto-execution remains unverified. Distinguish lightweight read-only Brain Talk callback receipts from task/schedule records; do not promise live delivery without proof.
+
+# 2026-11-24 Short-check wording draft
+Clarify that source-supported natural in-number/from-now read-only checks use
+Brain Talk's saved due receipt, separate from tasks and recurring schedules.
+No general timed action or due-delivery guarantee. Hold publication for the
+matching rollout; retain existing task authority and person-review boundaries.

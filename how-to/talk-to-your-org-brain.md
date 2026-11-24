@@ -30,13 +30,40 @@ word or paste several lines before submitting.
 - **Stop waiting** stops this view waiting. The brain may still finish.
   It does not automatically resend the question.
 
+Daily question allowances are unlimited by default. An organisation can still
+set an explicit daily limit for the organisation or each person. Model
+availability, the size of one request, concurrent questions and delayed-check
+limits are separate.
+
 Elapsed time means how long you have waited. It is not a completion estimate.
-Progress labels describe returned stages only. An unavailable update does not
-prove the answer failed. A timed-out request may have reached the brain;
-retrying sends a new question.
+Progress labels such as **Gathering context for your question**, **Reading
+sources for your question** and **Writing your answer** describe returned
+stages only. If a progress read fails temporarily, Brain Talk keeps waiting
+and checks again while your question is pending. **Checking for another
+update** does not mean the answer failed or that a new stage was observed.
+A timed-out question may have reached the brain; sending it again creates
+a new question.
 
 Scroll to read earlier replies. New replies preserve your reading position.
 Select **Jump to latest** to return to the newest reply.
+
+## Attach an image
+
+Use **Attach images** beside the composer, or paste an image into it. You can
+attach up to four JPEG, PNG or WebP images. Brain Talk prepares smaller copies;
+their combined size must fit within 2 MiB. Review the previews and remove any
+image you do not want to send before selecting **Send**.
+
+Images are used for that question only. Their bytes are not kept in
+conversation memory or restored history. The text of the question and answer
+can still be remembered. A later question that needs the picture must attach
+it again. The question and images go to the configured model provider.
+
+Use **Org + general** or **Organisation only** for private image questions.
+Images are not sent to public web research. Legacy public-web image requests
+are refused. An image question cannot be saved as a delayed check or authorise
+a task or other action; send a separate text request for that work. If an image
+is refused, correct or remove it before sending again.
 
 ## Conversation memory and scopes
 
@@ -79,9 +106,21 @@ A quick question may skip evidence it did not need. **Coverage not reported**
 means no usable coverage details arrived. Missing access and empty results do
 not prove that no work happened.
 
-The answer shows its model and effort when supplied. Model access depends on
-your organisation's current configuration and availability. A configured
-choice does not guarantee it can answer at that moment.
+The answer shows its model and effort when supplied.
+
+## Choose a model
+
+Use **/model** to open the choices. Models reported as unavailable are disabled,
+with a reason and a resume time when one is supplied. A suspended model is
+not selectable. **Availability could not be checked** also leaves a choice
+disabled; being listed does not grant access. Use **Filter models** when it
+appears to narrow a longer list.
+
+**Auto preference ranking** shows the configured preference among currently
+available models. It is not the order every question will try. Phase priority
+and temporary cooldown can change which model runs. Use **/model auto** to
+return to automatic choice. Read the model on the returned answer to see
+which one answered. A displayed resume time is not proof the model has resumed.
 
 ## Ask for work
 
@@ -103,9 +142,12 @@ run receipt. See [org tasks](plan-work-with-org-tasks-and-schedules.md) and
 
 ## Short delayed checks
 
-A short request such as "Check the review progress again in 3
-minutes" uses a lightweight read-only check where the serving brain
-supports it. It does not need a repeating Agenda schedule.
+A short request such as "Check the review progress again in three minutes"
+uses a lightweight read-only check where the serving brain supports it.
+Other supported forms include "Check the review progress in 3mins from now
+and report back to me" and "Recheck in 2 minutes if the review has finished".
+Name one read-only goal and one delay. It does not need a repeating Agenda
+schedule. This path does not perform general timed jobs, edits or deployments.
 
 Treat it as scheduled only after Brain Talk shows a saved receipt with a due
 time. Use **Cancel** on that receipt to withdraw a pending check. A refusal,

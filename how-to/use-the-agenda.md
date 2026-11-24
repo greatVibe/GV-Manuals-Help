@@ -128,6 +128,11 @@ Due and overdue reminders appear as small notices in any open dashboard tab,
 even with the Agenda closed. In the Agenda you can turn on a chime and allow
 browser notifications.
 
+Short read-only checks requested in [Brain Talk](talk-to-your-org-brain.md#short-delayed-checks)
+use their own saved due receipt. They are separate from Agenda tasks and
+repeating schedules. A saved receipt proves the request was stored, not that
+its due-time result has arrived.
+
 ## Watching agents work with tasks
 
 When an agent creates or changes tasks and schedules during a turn, the

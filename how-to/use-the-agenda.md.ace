@@ -37,3 +37,8 @@ behaviour only; no routes, file names or internal ids.
 
 # 2026-11-24 Agenda reconciliation
 Supersedes own-console-only Run now description above. Document Mine/Everyone, ranked Auto one-press Run now, separate Choose node/manual review, changed-task/agreement gates, Run at due explicit confirmation, Run again/Dismiss run and refresh feedback. Read source for actual labels. Do not claim every due task runs or invent permission changes.
+
+# 2026-11-24 Delayed-check distinction draft
+Explain that lightweight Brain Talk read-only checks have their own due receipt
+and are separate from Agenda tasks/schedules. A saved receipt is not delivery
+proof. Keep this addition on the feature branch until matching rollout.
