@@ -26,9 +26,11 @@ by the node's organisation); new brains match words only (no model answers).
 - Without model answers, ask matches words, not meaning.
 - Work authority (since 2026-11-25): the brain never acts on its own
   authority. It starts AI work only inside a current owner/admin mandate
-  (permissions, kinds, eligible nodes, expiry and start limits still apply;
-  a mandate never approves a draft). Task changes it drafts (create, run,
-  raise priority, pause, cancel, delete) run as the person, when they asked
+  (kinds, default node, limits, expiry; covers any org node; never release
+  or deploy; the run executes as the grantor; a Brain Talk ask starts it
+  only for the grantor or an org owner/admin; a mandate never approves a
+  draft). Changes it drafts (task create, run, raise priority, cancel,
+  delete; schedule pause, delete; sprint rollover) run as the person, when they asked
   or confirm; permanent deletes wait 5 s behind Stop and need the person's
   own dashboard session; running an existing task needs their Run now.
   Never describe it
@@ -38,6 +40,6 @@ by the node's organisation); new brains match words only (no model answers).
   (one region today); keep the "where available" wording.
 
 # Change History
-- 2026-11-26: Replaces "does not run work" with the mandate and confirm-as-you rules; adds charter/guidance notes, ask depth and the agent tool rows (three-day review row M3).
+- 2026-11-26: Replaces "does not run work" with the mandate and confirm-as-you rules; adds charter/guidance notes, ask depth and the agent tool rows, checked against the released browser and brain behaviour.
 - 2026-11-14: One brain per organisation, deploy link, isolation, notes list/delete, full brain tool table (docs turn 664d6afc).
 - 2026-11-13: Created (docs turn c345a346).

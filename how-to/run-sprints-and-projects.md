@@ -43,8 +43,10 @@ three repeating tasks in the sprint's time zone:
 | Retro | Last day, 15:00 |
 
 They are "AI then human" tasks: an agent can prepare each one and people run
-it. Like other AI tasks, the preparation does not start by itself yet; open
-the task and choose **Run now with AI**, or ask your agent. A person
+it. The preparation starts only from **Run now with AI**, an accepted
+schedule's run authority or a covering brain mandate; a due time alone
+starts nothing. Open the task and choose **Run now with AI**, or ask your
+agent. A person
 approves the prepared stand-up, review or retro with a short summary.
 
 ### Sprints in the Agenda

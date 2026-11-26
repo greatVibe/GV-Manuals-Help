@@ -80,14 +80,17 @@ one mesh, node, repository or person for up to 30 days.
 ## Starting work
 
 - **Under a mandate.** An owner or admin can give the brain a mandate: which
-  kinds of AI work it may start, on which nodes, until when. Inside it, the
-  brain can start a ready AI task without another confirmation, within the
-  organisation's start limits. Permissions, node settings and expiry still
+  kinds of AI work it may start (never release or deploy), a default node,
+  its limits and when it ends. It covers any node the organisation owns.
+  Inside it, the brain can start a ready AI task without another
+  confirmation, within the organisation's start limits, and the run executes
+  as the person who granted the mandate. Node settings and expiry still
   apply, and a mandate never approves AI-prepared work for a person. In
   Brain Talk, **/mandate** shows what is allowed and when it ends.
 - **When you ask.** The brain can prepare a change for you: create or run a
-  task, raise its priority, pause or cancel it, or delete it. The change runs
-  as you, with your permissions. Changes you asked for in your own words go
+  task, raise its priority, cancel or delete it, pause or delete a schedule,
+  or roll a sprint over. The change runs as you, with your permissions.
+  Changes you asked for in your own words go
   through for you; a permanent delete waits 5 seconds with **Stop** and runs
   only from your own signed-in session, never from an agent. Running an
   existing task still takes your **Run now**. See

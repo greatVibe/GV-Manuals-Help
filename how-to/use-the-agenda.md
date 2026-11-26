@@ -34,7 +34,7 @@ refresh it. A cached sample can lead to a later follow-up check.
 
 | Section | What it shows |
 | --- | --- |
-| Questions for you | Open questions agents or teammates asked you. Answer each with one tap. |
+| Questions for you | Decisions an agent asked you to make, with who it works for and why. Answer each with one tap. |
 | Approvals for you | AI-prepared work waiting for a person: **Approve**, or **Decline** then **Confirm decline** (declining cancels the task and drops the draft). |
 | Org | One named button per organisation with an org brain, shown when there is more than one; the selected one is highlighted. |
 | Today headline | One line about the selected organisation's day, from the [org brain](../concepts/what-is-the-org-brain.md). Select **Why?** for the reasoning. |

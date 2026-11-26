@@ -1,6 +1,6 @@
 file: use-the-agenda.md
 created: 2026-11-13
-lastModified: 2026-11-26 — Questions and approvals strips, Brain queue, schedule Pause/Resume/Stop repeating, mandate run provenance (three-day review row M8 and gap G2; checked against released konui agenda-drawer, agenda-core, agenda-questions and agenda-approvals ACE).
+lastModified: 2026-11-26 — Questions and approvals strips, Brain queue, schedule Pause/Resume/Stop repeating, mandate run provenance (checked against the released Agenda labels and behaviour).
 consumers: [GreatVibe users, Mochi agents]
 produces: [public guide to the Agenda panel: opening it, sections in render order, questions and approvals strips, brain queue, schedule controls, Plan your day rule, task actions, mandate run provenance, calendar and day view, reminders, Agent IQ Agenda and Org brain spaces]
 ---

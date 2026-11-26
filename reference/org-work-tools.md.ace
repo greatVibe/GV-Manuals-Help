@@ -50,7 +50,6 @@ repositories, release numbers or internal ids.
 
 # Change History
 - 2026-11-26: Run authority replaces "AI tasks never run"; adds org_task_run,
-  questions, ask mode/model/depth, charter/guidance notes, task-run sessions
-  (three-day review rows M1, M2; checked against live tool schemas).
+  questions, ask mode/model/depth, charter/guidance notes, task-run sessions; checked against the live agent tool schemas.
 - 2026-11-14: outcome on org_task_update, schedule notify/kind/instructions, full ids (after the schedule fields fix).
 - 2026-11-14: Created.

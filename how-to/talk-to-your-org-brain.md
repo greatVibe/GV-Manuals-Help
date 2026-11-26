@@ -126,14 +126,15 @@ which one answered. A displayed resume time is not proof the model has resumed.
 
 Ask plainly, for example: "Create a task to review the import job and run
 it now", "Raise the priority of the release checklist" or "Close this sprint
-and start the next one." Every change runs as you, with your permissions.
+and start the next one." Changes you confirm run as you, with your
+permissions.
 
 **When you asked for it, it goes through.** If the change matches what you
 asked for in your own words, Brain Talk confirms it for you from your
 signed-in session. Its details fold away under the result.
 
-- A delete, a schedule delete or a sprint rollover waits 5 seconds with a
-  **Stop** button first. **Stop** leaves everything unchanged and shows the
+- A delete, a schedule delete, a sprint rollover, or any change marked as
+  permanent waits 5 seconds with a **Stop** button first. **Stop** leaves everything unchanged and shows the
   normal **Confirm** button.
 - You still check and confirm a card when the brain drafted something you
   did not ask for, when the instructions mention secrets or sending data
@@ -141,14 +142,17 @@ signed-in session. Its details fold away under the result.
 - Running an existing task shows a **Run a task** card. **Run now** opens
   the task in the Agenda in front of Brain Talk, ready for you to confirm
   once.
-- On a confirm card, cancel, pause and raise priority take one tap. A
-  permanent delete takes two, because it cannot be undone.
+- On a confirm card, cancelling a task, pausing a schedule and raising a
+  priority take one tap. Creating a task, a sprint rollover and a permanent
+  delete take two.
 
-**Under a mandate.** A run can start without your confirmation when an owner
-or admin has given the brain a current mandate that covers that work.
-Permissions, allowed kinds, node eligibility, expiry and limits still apply.
-A mandate never approves an AI-prepared draft on a person's behalf. Requests
-requiring review show that reason instead of claiming they started.
+**Under a mandate.** If you granted the brain's current mandate, or you are
+an organisation owner or admin, a run it covers can start without your
+confirmation. It runs as the person who granted the mandate. Other members
+get **Not started automatically** with the reason. Allowed kinds, limits and
+expiry still apply, and a mandate never approves an AI-prepared draft on a
+person's behalf. Requests requiring review show that reason instead of
+claiming they started.
 
 Read the result: **Started**, **Scheduled**, **Not started automatically** and
 a proposal awaiting confirmation mean different things. An answer saying it
