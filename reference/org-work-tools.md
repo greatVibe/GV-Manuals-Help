@@ -156,9 +156,12 @@ due, an accepted schedule or a brain mandate), that turn is a task run:
 
 - It can read its own task, tick its checklist and attach evidence. It
   cannot reach other tasks.
-- Reading brain notes, searching other nodes, creating tasks, asking where
-  to run work and delegating to another node answer `authorization_denied`.
-  Say what was blocked in your result instead of working around it.
+- It can read the org brain's notes and write `fact`, `decision`, `intent`
+  and `finding` notes as the person it runs as. Charter and guidance notes
+  and note deletes answer `authorization_denied`.
+- Searching other nodes, creating tasks, asking where to run work and
+  delegating to another node answer `authorization_denied`. Say what was
+  blocked in your result instead of working around it.
 - Finish with your result card. The run service attaches it and submits the
   task; do not submit or approve it yourself.
 

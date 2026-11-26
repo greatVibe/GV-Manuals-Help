@@ -53,3 +53,4 @@ repositories, release numbers or internal ids.
   questions, ask mode/model/depth, charter/guidance notes, task-run sessions; checked against the live agent tool schemas.
 - 2026-11-14: outcome on org_task_update, schedule notify/kind/instructions, full ids (after the schedule fields fix).
 - 2026-11-14: Created.
+- 2026-11-26: task runs can read brain notes and write fact, decision, intent and finding notes; charter, guidance and deletes stay refused.
