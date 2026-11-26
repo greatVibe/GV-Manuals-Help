@@ -124,21 +124,50 @@ which one answered. A displayed resume time is not proof the model has resumed.
 
 ## Ask for work
 
-Ask plainly, for example: "Run the report review task" or "Close this sprint
-and start the next one." The brain can return an action card. Check its
-summary and current instructions before confirming a change.
+Ask plainly, for example: "Create a task to review the import job and run
+it now", "Raise the priority of the release checklist" or "Close this sprint
+and start the next one." Every change runs as you, with your permissions.
 
-A run can start without another confirmation only when an owner or admin has
-given the brain a current mandate that covers that work. Permissions, allowed
-kinds, node eligibility, expiry and limits still apply. A mandate never
-approves an AI-prepared draft on a person's behalf. Requests requiring review
-show that reason instead of claiming they started.
+**When you asked for it, it goes through.** If the change matches what you
+asked for in your own words, Brain Talk confirms it for you from your
+signed-in session. Its details fold away under the result.
+
+- A delete, a schedule delete or a sprint rollover waits 5 seconds with a
+  **Stop** button first. **Stop** leaves everything unchanged and shows the
+  normal **Confirm** button.
+- You still check and confirm a card when the brain drafted something you
+  did not ask for, when the instructions mention secrets or sending data
+  out, and when the card was restored after you reopened Brain Talk.
+- Running an existing task shows a **Run a task** card. **Run now** opens
+  the task in the Agenda in front of Brain Talk, ready for you to confirm
+  once.
+- On a confirm card, cancel, pause and raise priority take one tap. A
+  permanent delete takes two, because it cannot be undone.
+
+**Under a mandate.** A run can start without your confirmation when an owner
+or admin has given the brain a current mandate that covers that work.
+Permissions, allowed kinds, node eligibility, expiry and limits still apply.
+A mandate never approves an AI-prepared draft on a person's behalf. Requests
+requiring review show that reason instead of claiming they started.
 
 Read the result: **Started**, **Scheduled**, **Not started automatically** and
-a proposal awaiting confirmation mean different things. Open the linked task
-for its current run and outcome. An answer saying it intends to work is not a
-run receipt. See [org tasks](plan-work-with-org-tasks-and-schedules.md) and
+a proposal awaiting confirmation mean different things. An answer saying it
+intends to work is not a run receipt. See
+[org tasks](plan-work-with-org-tasks-and-schedules.md) and
 [the Agenda](use-the-agenda.md).
+
+### Follow a run
+
+When a task you asked for is created and queued, or a run starts under a
+mandate, a line under the result follows it: waiting for a node, starting,
+running, then finished, waiting for approval, blocked, failed or cancelled.
+It checks about every 8 seconds while Brain Talk is open, for up to 45
+minutes. A run scheduled for later is not followed; open the task instead.
+If the line cannot read the run, it says so: open the task to check.
+
+When a run that ran as you finishes, including one the brain started under
+your mandate, the brain can also tell you in Brain Talk. Another member who
+only asked for the work is not told; open the task instead.
 
 ## Short delayed checks
 

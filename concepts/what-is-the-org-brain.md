@@ -6,8 +6,10 @@ answers questions about both. Any agent working for a member of your
 organisation can ask it before starting work, so people stop re-solving
 problems someone already solved.
 
-It does not run work, and it does not assign, change or cancel anyone's
-tasks.
+It never acts on its own authority. It starts AI work only when an owner or
+admin has given it a current mandate that covers that work, and it prepares
+task changes that run as you when you ask for them or confirm them. See
+[Starting work](#starting-work).
 
 Every organisation has its own brain. Owners and admins start it and watch
 its health from the **Org brain** tab in Account Admin; see
@@ -39,9 +41,9 @@ cards.
 ## Asking questions
 
 You can ask directly in [Brain Talk](../how-to/talk-to-your-org-brain.md), or
-ask your agent to consult the brain. Brain Talk's visible conversation is
-temporary reading history: each new question is independent unless you
-include the context it needs in that question.
+ask your agent to consult the brain. Brain Talk remembers your answered
+private conversations for follow-up questions; other members do not see
+them, and **Forget remembered conversations** erases them.
 
 Ask your agent in plain words:
 
@@ -70,6 +72,31 @@ someone time later:
 - "List the org brain's notes." / "Delete my org brain note release-days."
 
 You can delete only your own notes.
+
+Owners and admins can also record two steering kinds: a **charter** note
+holds the organisation's standing priorities, and a **guidance** note steers
+one mesh, node, repository or person for up to 30 days.
+
+## Starting work
+
+- **Under a mandate.** An owner or admin can give the brain a mandate: which
+  kinds of AI work it may start, on which nodes, until when. Inside it, the
+  brain can start a ready AI task without another confirmation, within the
+  organisation's start limits. Permissions, node settings and expiry still
+  apply, and a mandate never approves AI-prepared work for a person. In
+  Brain Talk, **/mandate** shows what is allowed and when it ends.
+- **When you ask.** The brain can prepare a change for you: create or run a
+  task, raise its priority, pause or cancel it, or delete it. The change runs
+  as you, with your permissions. Changes you asked for in your own words go
+  through for you; a permanent delete waits 5 seconds with **Stop** and runs
+  only from your own signed-in session, never from an agent. Running an
+  existing task still takes your **Run now**. See
+  [Ask for work](../how-to/talk-to-your-org-brain.md#ask-for-work).
+- **Otherwise it proposes.** Work outside the mandate, or a change you did
+  not ask for, comes back as a card for you to check and confirm.
+
+The [Agenda](../how-to/use-the-agenda.md) shows the brain's queue and marks
+runs it started under a mandate.
 
 ## The Today headline
 
@@ -102,8 +129,8 @@ they happen. It only shows calls the agent actually made.
 
 | Tool | Use |
 | --- | --- |
-| `org_brain_ask` | `{question, limit?}`: ranked matching notes and running turns |
-| `org_brain_note` | `{id, kind: fact\|decision\|intent\|finding, title, text, tags?, source?}`; `id` is lowercase letters, digits, `.`, `_`, `-` |
+| `org_brain_ask` | `{question, limit?, mode?, model?, depth?}`: ranked matching notes and running turns; `depth: deep` reads every note |
+| `org_brain_note` | `{id, kind: fact\|decision\|intent\|finding\|charter\|guidance, title, text, tags?, source?}`; `id` is lowercase letters, digits, `.`, `_`, `-`; charter and guidance need an owner or admin |
 | `org_brain_notes` | Every note, sorted by id |
 | `org_brain_note_delete` | `{id}`: delete one of your own notes |
 | `org_brain_today` | `{tz?}`: the Today headline |

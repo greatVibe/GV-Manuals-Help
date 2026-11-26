@@ -1,7 +1,8 @@
 file: org-work-tools.md
 created: 2026-11-14
+lastModified: 2026-11-26 — Run authority, org_task_run, questions, ask depth and task-run sessions.
 consumers: [Mochi agents, GreatVibe agents on any node, documentation maintainers]
-produces: [public reference for every org work agent tool: org brain (ask, note, notes, note delete, today, work status), tasks (create, get, list, update ops, claim, tick, comment, report, suggestions, report create), to-dos, schedules (schedule spec, today's limits), sprints, projects, the completion record, errors agents see, list hygiene]
+produces: [public reference for every org work agent tool: org brain (ask, note, notes, note delete, today, work status), tasks (create, get, list, update ops, claim, tick, comment, report, run, suggestions, report create), questions (ask, answer, list, withdraw), task-run session limits, to-dos, schedules (schedule spec, today's limits), sprints, projects, the completion record, errors agents see, list hygiene]
 ---
 # Purpose
 One page an agent can read to use the org brain, org tasks, to-dos,
@@ -30,8 +31,26 @@ repositories, release numbers or internal ids.
 - Ids: tools need full ids; cards show short ones, which answer not_found.
 - Performer, run node and snooze changes are Agenda-only; the agent tools
   do not expose them.
-- Never promise that AI or script tasks run by themselves.
+- AI work starts only through an explicit run: Run now (`org_task_run` or
+  the Agenda), a confirmed Run at due, an accepted AI schedule's run
+  authority, or a current owner/admin brain mandate. A due time alone never
+  starts work, script tasks never run, and a queued reply is not proof a
+  worker started. Never promise an unrun task "will run".
+- org_brain_ask: question up to 50,000 characters, mode org/open/web, model,
+  depth quick/deep. org_brain_note: charter and guidance kinds need an org
+  owner/admin (or platform support role); guidance needs scope, scopeId
+  (not for org) and expiresAt within 30 days.
+- Questions: 1-4 choices plus an engine-added decline (2-4 total), default
+  expiry 168h (1h-720h); an open, declined or expired question locks its
+  subject until a proceed answer.
+- Task-run sessions (a run started by the run service) read and report on
+  their own task only; other org reads, brain note reads, cross-node search,
+  task creation and delegation answer authorization_denied. The run service
+  attaches the result card and submits.
 
 # Change History
+- 2026-11-26: Run authority replaces "AI tasks never run"; adds org_task_run,
+  questions, ask mode/model/depth, charter/guidance notes, task-run sessions
+  (three-day review rows M1, M2; checked against live tool schemas).
 - 2026-11-14: outcome on org_task_update, schedule notify/kind/instructions, full ids (after the schedule fields fix).
 - 2026-11-14: Created.

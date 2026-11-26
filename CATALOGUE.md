@@ -17,13 +17,13 @@ and users. Private employee engineering repositories are not user help sources.
 | How do I manage a complex turn on a folding phone? | `how-to/work-with-complex-turns-on-mobile.md` + optional video `greatvibe-mobile-tips` |
 | How do I develop software with greatVibe? | `manuals/development/overview.md`, then one chapter |
 | Find previous work across nodes, meshes or organisations? | `how-to/use-global-search.md` |
-| What is the org brain? Who is working on what? | `concepts/what-is-the-org-brain.md` |
+| What is the org brain? Who is working on what? Can the brain start work? | `concepts/what-is-the-org-brain.md` |
 | Ask the brain directly? Edit a question or read earlier answers? | `how-to/talk-to-your-org-brain.md` |
 | Tasks, to-dos, schedules and reminders for my team? | `how-to/plan-work-with-org-tasks-and-schedules.md` |
-| Where are my tasks today? Calendar? Plan my day? | `how-to/use-the-agenda.md` |
+| Where are my tasks today? Calendar? Plan my day? Questions or approvals for me? Stop a repeating task? | `how-to/use-the-agenda.md` |
 | Sprints, ceremonies, projects and billable work? | `how-to/run-sprints-and-projects.md` |
 | Start an org brain for my organisation? Is it healthy? Reset it? | `how-to/deploy-and-run-your-org-brain.md` |
-| Which org_* tools do agents use, with what inputs, rules and errors? | `reference/org-work-tools.md` |
+| Which org_* tools do agents use, with what inputs, rules and errors? What can a task run do? | `reference/org-work-tools.md` |
 | What can greatVibe do? Where do I start? Ideas for my industry? | `reference/greatvibe-example-prompts.md` |
 
 ## How To Use This Catalogue
@@ -164,7 +164,10 @@ private implementation facts.
 - For visible shell work, read [Use Terminal with your agent](how-to/use-terminal-with-your-agent.md). Check the tools available in the current session before promising control.
 - For direct Brain Talk questions, corrected text input, reading history or
   source interpretation, read [Talk to your org brain](how-to/talk-to-your-org-brain.md).
-  Its visible history does not become hidden context for a later question.
+  The brain remembers each member's answered private conversations for
+  follow-ups; Clear only empties the view, Forget erases them. For who may start
+  work, read Starting work in the org brain concept: a mandate covers
+  starts, and changes run as the person who asked.
   Keep browser controls and terminal commands distinct, and never present a
   private chat as a note shared with the organisation.
 - For guest story pages, fullscreen navigation, the demo or story restart, read [Ask Mochi for help](getting-started/ask-mochi-for-help.md#as-a-guest). A signed-in member using temporary Mochi remains a member.

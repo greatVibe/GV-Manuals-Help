@@ -33,8 +33,8 @@ People do not need this page. Ask your agent in plain words; it picks the tool.
 
 | Tool | Input | Returns |
 | --- | --- | --- |
-| `org_brain_ask` | `question` (up to 1,000 characters), `limit` 1–20 | Ranked notes and running turns that match, and a short written answer when model answers are on |
-| `org_brain_note` | `id`, `kind` (`fact`, `decision`, `intent`, `finding`), `title` (up to 160), `text` (up to 2,000), `tags` (up to 8), `source` (up to 200) | The stored note. The same `id` again replaces your own note |
+| `org_brain_ask` | `question` (up to 50,000 characters), `limit` 1–20, `mode`, `model`, `depth` | Ranked notes and running turns that match, and a short written answer when model answers are on |
+| `org_brain_note` | `id`, `kind` (`fact`, `decision`, `intent`, `finding`, `charter`, `guidance`), `title` (up to 160), `text` (up to 2,000), `tags` (up to 8), `source` (up to 200); for guidance also `scope`, `scopeId`, `expiresAt` | The stored note. The same `id` again replaces your own note |
 | `org_brain_notes` | none | Every note: id, kind, title, text, tags, author, last update, sorted by id |
 | `org_brain_note_delete` | `id` | Deletes one of your own notes; someone else's is refused |
 | `org_brain_today` | `tz` (optional, for example `Pacific/Auckland`) | The organisation's Today headline as shown at the top of the Agenda |
@@ -43,6 +43,20 @@ People do not need this page. Ask your agent in plain words; it picks the tool.
 - Note ids: lowercase letters, digits, `.`, `_`, `-`; start with a letter or
   digit; up to 64 characters. Tags: lowercase letters, digits and `-`, up to
   32 characters each.
+- `mode`: leave it out (or `org`) for organisation notes, running turns and
+  tasks. `open` adds general model knowledge with web tools off. `web` is
+  only for an explicit public research request: it leaves out organisation
+  notes and private evidence, and the question may go to a public search
+  provider, so never put private details in it. `model` picks one of the
+  organisation's configured models as `claude:<name>` or `codex:<name>`.
+- `depth`: `quick` (default) reads the charter, ranked and recent notes and
+  the task board. `deep` reads every note and the full live evidence; it is
+  slower and costs more.
+- `charter` (standing priorities) and `guidance` notes need an
+  organisation owner or admin. Guidance also needs `scope` (`org`, `mesh`,
+  `node`, `repo` or `user`), a `scopeId` naming that mesh, node, repository
+  or person (left out for `org`), and `expiresAt` no more than 30 days
+  ahead.
 - Ask before re-solving earlier work: "is anyone already on this?"
 - Record a note when a decision lands or a finding would save someone time.
 - A brand-new organisation brain answers from notes and the live board only;
@@ -60,6 +74,7 @@ People do not need this page. Ask your agent in plain words; it picks the tool.
 | `org_task_tick` | `id`, `itemId`, `evidenceRef` | Mark one checklist item done, citing evidence |
 | `org_task_comment` | `id`, `text` (up to 2,000) | Add a comment |
 | `org_task_report` | `id`, `kind` (`note`, `gvturn`, `file`, `link`, `support_issue`), `ref` (up to 500) | Attach evidence, such as your result card |
+| `org_task_run` | `id`, `version`, `nodeId`, `idempotencyKey`, `kind` (optional: `plan`, `review`, `edit`, `mechanical`, `research`, `build`, `test`, `release`) | Ask to start one unfinished one-off AI task on a named node, as you. Scheduled occurrences and approvals are excluded. A queued reply is not proof a worker started |
 | `org_task_suggestions` | none | Pairs of stale or duplicate tasks you can read that could be merged (`keep`, `merge`). Comment or propose; never cancel someone else's task |
 | `org_report_create` | `title`, `audience` (up to 20 user ids) | A read-only written report of the work you can read; cites only work every audience member can read. Nothing is stored |
 
@@ -134,6 +149,44 @@ same kinds as `org_task_report`. Who and when are recorded for you. An
    AI-then-human work lands in **draft ready** for a person.
 5. If you cannot finish, `op: block` with a one-line reason.
 
+### Task-run sessions
+
+When the run service starts a turn for a task (Run now, a confirmed Run at
+due, an accepted schedule or a brain mandate), that turn is a task run:
+
+- It can read its own task, tick its checklist and attach evidence. It
+  cannot reach other tasks.
+- Reading brain notes, searching other nodes, creating tasks, asking where
+  to run work and delegating to another node answer `authorization_denied`.
+  Say what was blocked in your result instead of working around it.
+- Finish with your result card. The run service attaches it and submits the
+  task; do not submit or approve it yourself.
+
+## Questions
+
+A decision only a person can make, and whose answer must outlive the turn,
+is a question, not a human task. People answer in one tap from **Questions
+for you** in the [Agenda](../how-to/use-the-agenda.md).
+
+| Tool | Input | Use |
+| --- | --- | --- |
+| `org_question_ask` | `scope`, `ask` (up to 280, ending in "?"), `choices` (1–4 of `{id, label, effect}`), `why` (up to 600), `evidence` (up to 8 card or turn ids), `askedOf` (`{user}` or `{managers: true}`; you by default), `blocking` (up to 200), `allowFreeText` (default true), `expiresIn` (`1h`–`720h`, default `168h`), `idempotencyKey` | Ask a person |
+| `org_question_answer` | `id`, `version`, `choice`, `text` (up to 600) | Record the person's answer |
+| `org_question_list` | `status` (`asked`, `answered`, `declined`, `expired`, `withdrawn`), `mine` | Questions you can see, or only those asked of you |
+| `org_question_withdraw` | `id`, `version`, `reason` (up to 500) | Withdraw your own question when it no longer applies |
+
+- Each choice's `effect` is `proceed`, `decline`, `defer` or `handoff`. A
+  decline choice is added when none of yours declines, so a question has 2–4
+  choices in total.
+- **An open, declined or expired question locks its subject.** Do not act on
+  it until a `proceed` answer exists. Check `org_question_list` first.
+- Answer only with the person's actual decision; the answer records whether
+  a person or an agent chose it. A declined organisation question asked of
+  the managers is also saved as a decision note in the org brain when the
+  brain is reachable; the answer reports whether that note was written.
+- Inside a live turn, ask in the console instead; use these for answers that
+  must outlive it.
+
 ## Private to-dos
 
 | Tool | Input | Use |
@@ -187,9 +240,13 @@ Durations (`leadTime`, `dueAfter` and the `notify` times) are written like
 ```
 
 On a node that has not updated yet, `notify`, `kind` and `instructions` are
-refused; update the node from its System card. Do not tell a user a
-schedule will start AI work on its own: AI and script tasks do not run by
-themselves yet, so each occurrence waits for a person to run it.
+refused; update the node from its System card.
+
+An AI schedule runs its occurrences only after a person accepted its run
+authority and while AI runs are on (`org_work_status` reports `runs`).
+Otherwise each occurrence waits for someone to run it. A due time alone
+starts nothing, and script tasks are recorded but do not run. Read the run
+state on the task before telling anyone work started.
 
 ## Sprints
 
@@ -242,6 +299,7 @@ organisation's active projects. Projects do not record time.
 ## Related
 
 - [What is the org brain?](../concepts/what-is-the-org-brain.md)
+- [Talk to your org brain](../how-to/talk-to-your-org-brain.md)
 - [Deploy and run your org brain](../how-to/deploy-and-run-your-org-brain.md)
 - [Plan work with org tasks and schedules](../how-to/plan-work-with-org-tasks-and-schedules.md)
 - [Run sprints and projects](../how-to/run-sprints-and-projects.md)

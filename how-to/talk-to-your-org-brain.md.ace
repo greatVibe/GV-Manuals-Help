@@ -1,7 +1,8 @@
 file: talk-to-your-org-brain.md
 created: 2026-11-15
+lastModified: 2026-11-26 — Ask for work: requested changes go through, follow a run, change cards.
 consumers: [GreatVibe users, Mochi agents, documentation maintainers]
-produces: [public Brain Talk guide: native input, private memory, sources, work authority, delayed-check receipts and terminal alternative]
+produces: [public Brain Talk guide: native input, private memory, sources, work authority, requested-change confirmation, run follow line, delayed-check receipts and terminal alternative]
 ---
 # Purpose
 Help a person ask the org brain directly, correct a draft without sending
@@ -109,3 +110,23 @@ Use only source-supported in-number/from-now and middle-delay read examples.
 A due receipt proves storage, not due delivery. This feature-branch draft stays
 unpublished until matching rollout verification; never promise general timed
 actions or callback success. Keep public prose free of private source details.
+
+# 2026-11-26 Ask for work: requested changes, follow line, change cards
+Three-day review row M4, checked against released konui v2 source
+(src/brain-talk.ts.ace autoConfirmable/autoConfirm/followRun; turns
+8dd5598f, 2172d682, 5e7e719a, 74f51e59). Public guide now says: drafts the
+person asked for in their own words confirm themselves through their own
+signed-in session; deletes, schedule deletes and sprint rollovers wait 5 s
+behind Stop; drafts not asked for, drafts whose instructions mention
+secrets or sending data out, restored drafts and runs of an existing task
+still show a card (Run now opens the Agenda in front to confirm). Cancel,
+pause and raise priority confirm on one tap; permanent deletes take two.
+A follow line tracks created-and-queued and mandate-started runs (not
+scheduled ones) for up to 45 minutes. The person a run ran as (the grantor
+for mandate runs) can get a "Your run finished" message through the brain's
+initiative loop (gv-org-brain internal/server/run_notice.go, 15 min window);
+other askers are not told. Agents asking through tools always get a card. The
+owner's live check of auto-confirm (8dd5598f, audit_required) is still
+open; keep wording conditional on what the screen shows. Image limit
+unchanged: the released composer still caps four images at 2 MiB combined
+(src/brain-talk.ts:1218), although the gateway body cap grew (row M10).

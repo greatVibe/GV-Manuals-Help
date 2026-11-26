@@ -34,6 +34,8 @@ refresh it. A cached sample can lead to a later follow-up check.
 
 | Section | What it shows |
 | --- | --- |
+| Questions for you | Open questions agents or teammates asked you. Answer each with one tap. |
+| Approvals for you | AI-prepared work waiting for a person: **Approve**, or **Decline** then **Confirm decline** (declining cancels the task and drops the draft). |
 | Org | One named button per organisation with an org brain, shown when there is more than one; the selected one is highlighted. |
 | Today headline | One line about the selected organisation's day, from the [org brain](../concepts/what-is-the-org-brain.md). Select **Why?** for the reasoning. |
 | Plan your day | Your late, started, urgent and due-today tasks with rough time estimates against the time left before 18:00. |
@@ -43,7 +45,12 @@ refresh it. A cached sample can lead to a later follow-up check.
 | Org tasks | Other open work you can see in the selected organisation (titled "Your org"). |
 | Done today | What was finished today, with each task's outcome. |
 | Snoozed | Tasks you snoozed, with their wake time. |
-| Schedules | Repeating work and its next runs. |
+| Brain queue | Shown when the org brain has ranked AI work: each task's rank and reason, and whether the brain started it, was refused, is waiting before trying again, or has reached its hourly start limit. |
+| Schedules | Repeating work and its next runs, with **Pause** (or **Resume**) and **Stop repeating**. |
+
+**Stop repeating** ends a schedule for good: tap it again within 4 seconds
+to confirm. Tasks the schedule already made stay. Use **Pause** when you
+may want it back.
 
 If part of the Agenda cannot load, it says that part is unavailable instead
 of showing an empty list.
@@ -88,6 +95,11 @@ nodes and explains its choice. Choosing a node manually keeps a confirmation
 step. If run services are unavailable, a console fallback may be offered.
 Read the returned reason and run state; a refused request has not started.
 See [org tasks](plan-work-with-org-tasks-and-schedules.md#who-does-the-work).
+
+A run the org brain started under a mandate says so: **Started by** reads
+"the brain, under your mandate" or under the person who granted it, and the
+run lists the mandate version it used. See
+[Starting work](../concepts/what-is-the-org-brain.md#starting-work).
 
 Task details put **Run task** and **Progress** before expandable details and
 **More actions**. Opening a task from Brain Talk brings the task above that
