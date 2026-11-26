@@ -97,9 +97,9 @@ step. If run services are unavailable, a console fallback may be offered.
 Read the returned reason and run state; a refused request has not started.
 See [org tasks](plan-work-with-org-tasks-and-schedules.md#who-does-the-work).
 
-A run the org brain started under a mandate says so: **Started by** reads
-"the brain, under your mandate" or under the person who granted it, and the
-run lists the mandate version it used. See
+A run the org brain started under the org policy says so: **Started by** reads
+"the brain, under your policy" or under the person who set it, and the
+run lists the policy version it used. See
 [Starting work](../concepts/what-is-the-org-brain.md#starting-work).
 
 Task details put **Run task** and **Progress** before expandable details and

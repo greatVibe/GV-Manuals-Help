@@ -54,3 +54,5 @@ repositories, release numbers or internal ids.
 - 2026-11-14: outcome on org_task_update, schedule notify/kind/instructions, full ids (after the schedule fields fix).
 - 2026-11-14: Created.
 - 2026-11-26: task runs can read brain notes and write fact, decision, intent and finding notes; charter, guidance and deletes stay refused.
+
+- 2026-11-26 (task_c6e8101f, org policy P4): "mandate" wording now says "org policy"; the org policy stands by default, the brain keeps it current inside the admin ceiling, suspends on steward loss. Describes branches feat/org-policy-p3-026f in gv-node-gateway, gv-org-brain and konui: publish with their release, not before.

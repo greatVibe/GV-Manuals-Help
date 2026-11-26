@@ -129,3 +129,5 @@ Agents asking through tools always get a card. The owner's live check of
 auto-confirm is still open; keep wording conditional on what the screen
 shows. Image limit unchanged: the released composer still caps four images
 at 2 MiB combined, although the server accepts larger requests.
+
+- 2026-11-26 (task_c6e8101f, org policy P4): "mandate" wording now says "org policy"; the org policy stands by default, the brain keeps it current inside the admin ceiling, suspends on steward loss. Describes branches feat/org-policy-p3-026f in gv-node-gateway, gv-org-brain and konui: publish with their release, not before.

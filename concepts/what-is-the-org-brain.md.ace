@@ -43,3 +43,5 @@ by the node's organisation); new brains match words only (no model answers).
 - 2026-11-26: Replaces "does not run work" with the mandate and confirm-as-you rules; adds charter/guidance notes, ask depth and the agent tool rows, checked against the released browser and brain behaviour.
 - 2026-11-14: One brain per organisation, deploy link, isolation, notes list/delete, full brain tool table.
 - 2026-11-13: Created.
+
+- 2026-11-26 (task_c6e8101f, org policy P4): "mandate" wording now says "org policy"; the org policy stands by default, the brain keeps it current inside the admin ceiling, suspends on steward loss. Describes branches feat/org-policy-p3-026f in gv-node-gateway, gv-org-brain and konui: publish with their release, not before.

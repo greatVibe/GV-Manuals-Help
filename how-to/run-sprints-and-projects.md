@@ -44,7 +44,7 @@ three repeating tasks in the sprint's time zone:
 
 They are "AI then human" tasks: an agent can prepare each one and people run
 it. The preparation starts only from **Run now with AI**, an accepted
-schedule's run authority or a covering brain mandate; a due time alone
+schedule's run authority or a covering org policy; a due time alone
 starts nothing. Open the task and choose **Run now with AI**, or ask your
 agent. A person
 approves the prepared stand-up, review or retro with a short summary.

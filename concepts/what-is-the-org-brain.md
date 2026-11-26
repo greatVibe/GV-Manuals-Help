@@ -7,7 +7,7 @@ organisation can ask it before starting work, so people stop re-solving
 problems someone already solved.
 
 It never acts on its own authority. It starts AI work only when an owner or
-admin has given it a current mandate that covers that work, and it prepares
+admin has given it an org policy that covers that work, and it prepares
 task changes that run as you when you ask for them or confirm them. See
 [Starting work](#starting-work).
 
@@ -79,14 +79,26 @@ one mesh, node, repository or person for up to 30 days.
 
 ## Starting work
 
-- **Under a mandate.** An owner or admin can give the brain a mandate: which
-  kinds of AI work it may start (never release or deploy), a default node,
-  its limits and when it ends. It covers any node the organisation owns.
-  Inside it, the brain can start a ready AI task without another
-  confirmation, within the organisation's start limits, and the run executes
-  as the person who granted the mandate. Node settings and expiry still
-  apply, and a mandate never approves AI-prepared work for a person. In
-  Brain Talk, **/mandate** shows what is allowed and when it ends.
+- **Under the org policy.** An owner or admin can give the brain an org
+  policy: which kinds of AI work it may start (never release or deploy), a
+  default node and optional limits. By default it stands until someone revokes it. It
+  covers any node the organisation owns. Inside it, the brain can start a
+  ready AI task without another confirmation, and the run executes as the
+  person who set the policy, the steward. Node settings still apply, and a
+  policy never approves AI-prepared work for a person. In Brain Talk,
+  **/policy** shows what is allowed, the ceiling the admin set and the
+  brain's last change.
+- **The brain keeps it current.** The admin sets a ceiling: the kinds the
+  brain may add. Inside it, the brain can widen the policy when a ready task
+  needs a kind the policy lacks, and it can change it when an owner or admin
+  asks in Brain Talk. It notes each change with its reason. **/policy undo**
+  reverts the brain's last change and **/policy brain off** stops the brain
+  changing the policy. The brain never changes the steward or the ceiling.
+- **If the steward leaves.** When the person who set the policy is no longer
+  an owner or admin, the policy is suspended and the brain does nothing under
+  it. The managers get a question to take it over or revoke it. Once a month
+  the steward gets a question asking if they still want it. Nothing lapses
+  if they do not answer.
 - **When you ask.** The brain can prepare a change for you: create or run a
   task, raise its priority, cancel or delete it, pause or delete a schedule,
   or roll a sprint over. The change runs as you, with your permissions.
@@ -95,11 +107,11 @@ one mesh, node, repository or person for up to 30 days.
   only from your own signed-in session, never from an agent. Running an
   existing task still takes your **Run now**. See
   [Ask for work](../how-to/talk-to-your-org-brain.md#ask-for-work).
-- **Otherwise it proposes.** Work outside the mandate, or a change you did
+- **Otherwise it proposes.** Work outside the policy, or a change you did
   not ask for, comes back as a card for you to check and confirm.
 
 The [Agenda](../how-to/use-the-agenda.md) shows the brain's queue and marks
-runs it started under a mandate.
+runs it started under the org policy.
 
 ## The Today headline
 
