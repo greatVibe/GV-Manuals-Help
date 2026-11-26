@@ -41,5 +41,5 @@ by the node's organisation); new brains match words only (no model answers).
 
 # Change History
 - 2026-11-26: Replaces "does not run work" with the mandate and confirm-as-you rules; adds charter/guidance notes, ask depth and the agent tool rows, checked against the released browser and brain behaviour.
-- 2026-11-14: One brain per organisation, deploy link, isolation, notes list/delete, full brain tool table (docs turn 664d6afc).
-- 2026-11-13: Created (docs turn c345a346).
+- 2026-11-14: One brain per organisation, deploy link, isolation, notes list/delete, full brain tool table.
+- 2026-11-13: Created.

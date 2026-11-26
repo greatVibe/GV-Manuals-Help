@@ -50,7 +50,8 @@ refresh it. A cached sample can lead to a later follow-up check.
 
 **Stop repeating** ends a schedule for good: tap it again within 4 seconds
 to confirm. Tasks the schedule already made stay. Use **Pause** when you
-may want it back.
+may want it back. (When you ask the org brain in Brain Talk to delete a
+schedule, it waits 5 seconds with **Stop** instead; both end the schedule.)
 
 If part of the Agenda cannot load, it says that part is unavailable instead
 of showing an empty list.

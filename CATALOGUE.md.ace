@@ -5,7 +5,7 @@ lastModified-fast-answers: 2026-10-12 — Adds a Fast Answers block and routes p
 file: CATALOGUE.md
 lastModified-brain-work-authority: 2026-11-26 — Fast Answers route who-can-start-work, questions, Stop repeating and Brain queue to the concept, Agenda and tool pages; the Brain Talk routing note now says answered private conversations are remembered (it no longer claims history never becomes context) and points to the brain's mandate and confirm-as-you rules.
 lastModified-brain-talk: 2026-11-15 — Indexes how-to/talk-to-your-org-brain.md from Fast Answers, Starter Paths, Team work, coverage and routing notes. Publication waits for the matching browser release.
-lastModified-team-work: 2026-11-13 — Indexes concepts/what-is-the-org-brain.md and how-to guides for org tasks/to-dos/schedules, the Agenda, and sprints/projects from Fast Answers, Starter Paths, a Team work topic row, Repository Coverage and an agent routing note (AI/script tasks do not auto-run; projects record no time) (docs turn c345a346).
+lastModified-team-work: 2026-11-13 — Indexes concepts/what-is-the-org-brain.md and how-to guides for org tasks/to-dos/schedules, the Agenda, and sprints/projects from Fast Answers, Starter Paths, a Team work topic row, Repository Coverage and an agent routing note (AI/script tasks do not auto-run; projects record no time).
 lastModified-slopguard: 2026-10-26 — Indexes concepts/what-is-slopguard.md (AI slop definition, causes, ten SlopGuard checks, card line) from starter paths, core concepts topic row, repository coverage and agent routing notes. Draft: do not publish before SlopGuard ships.
 lastModified-guest-mobile-videos: 2026-10-15 — Route guest-tour and complex-mobile-turn questions to dedicated guides, timestamp transcripts and preserved automatic VTT captions; keep optional mobile learning separate from the guest demo.
 lastModified-terminal-guest: 2026-10-13 — Index native Terminal guide and direct guest-story questions to Ask Mochi. Public user guidance contains no private routing or account-detection implementation.
@@ -64,7 +64,7 @@ Adds reference/greatvibe-example-prompts.md (starter and "Build what you used to
 
 2026-10-27 — Index global-search guidance for scoped targets, field queries, relevance, facets, coverage, continuation and explanation. Matching release verified before removing the Search publication hold.
 
-2026-11-14 — Org work docs refresh (docs turn 664d6afc): adds how-to/deploy-and-run-your-org-brain.md and reference/org-work-tools.md to Fast Answers, the topic table, Team work rows, Reference row and the agent routing note (agents read the tool reference first; brains are reachable only from their organisation's nodes).
+2026-11-14 — Org work docs refresh: adds how-to/deploy-and-run-your-org-brain.md and reference/org-work-tools.md to Fast Answers, the topic table, Team work rows, Reference row and the agent routing note (agents read the tool reference first; brains are reachable only from their organisation's nodes).
 
 # 2026-11-24 Run authority routing correction
 Replace the obsolete blanket AI-runs-off note with current Run now, confirmed

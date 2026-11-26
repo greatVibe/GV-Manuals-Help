@@ -18,8 +18,8 @@ Defines common GreatVibe terms in plain language.
 - Avoid internal implementation terms unless the public reader needs them.
 
 # Change History
-- 2026-11-14: Added Completion record, Draft ready, Ceremony, Proposal (docs turn 664d6afc).
+- 2026-11-14: Added Completion record, Draft ready, Ceremony, Proposal.
 - 2026-11-13: Added team-work terms (Agenda, org brain, org task, project,
-  schedule, sprint, to-do) matching the new guides (docs turn c345a346).
+  schedule, sprint, to-do) matching the new guides.
 - 2026-08-03: Added power footer vocabulary.
 - 2026-08-03: Created initial glossary.
