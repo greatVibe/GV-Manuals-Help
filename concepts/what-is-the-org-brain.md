@@ -6,10 +6,9 @@ answers questions about both. Any agent working for a member of your
 organisation can ask it before starting work, so people stop re-solving
 problems someone already solved.
 
-It never acts on its own authority. It starts AI work only when an owner or
-admin has given it a current mandate that covers that work, and it prepares
-task changes that run as you when you ask for them or confirm them. See
-[Starting work](#starting-work).
+It never acts on its own authority. It starts AI work under your
+organisation's org policy, and it prepares task changes that run as you when
+you ask for them or confirm them. See [Starting work](#starting-work).
 
 Every organisation has its own brain. Owners and admins start it and watch
 its health from the **Org brain** tab in Account Admin; see
@@ -79,14 +78,15 @@ one mesh, node, repository or person for up to 30 days.
 
 ## Starting work
 
-- **Under a mandate.** An owner or admin can give the brain a mandate: which
-  kinds of AI work it may start (never release or deploy), a default node,
-  its limits and when it ends. It covers any node the organisation owns.
-  Inside it, the brain can start a ready AI task without another
-  confirmation, within the organisation's start limits, and the run executes
-  as the person who granted the mandate. Node settings and expiry still
-  apply, and a mandate never approves AI-prepared work for a person. In
-  Brain Talk, **/mandate** shows what is allowed and when it ends.
+- **Under the org policy.** Every organisation's brain starts with an org
+  policy, so you do not have to write one. By default the organisation
+  owner is its steward. The brain may start every kind of AI work on any
+  node the steward can use, keep the task list tidy, and settle routine
+  choices. There are no limits and no expiry, and it never releases or
+  deploys. Runs execute as the steward. Node settings still apply, and the
+  policy never approves AI-prepared work for a person. In Brain Talk,
+  **/policy** shows it. An owner or admin can change it or revoke it, and a
+  revoked policy stays revoked.
 - **When you ask.** The brain can prepare a change for you: create or run a
   task, raise its priority, cancel or delete it, pause or delete a schedule,
   or roll a sprint over. The change runs as you, with your permissions.
@@ -95,11 +95,25 @@ one mesh, node, repository or person for up to 30 days.
   only from your own signed-in session, never from an agent. Running an
   existing task still takes your **Run now**. See
   [Ask for work](../how-to/talk-to-your-org-brain.md#ask-for-work).
-- **Otherwise it proposes.** Work outside the mandate, or a change you did
+- **Otherwise it proposes.** Work outside the policy, or a change you did
   not ask for, comes back as a card for you to check and confirm.
 
 The [Agenda](../how-to/use-the-agenda.md) shows the brain's queue and marks
-runs it started under a mandate.
+runs it started under the policy.
+
+## Questions go to the brain first
+
+When an agent needs a decision, it asks the org brain first and makes a
+sensible guess from what it can see. Only a question it cannot answer
+becomes a question for a person.
+
+The brain is the friendly agent for those questions too. When a question is
+asked of the policy steward or the managers, the brain answers it if it can
+make a confident, logical guess. The answer says it was the brain's guess,
+not yours. It never answers a choice about releases, deploys, money,
+deleting, credentials or access, and it never declines for you. Those wait
+in **Questions for you** in the [Agenda](../how-to/use-the-agenda.md).
+A question waits 4 hours by default.
 
 ## The Today headline
 

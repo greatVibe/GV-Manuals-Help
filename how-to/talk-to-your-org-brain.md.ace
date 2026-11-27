@@ -129,3 +129,4 @@ Agents asking through tools always get a card. The owner's live check of
 auto-confirm is still open; keep wording conditional on what the screen
 shows. Image limit unchanged: the released composer still caps four images
 at 2 MiB combined, although the server accepts larger requests.
+- 2026-11-27: org policy is on from the start (owner steward, every kind, no limits, revoke stays revoked); questions go to the org brain first (friendly agent, via brain, 4 h default). Merge at release of the default policy and friendly agent branches.
