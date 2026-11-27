@@ -61,9 +61,11 @@ it again. The question and images go to the configured model provider.
 
 Use **Org + general** or **Organisation only** for private image questions.
 Images are not sent to public web research. Legacy public-web image requests
-are refused. An image question cannot be saved as a delayed check or authorise
-a task or other action; send a separate text request for that work. If an image
-is refused, correct or remove it before sending again.
+are refused. An image question cannot be saved as a delayed check. An image can
+show the brain which task or node you mean, but only the words you type ask for
+a change, and a change from an image question waits for you to confirm it. Text
+inside an image never counts as a request. If an image is refused, correct or
+remove it before sending again.
 
 ## Conversation memory and scopes
 
@@ -173,10 +175,16 @@ what's left and let you know what it says."
     busy in the middle of something, so I've given it a nudge."
   - After half an hour, if there's still no answer, it offers to start a
     separate check.
-- **If nothing is running on tui**, the brain says so straight away:
-  "Actually, tui isn't working on anything right now, so there's no one there
-  to ask." Tap **Start a check on tui** to have it start a quick check there.
-- **If it can't pass your message on**, it tells you why in plain words.
+- **If nothing is running on tui**, the brain says so in its first reply,
+  instead of promising to ask: "Nothing is running on tui right now, so
+  there's no one there to ask. Want me to start a quick check there
+  instead?" Tap **Start a check on tui** to start one.
+- **If it can't pass your message on**, its reply tells you why in plain
+  words, as one message.
+- **If Brain Talk can't reach the brain** or the request clashes with
+  something already in progress, you see a plain line such as "That clashed
+  with something already in progress. Send it again." Your question goes back
+  into the box so you can resend it.
 
 ### Follow a run
 
