@@ -63,7 +63,8 @@ Use **Org + general** or **Organisation only** for private image questions.
 Images are not sent to public web research. Legacy public-web image requests
 are refused. An image question cannot be saved as a delayed check. An image can
 show the brain which task or node you mean, but only the words you type ask for
-a change, and a change from an image question waits for you to confirm it. Text
+a change, and a change from an image question waits for you to confirm it. A
+message to a node is never sent from an image question: type it on its own. Text
 inside an image never counts as a request. If an image is refused, correct or
 remove it before sending again.
 
@@ -178,7 +179,8 @@ what's left and let you know what it says."
 - **If nothing is running on tui**, the brain says so in its first reply,
   instead of promising to ask: "Nothing is running on tui right now, so
   there's no one there to ask. Want me to start a quick check there
-  instead?" Tap **Start a check on tui** to start one.
+  instead?" Tap **Start a check on tui** to put that request in the box,
+  then check it and select **Send**.
 - **If it can't pass your message on**, its reply tells you why in plain
   words, as one message.
 - **If Brain Talk can't reach the brain** or the request clashes with
