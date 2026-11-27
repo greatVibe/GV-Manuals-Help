@@ -187,6 +187,11 @@ what's left and let you know what it says."
   something already in progress, you see a plain line such as "That clashed
   with something already in progress. Send it again." Your question goes back
   into the box so you can resend it.
+- **When the brain is being updated**, a card in the middle of Brain Talk
+  counts down ("The brain is restarting for an update in 40 s"), then says
+  the brain is updating. Your conversation stays open. While it updates,
+  **Send** keeps your question in the box instead of sending it. When the
+  brain answers again the card says "The brain is back." and closes.
 
 ### Follow a run
 
