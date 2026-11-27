@@ -234,11 +234,22 @@ you are still waiting on from this conversation; select it to open the list.
 ### Keep work moving while you're away
 
 Say "Keep working through the open tasks until 9am tomorrow". The brain
-saves a work brief and says in one line what it will work on and until when
-(9am in your time zone). About every 10 minutes it plans the next steps and
-starts or steers work on your nodes, within your [org policy](../concepts/what-is-the-org-brain.md).
+saves a work brief and says in one line what it will work on and until when.
+About every 10 minutes it plans the next steps and starts or steers work on
+your nodes, within your [org policy](../concepts/what-is-the-org-brain.md).
 It never releases, deploys, spends or approves anything; work only a person
 can do waits for you. Say "stop" to end the brief early.
+
+Tell it when to stop in any of these ways: "for 8 hours", "until 22:30",
+"stop at 22:30" or "until 9am on 28 Nov". The end can be at most 24 hours
+away. Times are read in your organisation's home time zone, which can differ
+from your phone's, and the brief card shows the end in that zone. If you name
+no end, the brief runs to the next 9am, unless that is under 2 hours away, in
+which case the brain asks you for an end.
+
+You can set the end in one message and start it in the next. "Start it",
+"go ahead" or "I confirm" starts the brief you were just discussing. The card
+in Brain Talk shows when it has started.
 
 ### Follow a run
 
