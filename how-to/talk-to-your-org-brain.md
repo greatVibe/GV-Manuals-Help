@@ -162,14 +162,14 @@ intends to work is not a run receipt. See
 ### Follow a run
 
 When a task you asked for is created and queued, or a run starts under a
-mandate, a line under the result follows it: waiting for a node, starting,
+org policy, a line under the result follows it: waiting for a node, starting,
 running, then finished, waiting for approval, blocked, failed or cancelled.
 It checks about every 8 seconds while Brain Talk is open, for up to 45
 minutes. A run scheduled for later is not followed; open the task instead.
 If the line cannot read the run, it says so: open the task to check.
 
 When a run that ran as you finishes, including one the brain started under
-your mandate, the brain can also tell you in Brain Talk. Another member who
+the org policy, the brain can also tell you in Brain Talk. Another member who
 only asked for the work is not told; open the task instead.
 
 ## Short delayed checks
