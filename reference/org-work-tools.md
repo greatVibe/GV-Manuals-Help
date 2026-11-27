@@ -173,7 +173,7 @@ for you** in the [Agenda](../how-to/use-the-agenda.md).
 
 | Tool | Input | Use |
 | --- | --- | --- |
-| `org_question_ask` | `scope`, `ask` (up to 280, ending in "?"), `choices` (1–4 of `{id, label, effect}`), `why` (up to 600), `evidence` (up to 8 card or turn ids), `askedOf` (`{user}` or `{managers: true}`; you by default), `blocking` (up to 200), `allowFreeText` (default true), `expiresIn` (`1h`–`720h`, default `168h`), `idempotencyKey` | Ask a person |
+| `org_question_ask` | `scope`, `ask` (up to 280, ending in "?"), `choices` (1–4 of `{id, label, effect}`), `why` (up to 600), `evidence` (up to 8 card or turn ids), `askedOf` (`{user}` or `{managers: true}`; you by default), `blocking` (up to 200), `allowFreeText` (default true), `expiresIn` (`1h`–`720h`, default `4h`), `idempotencyKey` | Ask a person |
 | `org_question_answer` | `id`, `version`, `choice`, `text` (up to 600) | Record the person's answer |
 | `org_question_list` | `status` (`asked`, `answered`, `declined`, `expired`, `withdrawn`), `mine` | Questions you can see, or only those asked of you |
 | `org_question_withdraw` | `id`, `version`, `reason` (up to 500) | Withdraw your own question when it no longer applies |
@@ -183,8 +183,17 @@ for you** in the [Agenda](../how-to/use-the-agenda.md).
   choices in total.
 - **An open, declined or expired question locks its subject.** Do not act on
   it until a `proceed` answer exists. Check `org_question_list` first.
+- **Ask the org brain first.** Try `org_brain_ask` and make a logical guess
+  from the evidence. Ask a person only when you definitely cannot answer.
+- **The org brain answers some questions itself.** For a question the policy
+  steward's own work asked, the brain makes a confident guess when it can
+  and records it as its own (`via brain`). It never answers release,
+  deploy, money, delete, credential, access or security choices, a member's
+  question, or a decline. Those wait for the person.
+- Do not hold a turn open waiting for an answer. Leave the question on the
+  task, continue with other work, and pick it up when it is answered.
 - Answer only with the person's actual decision; the answer records whether
-  a person or an agent chose it. A declined organisation question asked of
+  a person, their agent or the org brain chose it. A declined organisation question asked of
   the managers is also saved as a decision note in the org brain when the
   brain is reachable; the answer reports whether that note was written.
 - Inside a live turn, ask in the console instead; use these for answers that

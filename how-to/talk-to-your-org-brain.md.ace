@@ -135,3 +135,4 @@ at 2 MiB combined, although the server accepts larger requests.
 - 2026-11-27 (turn 1ead81d5): brain update card (countdown, updating, Send holds the question, "The brain is back.").
 - 2026-11-27 (turn 1ead81d5, merge on release): node answers come as the brain's own message, read against your question; no separate answered block.
 - 2026-11-27 (turn 1ead81d5, merge on release): user menu Console / Brain Talk login default.
+- 2026-11-27: org policy is on from the start (owner steward, every kind, no limits, revoke stays revoked); questions go to the org brain first (friendly agent, via brain, 4 h default). Merge at release of the default policy and friendly agent branches.

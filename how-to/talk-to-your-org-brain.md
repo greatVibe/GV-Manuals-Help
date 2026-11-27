@@ -159,12 +159,11 @@ signed-in session. Its details fold away under the result.
   priority take one tap. Creating a task, a sprint rollover and a permanent
   delete take two.
 
-**Under a mandate.** If you granted the brain's current mandate, or you are
-an organisation owner or admin, a run it covers can start without your
-confirmation. It runs as the person who granted the mandate. Other members
-get **Not started automatically** with the reason. Allowed kinds, limits and
-expiry still apply, and a mandate never approves an AI-prepared draft on a
-person's behalf. Requests requiring review show that reason instead of
+**Under the org policy.** If you are the policy's steward, or you are an
+organisation owner or admin, a run it covers can start without your
+confirmation. It runs as the steward. Other members get **Not started
+automatically** with the reason. The policy's kinds and any limits still
+apply, and it never approves an AI-prepared draft on a person's behalf. Requests requiring review show that reason instead of
 claiming they started.
 
 Read the result: **Started**, **Scheduled**, **Not started automatically** and
@@ -207,15 +206,15 @@ what's left and let you know what it says."
 
 ### Follow a run
 
-When a task you asked for is created and queued, or a run starts under a
-mandate, a line under the result follows it: waiting for a node, starting,
+When a task you asked for is created and queued, or a run starts under the
+org policy, a line under the result follows it: waiting for a node, starting,
 running, then finished, waiting for approval, blocked, failed or cancelled.
 It checks about every 8 seconds while Brain Talk is open, for up to 45
 minutes. A run scheduled for later is not followed; open the task instead.
 If the line cannot read the run, it says so: open the task to check.
 
 When a run that ran as you finishes, including one the brain started under
-your mandate, the brain can also tell you in Brain Talk. Another member who
+the org policy, the brain can also tell you in Brain Talk. Another member who
 only asked for the work is not told; open the task instead.
 
 ## Short delayed checks
@@ -250,8 +249,9 @@ Use **/help** for the commands supported by your current view.
 - **/deep <question>** asks with the full available notes and activity.
 - **/web <question>** selects Org + web and asks the question.
 - **/charter** reads the owner's priorities. **/guide** shows guidance help.
-- **/mandate** shows what the brain may start and when that permission ends.
-  Owners and admins can set or revoke it through the command's instructions.
+- **/policy** shows the org policy: what the brain may start and who its
+  steward is. Every organisation has one from the start. Owners and admins
+  can change or revoke it through the command's instructions.
 - **/checkins off** stops quiet-time follow-ups. **/checkins on** allows a
   relevant check-in after 20 quiet minutes while the view is open, up to three
   until you interact. These are separate from saved delayed checks.

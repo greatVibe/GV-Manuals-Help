@@ -43,3 +43,4 @@ by the node's organisation); new brains match words only (no model answers).
 - 2026-11-26: Replaces "does not run work" with the mandate and confirm-as-you rules; adds charter/guidance notes, ask depth and the agent tool rows, checked against the released browser and brain behaviour.
 - 2026-11-14: One brain per organisation, deploy link, isolation, notes list/delete, full brain tool table.
 - 2026-11-13: Created.
+- 2026-11-27: org policy is on from the start (owner steward, every kind, no limits, revoke stays revoked); questions go to the org brain first (friendly agent, via brain, 4 h default). Merge at release of the default policy and friendly agent branches.
