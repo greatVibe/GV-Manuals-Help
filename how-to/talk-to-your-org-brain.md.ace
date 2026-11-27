@@ -133,3 +133,4 @@ at 2 MiB combined, although the server accepts larger requests.
 - 2026-11-27 (turn ed38ab3f, branch feat/outcome-first-ed38, merge on release): image questions can lead to a change that waits for your confirm (typed words only); not-running reply is the first reply, not a correction; failures are plain lines and the question returns to the box.
 - 2026-11-27 (review 062fe82b): Start a check fills the box; node messages are never sent from image questions.
 - 2026-11-27 (turn 1ead81d5): brain update card (countdown, updating, Send holds the question, "The brain is back.").
+- 2026-11-27 (turn 1ead81d5, merge on release): node answers come as the brain's own message, read against your question; no separate answered block.

@@ -169,7 +169,9 @@ You talk to the org brain, and the brain talks to your nodes for you. Say
 "Ask tui what's left" and the brain replies along the lines of "I'll ask tui
 what's left and let you know what it says."
 
-- **When tui answers**, the brain passes it on: "Here's what tui said …".
+- **When tui answers**, the brain tells you in its own words, as its next
+  message: it answers your question, sums up what tui said and says when
+  something is new or has changed since earlier in the conversation.
 - **If tui is quiet for a while**, the brain checks in with you instead of
   going silent.
   - After about 5 to 10 minutes: "Still nothing back from tui. It's probably
