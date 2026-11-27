@@ -44,8 +44,8 @@ authority and current permissions. Read the run receipt and task status;
 a saved task is not proof that a worker started.
 
 Brain Talk can propose work or run a cited existing task. A current owner or
-admin mandate can allow covered work without another confirmation. Requests
-outside that mandate still need review. Script tasks are recorded, but do not
+admin org policy can allow covered work without another confirmation. Requests
+outside that policy still need review. Script tasks are recorded, but do not
 assume automatic script execution is available.
 
 ## A task's life

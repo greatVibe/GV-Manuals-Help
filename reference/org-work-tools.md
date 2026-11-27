@@ -152,7 +152,7 @@ same kinds as `org_task_report`. Who and when are recorded for you. An
 ### Task-run sessions
 
 When the run service starts a turn for a task (Run now, a confirmed Run at
-due, an accepted schedule or a brain mandate), that turn is a task run:
+due, an accepted schedule or the org policy), that turn is a task run:
 
 - It can read its own task, tick its checklist and attach evidence. It
   cannot reach other tasks.

@@ -50,3 +50,5 @@ Explain that lightweight Brain Talk read-only checks have their own due receipt
 and are separate from Agenda tasks/schedules. A saved receipt is not delivery
 proof. Keep this addition on the feature branch until matching rollout.
 - 2026-11-26: Stop repeating (Agenda, second tap within 4 s) and a Brain Talk schedule delete (5 s with Stop) are named as two surfaces of the same end (cross-provider review D2).
+
+- 2026-11-26 (task_c6e8101f, org policy P4): "mandate" wording now says "org policy"; the org policy stands by default, the brain keeps it current inside the admin ceiling, suspends on steward loss. Describes branches feat/org-policy-p3-026f in gv-node-gateway, gv-org-brain and konui: publish with their release, not before.

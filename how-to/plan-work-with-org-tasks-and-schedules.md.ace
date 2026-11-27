@@ -44,3 +44,5 @@ Clarify that source-supported natural in-number/from-now read-only checks use
 Brain Talk's saved due receipt, separate from tasks and recurring schedules.
 No general timed action or due-delivery guarantee. Hold publication for the
 matching rollout; retain existing task authority and person-review boundaries.
+
+- 2026-11-26 (task_c6e8101f, org policy P4): "mandate" wording now says "org policy"; the org policy stands by default, the brain keeps it current inside the admin ceiling, suspends on steward loss. Describes branches feat/org-policy-p3-026f in gv-node-gateway, gv-org-brain and konui: publish with their release, not before.

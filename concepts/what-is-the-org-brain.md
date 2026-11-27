@@ -80,13 +80,25 @@ one mesh, node, repository or person for up to 30 days.
 
 - **Under the org policy.** Every organisation's brain starts with an org
   policy, so you do not have to write one. By default the organisation
-  owner is its steward. The brain may start every kind of AI work on any
-  node the steward can use, keep the task list tidy, and settle routine
-  choices. There are no limits and no expiry, and it never releases or
-  deploys. Runs execute as the steward. Node settings still apply, and the
-  policy never approves AI-prepared work for a person. In Brain Talk,
-  **/policy** shows it. An owner or admin can change it or revoke it, and a
-  revoked policy stays revoked.
+  owner is its steward, and the brain may start every kind of AI work
+  (never release or deploy) on any node the steward can use, keep the task
+  list tidy, and settle routine choices. There are no limits and no expiry.
+  Runs execute as the steward. Node settings still apply, and the policy
+  never approves AI-prepared work for a person. An owner or admin can
+  change it, set a ceiling, a default node and limits, or revoke it; a
+  revoked policy stays revoked. In Brain Talk, **/policy** shows what is
+  allowed, the ceiling and the brain's last change.
+- **The brain keeps it current.** The ceiling is the kinds the brain may
+  add. Inside it, the brain can widen the policy when a ready task needs a
+  kind the policy lacks, and it can change it when an owner or admin asks
+  in Brain Talk. It notes each change with its reason. **/policy undo**
+  reverts the brain's last change and **/policy brain off** stops the brain
+  changing the policy. The brain never changes the steward or the ceiling.
+- **If the steward leaves.** When the steward is no longer an owner or
+  admin, the policy is suspended and the brain does nothing under it. The
+  managers get a question to take it over or revoke it. Once a month the
+  steward gets a question asking if they still want it. Nothing lapses if
+  they do not answer.
 - **When you ask.** The brain can prepare a change for you: create or run a
   task, raise its priority, cancel or delete it, pause or delete a schedule,
   or roll a sprint over. The change runs as you, with your permissions.

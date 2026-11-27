@@ -136,3 +136,5 @@ at 2 MiB combined, although the server accepts larger requests.
 - 2026-11-27 (turn 1ead81d5, merge on release): node answers come as the brain's own message, read against your question; no separate answered block.
 - 2026-11-27 (turn 1ead81d5, merge on release): user menu Console / Brain Talk login default.
 - 2026-11-27: org policy is on from the start (owner steward, every kind, no limits, revoke stays revoked); questions go to the org brain first (friendly agent, via brain, 4 h default). Merge at release of the default policy and friendly agent branches.
+
+- 2026-11-26 (task_c6e8101f, org policy P4): "mandate" wording now says "org policy"; the org policy stands by default, the brain keeps it current inside the admin ceiling, suspends on steward loss. Describes branches feat/org-policy-p3-026f in gv-node-gateway, gv-org-brain and konui: publish with their release, not before.

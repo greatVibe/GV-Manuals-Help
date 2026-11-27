@@ -28,3 +28,5 @@ example-org.
 - 2026-11-14: Agents write the sprint completion summary themselves.
 - 2026-11-14: Completion summary for sprint tasks, carry-over limits, ceremony approval, link to the agent reference.
 - 2026-11-13: Created.
+
+- 2026-11-26 (task_c6e8101f, org policy P4): "mandate" wording now says "org policy"; the org policy stands by default, the brain keeps it current inside the admin ceiling, suspends on steward loss. Describes branches feat/org-policy-p3-026f in gv-node-gateway, gv-org-brain and konui: publish with their release, not before.

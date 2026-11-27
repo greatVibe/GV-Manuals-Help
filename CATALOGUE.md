@@ -166,7 +166,7 @@ private implementation facts.
   source interpretation, read [Talk to your org brain](how-to/talk-to-your-org-brain.md).
   The brain remembers each member's answered private conversations for
   follow-ups; Clear only empties the view, Forget erases them. For who may start
-  work, read Starting work in the org brain concept: a mandate covers
+  work, read Starting work in the org brain concept: the org policy covers
   starts, and changes run as the person who asked.
   Keep browser controls and terminal commands distinct, and never present a
   private chat as a note shared with the organisation.

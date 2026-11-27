@@ -249,9 +249,12 @@ Use **/help** for the commands supported by your current view.
 - **/deep <question>** asks with the full available notes and activity.
 - **/web <question>** selects Org + web and asks the question.
 - **/charter** reads the owner's priorities. **/guide** shows guidance help.
-- **/policy** shows the org policy: what the brain may start and who its
-  steward is. Every organisation has one from the start. Owners and admins
-  can change or revoke it through the command's instructions.
+- **/policy** shows the org policy: what the brain may start, its steward,
+  the ceiling and the brain's last change. Every organisation has one from
+  the start. Owners and admins can set it (**/policy set**), stop the brain
+  changing it (**/policy brain off**), undo the brain's last change
+  (**/policy undo**) or revoke it (**/policy revoke**). **/mandate** still
+  works.
 - **/checkins off** stops quiet-time follow-ups. **/checkins on** allows a
   relevant check-in after 20 quiet minutes while the view is open, up to three
   until you interact. These are separate from saved delayed checks.
