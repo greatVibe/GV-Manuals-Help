@@ -101,12 +101,17 @@ one mesh, node, repository or person for up to 30 days.
   they do not answer.
 - **When you ask.** The brain can prepare a change for you: create or run a
   task, raise its priority, cancel or delete it, pause or delete a schedule,
-  or roll a sprint over. The change runs as you, with your permissions.
-  Changes you asked for in your own words go
-  through for you; a permanent delete waits 5 seconds with **Stop** and runs
-  only from your own signed-in session, never from an agent. Running an
-  existing task still takes your **Run now**. See
-  [Ask for work](../how-to/talk-to-your-org-brain.md#ask-for-work).
+  roll a sprint over, pass a message to your running turn, or start new
+  work on a node. The change runs as you, with your permissions. Changes
+  you asked for in your own words go through for you, including runs of an
+  existing task and new work on another node ("find another node to do
+  it"), which needs no task. A permanent delete waits 5 seconds with
+  **Stop** and runs only from your own signed-in session, never from an
+  agent. See [Ask for work](../how-to/talk-to-your-org-brain.md#ask-for-work).
+- **While you're away.** "Keep working through the open tasks until 9am"
+  gives the brain a work brief: it plans about every 10 minutes and starts
+  or steers work within the policy until then, leaving person-only work for
+  you. See [Keep work moving while you're away](../how-to/talk-to-your-org-brain.md#keep-work-moving-while-youre-away).
 - **Otherwise it proposes.** Work outside the policy, or a change you did
   not ask for, comes back as a card for you to check and confirm.
 

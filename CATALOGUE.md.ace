@@ -73,3 +73,4 @@ script auto-execution stays unverified. Route short read-only checks to Brain
 Talk and require its saved due receipt. No rollout or callback success claim.
 
 - 2026-11-26 (task_c6e8101f, org policy P4): "mandate" wording now says "org policy"; the org policy stands by default, the brain keeps it current inside the admin ceiling, suspends on steward loss. Describes branches feat/org-policy-p3-026f in gv-node-gateway, gv-org-brain and konui: publish with their release, not before.
+- 2026-11-27 (turn 374e4e28): org work line says covering org policy (not mandate) and that Brain Talk starts runs or new node work the person asks for.

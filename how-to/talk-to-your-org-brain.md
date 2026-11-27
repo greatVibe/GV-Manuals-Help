@@ -74,8 +74,9 @@ Images are not sent to public web research. Legacy public-web image requests
 are refused. An image question cannot be saved as a delayed check. An image can
 show the brain which task or node you mean, but only the words you type ask for
 a change, and a change from an image question waits for you to confirm it. A
-message to a node is never sent from an image question: type it on its own. Text
-inside an image never counts as a request. If an image is refused, correct or
+message passed to a running turn on a node carries only your typed words, never
+the images, and your typed words must name the node. Text inside an image never
+counts as a request. If an image is refused, correct or
 remove it before sending again.
 
 ## Conversation memory and scopes
@@ -91,7 +92,7 @@ Use the scope controls beside the composer:
 | Scope | What the answer can use |
 | --- | --- |
 | **Org + general** | Accessible organisation records, remembered conversation and general model knowledge. Web research stays off. |
-| **Org + web** | Organisation context and conversation for the answer, with only the current question sent to web research. The exchange can join your remembered conversation. |
+| **Org + web** (the default) | Organisation context and conversation for the answer, with only the current question sent to web research. The exchange can join your remembered conversation. |
 | **Organisation only** | Organisation records and conversation. Web research stays off. |
 
 Check your question before using Org + web: its text goes to web research.
@@ -152,9 +153,12 @@ signed-in session. Its details fold away under the result.
 - You still check and confirm a card when the brain drafted something you
   did not ask for, when the instructions mention secrets or sending data
   out, and when the card was restored after you reopened Brain Talk.
-- Running an existing task shows a **Run a task** card. **Run now** opens
-  the task in the Agenda in front of Brain Talk, ready for you to confirm
-  once.
+- When you ask to run an existing task ("Retry it on lion"), it starts at
+  once on the node you named, or on a free node. The line under the answer
+  says **Started on lion** and offers **Open task**. If it cannot start, the
+  line says why and a **Run a task** card appears; **Run now** opens the task
+  in the Agenda. A node name Brain Talk cannot find is never swapped for
+  another node.
 - On a confirm card, cancelling a task, pausing a schedule and raising a
   priority take one tap. Creating a task, a sprint rollover and a permanent
   delete take two.
@@ -203,6 +207,38 @@ what's left and let you know what it says."
   the brain is updating. Your conversation stays open. While it updates,
   **Send** keeps your question in the box instead of sending it. When the
   brain answers again the card says "The brain is back." and closes.
+
+### Tell a node, or start new work on another node
+
+- **Tell a running turn something**: "Tell tui to stop after the tests" goes
+  straight to your turn running on tui, even when tui is busy with other
+  work. Its agent decides how to fit it in. A quick check first confirms you
+  asked for it now; if the check holds it, the reply says why.
+- **Start new work on another node**: "Find another node to do it" or "Get
+  lion to fix the login bug" starts a new turn as you, like typing it into
+  that node's console. It goes to a free node, or to the node you name. It
+  creates no task and shows no card. The line under the answer says
+  **Started on lion**, or why it could not start. If the reply is lost, it
+  says it could not confirm the start: check the node before asking again.
+- **Want it tracked?** Ask for a task ("Create a task to fix the login bug
+  and run it on lion"). A task shows in the Agenda and records the result.
+
+### Answer your turns' questions
+
+When a turn you started asks you a question, it appears in Brain Talk under
+**Needs your answer**, with the node that asked. Pick a choice or type an
+answer and select **Send answer**. The line under it says whether the turn
+received it. The strip **Waiting on N things you started here** lists what
+you are still waiting on from this conversation; select it to open the list.
+
+### Keep work moving while you're away
+
+Say "Keep working through the open tasks until 9am tomorrow". The brain
+saves a work brief and says in one line what it will work on and until when
+(9am in your time zone). About every 10 minutes it plans the next steps and
+starts or steers work on your nodes, within your [org policy](../concepts/what-is-the-org-brain.md).
+It never releases, deploys, spends or approves anything; work only a person
+can do waits for you. Say "stop" to end the brief early.
 
 ### Follow a run
 
