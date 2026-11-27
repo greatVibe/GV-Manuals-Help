@@ -107,11 +107,12 @@ When an agent needs a decision, it asks the org brain first and makes a
 sensible guess from what it can see. Only a question it cannot answer
 becomes a question for a person.
 
-The brain is the friendly agent for those questions too. When a question is
-asked of the policy steward or the managers, the brain answers it if it can
-make a confident, logical guess. The answer says it was the brain's guess,
+The brain is the friendly agent for those questions too. When the policy
+steward's own work asks a question, the brain answers it if it can make a
+confident, logical guess. A question from any other member always waits for
+a person. The answer says it was the brain's guess,
 not yours. It never answers a choice about releases, deploys, money,
-deleting, credentials or access, and it never declines for you. Those wait
+deleting, credentials, access or security, and it never declines for you. Those wait
 in **Questions for you** in the [Agenda](../how-to/use-the-agenda.md).
 A question waits 4 hours by default.
 

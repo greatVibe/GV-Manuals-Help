@@ -185,11 +185,11 @@ for you** in the [Agenda](../how-to/use-the-agenda.md).
   it until a `proceed` answer exists. Check `org_question_list` first.
 - **Ask the org brain first.** Try `org_brain_ask` and make a logical guess
   from the evidence. Ask a person only when you definitely cannot answer.
-- **The org brain answers some questions itself.** For a question asked of
-  the policy steward or the managers, the brain makes a confident guess when
-  it can and records it as its own (`via brain`). It never answers
-  release, deploy, money, delete, credential or access choices, and it
-  never declines. Those wait for the person.
+- **The org brain answers some questions itself.** For a question the policy
+  steward's own work asked, the brain makes a confident guess when it can
+  and records it as its own (`via brain`). It never answers release,
+  deploy, money, delete, credential, access or security choices, a member's
+  question, or a decline. Those wait for the person.
 - Do not hold a turn open waiting for an answer. Leave the question on the
   task, continue with other work, and pick it up when it is answered.
 - Answer only with the person's actual decision; the answer records whether
