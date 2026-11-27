@@ -15,6 +15,16 @@ nodes closes the view. Reopen it on the new node. Your access is checked when
 you ask. **Pop out**, where offered, opens a separate view without sending a
 question or copying your current conversation into it.
 
+### Open greatVibe straight into Brain Talk
+
+Your user menu (your picture at the top right) has a button that shows where
+greatVibe opens for you: **Console** or **Brain Talk**. Tap it to switch.
+The choice is saved to your account, so it applies in the browser and in the
+installed app. Your current page moves to the other view straight away.
+Brain Talk opens for your default organisation, and it needs one: set it in
+**Account admin** if the button says so. Tap the button again to go back to
+the console.
+
 ## Write a question
 
 Your draft stays in the message box until you send it. Select text, replace a

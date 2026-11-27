@@ -134,3 +134,4 @@ at 2 MiB combined, although the server accepts larger requests.
 - 2026-11-27 (review 062fe82b): Start a check fills the box; node messages are never sent from image questions.
 - 2026-11-27 (turn 1ead81d5): brain update card (countdown, updating, Send holds the question, "The brain is back.").
 - 2026-11-27 (turn 1ead81d5, merge on release): node answers come as the brain's own message, read against your question; no separate answered block.
+- 2026-11-27 (turn 1ead81d5, merge on release): user menu Console / Brain Talk login default.
