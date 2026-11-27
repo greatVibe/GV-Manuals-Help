@@ -160,6 +160,24 @@ intends to work is not a run receipt. See
 [org tasks](plan-work-with-org-tasks-and-schedules.md) and
 [the Agenda](use-the-agenda.md).
 
+### Ask a node something
+
+You talk to the org brain, and the brain talks to your nodes for you. Say
+"Ask tui what's left" and the brain replies along the lines of "I'll ask tui
+what's left and let you know what it says."
+
+- **When tui answers**, the brain passes it on: "Here's what tui said …".
+- **If tui is quiet for a while**, the brain checks in with you instead of
+  going silent.
+  - After about 5 to 10 minutes: "Still nothing back from tui. It's probably
+    busy in the middle of something, so I've given it a nudge."
+  - After half an hour, if there's still no answer, it offers to start a
+    separate check.
+- **If nothing is running on tui**, the brain says so straight away:
+  "Actually, tui isn't working on anything right now, so there's no one there
+  to ask." Tap **Start a check on tui** to have it start a quick check there.
+- **If it can't pass your message on**, it tells you why in plain words.
+
 ### Follow a run
 
 When a task you asked for is created and queued, or a run starts under a

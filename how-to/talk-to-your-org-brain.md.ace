@@ -129,3 +129,4 @@ Agents asking through tools always get a card. The owner's live check of
 auto-confirm is still open; keep wording conditional on what the screen
 shows. Image limit unchanged: the released composer still caps four images
 at 2 MiB combined, although the server accepts larger requests.
+- 2026-11-27 (owner turn a008b49a): "Ask a node something": you talk to the brain, it talks to nodes; passes on replies, checks in when a node is quiet, offers a quick check when nothing runs there. Merge at release of brain feat/conversational-follow-a008 and konui feat/conversational-steer-a008.
